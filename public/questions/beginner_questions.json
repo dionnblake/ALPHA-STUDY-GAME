@@ -1,0 +1,502 @@
+[
+  {
+    "id": "google_ai_beg_001",
+    "questionText": "A logistics firm aims to predict customer churn by analyzing patterns in historical service logs. Given they have historical examples of customers who left, which AI (Artificial Intelligence) approach is most suitable?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Supervised Learning",
+    "category": "fundamentals",
+    "difficulty": "beginner",
+    "options": [
+      "Reinforcement Learning",
+      "Supervised Learning",
+      "Unsupervised Learning",
+      "Generative Modeling"
+    ],
+    "explanation": "Supervised learning is ideal here because the firm has labeled data — historical examples of churned vs. active customers — to train the model.",
+    "remediationNotes": "Think: If you have historical examples of the answer, it's Supervised. See Chapter 2.",
+    "learningObjective": "Distinguish between supervised and unsupervised learning in a business scenario.",
+    "tags": [
+      "fundamentals",
+      "supervised learning"
+    ],
+    "scenario": "Customer churn prediction via historical data.",
+    "option_a": "Reinforcement Learning",
+    "option_b": "Supervised Learning",
+    "option_c": "Unsupervised Learning",
+    "option_d": "Generative Modeling"
+  },
+  {
+    "id": "google_ai_beg_002",
+    "questionText": "Which statement correctly describes the technical relationship between Artificial Intelligence and Machine Learning?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "ML (Machine Learning) is a subset of AI (Artificial Intelligence) that learns from data.",
+    "category": "fundamentals",
+    "difficulty": "beginner",
+    "options": [
+      "AI (Artificial Intelligence) and ML (Machine Learning) are separate fields with no overlap.",
+      "ML (Machine Learning) is a subset of AI (Artificial Intelligence) that learns from data.",
+      "AI (Artificial Intelligence) is a specialized branch within Machine Learning.",
+      "AI (Artificial Intelligence) and ML (Machine Learning) are interchangeable in technical contexts."
+    ],
+    "explanation": "AI (Artificial Intelligence) is the broad field of creating intelligent machines; ML (Machine Learning) is a specific subset within AI (Artificial Intelligence) where machines improve at tasks through data.",
+    "remediationNotes": "Check the nested circles diagram in Chapter 3: AI (Artificial Intelligence) > ML (Machine Learning) > Deep Learning.",
+    "learningObjective": "Understand the hierarchy of AI (Artificial Intelligence) and ML (Machine Learning).",
+    "tags": [
+      "fundamentals",
+      "ai vs ml"
+    ],
+    "option_a": "AI (Artificial Intelligence) and ML (Machine Learning) are separate fields with no overlap.",
+    "option_b": "ML (Machine Learning) is a subset of AI (Artificial Intelligence) that learns from data.",
+    "option_c": "AI (Artificial Intelligence) is a specialized branch within Machine Learning.",
+    "option_d": "AI (Artificial Intelligence) and ML (Machine Learning) are interchangeable in technical contexts."
+  },
+  {
+    "id": "google_ai_beg_003",
+    "questionText": "A smart HVAC (Heating, Ventilation, and Air Conditioning) system learns the thermal properties of a specific building to optimize energy usage. A student claims this is General AI (Artificial Intelligence). What type of AI (Artificial Intelligence) is it actually?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Narrow AI (task-specific)",
+    "category": "ai-types",
+    "difficulty": "beginner",
+    "options": [
+      "Narrow AI (task-specific)",
+      "AGI (Artificial General Intelligence)",
+      "Generative AI (content creation)",
+      "Supervised Learning (classification-based)"
+    ],
+    "explanation": "Narrow or Weak AI (Artificial Intelligence) is designed for a single specific task — like climate control — rather than human-level multi-domain intelligence.",
+    "remediationNotes": "If an AI (Artificial Intelligence) is an expert at ONE thing but useless at others, it's Narrow! See Ch 4.",
+    "learningObjective": "Identify Narrow AI (Artificial Intelligence) in everyday technology.",
+    "tags": [
+      "ai-types",
+      "narrow ai"
+    ],
+    "option_a": "Narrow AI (task-specific)",
+    "option_b": "AGI (Artificial General Intelligence)",
+    "option_c": "Generative AI (content creation)",
+    "option_d": "Supervised Learning (classification-based)"
+  },
+  {
+    "id": "google_ai_beg_004",
+    "questionText": "A major retailer wants to automatically group customers into hidden clusters based on shared shopping behavior — no predefined categories exist. Which ML (Machine Learning) technique applies?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Clustering (Unsupervised Learning)",
+    "category": "fundamentals",
+    "difficulty": "beginner",
+    "options": [
+      "Regression (Supervised Learning)",
+      "Clustering (Unsupervised Learning)",
+      "Classification (Supervised Learning)",
+      "Dimensionality Reduction (Feature Compression)"
+    ],
+    "explanation": "Clustering discovers patterns in unlabeled data by grouping similar items together, making it ideal for market segmentation.",
+    "remediationNotes": "Grouping without pre-defined labels = Clustering. Review Ch 2.",
+    "learningObjective": "Identify clustering as a solution for customer segmentation.",
+    "tags": [
+      "fundamentals",
+      "clustering"
+    ],
+    "option_a": "Regression (Supervised Learning)",
+    "option_b": "Clustering (Unsupervised Learning)",
+    "option_c": "Classification (Supervised Learning)",
+    "option_d": "Dimensionality Reduction (Feature Compression)"
+  },
+  {
+    "id": "google_ai_beg_005",
+    "questionText": "An AI (Artificial Intelligence) resume screening tool shows a statistically significant preference for candidates from certain universities — a pattern inherited from historical hiring data. What risk does this represent?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Algorithmic Bias (Historical Prejudice)",
+    "category": "bias-fairness",
+    "difficulty": "beginner",
+    "options": [
+      "Model Overfitting (Training Noise)",
+      "Algorithmic Bias (Historical Prejudice)",
+      "Data Leakage (Test Contamination)",
+      "Concept Drift (Distribution Shift)"
+    ],
+    "explanation": "Algorithmic bias occurs when a model mirrors or amplifies unfair prejudices present in its training dataset.",
+    "remediationNotes": "Bias isn't a bug; it's often a mirror of bad historical data. See Chapter 8.",
+    "learningObjective": "Recognize the impact of bias in AI (Artificial Intelligence) systems.",
+    "tags": [
+      "ethics",
+      "bias"
+    ],
+    "option_a": "Model Overfitting (Training Noise)",
+    "option_b": "Algorithmic Bias (Historical Prejudice)",
+    "option_c": "Data Leakage (Test Contamination)",
+    "option_d": "Concept Drift (Distribution Shift)"
+  },
+  {
+    "id": "google_ai_beg_006",
+    "questionText": "A colleague claims generative AI (Artificial Intelligence) and traditional classification models do the same job. What is the key functional difference?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Generative AI (Artificial Intelligence) creates new content; classification assigns labels to existing input.",
+    "category": "generative-models",
+    "difficulty": "beginner",
+    "options": [
+      "Generative AI (Artificial Intelligence) requires AGI (Artificial General Intelligence); classification models do not.",
+      "Generative AI (Artificial Intelligence) creates new content; classification assigns labels to existing input.",
+      "Generative AI (Artificial Intelligence) needs no training data; classification requires all data labeled.",
+      "Generative AI (Artificial Intelligence) only handles text; classification handles all other data types."
+    ],
+    "explanation": "While traditional AI (Artificial Intelligence) categorizes existing data, Generative AI (Artificial Intelligence) produces entirely new outputs like text, images, or audio.",
+    "remediationNotes": "Generative = Generates. Classification = Classifies. Check Chapter 6.",
+    "learningObjective": "Understand the distinction between generative and discriminative AI (Artificial Intelligence).",
+    "tags": [
+      "generative ai"
+    ],
+    "option_a": "Generative AI (Artificial Intelligence) requires AGI (Artificial General Intelligence); classification models do not.",
+    "option_b": "Generative AI (Artificial Intelligence) creates new content; classification assigns labels to existing input.",
+    "option_c": "Generative AI (Artificial Intelligence) needs no training data; classification requires all data labeled.",
+    "option_d": "Generative AI (Artificial Intelligence) only handles text; classification handles all other data types."
+  },
+  {
+    "id": "google_ai_beg_007",
+    "questionText": "A professional uses an AI (Artificial Intelligence) tool to transform a rough technical outline into a polished project proposal. Which underlying technology makes this possible?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Large Language Model (Generative AI (Artificial Intelligence))",
+    "category": "google-workspace",
+    "difficulty": "beginner",
+    "options": [
+      "Keyword-based Search Indexing",
+      "Large Language Model (Generative AI (Artificial Intelligence))",
+      "Rule-based Template Scripting",
+      "Relational Query Processing"
+    ],
+    "explanation": "Google Workspace's 'Help me write' leverages Large Language Models to understand context and generate coherent prose from rough inputs.",
+    "remediationNotes": "LLMs (Large Language Models) find the next likely word to build your draft. See Chapter 13.",
+    "learningObjective": "Identify AI (Artificial Intelligence) productivity tools in Google Workspace.",
+    "tags": [
+      "google-workspace",
+      "productivity"
+    ],
+    "option_a": "Keyword-based Search Indexing",
+    "option_b": "Large Language Model (Generative AI (Artificial Intelligence))",
+    "option_c": "Rule-based Template Scripting",
+    "option_d": "Relational Query Processing"
+  },
+  {
+    "id": "google_ai_beg_008",
+    "questionText": "A small business with no data science team wants to build a custom ML (Machine Learning) model. They hear about AutoML. What does AutoML actually do for them?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Automates model building without requiring deep coding or statistical expertise.",
+    "category": "automl",
+    "difficulty": "beginner",
+    "options": [
+      "Automates database queries to speed up existing workflows.",
+      "Automates model building without requiring deep coding or statistical expertise.",
+      "Automatically scrapes licensed datasets from third-party web sources.",
+      "Automates manual data labeling for each training example."
+    ],
+    "explanation": "AutoML democratizes AI (Artificial Intelligence) by automating complex parts of the ML (Machine Learning) lifecycle like feature engineering and model selection.",
+    "remediationNotes": "AutoML is 'AI (Artificial Intelligence) that builds AI (Artificial Intelligence)'. Review Chapter 14.",
+    "learningObjective": "Define AutoML and its value proposition.",
+    "tags": [
+      "automl",
+      "google-cloud"
+    ],
+    "option_a": "Automates database queries to speed up existing workflows.",
+    "option_b": "Automates model building without requiring deep coding or statistical expertise.",
+    "option_c": "Automatically scrapes licensed datasets from third-party web sources.",
+    "option_d": "Automates manual data labeling for each training example."
+  },
+  {
+    "id": "google_ai_beg_009",
+    "questionText": "Among Google's AI (Artificial Intelligence) Principles, why is building AI (Artificial Intelligence) that is 'socially beneficial' specifically emphasized?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "To ensure positive global impact by proactively minimizing harmful biases.",
+    "category": "google-principles",
+    "difficulty": "beginner",
+    "options": [
+      "To maximize profits before addressing safety or fairness concerns.",
+      "To ensure positive global impact by proactively minimizing harmful biases.",
+      "To prevent other companies from replicating the technology.",
+      "To shift focus from scientific methods to purely creative applications."
+    ],
+    "explanation": "Google's principles state that AI (Artificial Intelligence) should be developed with high standards of social responsibility, safety, and fairness.",
+    "remediationNotes": "Check the 'Principles Summary' in Chapter 11.",
+    "learningObjective": "State key AI (Artificial Intelligence) ethical principles.",
+    "tags": [
+      "ethics",
+      "principles"
+    ],
+    "option_a": "To maximize profits before addressing safety or fairness concerns.",
+    "option_b": "To ensure positive global impact by proactively minimizing harmful biases.",
+    "option_c": "To prevent other companies from replicating the technology.",
+    "option_d": "To shift focus from scientific methods to purely creative applications."
+  },
+  {
+    "id": "google_ai_beg_010",
+    "questionText": "An office worker uses an AI (Artificial Intelligence) agent to read 50 customer emails and extract grievances into a summary table. Which NLP (Natural Language Processing) capability is primarily being applied?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Information Summarization and Extraction",
+    "category": "automation",
+    "difficulty": "beginner",
+    "options": [
+      "Sentiment Analysis and Emotion Detection",
+      "Information Summarization and Extraction",
+      "Named Entity Recognition and Labeling",
+      "Predictive Analytics and Forecasting"
+    ],
+    "explanation": "Condensing unstructured text into actionable summaries is one of the most practical beginner NLP (Natural Language Processing) use cases for AI (Artificial Intelligence).",
+    "remediationNotes": "Think: AI (Artificial Intelligence) isn't just for bots; it's a super-summarizer! See Chapter 15.",
+    "learningObjective": "Identify AI (Artificial Intelligence) use cases for time management and efficiency.",
+    "tags": [
+      "productivity",
+      "summarization"
+    ],
+    "option_a": "Sentiment Analysis and Emotion Detection",
+    "option_b": "Information Summarization and Extraction",
+    "option_c": "Named Entity Recognition and Labeling",
+    "option_d": "Predictive Analytics and Forecasting"
+  },
+  {
+    "id": "google_ai_beg_011",
+    "questionText": "When you unlock your phone using facial recognition biometrics, which AI (Artificial Intelligence) capability is being used?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Computer Vision (Pattern Matching)",
+    "category": "ai-types",
+    "difficulty": "beginner",
+    "options": [
+      "Natural Language Understanding",
+      "Computer Vision (Pattern Matching)",
+      "Reinforcement Learning Signal",
+      "Dimensionality Reduction Method"
+    ],
+    "explanation": "Computer vision allows systems to identify and verify subjects from visual data — a hallmark of Narrow AI (Artificial Intelligence).",
+    "remediationNotes": "See = Vision. If it analyzes pixels to find a face, it's Computer Vision! See Ch 4.",
+    "learningObjective": "Recognize Narrow AI (Artificial Intelligence) in daily mobile features.",
+    "tags": [
+      "ai-types",
+      "biometrics"
+    ],
+    "option_a": "Natural Language Understanding",
+    "option_b": "Computer Vision (Pattern Matching)",
+    "option_c": "Reinforcement Learning Signal",
+    "option_d": "Dimensionality Reduction Method"
+  },
+  {
+    "id": "google_ai_beg_012",
+    "questionText": "What does a Large Language Model primarily rely on to generate its responses?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Statistical patterns learned from massive human-written text.",
+    "category": "generative-models",
+    "difficulty": "beginner",
+    "options": [
+      "Live internet searches run for each word generated.",
+      "Statistical patterns learned from massive human-written text.",
+      "Scripts authored by human programmers at inference time.",
+      "Symbolic logic rules with no natural language training."
+    ],
+    "explanation": "LLMs (Large Language Models) predict the most likely next token based on patterns learned during training on massive text datasets.",
+    "remediationNotes": "LLMs (Large Language Models) are statistical pattern matchers for language. See Chapter 6.",
+    "learningObjective": "Understand how LLMs (Large Language Models) generate content.",
+    "tags": [
+      "llm",
+      "text"
+    ],
+    "option_a": "Live internet searches run for each word generated.",
+    "option_b": "Statistical patterns learned from massive human-written text.",
+    "option_c": "Scripts authored by human programmers at inference time.",
+    "option_d": "Symbolic logic rules with no natural language training."
+  },
+  {
+    "id": "google_ai_beg_013",
+    "questionText": "RAG (In Retrieval-Augmented Generation), what is the primary purpose of providing external documents before the model responds?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "To anchor responses in verified external facts and prevent hallucinations.",
+    "category": "generative-models",
+    "difficulty": "beginner",
+    "options": [
+      "To increase the inference speed of the base language model.",
+      "To anchor responses in verified external facts and prevent hallucinations.",
+      "To teach the model an entirely new programming language.",
+      "To eliminate the need for GPU (Graphics Processing Unit)-based computation during inference."
+    ],
+    "explanation": "RAG (Retrieval-Augmented Generation) reduces hallucinations by giving the AI (Artificial Intelligence) a factual context to reference before answering.",
+    "remediationNotes": "RAG (Retrieval-Augmented Generation) is like giving the AI (Artificial Intelligence) an open-book test. See Chapter 16.",
+    "learningObjective": "Define the purpose of RAG (Retrieval-Augmented Generation) in modern AI (Artificial Intelligence).",
+    "tags": [
+      "rag",
+      "llm"
+    ],
+    "option_a": "To increase the inference speed of the base language model.",
+    "option_b": "To anchor responses in verified external facts and prevent hallucinations.",
+    "option_c": "To teach the model an entirely new programming language.",
+    "option_d": "To eliminate the need for GPU (Graphics Processing Unit)-based computation during inference."
+  },
+  {
+    "id": "google_ai_beg_014",
+    "questionText": "When using Persona-Based Prompting — asking the AI (Artificial Intelligence) to 'Act as a Senior Project Manager' — what is the intended effect on the output?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "It shapes the output's tone, depth, and professional vocabulary.",
+    "category": "generative-models",
+    "difficulty": "beginner",
+    "options": [
+      "It makes the model respond in a more casual, friendly tone.",
+      "It shapes the output's tone, depth, and professional vocabulary.",
+      "It bypasses safety filters built into the model.",
+      "It reduces the cost of the AI (Artificial Intelligence) subscription tier."
+    ],
+    "explanation": "Personas help the model select relevant parts of its training data to better match the user's expected style and expertise level.",
+    "remediationNotes": "Ask it to 'Act as' to get specific results. See Chapter 18.",
+    "learningObjective": "Use prompt engineering for tone adjustment.",
+    "tags": [
+      "prompting",
+      "persona"
+    ],
+    "option_a": "It makes the model respond in a more casual, friendly tone.",
+    "option_b": "It shapes the output's tone, depth, and professional vocabulary.",
+    "option_c": "It bypasses safety filters built into the model.",
+    "option_d": "It reduces the cost of the AI (Artificial Intelligence) subscription tier."
+  },
+  {
+    "id": "google_ai_beg_015",
+    "questionText": "HITL (A hospital considers fully automating its AI (Artificial Intelligence) diagnosis system. A colleague argues a human must remain in the loop. Why is Human-in-the-Loop) required for safety-critical AI (Artificial Intelligence)?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "It provides oversight and validation where models may lack reliable judgment.",
+    "category": "google-principles",
+    "difficulty": "beginner",
+    "options": [
+      "It reduces the computational cost of each model inference.",
+      "It provides oversight and validation where models may lack reliable judgment.",
+      "It speeds up automated decision pipelines significantly.",
+      "It ensures the model only processes pre-approved input data."
+    ],
+    "explanation": "AI (Artificial Intelligence) models can produce inaccurate or biased advice; human experts are needed for final, ethical oversight and validation in high-stakes domains.",
+    "remediationNotes": "High stakes = Human checks. Review Chapter 7 on Responsibility.",
+    "learningObjective": "Recall the necessity of human verification.",
+    "tags": [
+      "ethics",
+      "human-oversight"
+    ],
+    "option_a": "It reduces the computational cost of each model inference.",
+    "option_b": "It provides oversight and validation where models may lack reliable judgment.",
+    "option_c": "It speeds up automated decision pipelines significantly.",
+    "option_d": "It ensures the model only processes pre-approved input data."
+  },
+  {
+    "id": "google_ai_beg_016",
+    "questionText": "A credit model consistently approves higher limits for men than women with identical financial profiles. Which AI (Artificial Intelligence) problem does this represent?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Unfair Bias (Disparate Impact)",
+    "category": "bias-fairness",
+    "difficulty": "beginner",
+    "options": [
+      "Model Overfitting (High Variance)",
+      "Unfair Bias (Disparate Impact)",
+      "Data Leakage (Test Contamination)",
+      "Concept Drift (Distribution Shift)"
+    ],
+    "explanation": "This is a classic example of unintended bias where the model uses sensitive attributes or proxies for them to make unfair decisions.",
+    "remediationNotes": "Review Chapter 8 on identifying and mitigating bias.",
+    "learningObjective": "Define bias in real-world AI (Artificial Intelligence) applications.",
+    "tags": [
+      "ethics",
+      "bias"
+    ],
+    "option_a": "Model Overfitting (High Variance)",
+    "option_b": "Unfair Bias (Disparate Impact)",
+    "option_c": "Data Leakage (Test Contamination)",
+    "option_d": "Concept Drift (Distribution Shift)"
+  },
+  {
+    "id": "google_ai_beg_017",
+    "questionText": "A student uses AI (Artificial Intelligence) to analyze a recorded lecture and generate a set of study flashcards. Which AI (Artificial Intelligence) capability is most central to this task?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Knowledge Extraction and Educational Support",
+    "category": "automation",
+    "difficulty": "beginner",
+    "options": [
+      "Sentiment Analysis for Content Rating",
+      "Knowledge Extraction and Educational Support",
+      "Transfer Learning for Domain Adaptation",
+      "Named Entity Recognition and Tagging"
+    ],
+    "explanation": "AI (Artificial Intelligence) can analyze audio and text to identify key concepts, helping students learn more efficiently.",
+    "remediationNotes": "Check Chapter 15 for AI (Artificial Intelligence) in learning and education.",
+    "learningObjective": "Identify AI (Artificial Intelligence) for skill development.",
+    "tags": [
+      "education",
+      "flashcards"
+    ],
+    "option_a": "Sentiment Analysis for Content Rating",
+    "option_b": "Knowledge Extraction and Educational Support",
+    "option_c": "Transfer Learning for Domain Adaptation",
+    "option_d": "Named Entity Recognition and Tagging"
+  },
+  {
+    "id": "google_ai_beg_018",
+    "questionText": "A regulator demands that a bank's AI (Artificial Intelligence) explain why a specific loan was denied. What property of the AI (Artificial Intelligence) system is the regulator requiring?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "XAI (Explainability) — humans can trace each output to its cause.",
+    "category": "transparency",
+    "difficulty": "beginner",
+    "options": [
+      "Scalability — the model handles high query volume efficiently.",
+      "XAI (Explainability) — humans can trace each output to its cause.",
+      "Robustness — the model performs well under adversarial inputs.",
+      "Portability — the model runs across different hardware platforms."
+    ],
+    "explanation": "Explainability is critical for trust, especially in high-stakes fields where we need to know WHY a decision was made.",
+    "remediationNotes": "Check Chapter 10 for XAI (Explainable AI) concepts.",
+    "learningObjective": "Define AI (Artificial Intelligence) explainability.",
+    "tags": [
+      "transparency",
+      "explainability"
+    ],
+    "option_a": "Scalability — the model handles high query volume efficiently.",
+    "option_b": "XAI (Explainability) — humans can trace each output to its cause.",
+    "option_c": "Robustness — the model performs well under adversarial inputs.",
+    "option_d": "Portability — the model runs across different hardware platforms."
+  },
+  {
+    "id": "google_ai_beg_019",
+    "questionText": "A writer asks an AI (Artificial Intelligence) to rewrite a formal email in a 'friendly and encouraging' tone while keeping the original meaning. What NLP (Natural Language Processing) task is this?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Text Transformation (Tone Shift)",
+    "category": "generative-models",
+    "difficulty": "beginner",
+    "options": [
+      "Sentiment Analysis (Opinion Detection)",
+      "Text Transformation (Tone Shift)",
+      "Named Entity Recognition (Extraction)",
+      "Machine Translation (Language Conversion)"
+    ],
+    "explanation": "Large Language Models excel at adjusting the style and tone of text while preserving the original meaning.",
+    "remediationNotes": "Study the rewrite capabilities mentioned in Chapter 13.",
+    "learningObjective": "Use AI (Artificial Intelligence) for tone adjustments.",
+    "tags": [
+      "productivity",
+      "writing"
+    ],
+    "option_a": "Sentiment Analysis (Opinion Detection)",
+    "option_b": "Text Transformation (Tone Shift)",
+    "option_c": "Named Entity Recognition (Extraction)",
+    "option_d": "Machine Translation (Language Conversion)"
+  },
+  {
+    "id": "google_ai_beg_020",
+    "questionText": "Which AI (Artificial Intelligence) career path focuses specifically on investigating the societal impacts and fairness of new AI (Artificial Intelligence) technologies?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "AI (Artificial Intelligence) Ethics and Policy Researcher",
+    "category": "future-of-work",
+    "difficulty": "beginner",
+    "options": [
+      "MLOps Infrastructure Engineer",
+      "AI (Artificial Intelligence) Ethics and Policy Researcher",
+      "Data Pipeline Architect",
+      "Foundation Model Training Specialist"
+    ],
+    "explanation": "Ethics researchers work to ensure AI (Artificial Intelligence) development aligns with human values, laws, and fairness standards.",
+    "remediationNotes": "Check Chapter 19 for future-focused AI (Artificial Intelligence) roles.",
+    "learningObjective": "Identify specialized roles in the AI (Artificial Intelligence) field.",
+    "tags": [
+      "career",
+      "ethics"
+    ],
+    "option_a": "MLOps Infrastructure Engineer",
+    "option_b": "AI (Artificial Intelligence) Ethics and Policy Researcher",
+    "option_c": "Data Pipeline Architect",
+    "option_d": "Foundation Model Training Specialist"
+  }
+]

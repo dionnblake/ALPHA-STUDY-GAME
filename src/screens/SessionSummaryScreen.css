@@ -1,0 +1,119 @@
+/* src/screens/SessionSummaryScreen.css */
+.summary-screen {
+  animation: fadeIn 0.8s ease-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+.debrief-card {
+  width: 100%;
+  max-width: 900px;
+  background: radial-gradient(circle at 50% 0%, hsla(215, 100%, 65%, 0.1), transparent 70%),
+              var(--bg-mica);
+  border: 1px solid var(--border-vibrant);
+  padding: 4rem;
+  border-radius: 24px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+}
+
+.debrief-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 2px;
+  background: linear-gradient(90deg, transparent, var(--primary), transparent);
+}
+
+.debrief-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.debrief-header h1 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 20px var(--primary-glow);
+}
+
+.debrief-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.debrief-module {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  position: relative;
+}
+
+.debrief-module .hud-label-small {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+}
+
+.debrief-val {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+/* Accuracy Gauge Specifics */
+.debrief-module.highlight {
+  border-color: var(--primary);
+  background: radial-gradient(circle at top right, rgba(55, 125, 255, 0.1), transparent);
+}
+
+.debrief-module.highlight .debrief-val {
+  color: var(--primary);
+  text-shadow: 0 0 15px var(--primary-glow);
+}
+
+.debrief-footer {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.debrief-footer button {
+  min-width: 220px;
+  padding: 1.25rem;
+  font-weight: 700;
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.share-feedback {
+  margin-top: 1rem;
+  text-align: center;
+  color: var(--color-success);
+  font-size: 0.92rem;
+}
+
+.share-feedback.error {
+  color: var(--color-error);
+}
+
+@media (max-width: 800px) {
+  .debrief-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

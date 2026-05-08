@@ -1,0 +1,2802 @@
+[
+  {
+    "id": 1,
+    "term": "Artificial Intelligence",
+    "definition": "The simulation of human intelligence processes by machines, especially computer systems. These processes include learning, reasoning, and self-correction.",
+    "difficulty": "beginner",
+    "category": "fundamentals"
+  },
+  {
+    "id": 2,
+    "term": "Machine Learning",
+    "definition": "A subset of AI where systems learn from data without being explicitly programmed. The system improves performance through experience.",
+    "difficulty": "beginner",
+    "category": "fundamentals"
+  },
+  {
+    "id": 3,
+    "term": "Deep Learning",
+    "definition": "A subset of machine learning using artificial neural networks with multiple layers to progressively extract higher-level features from raw input.",
+    "difficulty": "intermediate",
+    "category": "deepLearning"
+  },
+  {
+    "id": 4,
+    "term": "Neural Network",
+    "definition": "A computing system inspired by biological neural networks that constitute animal brains. It consists of interconnected nodes (neurons) that process information.",
+    "difficulty": "beginner",
+    "category": "fundamentals"
+  },
+  {
+    "id": 5,
+    "term": "Supervised Learning",
+    "definition": "A machine learning approach where the model is trained on labeled data, meaning the training data includes both features and correct answers.",
+    "difficulty": "intermediate",
+    "category": "models"
+  },
+  {
+    "id": 6,
+    "term": "Unsupervised Learning",
+    "definition": "A machine learning approach where models are trained on unlabeled data to discover hidden patterns, structures, or relationships without predefined answers.",
+    "difficulty": "intermediate",
+    "category": "models"
+  },
+  {
+    "id": 7,
+    "term": "Reinforcement Learning",
+    "definition": "A machine learning paradigm where an agent learns to make decisions by interacting with an environment and receiving rewards or penalties for actions.",
+    "difficulty": "intermediate",
+    "category": "models"
+  },
+  {
+    "id": 8,
+    "term": "Training",
+    "definition": "The process of feeding data into a machine learning model and adjusting its parameters to minimize error and improve predictions.",
+    "difficulty": "beginner",
+    "category": "training"
+  },
+  {
+    "id": 9,
+    "term": "Overfitting",
+    "definition": "When a model learns the training data too well, including its noise and peculiarities, resulting in poor performance on new, unseen data.",
+    "difficulty": "intermediate",
+    "category": "evaluation"
+  },
+  {
+    "id": 10,
+    "term": "Underfitting",
+    "definition": "When a model is too simple to learn the underlying pattern in the data, resulting in poor performance on both training and test data.",
+    "difficulty": "intermediate",
+    "category": "evaluation"
+  },
+  {
+    "id": 11,
+    "term": "Epoch",
+    "definition": "One complete pass through the entire training dataset during the training process of a neural network.",
+    "difficulty": "beginner",
+    "category": "training"
+  },
+  {
+    "id": 12,
+    "term": "Batch Size",
+    "definition": "The number of training examples processed together in one iteration before updating model weights. Larger batches are more stable but require more memory.",
+    "difficulty": "intermediate",
+    "category": "training"
+  },
+  {
+    "id": 13,
+    "term": "Learning Rate",
+    "definition": "A hyperparameter that controls the step size at which a model updates its weights during training. Too high causes instability, too low causes slow convergence.",
+    "difficulty": "intermediate",
+    "category": "training"
+  },
+  {
+    "id": 14,
+    "term": "Gradient Descent",
+    "definition": "An optimization algorithm that iteratively adjusts model parameters in the direction of the negative gradient to minimize the loss function.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 15,
+    "term": "Backpropagation",
+    "definition": "The fundamental algorithm for training neural networks that computes gradients by propagating errors backward through the network layers.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 16,
+    "term": "Activation Function",
+    "definition": "A mathematical function applied to a neuron's output to introduce non-linearity into the network. Common examples: ReLU, sigmoid, tanh.",
+    "difficulty": "intermediate",
+    "category": "models"
+  },
+  {
+    "id": 17,
+    "term": "ReLU (Rectified Linear Unit)",
+    "definition": "An activation function that outputs the input directly if positive; otherwise, it outputs zero. Formula: f(x) = max(0, x)",
+    "difficulty": "intermediate",
+    "category": "models"
+  },
+  {
+    "id": 18,
+    "term": "Sigmoid Function",
+    "definition": "An activation function that squashes inputs to a range between 0 and 1, useful for binary classification. Formula: f(x) = 1/(1+e^-x)",
+    "difficulty": "intermediate",
+    "category": "models"
+  },
+  {
+    "id": 19,
+    "term": "Softmax Function",
+    "definition": "A function that converts a vector of numbers into a probability distribution where outputs sum to 1, used in multi-class classification.",
+    "difficulty": "advanced",
+    "category": "models"
+  },
+  {
+    "id": 20,
+    "term": "Loss Function",
+    "definition": "A function that measures the difference between predicted values and actual values, guiding the model's learning process.",
+    "difficulty": "intermediate",
+    "category": "evaluation"
+  },
+  {
+    "id": 21,
+    "term": "Cross-Entropy Loss",
+    "definition": "A loss function commonly used for classification tasks that measures the difference between predicted and actual probability distributions.",
+    "difficulty": "advanced",
+    "category": "evaluation"
+  },
+  {
+    "id": 22,
+    "term": "Mean Squared Error (MSE)",
+    "definition": "A loss function that calculates the average of squared differences between predicted and actual values, commonly used for regression tasks.",
+    "difficulty": "intermediate",
+    "category": "evaluation"
+  },
+  {
+    "id": 23,
+    "term": "Accuracy",
+    "definition": "A metric that measures the proportion of correct predictions out of total predictions. Calculated as: (TP + TN) / (TP + TN + FP + FN)",
+    "difficulty": "beginner",
+    "category": "metrics"
+  },
+  {
+    "id": 24,
+    "term": "Precision",
+    "definition": "The proportion of positive predictions that were actually correct. Calculated as: TP / (TP + FP). Answers: 'Of predicted positives, how many were right?'",
+    "difficulty": "intermediate",
+    "category": "metrics"
+  },
+  {
+    "id": 25,
+    "term": "Recall (Sensitivity)",
+    "definition": "The proportion of actual positives correctly identified. Calculated as: TP / (TP + FN). Answers: 'Of actual positives, how many did we find?'",
+    "difficulty": "intermediate",
+    "category": "metrics"
+  },
+  {
+    "id": 26,
+    "term": "F1-Score",
+    "definition": "The harmonic mean of precision and recall, providing a balanced measure of model performance. Formula: 2 * (Precision * Recall) / (Precision + Recall)",
+    "difficulty": "intermediate",
+    "category": "metrics"
+  },
+  {
+    "id": 27,
+    "term": "Confusion Matrix",
+    "definition": "A table showing True Positives, True Negatives, False Positives, and False Negatives, used to evaluate classification model performance.",
+    "difficulty": "intermediate",
+    "category": "metrics"
+  },
+  {
+    "id": 28,
+    "term": "ROC Curve",
+    "definition": "A plot showing the trade-off between True Positive Rate and False Positive Rate at different classification thresholds, used to evaluate classifier performance.",
+    "difficulty": "advanced",
+    "category": "metrics"
+  },
+  {
+    "id": 29,
+    "term": "AUC (Area Under Curve)",
+    "definition": "The area under the ROC curve, representing the probability that the model ranks a random positive example higher than a random negative example.",
+    "difficulty": "advanced",
+    "category": "metrics"
+  },
+  {
+    "id": 30,
+    "term": "Convolutional Neural Network (CNN)",
+    "definition": "A deep learning architecture designed for processing grid-like data (images). Uses convolutional layers to automatically learn spatial hierarchies.",
+    "difficulty": "intermediate",
+    "category": "deepLearning"
+  },
+  {
+    "id": 31,
+    "term": "Convolution Operation",
+    "definition": "A mathematical operation that applies a filter (kernel) to sliding windows of input data, extracting local features from images or sequences.",
+    "difficulty": "advanced",
+    "category": "deepLearning"
+  },
+  {
+    "id": 32,
+    "term": "Pooling Layer",
+    "definition": "A layer in CNNs that reduces spatial dimensions by taking the maximum (max pooling) or average (average pooling) of feature regions.",
+    "difficulty": "intermediate",
+    "category": "deepLearning"
+  },
+  {
+    "id": 33,
+    "term": "Recurrent Neural Network (RNN)",
+    "definition": "A neural network architecture with connections forming cycles, allowing it to process sequential data by maintaining internal state/memory.",
+    "difficulty": "intermediate",
+    "category": "deepLearning"
+  },
+  {
+    "id": 34,
+    "term": "LSTM (Long Short-Term Memory)",
+    "definition": "A type of RNN (Recurrent Neural Network) with memory cells that can learn long-term dependencies through gates controlling information flow, addressing the vanishing gradient problem.",
+    "difficulty": "advanced",
+    "category": "deepLearning"
+  },
+  {
+    "id": 35,
+    "term": "GRU (Gated Recurrent Unit)",
+    "definition": "A simplified variant of LSTM that combines update and reset gates into a single gate, reducing parameters while maintaining similar performance.",
+    "difficulty": "advanced",
+    "category": "deepLearning"
+  },
+  {
+    "id": 36,
+    "term": "Attention Mechanism",
+    "definition": "A mechanism that allows models to focus on relevant parts of input data by computing weights over all input elements, improving information flow.",
+    "difficulty": "advanced",
+    "category": "deepLearning"
+  },
+  {
+    "id": 37,
+    "term": "Transformer",
+    "definition": "A neural network architecture based entirely on attention mechanisms without recurrence, enabling parallel processing of sequences and better scalability.",
+    "difficulty": "advanced",
+    "category": "deepLearning"
+  },
+  {
+    "id": 38,
+    "term": "Embedding",
+    "definition": "A representation of discrete data (like words or categories) as continuous vectors in a lower-dimensional space, capturing semantic relationships.",
+    "difficulty": "intermediate",
+    "category": "nlp"
+  },
+  {
+    "id": 39,
+    "term": "Word2Vec",
+    "definition": "An algorithm that learns word embeddings by predicting context words or using context to predict target words, capturing semantic similarity.",
+    "difficulty": "intermediate",
+    "category": "nlp"
+  },
+  {
+    "id": 40,
+    "term": "GloVe (Global Vectors)",
+    "definition": "An unsupervised learning algorithm for obtaining word vectors by combining global matrix factorization and local context window methods.",
+    "difficulty": "advanced",
+    "category": "nlp"
+  },
+  {
+    "id": 41,
+    "term": "BERT (Bidirectional Encoder Representations from Transformers)",
+    "definition": "A pre-trained transformer model using masked language modeling and next sentence prediction, effective for various NLP (Natural Language Processing) tasks.",
+    "difficulty": "advanced",
+    "category": "nlp"
+  },
+  {
+    "id": 42,
+    "term": "GPT (Generative Pre-trained Transformer)",
+    "definition": "An autoregressive language model trained on next-token prediction, capable of generating coherent text and performing various language tasks.",
+    "difficulty": "advanced",
+    "category": "nlp"
+  },
+  {
+    "id": 43,
+    "term": "Tokenization",
+    "definition": "The process of breaking down text into smaller units (tokens) like words or subwords for processing by NLP (Natural Language Processing) models.",
+    "difficulty": "beginner",
+    "category": "nlp"
+  },
+  {
+    "id": 44,
+    "term": "Named Entity Recognition (NER)",
+    "definition": "A natural language processing task that identifies and classifies named entities (persons, places, organizations) in text.",
+    "difficulty": "intermediate",
+    "category": "nlp"
+  },
+  {
+    "id": 45,
+    "term": "Sentiment Analysis",
+    "definition": "An NLP (Natural Language Processing) task that determines whether text expresses positive, negative, or neutral sentiment, commonly used for reviewing and social media analysis.",
+    "difficulty": "beginner",
+    "category": "nlp"
+  },
+  {
+    "id": 46,
+    "term": "Sequence-to-Sequence (Seq2Seq)",
+    "definition": "A neural network architecture with encoder and decoder components for tasks like machine translation and summarization.",
+    "difficulty": "advanced",
+    "category": "nlp"
+  },
+  {
+    "id": 47,
+    "term": "Machine Translation",
+    "definition": "The use of AI to automatically translate text or speech from one language to another, leveraging neural networks and statistical methods.",
+    "difficulty": "intermediate",
+    "category": "nlp"
+  },
+  {
+    "id": 48,
+    "term": "Computer Vision",
+    "definition": "An AI field focusing on enabling computers to understand and interpret visual information from images and videos.",
+    "difficulty": "beginner",
+    "category": "fundamentals"
+  },
+  {
+    "id": 49,
+    "term": "Image Classification",
+    "definition": "The task of assigning predefined categories or labels to entire images using machine learning models, foundational for computer vision.",
+    "difficulty": "beginner",
+    "category": "fundamentals"
+  },
+  {
+    "id": 50,
+    "term": "Object Detection",
+    "definition": "The computer vision task of locating and identifying multiple objects within an image, returning bounding boxes and class labels.",
+    "difficulty": "intermediate",
+    "category": "fundamentals"
+  },
+  {
+    "id": 51,
+    "term": "Semantic Segmentation",
+    "definition": "A computer vision task that assigns a class label to each pixel in an image, creating a dense pixel-wise classification.",
+    "difficulty": "advanced",
+    "category": "fundamentals"
+  },
+  {
+    "id": 52,
+    "term": "Instance Segmentation",
+    "definition": "A computer vision task combining object detection and semantic segmentation to identify and segment individual instances of objects.",
+    "difficulty": "advanced",
+    "category": "fundamentals"
+  },
+  {
+    "id": 53,
+    "term": "Feature Extraction",
+    "definition": "The process of identifying and extracting relevant features from raw data that are most informative for a machine learning task.",
+    "difficulty": "intermediate",
+    "category": "data"
+  },
+  {
+    "id": 54,
+    "term": "Dimensionality Reduction",
+    "definition": "Techniques that reduce the number of features in a dataset while preserving important information, improving efficiency and reducing overfitting.",
+    "difficulty": "advanced",
+    "category": "data"
+  },
+  {
+    "id": 55,
+    "term": "Principal Component Analysis (PCA)",
+    "definition": "An unsupervised technique for dimensionality reduction that identifies orthogonal axes (principal components) capturing maximum variance in data.",
+    "difficulty": "advanced",
+    "category": "data"
+  },
+  {
+    "id": 56,
+    "term": "Normalization",
+    "definition": "The process of scaling features to a similar range (usually 0-1), improving model training stability and performance.",
+    "difficulty": "intermediate",
+    "category": "data"
+  },
+  {
+    "id": 57,
+    "term": "Standardization",
+    "definition": "Transforming features to have mean 0 and standard deviation 1, useful for algorithms sensitive to feature scaling like distance-based models.",
+    "difficulty": "intermediate",
+    "category": "data"
+  },
+  {
+    "id": 58,
+    "term": "Outlier Detection",
+    "definition": "The process of identifying and handling anomalous data points that differ significantly from the majority, improving data quality.",
+    "difficulty": "intermediate",
+    "category": "data"
+  },
+  {
+    "id": 59,
+    "term": "Data Augmentation",
+    "definition": "Techniques that artificially expand training datasets through transformations like rotation, cropping, and flipping for images.",
+    "difficulty": "intermediate",
+    "category": "data"
+  },
+  {
+    "id": 60,
+    "term": "Train-Test Split",
+    "definition": "The practice of dividing a dataset into training and testing subsets to evaluate model performance on unseen data.",
+    "difficulty": "beginner",
+    "category": "evaluation"
+  },
+  {
+    "id": 61,
+    "term": "Cross-Validation",
+    "definition": "A technique that divides data into multiple folds, training and testing on different combinations to provide robust performance estimates.",
+    "difficulty": "intermediate",
+    "category": "evaluation"
+  },
+  {
+    "id": 62,
+    "term": "K-Fold Cross-Validation",
+    "definition": "A cross-validation method dividing data into K equal-sized folds, training K times with each fold as test set once.",
+    "difficulty": "intermediate",
+    "category": "evaluation"
+  },
+  {
+    "id": 63,
+    "term": "Hyperparameter Tuning",
+    "definition": "The process of optimizing hyperparameters (learning rate, batch size, etc.) to improve model performance using techniques like grid search or random search.",
+    "difficulty": "intermediate",
+    "category": "training"
+  },
+  {
+    "id": 64,
+    "term": "Grid Search",
+    "definition": "An exhaustive hyperparameter optimization technique evaluating all combinations of specified parameter values to find the best configuration.",
+    "difficulty": "intermediate",
+    "category": "training"
+  },
+  {
+    "id": 65,
+    "term": "Random Search",
+    "definition": "A hyperparameter optimization technique randomly sampling from the parameter space, often more efficient than grid search for high dimensions.",
+    "difficulty": "intermediate",
+    "category": "training"
+  },
+  {
+    "id": 66,
+    "term": "Regularization",
+    "definition": "Techniques that prevent overfitting by adding constraints to model complexity, such as L1/L2 penalties or dropout.",
+    "difficulty": "intermediate",
+    "category": "evaluation"
+  },
+  {
+    "id": 67,
+    "term": "L1 Regularization (Lasso)",
+    "definition": "A regularization technique adding the sum of absolute weights as a penalty, encouraging sparse models with feature selection.",
+    "difficulty": "advanced",
+    "category": "evaluation"
+  },
+  {
+    "id": 68,
+    "term": "L2 Regularization (Ridge)",
+    "definition": "A regularization technique adding the sum of squared weights as a penalty, discouraging large weights and improving generalization.",
+    "difficulty": "advanced",
+    "category": "evaluation"
+  },
+  {
+    "id": 69,
+    "term": "Dropout",
+    "definition": "A regularization technique randomly deactivating neurons during training to prevent co-adaptation and improve generalization.",
+    "difficulty": "intermediate",
+    "category": "evaluation"
+  },
+  {
+    "id": 70,
+    "term": "Batch Normalization",
+    "definition": "A technique that normalizes layer inputs during training, stabilizing learning and enabling higher learning rates.",
+    "difficulty": "advanced",
+    "category": "evaluation"
+  },
+  {
+    "id": 71,
+    "term": "Vanishing Gradient Problem",
+    "definition": "A problem in deep networks where gradients become extremely small during backpropagation, slowing or halting learning in early layers.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 72,
+    "term": "Exploding Gradient Problem",
+    "definition": "A problem in deep networks where gradients grow exponentially during backpropagation, causing instability and divergence.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 73,
+    "term": "Transfer Learning",
+    "definition": "A technique using pre-trained models on large datasets as starting points for new tasks, reducing training time and data requirements.",
+    "difficulty": "intermediate",
+    "category": "training"
+  },
+  {
+    "id": 74,
+    "term": "Fine-Tuning",
+    "definition": "The process of retraining a pre-trained model on new data for a specific task, adjusting only the last layers or all parameters.",
+    "difficulty": "intermediate",
+    "category": "training"
+  },
+  {
+    "id": 75,
+    "term": "Clustering",
+    "definition": "An unsupervised learning task that groups similar data points together without predefined labels or categories.",
+    "difficulty": "beginner",
+    "category": "models"
+  },
+  {
+    "id": 76,
+    "term": "K-Means Clustering",
+    "definition": "A clustering algorithm that partitions data into K clusters by iteratively assigning points to nearest centroids and updating centroids.",
+    "difficulty": "intermediate",
+    "category": "models"
+  },
+  {
+    "id": 77,
+    "term": "Hierarchical Clustering",
+    "definition": "A clustering approach building a tree of clusters (dendrogram) through agglomerative (bottom-up) or divisive (top-down) methods.",
+    "difficulty": "advanced",
+    "category": "models"
+  },
+  {
+    "id": 78,
+    "term": "DBSCAN (Density-Based Spatial Clustering)",
+    "definition": "A clustering algorithm grouping points based on density, effective for finding clusters of arbitrary shape and identifying outliers.",
+    "difficulty": "advanced",
+    "category": "models"
+  },
+  {
+    "id": 79,
+    "term": "Decision Tree",
+    "definition": "A tree-like model making predictions by recursively splitting data based on feature values, interpretable and prone to overfitting.",
+    "difficulty": "beginner",
+    "category": "models"
+  },
+  {
+    "id": 80,
+    "term": "Random Forest",
+    "definition": "An ensemble method combining multiple decision trees trained on random subsets of data, improving accuracy and reducing overfitting.",
+    "difficulty": "intermediate",
+    "category": "models"
+  },
+  {
+    "id": 81,
+    "term": "Gradient Boosting",
+    "definition": "An ensemble technique sequentially training weak learners to correct errors of previous models, producing powerful predictors.",
+    "difficulty": "advanced",
+    "category": "models"
+  },
+  {
+    "id": 82,
+    "term": "Support Vector Machine (SVM)",
+    "definition": "A supervised learning algorithm finding optimal hyperplanes to maximize margin between classes, effective for binary and multi-class classification.",
+    "difficulty": "advanced",
+    "category": "models"
+  },
+  {
+    "id": 83,
+    "term": "Kernel Trick",
+    "definition": "A technique enabling SVMs to handle non-linear problems by implicitly mapping data to higher dimensions without explicit computation.",
+    "difficulty": "advanced",
+    "category": "models"
+  },
+  {
+    "id": 84,
+    "term": "Naive Bayes",
+    "definition": "A probabilistic classifier based on Bayes theorem, assuming conditional independence between features, simple and effective for text classification.",
+    "difficulty": "intermediate",
+    "category": "models"
+  },
+  {
+    "id": 85,
+    "term": "K-Nearest Neighbors (KNN)",
+    "definition": "A simple instance-based algorithm classifying points based on the K nearest training examples in feature space.",
+    "difficulty": "beginner",
+    "category": "models"
+  },
+  {
+    "id": 86,
+    "term": "Logistic Regression",
+    "definition": "A linear model for binary classification using the sigmoid function to output probabilities, foundational for understanding neural networks.",
+    "difficulty": "beginner",
+    "category": "models"
+  },
+  {
+    "id": 87,
+    "term": "Linear Regression",
+    "definition": "A supervised learning technique modeling the linear relationship between input features and continuous target values.",
+    "difficulty": "beginner",
+    "category": "models"
+  },
+  {
+    "id": 88,
+    "term": "Polynomial Regression",
+    "definition": "An extension of linear regression fitting polynomial curves to data, capturing non-linear relationships while remaining interpretable.",
+    "difficulty": "intermediate",
+    "category": "models"
+  },
+  {
+    "id": 89,
+    "term": "Ensemble Methods",
+    "definition": "Techniques combining multiple models to improve prediction accuracy, including bagging, boosting, and stacking.",
+    "difficulty": "intermediate",
+    "category": "models"
+  },
+  {
+    "id": 90,
+    "term": "Bagging (Bootstrap Aggregating)",
+    "definition": "An ensemble method training multiple models on random samples with replacement, reducing variance through averaging predictions.",
+    "difficulty": "intermediate",
+    "category": "models"
+  },
+  {
+    "id": 91,
+    "term": "Stacking",
+    "definition": "An ensemble technique training a meta-learner on predictions from multiple base models to combine their strengths.",
+    "difficulty": "advanced",
+    "category": "models"
+  },
+  {
+    "id": 92,
+    "term": "Generative Adversarial Networks (GANs)",
+    "definition": "A framework with generator and discriminator networks competing, used for generating synthetic data, image generation, and style transfer.",
+    "difficulty": "advanced",
+    "category": "deepLearning"
+  },
+  {
+    "id": 93,
+    "term": "Variational Autoencoder (VAE)",
+    "definition": "A generative model learning latent representations through an encoder-decoder architecture with probabilistic constraints.",
+    "difficulty": "advanced",
+    "category": "deepLearning"
+  },
+  {
+    "id": 94,
+    "term": "Autoencoder",
+    "definition": "A neural network learning efficient data representations by reconstructing input from a compressed bottleneck layer.",
+    "difficulty": "intermediate",
+    "category": "deepLearning"
+  },
+  {
+    "id": 95,
+    "term": "Transfer Learning with CNNs",
+    "definition": "Using pre-trained CNN (Convolutional Neural Network) models (like VGG, ResNet) for image tasks, leveraging learned visual features for new datasets.",
+    "difficulty": "intermediate",
+    "category": "fundamentals"
+  },
+  {
+    "id": 96,
+    "term": "ResNet (Residual Networks)",
+    "definition": "A deep CNN (Convolutional Neural Network) architecture using residual connections allowing very deep networks by enabling gradient flow and reducing vanishing gradients.",
+    "difficulty": "advanced",
+    "category": "deepLearning"
+  },
+  {
+    "id": 97,
+    "term": "VGGNet",
+    "definition": "A convolutional neural network with small receptive fields and deep architecture, demonstrating the importance of depth in CNNs.",
+    "difficulty": "advanced",
+    "category": "deepLearning"
+  },
+  {
+    "id": 98,
+    "term": "MobileNet",
+    "definition": "An efficient CNN (Convolutional Neural Network) architecture designed for mobile and edge devices using depthwise separable convolutions to reduce parameters.",
+    "difficulty": "intermediate",
+    "category": "deepLearning"
+  },
+  {
+    "id": 99,
+    "term": "Inception Network",
+    "definition": "A CNN (Convolutional Neural Network) architecture with parallel convolutional pathways of different sizes (Inception modules) capturing multi-scale features efficiently.",
+    "difficulty": "advanced",
+    "category": "deepLearning"
+  },
+  {
+    "id": 100,
+    "term": "Bias",
+    "definition": "In machine learning, a model's bias is its ability to learn the underlying pattern. High bias = underfitting. In neural networks, bias is an additive parameter.",
+    "difficulty": "intermediate",
+    "category": "evaluation"
+  },
+  {
+    "id": 101,
+    "term": "Variance",
+    "definition": "A model's sensitivity to training data fluctuations. High variance = overfitting. Part of the bias-variance tradeoff.",
+    "difficulty": "intermediate",
+    "category": "evaluation"
+  },
+  {
+    "id": 102,
+    "term": "Bias-Variance Tradeoff",
+    "definition": "The fundamental challenge in machine learning balancing underfitting (high bias) and overfitting (high variance) for optimal generalization.",
+    "difficulty": "intermediate",
+    "category": "evaluation"
+  },
+  {
+    "id": 103,
+    "term": "Generalization",
+    "definition": "A model's ability to perform well on new, unseen data. The ultimate goal of machine learning is to maximize generalization.",
+    "difficulty": "beginner",
+    "category": "evaluation"
+  },
+  {
+    "id": 104,
+    "term": "Parameter",
+    "definition": "Weights and biases in a neural network learned from data during training. Distinguished from hyperparameters set before training.",
+    "difficulty": "beginner",
+    "category": "training"
+  },
+  {
+    "id": 105,
+    "term": "Hyperparameter",
+    "definition": "Configuration settings (learning rate, batch size, number of layers) set before training that control the learning process.",
+    "difficulty": "beginner",
+    "category": "training"
+  },
+  {
+    "id": 106,
+    "term": "Feature",
+    "definition": "An individual measurable property or characteristic used as input to a machine learning model for making predictions.",
+    "difficulty": "beginner",
+    "category": "data"
+  },
+  {
+    "id": 107,
+    "term": "Label",
+    "definition": "The target or output variable that a supervised learning model aims to predict based on input features.",
+    "difficulty": "beginner",
+    "category": "data"
+  },
+  {
+    "id": 108,
+    "term": "Class",
+    "definition": "A category or label in classification tasks. Multi-class problems have more than two categories.",
+    "difficulty": "beginner",
+    "category": "data"
+  },
+  {
+    "id": 109,
+    "term": "Instance",
+    "definition": "A single example in the dataset, consisting of feature values and possibly a label.",
+    "difficulty": "beginner",
+    "category": "data"
+  },
+  {
+    "id": 110,
+    "term": "Dataset",
+    "definition": "A collection of instances with features and labels used for training, validation, or testing machine learning models.",
+    "difficulty": "beginner",
+    "category": "data"
+  },
+  {
+    "id": 111,
+    "term": "Validation Set",
+    "definition": "A subset of data used during training to tune hyperparameters and monitor performance without touching the test set.",
+    "difficulty": "intermediate",
+    "category": "evaluation"
+  },
+  {
+    "id": 112,
+    "term": "Test Set",
+    "definition": "A final held-out dataset used only to evaluate model performance, providing an unbiased estimate of real-world accuracy.",
+    "difficulty": "beginner",
+    "category": "evaluation"
+  },
+  {
+    "id": 113,
+    "term": "Data Leakage",
+    "definition": "A critical error where information from validation or test sets influences training, leading to overly optimistic performance estimates.",
+    "difficulty": "advanced",
+    "category": "evaluation"
+  },
+  {
+    "id": 114,
+    "term": "Imbalanced Dataset",
+    "definition": "A dataset where class distributions are unequal, challenging models to learn from minority classes without specialized techniques.",
+    "difficulty": "intermediate",
+    "category": "data"
+  },
+  {
+    "id": 115,
+    "term": "Class Imbalance",
+    "definition": "The condition of having significantly different numbers of examples in different classes, requiring techniques like SMOTE or class weighting.",
+    "difficulty": "intermediate",
+    "category": "data"
+  },
+  {
+    "id": 116,
+    "term": "SMOTE (Synthetic Minority Over-sampling Technique)",
+    "definition": "An oversampling technique creating synthetic examples of minority classes to balance datasets.",
+    "difficulty": "advanced",
+    "category": "data"
+  },
+  {
+    "id": 117,
+    "term": "Prompt Engineering",
+    "definition": "The art of crafting effective prompts to get desired outputs from large language models, including techniques like few-shot learning.",
+    "difficulty": "intermediate",
+    "category": "nlp"
+  },
+  {
+    "id": 118,
+    "term": "Few-Shot Learning",
+    "definition": "The ability of models to learn from a small number of examples, important for language models and meta-learning.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 119,
+    "term": "Zero-Shot Learning",
+    "definition": "A model's ability to perform tasks on categories never seen during training using semantic information and generalization.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 120,
+    "term": "One-Shot Learning",
+    "definition": "The capability to learn from a single example, important for scenarios with limited training data.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 121,
+    "term": "Meta-Learning",
+    "definition": "Learning how to learn, enabling models to quickly adapt to new tasks with minimal data through experience from multiple tasks.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 122,
+    "term": "Continual Learning",
+    "definition": "The ability to learn sequentially from new tasks while retaining knowledge from previous tasks without catastrophic forgetting.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 123,
+    "term": "Catastrophic Forgetting",
+    "definition": "A phenomenon where learning new tasks causes significant performance loss on previously learned tasks in sequential learning scenarios.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 124,
+    "term": "Multi-Task Learning",
+    "definition": "A learning paradigm training a single model on multiple related tasks simultaneously, improving generalization through shared representations.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 125,
+    "term": "Domain Adaptation",
+    "definition": "Techniques enabling models trained on one domain to perform well on different but related domains with different data distributions.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 126,
+    "term": "Domain Shift",
+    "definition": "The difference in data distribution between source and target domains, a key challenge in transfer learning and generalization.",
+    "difficulty": "intermediate",
+    "category": "training"
+  },
+  {
+    "id": 127,
+    "term": "Adversarial Examples",
+    "definition": "Specially crafted inputs designed to fool machine learning models into making incorrect predictions despite human imperceptibility.",
+    "difficulty": "advanced",
+    "category": "fundamentals"
+  },
+  {
+    "id": 128,
+    "term": "Adversarial Training",
+    "definition": "Training models with adversarial examples to improve robustness and generalization against adversarial attacks.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 129,
+    "term": "Interpretability",
+    "definition": "The ability to understand and explain model decisions, crucial for trust and compliance in high-stakes applications.",
+    "difficulty": "intermediate",
+    "category": "fundamentals"
+  },
+  {
+    "id": 130,
+    "term": "Explainability",
+    "definition": "The process of making machine learning decisions understandable to humans through visualization and explanation techniques.",
+    "difficulty": "intermediate",
+    "category": "fundamentals"
+  },
+  {
+    "id": 131,
+    "term": "LIME (Local Interpretable Model-agnostic Explanations)",
+    "definition": "A technique explaining individual predictions by fitting interpretable models to local neighborhoods of complex black-box models.",
+    "difficulty": "advanced",
+    "category": "fundamentals"
+  },
+  {
+    "id": 132,
+    "term": "SHAP (SHapley Additive exPlanations)",
+    "definition": "A game theory-based approach providing consistent and locally accurate feature importance explanations for predictions.",
+    "difficulty": "advanced",
+    "category": "fundamentals"
+  },
+  {
+    "id": 133,
+    "term": "Feature Importance",
+    "definition": "A measure indicating how much each feature contributes to a model's predictions, useful for understanding model behavior.",
+    "difficulty": "intermediate",
+    "category": "evaluation"
+  },
+  {
+    "id": 134,
+    "term": "Permutation Feature Importance",
+    "definition": "A model-agnostic method measuring feature importance by observing performance change when feature values are randomly shuffled.",
+    "difficulty": "advanced",
+    "category": "evaluation"
+  },
+  {
+    "id": 135,
+    "term": "Model Agnostic",
+    "definition": "A property of techniques that work with any model without requiring knowledge of internal structure, like LIME and SHAP.",
+    "difficulty": "intermediate",
+    "category": "fundamentals"
+  },
+  {
+    "id": 136,
+    "term": "Black Box Model",
+    "definition": "A model whose internal decision-making process is not easily interpretable, like deep neural networks.",
+    "difficulty": "beginner",
+    "category": "fundamentals"
+  },
+  {
+    "id": 137,
+    "term": "White Box Model",
+    "definition": "A model with transparent and interpretable decision-making logic, like decision trees and linear models.",
+    "difficulty": "beginner",
+    "category": "fundamentals"
+  },
+  {
+    "id": 138,
+    "term": "Fair Machine Learning",
+    "definition": "An area ensuring machine learning systems don't discriminate against protected groups and produce equitable outcomes.",
+    "difficulty": "intermediate",
+    "category": "ethics"
+  },
+  {
+    "id": 139,
+    "term": "Algorithmic Bias",
+    "definition": "Systematic errors in machine learning models resulting from biased training data or flawed algorithms, leading to discriminatory outcomes.",
+    "difficulty": "intermediate",
+    "category": "ethics"
+  },
+  {
+    "id": 140,
+    "term": "Bias Mitigation",
+    "definition": "Techniques reducing algorithmic bias, including data balancing, fairness constraints, and post-processing adjustments.",
+    "difficulty": "advanced",
+    "category": "ethics"
+  },
+  {
+    "id": 141,
+    "term": "Fairness",
+    "definition": "In machine learning, ensuring systems treat individuals equitably without discrimination based on protected attributes.",
+    "difficulty": "intermediate",
+    "category": "ethics"
+  },
+  {
+    "id": 142,
+    "term": "Privacy",
+    "definition": "In machine learning, protecting sensitive information from unauthorized access and ensuring models don't memorize or leak training data.",
+    "difficulty": "intermediate",
+    "category": "ethics"
+  },
+  {
+    "id": 143,
+    "term": "Differential Privacy",
+    "definition": "A mathematical framework ensuring that queries on datasets reveal little about individual records while maintaining utility.",
+    "difficulty": "advanced",
+    "category": "ethics"
+  },
+  {
+    "id": 144,
+    "term": "Federated Learning",
+    "definition": "A distributed learning approach where models train on decentralized data without centrally collecting sensitive information.",
+    "difficulty": "advanced",
+    "category": "ethics"
+  },
+  {
+    "id": 145,
+    "term": "Model Poisoning",
+    "definition": "An adversarial attack where attackers inject malicious data into training to compromise model behavior.",
+    "difficulty": "advanced",
+    "category": "fundamentals"
+  },
+  {
+    "id": 146,
+    "term": "Gradient Attack",
+    "definition": "An adversarial attack using gradient information to craft examples that fool models, like FGSM.",
+    "difficulty": "advanced",
+    "category": "fundamentals"
+  },
+  {
+    "id": 147,
+    "term": "Robustness",
+    "definition": "A model's resilience to small perturbations in input or adversarial attacks while maintaining performance.",
+    "difficulty": "intermediate",
+    "category": "fundamentals"
+  },
+  {
+    "id": 148,
+    "term": "Model Compression",
+    "definition": "Techniques reducing model size while maintaining performance, including quantization, pruning, and distillation.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 149,
+    "term": "Knowledge Distillation",
+    "definition": "A technique where a large teacher model trains a smaller student model to approximate its behavior, enabling efficient deployment.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 150,
+    "term": "Quantization",
+    "definition": "A model compression technique reducing precision of weights and activations from floating-point to lower-bit representations.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 151,
+    "term": "Pruning",
+    "definition": "A model compression technique removing non-essential weights or neurons to reduce model size and computation.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 152,
+    "term": "Model Deployment",
+    "definition": "The process of putting trained models into production environments for real-world inference and applications.",
+    "difficulty": "intermediate",
+    "category": "fundamentals"
+  },
+  {
+    "id": 153,
+    "term": "Model Monitoring",
+    "definition": "Continuously tracking model performance in production, detecting data drift, and identifying when retraining is needed.",
+    "difficulty": "intermediate",
+    "category": "fundamentals"
+  },
+  {
+    "id": 154,
+    "term": "Data Drift",
+    "definition": "Changes in input data distribution over time, causing model performance degradation in production.",
+    "difficulty": "intermediate",
+    "category": "fundamentals"
+  },
+  {
+    "id": 155,
+    "term": "Concept Drift",
+    "definition": "Changes in the relationship between features and target over time, requiring model retraining and adaptation.",
+    "difficulty": "advanced",
+    "category": "fundamentals"
+  },
+  {
+    "id": 156,
+    "term": "Retraining",
+    "definition": "Updating a model with new data to maintain performance as data distributions change or requirements evolve.",
+    "difficulty": "intermediate",
+    "category": "training"
+  },
+  {
+    "id": 157,
+    "term": "A/B Testing",
+    "definition": "An experimental technique comparing model versions by randomly assigning users and measuring performance differences.",
+    "difficulty": "intermediate",
+    "category": "evaluation"
+  },
+  {
+    "id": 158,
+    "term": "Ensemble Learning",
+    "definition": "Combining multiple models to improve predictive performance through voting, averaging, or stacking mechanisms.",
+    "difficulty": "intermediate",
+    "category": "models"
+  },
+  {
+    "id": 159,
+    "term": "Bootstrap",
+    "definition": "A statistical resampling technique drawing samples with replacement from data to estimate statistics or train ensemble models.",
+    "difficulty": "intermediate",
+    "category": "evaluation"
+  },
+  {
+    "id": 160,
+    "term": "Monte Carlo Dropout",
+    "definition": "A technique using dropout at test time to estimate uncertainty in neural network predictions.",
+    "difficulty": "advanced",
+    "category": "evaluation"
+  },
+  {
+    "id": 161,
+    "term": "Bayesian Neural Networks",
+    "definition": "Neural networks with probabilistic weights, providing uncertainty estimates alongside predictions.",
+    "difficulty": "advanced",
+    "category": "deepLearning"
+  },
+  {
+    "id": 162,
+    "term": "Uncertainty Quantification",
+    "definition": "Techniques measuring confidence in model predictions, crucial for critical applications and decision-making.",
+    "difficulty": "advanced",
+    "category": "evaluation"
+  },
+  {
+    "id": 163,
+    "term": "Calibration",
+    "definition": "Ensuring predicted probabilities match true probability of events, important for applications requiring reliable confidence estimates.",
+    "difficulty": "advanced",
+    "category": "evaluation"
+  },
+  {
+    "id": 164,
+    "term": "Prediction Interval",
+    "definition": "A range around predictions within which actual values are expected to fall with specified probability.",
+    "difficulty": "intermediate",
+    "category": "evaluation"
+  },
+  {
+    "id": 165,
+    "term": "Confidence Interval",
+    "definition": "A statistical range within which a parameter is estimated to lie with given probability, indicating estimate precision.",
+    "difficulty": "intermediate",
+    "category": "evaluation"
+  },
+  {
+    "id": 166,
+    "term": "Reinforcement Learning Agent",
+    "definition": "An entity in reinforcement learning that observes state, takes actions, receives rewards, and learns optimal behavior.",
+    "difficulty": "intermediate",
+    "category": "models"
+  },
+  {
+    "id": 167,
+    "term": "Policy",
+    "definition": "In reinforcement learning, a strategy or function mapping states to actions, determining agent behavior.",
+    "difficulty": "intermediate",
+    "category": "models"
+  },
+  {
+    "id": 168,
+    "term": "Value Function",
+    "definition": "In reinforcement learning, a function estimating expected cumulative reward for states or state-action pairs.",
+    "difficulty": "advanced",
+    "category": "models"
+  },
+  {
+    "id": 169,
+    "term": "Q-Learning",
+    "definition": "A model-free reinforcement learning algorithm learning action-value functions to derive optimal policies.",
+    "difficulty": "advanced",
+    "category": "models"
+  },
+  {
+    "id": 170,
+    "term": "Deep Q-Network (DQN)",
+    "definition": "An algorithm combining Q-learning with deep neural networks, enabling RL on high-dimensional state spaces like games.",
+    "difficulty": "advanced",
+    "category": "models"
+  },
+  {
+    "id": 171,
+    "term": "Policy Gradient Methods",
+    "definition": "Reinforcement learning algorithms directly optimizing policy parameters through gradient ascent on expected reward.",
+    "difficulty": "advanced",
+    "category": "models"
+  },
+  {
+    "id": 172,
+    "term": "Actor-Critic Methods",
+    "definition": "Reinforcement learning combining policy gradient (actor) and value function (critic) for sample efficiency and stability.",
+    "difficulty": "advanced",
+    "category": "models"
+  },
+  {
+    "id": 173,
+    "term": "Reward Shaping",
+    "definition": "Modifying reward signals to guide learning and accelerate convergence toward desired behaviors in RL.",
+    "difficulty": "advanced",
+    "category": "models"
+  },
+  {
+    "id": 174,
+    "term": "Exploration-Exploitation Tradeoff",
+    "definition": "In RL, balancing trying new actions (exploration) versus leveraging known good actions (exploitation).",
+    "difficulty": "intermediate",
+    "category": "models"
+  },
+  {
+    "id": 175,
+    "term": "Epsilon-Greedy",
+    "definition": "A simple exploration strategy using random actions with probability epsilon and greedy actions otherwise.",
+    "difficulty": "intermediate",
+    "category": "models"
+  },
+  {
+    "id": 176,
+    "term": "Upper Confidence Bound (UCB)",
+    "definition": "An exploration strategy balancing exploitation with exploration using confidence bounds on action values.",
+    "difficulty": "advanced",
+    "category": "models"
+  },
+  {
+    "id": 177,
+    "term": "Thompson Sampling",
+    "definition": "A Bayesian exploration strategy sampling from posterior distributions to balance exploration and exploitation.",
+    "difficulty": "advanced",
+    "category": "models"
+  },
+  {
+    "id": 178,
+    "term": "Multi-Armed Bandit Problem",
+    "definition": "A classic problem modeling exploration-exploitation tradeoff with multiple actions (arms) and unknown reward distributions.",
+    "difficulty": "intermediate",
+    "category": "models"
+  },
+  {
+    "id": 179,
+    "term": "Contextual Bandits",
+    "definition": "An extension of bandits where agents observe context before choosing actions, modeling personalized recommendation problems.",
+    "difficulty": "advanced",
+    "category": "models"
+  },
+  {
+    "id": 180,
+    "term": "Markov Decision Process (MDP)",
+    "definition": "A mathematical framework for sequential decision-making with states, actions, transitions, and rewards.",
+    "difficulty": "advanced",
+    "category": "models"
+  },
+  {
+    "id": 181,
+    "term": "State Space",
+    "definition": "The set of all possible states an agent can be in during reinforcement learning.",
+    "difficulty": "intermediate",
+    "category": "models"
+  },
+  {
+    "id": 182,
+    "term": "Action Space",
+    "definition": "The set of all possible actions an agent can take in a reinforcement learning environment.",
+    "difficulty": "intermediate",
+    "category": "models"
+  },
+  {
+    "id": 183,
+    "term": "Reward Function",
+    "definition": "A function mapping state-action pairs to numerical rewards, guiding learning in reinforcement learning.",
+    "difficulty": "intermediate",
+    "category": "models"
+  },
+  {
+    "id": 184,
+    "term": "Discount Factor",
+    "definition": "A parameter determining the importance of future rewards relative to immediate rewards in RL value calculations.",
+    "difficulty": "intermediate",
+    "category": "models"
+  },
+  {
+    "id": 185,
+    "term": "Return",
+    "definition": "The cumulative discounted reward from a state onward, the ultimate goal for agents to maximize.",
+    "difficulty": "intermediate",
+    "category": "models"
+  },
+  {
+    "id": 186,
+    "term": "Trajectory",
+    "definition": "A sequence of states, actions, and rewards experienced by an agent following a policy.",
+    "difficulty": "intermediate",
+    "category": "models"
+  },
+  {
+    "id": 187,
+    "term": "Episode",
+    "definition": "A sequence of interactions from initial state to terminal state or fixed length in reinforcement learning.",
+    "difficulty": "intermediate",
+    "category": "models"
+  },
+  {
+    "id": 188,
+    "term": "Monte Carlo Methods",
+    "definition": "Reinforcement learning methods estimating value functions from complete episode returns without requiring models.",
+    "difficulty": "advanced",
+    "category": "models"
+  },
+  {
+    "id": 189,
+    "term": "Temporal Difference (TD) Learning",
+    "definition": "A RL approach combining Monte Carlo and dynamic programming, updating estimates using bootstrapping from subsequent states.",
+    "difficulty": "advanced",
+    "category": "models"
+  },
+  {
+    "id": 190,
+    "term": "Imitation Learning",
+    "definition": "A learning approach where agents learn from demonstrations by experts, useful when reward functions are difficult to specify.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 191,
+    "term": "Behavior Cloning",
+    "definition": "An imitation learning technique training agents to mimic expert actions through supervised learning.",
+    "difficulty": "intermediate",
+    "category": "training"
+  },
+  {
+    "id": 192,
+    "term": "Inverse Reinforcement Learning",
+    "definition": "A technique inferring reward functions from expert demonstrations, enabling learning from human behavior.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 193,
+    "term": "Curriculum Learning",
+    "definition": "A training strategy organizing tasks from simple to complex, mimicking human learning progression.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 194,
+    "term": "Self-Supervised Learning",
+    "definition": "A learning paradigm creating supervisory signals from unlabeled data itself, enabling learning from vast unlabeled datasets.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 195,
+    "term": "Contrastive Learning",
+    "definition": "A self-supervised approach learning representations by contrasting similar and dissimilar examples.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 196,
+    "term": "Contrastive Divergence",
+    "definition": "An approximation algorithm for training undirected graphical models like Restricted Boltzmann Machines.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 197,
+    "term": "Representation Learning",
+    "definition": "The field studying how to learn meaningful representations of data enabling better predictions and interpretability.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 198,
+    "term": "Feature Learning",
+    "definition": "Automatically discovering useful features for tasks, a core capability of deep learning models.",
+    "difficulty": "intermediate",
+    "category": "training"
+  },
+  {
+    "id": 199,
+    "term": "Attention Head",
+    "definition": "A component of multi-head attention computing attention over one representation subspace.",
+    "difficulty": "advanced",
+    "category": "deepLearning"
+  },
+  {
+    "id": 200,
+    "term": "Multi-Head Attention",
+    "definition": "A mechanism with multiple attention heads operating on different subspaces, capturing diverse relationships.",
+    "difficulty": "advanced",
+    "category": "deepLearning"
+  },
+  {
+    "id": 201,
+    "term": "Self-Attention",
+    "definition": "An attention mechanism where queries, keys, and values come from the same input, capturing internal relationships.",
+    "difficulty": "advanced",
+    "category": "deepLearning"
+  },
+  {
+    "id": 202,
+    "term": "Cross-Attention",
+    "definition": "An attention mechanism where queries come from one sequence and keys/values from another, enabling interaction between sequences.",
+    "difficulty": "advanced",
+    "category": "deepLearning"
+  },
+  {
+    "id": 203,
+    "term": "Positional Encoding",
+    "definition": "A technique adding positional information to token embeddings in Transformers since self-attention is permutation-invariant.",
+    "difficulty": "advanced",
+    "category": "deepLearning"
+  },
+  {
+    "id": 204,
+    "term": "Rotary Embeddings",
+    "definition": "A positional encoding method using rotation matrices to encode positions with better generalization to longer sequences.",
+    "difficulty": "advanced",
+    "category": "deepLearning"
+  },
+  {
+    "id": 205,
+    "term": "Vision Transformer (ViT)",
+    "definition": "A transformer architecture applied to image classification by treating image patches as tokens.",
+    "difficulty": "advanced",
+    "category": "deepLearning"
+  },
+  {
+    "id": 206,
+    "term": "Multimodal Learning",
+    "definition": "Learning from and reasoning about multiple types of data (text, images, audio) simultaneously.",
+    "difficulty": "advanced",
+    "category": "fundamentals"
+  },
+  {
+    "id": 207,
+    "term": "Large Language Model (LLM)",
+    "definition": "A transformer-based model trained on vast text data, capable of understanding and generating human language.",
+    "difficulty": "intermediate",
+    "category": "nlp"
+  },
+  {
+    "id": 208,
+    "term": "Fine-Tuning LLMs",
+    "definition": "Adapting pre-trained large language models to specific tasks through additional training on task-specific data.",
+    "difficulty": "intermediate",
+    "category": "training"
+  },
+  {
+    "id": 209,
+    "term": "Instruction Tuning",
+    "definition": "Fine-tuning language models on instruction-following data to make them more responsive to user instructions.",
+    "difficulty": "intermediate",
+    "category": "training"
+  },
+  {
+    "id": 210,
+    "term": "RLHF (Reinforcement Learning from Human Feedback)",
+    "definition": "A technique training models using human preference feedback as reward signal through reinforcement learning.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 211,
+    "term": "In-Context Learning",
+    "definition": "The ability of models to learn from examples provided in the prompt without parameter updates.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 212,
+    "term": "Chain-of-Thought Prompting",
+    "definition": "A prompting technique encouraging models to show reasoning steps, improving accuracy on complex tasks.",
+    "difficulty": "intermediate",
+    "category": "nlp"
+  },
+  {
+    "id": 213,
+    "term": "Tree-of-Thought",
+    "definition": "A reasoning technique exploring multiple thought paths and backtracking, improving solution quality.",
+    "difficulty": "advanced",
+    "category": "nlp"
+  },
+  {
+    "id": 214,
+    "term": "Retrieval-Augmented Generation (RAG)",
+    "definition": "A technique combining retrieval from external knowledge bases with generation, grounding responses in factual information.",
+    "difficulty": "advanced",
+    "category": "nlp"
+  },
+  {
+    "id": 215,
+    "term": "Vector Database",
+    "definition": "A database storing vector embeddings, enabling efficient similarity search for retrieval-augmented systems.",
+    "difficulty": "intermediate",
+    "category": "fundamentals"
+  },
+  {
+    "id": 216,
+    "term": "Semantic Search",
+    "definition": "Finding documents based on semantic meaning rather than keyword matching, using embeddings and similarity.",
+    "difficulty": "intermediate",
+    "category": "nlp"
+  },
+  {
+    "id": 217,
+    "term": "Similarity Metric",
+    "definition": "A function measuring how similar two data points or embeddings are, like cosine similarity or Euclidean distance.",
+    "difficulty": "intermediate",
+    "category": "evaluation"
+  },
+  {
+    "id": 218,
+    "term": "Cosine Similarity",
+    "definition": "A similarity metric calculating the cosine of the angle between vectors, ranging from -1 to 1.",
+    "difficulty": "intermediate",
+    "category": "evaluation"
+  },
+  {
+    "id": 219,
+    "term": "Euclidean Distance",
+    "definition": "A distance metric calculating straight-line distance between points in multi-dimensional space.",
+    "difficulty": "beginner",
+    "category": "evaluation"
+  },
+  {
+    "id": 220,
+    "term": "Manhattan Distance",
+    "definition": "A distance metric calculating distance along axes, also known as L1 distance or taxicab distance.",
+    "difficulty": "intermediate",
+    "category": "evaluation"
+  },
+  {
+    "id": 221,
+    "term": "Semantic Textual Similarity",
+    "definition": "Measuring how similar two text passages are in meaning, important for NLP (Natural Language Processing) tasks.",
+    "difficulty": "intermediate",
+    "category": "nlp"
+  },
+  {
+    "id": 222,
+    "term": "Sentence Transformers",
+    "definition": "Pre-trained models generating meaningful sentence embeddings, useful for semantic search and clustering.",
+    "difficulty": "intermediate",
+    "category": "nlp"
+  },
+  {
+    "id": 223,
+    "term": "Dense Passage Retrieval",
+    "definition": "A retrieval method encoding passages and queries as embeddings, enabling efficient semantic search.",
+    "difficulty": "advanced",
+    "category": "nlp"
+  },
+  {
+    "id": 224,
+    "term": "BM25",
+    "definition": "A ranking function for information retrieval based on probabilistic model and term frequency.",
+    "difficulty": "intermediate",
+    "category": "nlp"
+  },
+  {
+    "id": 225,
+    "term": "Hybrid Search",
+    "definition": "Combining lexical (BM25) and semantic (embeddings) search to leverage both exact matching and meaning.",
+    "difficulty": "advanced",
+    "category": "nlp"
+  },
+  {
+    "id": 226,
+    "term": "BLEU Score",
+    "definition": "A metric evaluating machine translation quality by comparing against reference translations.",
+    "difficulty": "intermediate",
+    "category": "metrics"
+  },
+  {
+    "id": 227,
+    "term": "ROUGE Score",
+    "definition": "A metric measuring text summarization quality through n-gram overlap with reference summaries.",
+    "difficulty": "intermediate",
+    "category": "metrics"
+  },
+  {
+    "id": 228,
+    "term": "METEOR",
+    "definition": "A machine translation evaluation metric considering synonyms and paraphrases beyond exact matches.",
+    "difficulty": "intermediate",
+    "category": "metrics"
+  },
+  {
+    "id": 229,
+    "term": "Perplexity",
+    "definition": "A metric measuring how well a probability model predicts test data, commonly used for language models.",
+    "difficulty": "advanced",
+    "category": "metrics"
+  },
+  {
+    "id": 230,
+    "term": "Mean Average Precision (MAP)",
+    "definition": "A metric for information retrieval averaging precision at different recall levels across queries.",
+    "difficulty": "advanced",
+    "category": "metrics"
+  },
+  {
+    "id": 231,
+    "term": "Normalized Discounted Cumulative Gain (NDCG)",
+    "definition": "A ranking metric considering position of relevant documents, higher positions weighted more.",
+    "difficulty": "advanced",
+    "category": "metrics"
+  },
+  {
+    "id": 232,
+    "term": "Mean Reciprocal Rank",
+    "definition": "A metric for evaluating retrieval systems as the average of inverse ranks of first relevant items.",
+    "difficulty": "intermediate",
+    "category": "metrics"
+  },
+  {
+    "id": 233,
+    "term": "Precision@K",
+    "definition": "The proportion of correct results in top K results, important for ranking and recommendation systems.",
+    "difficulty": "intermediate",
+    "category": "metrics"
+  },
+  {
+    "id": 234,
+    "term": "Recall@K",
+    "definition": "The proportion of total relevant items found in top K results, measuring completeness of rankings.",
+    "difficulty": "intermediate",
+    "category": "metrics"
+  },
+  {
+    "id": 235,
+    "term": "Human Evaluation",
+    "definition": "Assessing model outputs through human judgment, essential for subjective tasks like translation and generation.",
+    "difficulty": "beginner",
+    "category": "evaluation"
+  },
+  {
+    "id": 236,
+    "term": "Inter-Rater Agreement",
+    "definition": "Measuring consistency among multiple evaluators using metrics like Cohen's Kappa and Fleiss' Kappa.",
+    "difficulty": "intermediate",
+    "category": "evaluation"
+  },
+  {
+    "id": 237,
+    "term": "Annotation Guidelines",
+    "definition": "Clear instructions for human annotators ensuring consistent and high-quality labeling of datasets.",
+    "difficulty": "beginner",
+    "category": "data"
+  },
+  {
+    "id": 238,
+    "term": "Crowdsourcing",
+    "definition": "Distributing tasks to large numbers of workers online for data labeling, annotation, or evaluation.",
+    "difficulty": "beginner",
+    "category": "data"
+  },
+  {
+    "id": 239,
+    "term": "Active Learning",
+    "definition": "A learning paradigm where models select most informative unlabeled samples for annotation, reducing labeling cost.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 240,
+    "term": "Uncertainty Sampling",
+    "definition": "An active learning strategy selecting samples where model predictions are most uncertain.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 241,
+    "term": "Query-by-Committee",
+    "definition": "An active learning approach using multiple models and selecting samples where predictions disagree most.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 242,
+    "term": "Weak Supervision",
+    "definition": "Using noisy, limited, or imprecise labels from multiple sources to train models without full manual annotation.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 243,
+    "term": "Snorkel",
+    "definition": "A framework for programmatically generating weak labels from multiple sources for weakly supervised learning.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 244,
+    "term": "Label Aggregation",
+    "definition": "Combining multiple weak labels or annotations to create stronger training signals.",
+    "difficulty": "intermediate",
+    "category": "data"
+  },
+  {
+    "id": 245,
+    "term": "Majority Voting",
+    "definition": "A simple ensemble method selecting the most common class from multiple predictions or annotations.",
+    "difficulty": "beginner",
+    "category": "evaluation"
+  },
+  {
+    "id": 246,
+    "term": "Dawid-Skene Model",
+    "definition": "A probabilistic model aggregating multiple annotators with different reliabilities for crowdsourced labels.",
+    "difficulty": "advanced",
+    "category": "data"
+  },
+  {
+    "id": 247,
+    "term": "Curriculum Learning",
+    "definition": "Training strategy organizing learning tasks from simple to complex, improving learning efficiency.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 248,
+    "term": "Hard Negative Mining",
+    "definition": "A training technique focusing on challenging negative examples for better decision boundary learning.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 249,
+    "term": "Focal Loss",
+    "definition": "A loss function addressing class imbalance by down-weighting easy examples and focusing on hard ones.",
+    "difficulty": "advanced",
+    "category": "evaluation"
+  },
+  {
+    "id": 250,
+    "term": "Metric Learning",
+    "definition": "Learning distance metrics or embeddings where similar samples are close and dissimilar ones are far.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 251,
+    "term": "Triplet Loss",
+    "definition": "A loss function for metric learning using anchor, positive, and negative examples to learn embeddings.",
+    "difficulty": "advanced",
+    "category": "evaluation"
+  },
+  {
+    "id": 252,
+    "term": "Siamese Network",
+    "definition": "A neural network with two identical branches learning to compare inputs, useful for similarity tasks.",
+    "difficulty": "advanced",
+    "category": "deepLearning"
+  },
+  {
+    "id": 253,
+    "term": "Graph Neural Network (GNN)",
+    "definition": "A neural network architecture for graph-structured data, learning from node features and connections.",
+    "difficulty": "advanced",
+    "category": "deepLearning"
+  },
+  {
+    "id": 254,
+    "term": "Graph Convolutional Network (GCN)",
+    "definition": "A GNN applying convolutional operations on graphs to learn node representations.",
+    "difficulty": "advanced",
+    "category": "deepLearning"
+  },
+  {
+    "id": 255,
+    "term": "Graph Attention Network (GAT)",
+    "definition": "A GNN using attention mechanisms to learn importance weights for neighboring nodes.",
+    "difficulty": "advanced",
+    "category": "deepLearning"
+  },
+  {
+    "id": 256,
+    "term": "Message Passing",
+    "definition": "A paradigm in GNNs where information flows through edges, nodes aggregate neighbor messages.",
+    "difficulty": "advanced",
+    "category": "deepLearning"
+  },
+  {
+    "id": 257,
+    "term": "Knowledge Graph",
+    "definition": "A structured representation of knowledge as entities (nodes) and relationships (edges) forming a graph.",
+    "difficulty": "intermediate",
+    "category": "fundamentals"
+  },
+  {
+    "id": 258,
+    "term": "Link Prediction",
+    "definition": "A task predicting missing edges in graphs, useful for recommendation and relationship discovery.",
+    "difficulty": "advanced",
+    "category": "fundamentals"
+  },
+  {
+    "id": 259,
+    "term": "Node Classification",
+    "definition": "A task assigning labels to graph nodes using their features and graph structure.",
+    "difficulty": "intermediate",
+    "category": "fundamentals"
+  },
+  {
+    "id": 260,
+    "term": "Community Detection",
+    "definition": "Identifying groups of closely connected nodes in graphs, revealing underlying structure.",
+    "difficulty": "advanced",
+    "category": "fundamentals"
+  },
+  {
+    "id": 261,
+    "term": "Graph Embedding",
+    "definition": "Learning low-dimensional vector representations of graphs capturing structure and properties.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 262,
+    "term": "DeepWalk",
+    "definition": "A method learning node embeddings via random walks and Skip-gram, treating walks as sentences.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 263,
+    "term": "Node2Vec",
+    "definition": "An extension of DeepWalk with biased random walks controlling exploration vs exploitation.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 264,
+    "term": "Graph Isomorphism Network",
+    "definition": "A GNN with expressive power equivalent to Weisfeiler-Lehman test, handling complex graph patterns.",
+    "difficulty": "advanced",
+    "category": "deepLearning"
+  },
+  {
+    "id": 265,
+    "term": "Recurrent Graph Neural Network",
+    "definition": "GNNs with recurrent connections allowing temporal dynamics and iterative message passing.",
+    "difficulty": "advanced",
+    "category": "deepLearning"
+  },
+  {
+    "id": 266,
+    "term": "Temporal Graph",
+    "definition": "A graph where edges have timestamps, evolving over time and capturing temporal dependencies.",
+    "difficulty": "advanced",
+    "category": "fundamentals"
+  },
+  {
+    "id": 267,
+    "term": "Dynamic Graph Neural Network",
+    "definition": "GNN models handling graphs that change over time with node/edge additions, deletions, or updates.",
+    "difficulty": "advanced",
+    "category": "deepLearning"
+  },
+  {
+    "id": 268,
+    "term": "Point Cloud",
+    "definition": "A set of 3D points in space, often from LiDAR or depth sensors, used in 3D computer vision.",
+    "difficulty": "intermediate",
+    "category": "fundamentals"
+  },
+  {
+    "id": 269,
+    "term": "PointNet",
+    "definition": "A neural network directly processing point clouds without voxelization, learning permutation-invariant features.",
+    "difficulty": "advanced",
+    "category": "deepLearning"
+  },
+  {
+    "id": 270,
+    "term": "3D Object Detection",
+    "definition": "Detecting and localizing 3D objects in scenes from point clouds or multi-view images.",
+    "difficulty": "advanced",
+    "category": "fundamentals"
+  },
+  {
+    "id": 271,
+    "term": "Mesh",
+    "definition": "A 3D representation using vertices, edges, and faces to define geometric shapes.",
+    "difficulty": "intermediate",
+    "category": "fundamentals"
+  },
+  {
+    "id": 272,
+    "term": "Voxel",
+    "definition": "A 3D unit cell representing volumetric data, the 3D equivalent of pixels.",
+    "difficulty": "intermediate",
+    "category": "fundamentals"
+  },
+  {
+    "id": 273,
+    "term": "Time Series",
+    "definition": "Sequences of data points ordered by time, common in finance, weather, and sensor applications.",
+    "difficulty": "beginner",
+    "category": "data"
+  },
+  {
+    "id": 274,
+    "term": "Time Series Forecasting",
+    "definition": "Predicting future values in time series using historical patterns, challenges include trends and seasonality.",
+    "difficulty": "intermediate",
+    "category": "models"
+  },
+  {
+    "id": 275,
+    "term": "Autoregressive Model",
+    "definition": "A time series model predicting future values based on past values, like AR, ARMA, ARIMA.",
+    "difficulty": "intermediate",
+    "category": "models"
+  },
+  {
+    "id": 276,
+    "term": "ARIMA (AutoRegressive Integrated Moving Average)",
+    "definition": "A classical statistical model for time series forecasting combining autoregressive and moving average components.",
+    "difficulty": "advanced",
+    "category": "models"
+  },
+  {
+    "id": 277,
+    "term": "Exponential Smoothing",
+    "definition": "A time series forecasting method assigning exponentially decreasing weights to past observations.",
+    "difficulty": "intermediate",
+    "category": "models"
+  },
+  {
+    "id": 278,
+    "term": "Seasonality",
+    "definition": "Periodic patterns repeating at regular intervals in time series data, like daily or yearly cycles.",
+    "difficulty": "beginner",
+    "category": "data"
+  },
+  {
+    "id": 279,
+    "term": "Trend",
+    "definition": "The long-term direction or movement in time series data, increasing or decreasing over time.",
+    "difficulty": "beginner",
+    "category": "data"
+  },
+  {
+    "id": 280,
+    "term": "Stationarity",
+    "definition": "A property of time series where statistical properties don't change over time, important for some models.",
+    "difficulty": "intermediate",
+    "category": "data"
+  },
+  {
+    "id": 281,
+    "term": "Differencing",
+    "definition": "A technique making time series stationary by computing differences between consecutive observations.",
+    "difficulty": "intermediate",
+    "category": "data"
+  },
+  {
+    "id": 282,
+    "term": "Anomaly Detection",
+    "definition": "Identifying unusual or abnormal data points in datasets, important for fraud and failure detection.",
+    "difficulty": "intermediate",
+    "category": "models"
+  },
+  {
+    "id": 283,
+    "term": "Isolation Forest",
+    "definition": "An anomaly detection algorithm isolating anomalies through random partitioning in forests.",
+    "difficulty": "advanced",
+    "category": "models"
+  },
+  {
+    "id": 284,
+    "term": "Local Outlier Factor",
+    "definition": "An anomaly detection method comparing local density of points to neighbors' densities.",
+    "difficulty": "advanced",
+    "category": "models"
+  },
+  {
+    "id": 285,
+    "term": "Autoencoders for Anomaly Detection",
+    "definition": "Using reconstruction error from autoencoders to identify anomalies as high-error samples.",
+    "difficulty": "advanced",
+    "category": "models"
+  },
+  {
+    "id": 286,
+    "term": "Novelty Detection",
+    "definition": "Detecting new or unseen data points unlike training data, distinguishing anomalies from known classes.",
+    "difficulty": "advanced",
+    "category": "models"
+  },
+  {
+    "id": 287,
+    "term": "One-Class SVM",
+    "definition": "A support vector machine variant for anomaly detection, learning boundary around normal data.",
+    "difficulty": "advanced",
+    "category": "models"
+  },
+  {
+    "id": 288,
+    "term": "Recommender System",
+    "definition": "A system suggesting items to users based on preferences, behavior, or similarity.",
+    "difficulty": "intermediate",
+    "category": "models"
+  },
+  {
+    "id": 289,
+    "term": "Collaborative Filtering",
+    "definition": "A recommendation approach using user-item interactions, assuming similar users like similar items.",
+    "difficulty": "intermediate",
+    "category": "models"
+  },
+  {
+    "id": 290,
+    "term": "Content-Based Filtering",
+    "definition": "A recommendation approach suggesting items similar to those user liked, based on item features.",
+    "difficulty": "intermediate",
+    "category": "models"
+  },
+  {
+    "id": 291,
+    "term": "Hybrid Recommender Systems",
+    "definition": "Combining collaborative and content-based filtering to leverage both user behavior and item features.",
+    "difficulty": "advanced",
+    "category": "models"
+  },
+  {
+    "id": 292,
+    "term": "Matrix Factorization",
+    "definition": "A technique decomposing user-item matrix into latent factors for collaborative filtering.",
+    "difficulty": "advanced",
+    "category": "models"
+  },
+  {
+    "id": 293,
+    "term": "Factorization Machines",
+    "definition": "A model capturing feature interactions through latent factors, powerful for sparse data.",
+    "difficulty": "advanced",
+    "category": "models"
+  },
+  {
+    "id": 294,
+    "term": "Cold Start Problem",
+    "definition": "A challenge recommending items for new users or users with new items lacking interaction history.",
+    "difficulty": "intermediate",
+    "category": "models"
+  },
+  {
+    "id": 295,
+    "term": "Ranking",
+    "definition": "Ordering items by relevance, preference, or other criteria, fundamental to recommendation systems.",
+    "difficulty": "intermediate",
+    "category": "models"
+  },
+  {
+    "id": 296,
+    "term": "Learning to Rank",
+    "definition": "Machine learning approaches for optimal ranking, combining relevance signals into ranking functions.",
+    "difficulty": "advanced",
+    "category": "models"
+  },
+  {
+    "id": 297,
+    "term": "Pairwise Ranking",
+    "definition": "A ranking approach comparing pairs of items, optimizing relative ordering.",
+    "difficulty": "advanced",
+    "category": "models"
+  },
+  {
+    "id": 298,
+    "term": "Listwise Ranking",
+    "definition": "A ranking approach optimizing entire ranking lists jointly, capturing rank position importance.",
+    "difficulty": "advanced",
+    "category": "models"
+  },
+  {
+    "id": 299,
+    "term": "Information Extraction",
+    "definition": "Automatically extracting structured information from unstructured text, including entities and relationships.",
+    "difficulty": "intermediate",
+    "category": "nlp"
+  },
+  {
+    "id": 300,
+    "term": "Relation Extraction",
+    "definition": "Identifying and classifying semantic relationships between entities in text.",
+    "difficulty": "advanced",
+    "category": "nlp"
+  },
+  {
+    "id": 301,
+    "term": "Question Answering",
+    "definition": "A task answering questions about given text or knowledge, from simple retrieval to complex reasoning.",
+    "difficulty": "intermediate",
+    "category": "nlp"
+  },
+  {
+    "id": 302,
+    "term": "Machine Reading Comprehension",
+    "definition": "Understanding and answering questions about passages, evaluating deep text understanding.",
+    "difficulty": "advanced",
+    "category": "nlp"
+  },
+  {
+    "id": 303,
+    "term": "Coreference Resolution",
+    "definition": "Identifying expressions referring to same entity in text, crucial for understanding meaning.",
+    "difficulty": "advanced",
+    "category": "nlp"
+  },
+  {
+    "id": 304,
+    "term": "Dependency Parsing",
+    "definition": "Analyzing grammatical structure by identifying dependencies between words in sentences.",
+    "difficulty": "advanced",
+    "category": "nlp"
+  },
+  {
+    "id": 305,
+    "term": "Constituency Parsing",
+    "definition": "Analyzing sentence structure by building parse trees showing hierarchical composition.",
+    "difficulty": "advanced",
+    "category": "nlp"
+  },
+  {
+    "id": 306,
+    "term": "Part-of-Speech Tagging",
+    "definition": "Assigning grammatical tags (noun, verb, adjective) to words in sentences.",
+    "difficulty": "beginner",
+    "category": "nlp"
+  },
+  {
+    "id": 307,
+    "term": "Morphological Analysis",
+    "definition": "Breaking words into morphemes (smallest units with meaning) for understanding word structure.",
+    "difficulty": "intermediate",
+    "category": "nlp"
+  },
+  {
+    "id": 308,
+    "term": "Stemming",
+    "definition": "Reducing words to root forms by removing suffixes, a simple but aggressive preprocessing technique.",
+    "difficulty": "beginner",
+    "category": "nlp"
+  },
+  {
+    "id": 309,
+    "term": "Lemmatization",
+    "definition": "Reducing words to canonical forms using dictionary knowledge, more sophisticated than stemming.",
+    "difficulty": "beginner",
+    "category": "nlp"
+  },
+  {
+    "id": 310,
+    "term": "Bag of Words",
+    "definition": "A text representation ignoring word order and grammar, counting word frequencies, simple baseline.",
+    "difficulty": "beginner",
+    "category": "nlp"
+  },
+  {
+    "id": 311,
+    "term": "TF-IDF (Term Frequency-Inverse Document Frequency)",
+    "definition": "A text representation weighting terms by frequency in document and rarity across documents.",
+    "difficulty": "intermediate",
+    "category": "nlp"
+  },
+  {
+    "id": 312,
+    "term": "N-Gram",
+    "definition": "A sequence of N consecutive words or characters, capturing local context in text.",
+    "difficulty": "beginner",
+    "category": "nlp"
+  },
+  {
+    "id": 313,
+    "term": "Unigram",
+    "definition": "A single word or token, the simplest unit for text analysis.",
+    "difficulty": "beginner",
+    "category": "nlp"
+  },
+  {
+    "id": 314,
+    "term": "Bigram",
+    "definition": "A sequence of two consecutive words, capturing pairwise relationships.",
+    "difficulty": "beginner",
+    "category": "nlp"
+  },
+  {
+    "id": 315,
+    "term": "Trigram",
+    "definition": "A sequence of three consecutive words, capturing triplet relationships.",
+    "difficulty": "beginner",
+    "category": "nlp"
+  },
+  {
+    "id": 316,
+    "term": "Language Model",
+    "definition": "A probabilistic model predicting next words or estimating probability of word sequences.",
+    "difficulty": "intermediate",
+    "category": "nlp"
+  },
+  {
+    "id": 317,
+    "term": "Masked Language Modeling",
+    "definition": "A pre-training technique predicting masked tokens from context, used in BERT (Bidirectional Encoder Representations from Transformers).",
+    "difficulty": "intermediate",
+    "category": "nlp"
+  },
+  {
+    "id": 318,
+    "term": "Causal Language Modeling",
+    "definition": "A pre-training technique predicting next tokens from past tokens, used in GPT (Generative Pre-trained Transformer) models.",
+    "difficulty": "intermediate",
+    "category": "nlp"
+  },
+  {
+    "id": 319,
+    "term": "Text Summarization",
+    "definition": "Generating concise summaries of documents while preserving main information.",
+    "difficulty": "intermediate",
+    "category": "nlp"
+  },
+  {
+    "id": 320,
+    "term": "Abstractive Summarization",
+    "definition": "Generating summaries using new words and phrases, understanding meaning beyond copying.",
+    "difficulty": "advanced",
+    "category": "nlp"
+  },
+  {
+    "id": 321,
+    "term": "Extractive Summarization",
+    "definition": "Summarizing by selecting and combining important existing sentences from source text.",
+    "difficulty": "intermediate",
+    "category": "nlp"
+  },
+  {
+    "id": 322,
+    "term": "Document Classification",
+    "definition": "Assigning predefined categories to documents, foundational NLP (Natural Language Processing) task.",
+    "difficulty": "beginner",
+    "category": "nlp"
+  },
+  {
+    "id": 323,
+    "term": "Topic Modeling",
+    "definition": "Discovering abstract topics in document collections using techniques like LDA.",
+    "difficulty": "advanced",
+    "category": "nlp"
+  },
+  {
+    "id": 324,
+    "term": "Latent Dirichlet Allocation (LDA)",
+    "definition": "A probabilistic model discovering topics in documents through word distribution analysis.",
+    "difficulty": "advanced",
+    "category": "nlp"
+  },
+  {
+    "id": 325,
+    "term": "Text Similarity",
+    "definition": "Measuring how similar two text passages are using various distance or embedding metrics.",
+    "difficulty": "intermediate",
+    "category": "nlp"
+  },
+  {
+    "id": 326,
+    "term": "Paraphrase Detection",
+    "definition": "Identifying whether two texts convey the same meaning, important for plagiarism detection.",
+    "difficulty": "intermediate",
+    "category": "nlp"
+  },
+  {
+    "id": 327,
+    "term": "Natural Language Inference",
+    "definition": "Determining relationships between premise and hypothesis (entailment, contradiction, neutral).",
+    "difficulty": "advanced",
+    "category": "nlp"
+  },
+  {
+    "id": 328,
+    "term": "Entailment",
+    "definition": "When a premise logically implies or supports a hypothesis in NLI.",
+    "difficulty": "intermediate",
+    "category": "nlp"
+  },
+  {
+    "id": 329,
+    "term": "Textual Entailment",
+    "definition": "A task determining if premise text entails or contradicts hypothesis text.",
+    "difficulty": "intermediate",
+    "category": "nlp"
+  },
+  {
+    "id": 330,
+    "term": "Stance Detection",
+    "definition": "Determining stance (for, against, neutral) toward given topics or claims.",
+    "difficulty": "intermediate",
+    "category": "nlp"
+  },
+  {
+    "id": 331,
+    "term": "Speech Recognition",
+    "definition": "Converting spoken audio into text, combining acoustic and language models.",
+    "difficulty": "intermediate",
+    "category": "fundamentals"
+  },
+  {
+    "id": 332,
+    "term": "Text-to-Speech (TTS)",
+    "definition": "Converting written text into spoken audio, important for accessibility and voice interfaces.",
+    "difficulty": "intermediate",
+    "category": "fundamentals"
+  },
+  {
+    "id": 333,
+    "term": "Voice Activity Detection",
+    "definition": "Identifying whether speech is present in audio, preprocessing step for speech recognition.",
+    "difficulty": "intermediate",
+    "category": "fundamentals"
+  },
+  {
+    "id": 334,
+    "term": "Speaker Recognition",
+    "definition": "Identifying speakers from voice samples, used for authentication and diarization.",
+    "difficulty": "intermediate",
+    "category": "fundamentals"
+  },
+  {
+    "id": 335,
+    "term": "Emotion Recognition",
+    "definition": "Detecting emotions (happy, sad, angry, neutral) from text, audio, or images.",
+    "difficulty": "intermediate",
+    "category": "fundamentals"
+  },
+  {
+    "id": 336,
+    "term": "Intent Recognition",
+    "definition": "Identifying user intent from text input, foundational for chatbots and voice assistants.",
+    "difficulty": "intermediate",
+    "category": "nlp"
+  },
+  {
+    "id": 337,
+    "term": "Slot Filling",
+    "definition": "Extracting specific information entities for recognized intents in conversational systems.",
+    "difficulty": "intermediate",
+    "category": "nlp"
+  },
+  {
+    "id": 338,
+    "term": "Dialogue System",
+    "definition": "A system conducting conversations with users through multiple turns, including goal-oriented and open-domain.",
+    "difficulty": "advanced",
+    "category": "nlp"
+  },
+  {
+    "id": 339,
+    "term": "Task-Oriented Dialogue",
+    "definition": "Dialogue systems focused on completing specific tasks like booking or customer service.",
+    "difficulty": "intermediate",
+    "category": "nlp"
+  },
+  {
+    "id": 340,
+    "term": "Open-Domain Dialogue",
+    "definition": "Conversation systems without specific task goals, like chitchat bots.",
+    "difficulty": "advanced",
+    "category": "nlp"
+  },
+  {
+    "id": 341,
+    "term": "Dialogue State Tracking",
+    "definition": "Maintaining dialogue state representing user goals and current conversation status.",
+    "difficulty": "advanced",
+    "category": "nlp"
+  },
+  {
+    "id": 342,
+    "term": "Information Seeking Dialogue",
+    "definition": "Interactive systems helping users find information through multi-turn conversations.",
+    "difficulty": "advanced",
+    "category": "nlp"
+  },
+  {
+    "id": 343,
+    "term": "Factoid Question Answering",
+    "definition": "Answering factual questions with definite answers from knowledge bases or texts.",
+    "difficulty": "intermediate",
+    "category": "nlp"
+  },
+  {
+    "id": 344,
+    "term": "Non-Factoid Question Answering",
+    "definition": "Answering subjective or complex questions requiring reasoning, opinions, or multiple sources.",
+    "difficulty": "advanced",
+    "category": "nlp"
+  },
+  {
+    "id": 345,
+    "term": "Parsing",
+    "definition": "Analyzing syntactic structure of sentences to understand hierarchical composition.",
+    "difficulty": "intermediate",
+    "category": "nlp"
+  },
+  {
+    "id": 346,
+    "term": "Semantic Parsing",
+    "definition": "Converting natural language to formal semantic representations or logical forms.",
+    "difficulty": "advanced",
+    "category": "nlp"
+  },
+  {
+    "id": 347,
+    "term": "Knowledge Base Completion",
+    "definition": "Predicting missing facts in knowledge bases using known facts and entity relationships.",
+    "difficulty": "advanced",
+    "category": "fundamentals"
+  },
+  {
+    "id": 348,
+    "term": "Entity Linking",
+    "definition": "Linking entity mentions to knowledge base entries, disambiguating entities.",
+    "difficulty": "advanced",
+    "category": "nlp"
+  },
+  {
+    "id": 349,
+    "term": "Structured Prediction",
+    "definition": "Predicting structured outputs with dependencies, like sequences, trees, or graphs.",
+    "difficulty": "advanced",
+    "category": "models"
+  },
+  {
+    "id": 350,
+    "term": "Conditional Random Field (CRF)",
+    "definition": "A probabilistic model for structured prediction capturing label dependencies.",
+    "difficulty": "advanced",
+    "category": "models"
+  },
+  {
+    "id": 351,
+    "term": "Beam Search",
+    "definition": "A decoding algorithm maintaining top-K hypotheses when generating sequences.",
+    "difficulty": "advanced",
+    "category": "fundamentals"
+  },
+  {
+    "id": 352,
+    "term": "Greedy Decoding",
+    "definition": "A simple decoding strategy selecting highest-probability token at each step.",
+    "difficulty": "intermediate",
+    "category": "fundamentals"
+  },
+  {
+    "id": 353,
+    "term": "Sampling",
+    "definition": "A decoding strategy randomly sampling tokens from probability distributions.",
+    "difficulty": "intermediate",
+    "category": "fundamentals"
+  },
+  {
+    "id": 354,
+    "term": "Top-K Sampling",
+    "definition": "Sampling from top-K most likely tokens, reducing randomness while maintaining diversity.",
+    "difficulty": "intermediate",
+    "category": "fundamentals"
+  },
+  {
+    "id": 355,
+    "term": "Top-P (Nucleus) Sampling",
+    "definition": "Sampling from smallest set of tokens with cumulative probability P, adaptive to probability distribution.",
+    "difficulty": "intermediate",
+    "category": "fundamentals"
+  },
+  {
+    "id": 356,
+    "term": "Temperature in Sampling",
+    "definition": "A parameter controlling randomness in sampling: low temperature makes probabilities peaked, high flattens.",
+    "difficulty": "intermediate",
+    "category": "fundamentals"
+  },
+  {
+    "id": 357,
+    "term": "Mixed Precision Training",
+    "definition": "Training neural networks using both float32 and float16 for efficiency and speed.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 358,
+    "term": "Distributed Training",
+    "definition": "Training models across multiple GPUs or machines to handle larger models and data.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 359,
+    "term": "Data Parallelism",
+    "definition": "Distributing data across devices, each running same model, aggregating gradients.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 360,
+    "term": "Model Parallelism",
+    "definition": "Splitting model across devices when too large for single device memory.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 361,
+    "term": "Pipeline Parallelism",
+    "definition": "Distributing layers across devices with automatic gradient computation and synchronization.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 362,
+    "term": "Gradient Accumulation",
+    "definition": "Accumulating gradients over multiple mini-batches before updating weights, simulating larger batches.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 363,
+    "term": "Gradient Clipping",
+    "definition": "Limiting gradient magnitude during backpropagation to prevent exploding gradients.",
+    "difficulty": "intermediate",
+    "category": "training"
+  },
+  {
+    "id": 364,
+    "term": "Learning Rate Scheduling",
+    "definition": "Dynamically adjusting learning rate during training, like decay schedules and warmup.",
+    "difficulty": "intermediate",
+    "category": "training"
+  },
+  {
+    "id": 365,
+    "term": "Cosine Annealing",
+    "definition": "A learning rate schedule decreasing rate following cosine function from initial to minimum value.",
+    "difficulty": "intermediate",
+    "category": "training"
+  },
+  {
+    "id": 366,
+    "term": "Warm-Up",
+    "definition": "Gradually increasing learning rate at training start to stabilize initial learning.",
+    "difficulty": "intermediate",
+    "category": "training"
+  },
+  {
+    "id": 367,
+    "term": "Momentum",
+    "definition": "An optimization technique accumulating gradient directions to accelerate convergence.",
+    "difficulty": "intermediate",
+    "category": "training"
+  },
+  {
+    "id": 368,
+    "term": "Nesterov Momentum",
+    "definition": "A variant of momentum computing gradients at lookahead position, improving convergence.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 369,
+    "term": "Adam Optimizer",
+    "definition": "An adaptive learning rate optimizer combining momentum and RMSprop for efficient convergence.",
+    "difficulty": "intermediate",
+    "category": "training"
+  },
+  {
+    "id": 370,
+    "term": "RMSprop",
+    "definition": "An adaptive learning rate method using exponential moving average of squared gradients.",
+    "difficulty": "intermediate",
+    "category": "training"
+  },
+  {
+    "id": 371,
+    "term": "AdaGrad",
+    "definition": "An adaptive learning rate optimizer dividing by accumulated gradient magnitudes, beneficial for sparse data.",
+    "difficulty": "intermediate",
+    "category": "training"
+  },
+  {
+    "id": 372,
+    "term": "Stochastic Gradient Descent (SGD)",
+    "definition": "An optimization algorithm updating weights using gradient estimates from single samples or mini-batches.",
+    "difficulty": "beginner",
+    "category": "training"
+  },
+  {
+    "id": 373,
+    "term": "Mini-Batch Gradient Descent",
+    "definition": "Updating weights using gradients computed from small random samples, balancing noise and efficiency.",
+    "difficulty": "beginner",
+    "category": "training"
+  },
+  {
+    "id": 374,
+    "term": "Batch Gradient Descent",
+    "definition": "Computing gradients on entire dataset before updating weights, stable but slow.",
+    "difficulty": "beginner",
+    "category": "training"
+  },
+  {
+    "id": 375,
+    "term": "Convergence",
+    "definition": "The process of model loss decreasing and stabilizing, reaching optimal or near-optimal weights.",
+    "difficulty": "beginner",
+    "category": "training"
+  },
+  {
+    "id": 376,
+    "term": "Local Minimum",
+    "definition": "A point where loss is lower than neighbors but not globally lowest, risk in non-convex optimization.",
+    "difficulty": "intermediate",
+    "category": "training"
+  },
+  {
+    "id": 377,
+    "term": "Global Minimum",
+    "definition": "The lowest point in loss landscape, the ideal target of optimization.",
+    "difficulty": "intermediate",
+    "category": "training"
+  },
+  {
+    "id": 378,
+    "term": "Saddle Point",
+    "definition": "A point with high gradient magnitude in some directions and low in others, complicating optimization.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 379,
+    "term": "Loss Landscape",
+    "definition": "A visualization of loss function across parameter space, showing optimization terrain.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 380,
+    "term": "Weight Decay",
+    "definition": "A regularization technique applied during optimization, equivalent to L2 regularization.",
+    "difficulty": "intermediate",
+    "category": "training"
+  },
+  {
+    "id": 381,
+    "term": "Weight Initialization",
+    "definition": "The method of setting initial weights, crucial for training stability and convergence.",
+    "difficulty": "intermediate",
+    "category": "training"
+  },
+  {
+    "id": 382,
+    "term": "Xavier Initialization",
+    "definition": "A weight initialization method scaling by square root of layer input size for stable gradients.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 383,
+    "term": "He Initialization",
+    "definition": "A weight initialization method for ReLU networks, scaling by square root of layer input size.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 384,
+    "term": "Orthogonal Initialization",
+    "definition": "Initializing weights as random orthogonal matrices, beneficial for RNNs.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 385,
+    "term": "Inductive Bias",
+    "definition": "Assumptions built into model architecture favoring certain solutions over others.",
+    "difficulty": "advanced",
+    "category": "fundamentals"
+  },
+  {
+    "id": 386,
+    "term": "Convolutional Inductive Bias",
+    "definition": "The assumption that local spatial patterns are important, built into CNN (Convolutional Neural Network) architecture.",
+    "difficulty": "intermediate",
+    "category": "fundamentals"
+  },
+  {
+    "id": 387,
+    "term": "Recurrent Inductive Bias",
+    "definition": "The assumption that temporal dependencies matter, built into RNN (Recurrent Neural Network) architecture.",
+    "difficulty": "intermediate",
+    "category": "fundamentals"
+  },
+  {
+    "id": 388,
+    "term": "No Free Lunch Theorem",
+    "definition": "In ML, no algorithm outperforms all others across all problems; assumptions matter.",
+    "difficulty": "advanced",
+    "category": "fundamentals"
+  },
+  {
+    "id": 389,
+    "term": "Occam's Razor",
+    "definition": "A principle preferring simpler explanations, motivating model regularization and simplicity.",
+    "difficulty": "beginner",
+    "category": "fundamentals"
+  },
+  {
+    "id": 390,
+    "term": "Curse of Dimensionality",
+    "definition": "Phenomena where high-dimensional spaces become sparse, affecting distance metrics and learning.",
+    "difficulty": "advanced",
+    "category": "data"
+  },
+  {
+    "id": 391,
+    "term": "Sample Complexity",
+    "definition": "The amount of training data needed to learn a concept with given accuracy and confidence.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 392,
+    "term": "PAC Learning",
+    "definition": "Probably Approximately Correct learning: a theoretical framework for learning sample complexity.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 393,
+    "term": "VC Dimension",
+    "definition": "A measure of model capacity, the largest set that model can shatter.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 394,
+    "term": "Rademacher Complexity",
+    "definition": "A measure of function class complexity, bounding generalization error.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 395,
+    "term": "Generalization Bounds",
+    "definition": "Theoretical guarantees on generalization error, relating to model complexity and data size.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 396,
+    "term": "Uniform Convergence",
+    "definition": "A theoretical condition ensuring convergence of empirical error to population error.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 397,
+    "term": "Empirical Risk Minimization",
+    "definition": "The principle of minimizing error on training data, the basis of supervised learning.",
+    "difficulty": "intermediate",
+    "category": "training"
+  },
+  {
+    "id": 398,
+    "term": "Structural Risk Minimization",
+    "definition": "A principle balancing training error and model complexity for better generalization.",
+    "difficulty": "advanced",
+    "category": "training"
+  },
+  {
+    "id": 399,
+    "term": "Inductive Learning",
+    "definition": "Learning general rules from specific examples, the basis of supervised machine learning.",
+    "difficulty": "beginner",
+    "category": "fundamentals"
+  },
+  {
+    "id": 400,
+    "term": "Deductive Learning",
+    "definition": "Deriving specific conclusions from general rules, the opposite of inductive learning.",
+    "difficulty": "beginner",
+    "category": "fundamentals"
+  }
+]

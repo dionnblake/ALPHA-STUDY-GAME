@@ -1,0 +1,5 @@
+/* App.css — DEPRECATED
+   Not imported anywhere. Global theme loads via:
+     - src/styles/theme.css  (imported first in App.tsx)
+     - src/index.css         (imported second in App.tsx)
+   Safe to delete this file. */

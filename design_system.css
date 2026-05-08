@@ -1,0 +1,145 @@
+/* AI Study Game: High-Tech Windows 11 Design System */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700&display=swap');
+
+:root {
+  /* Surface colors (Mica/Carbon inspired) */
+  --bg-deep: hsl(230, 15%, 8%);
+  --bg-mica: hsla(230, 15%, 15%, 0.7);
+  --bg-surface: hsla(230, 15%, 20%, 0.82);
+  --bg-active: hsla(230, 15%, 25%, 0.95);
+
+  /* Borders / Separators */
+  --border-subtle: hsla(0, 0%, 100%, 0.08);
+  --border-vibrant: hsla(0, 0%, 100%, 0.15);
+
+  /* Typography */
+  --text-primary: hsl(0, 0%, 98%);
+  --text-secondary: hsl(230, 10%, 75%);
+  --text-muted: hsl(230, 10%, 55%);
+
+  /* Level/Status Colors */
+  --color-success: hsl(150, 80%, 55%);
+  --color-warning: hsl(35, 100%, 60%);
+  --color-error: hsl(350, 90%, 65%);
+  --color-info: hsl(210, 100%, 65%);
+
+  /* UI HUD Colors (Neon Accents) */
+  --glow-opacity: 0.4;
+  --glow-spread: 12px;
+
+  /* Domain 1: Fundamentals of AI and ML */
+  --domain-1: hsl(215, 100%, 60%);
+  --domain-1-glow: hsla(215, 100%, 60%, 0.3);
+
+  /* Domain 2: Fundamentals of Generative AI */
+  --domain-2: hsl(20, 100%, 60%);
+  --domain-2-glow: hsla(20, 100%, 60%, 0.3);
+
+  /* Domain 3: Applications of Foundation Models */
+  --domain-3: hsl(160, 90%, 50%);
+  --domain-3-glow: hsla(160, 90%, 50%, 0.3);
+
+  /* Domain 4: Guidelines for Responsible AI */
+  --domain-4: hsl(330, 90%, 65%);
+  --domain-4-glow: hsla(330, 90%, 65%, 0.3);
+
+  /* Domain 5: Security, Compliance, and Governance */
+  --domain-5: hsl(190, 90%, 55%);
+  --domain-5-glow: hsla(190, 90%, 55%, 0.3);
+
+  /* Default Active Domain */
+  --active-domain-color: var(--domain-1);
+  --active-domain-glow: var(--domain-1-glow);
+
+  /* Shadows */
+  --shadow-hud: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+
+  /* Grid Spacing */
+  --space-unit: 8px;
+}
+
+/* Base resets & fonts */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-deep);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  overflow: hidden; /* Desktop app feel */
+}
+
+h1, h2, h3, .hud-title {
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: -0.5px;
+  margin-top: 0;
+}
+
+/* Glassmorphism Styles */
+.glass-panel {
+  background: var(--bg-mica);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  box-shadow: var(--shadow-hud);
+}
+
+.glass-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Domain Mission Cards (Active state adds glow) */
+.mission-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.mission-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--active-domain-color, var(--border-vibrant));
+  box-shadow: 0 0 calc(var(--glow-spread) * 1.5) var(--active-domain-glow);
+}
+
+/* Animation utilities */
+@keyframes scanline {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+.hud-scanline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--border-vibrant), transparent);
+  opacity: 0.1;
+  animation: scanline 4s linear infinite;
+  pointer-events: none;
+}
+
+/* Keyboard Hints */
+.kbd-hint {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 6px;
+  min-width: 24px;
+  height: 20px;
+  font-size: 11px;
+  font-weight: bold;
+  background: var(--bg-active);
+  border: 1px solid var(--border-vibrant);
+  border-radius: 4px;
+  color: var(--text-secondary);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  margin-right: 8px;
+}

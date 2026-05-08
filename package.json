@@ -1,0 +1,42 @@
+{
+  "name": "ai-study-game",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:app": "node scripts/dev-app.mjs",
+    "build:transcript-bank": "node scripts/build-transcript-question-bank.mjs",
+    "build:genai-leader-bank": "node scripts/build-genai-leader-question-bank.mjs",
+    "build:genai-google-cloud-bank": "node scripts/build-genai-google-cloud-question-bank.mjs",
+    "build:prompt-engineering-bank": "node scripts/build-prompt-engineering-question-bank.mjs",
+    "expand:track-banks": "node scripts/expand-track-question-banks.mjs",
+    "sanitize:question-leaks": "node scripts/sanitize-question-leaks.mjs",
+    "sanitize:truncated-stems": "node scripts/sanitize-truncated-question-stems.mjs",
+    "qa:questions:release": "node scripts/release-question-qa.mjs",
+    "release:questions": "npm run sanitize:question-leaks && npm run sanitize:truncated-stems && npm run qa:questions:release",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2",
+    "@tauri-apps/plugin-opener": "^2",
+    "@tauri-apps/plugin-sql": "^2.3.2",
+    "framer-motion": "^12.38.0",
+    "lucide-react": "^1.7.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.14.0",
+    "recharts": "^3.8.1"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@types/react-router-dom": "^5.3.3",
+    "@vitejs/plugin-react": "^4.6.0",
+    "typescript": "~5.8.3",
+    "vite": "^7.0.4"
+  }
+}

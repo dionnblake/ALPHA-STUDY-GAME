@@ -1,0 +1,1939 @@
+[
+  {
+    "uid": "fib-001",
+    "question_text": "A technique that grounds model responses in external, trusted sources or retrieved information.",
+    "option_a": "RAG (Retrieval-Augmented Generation)",
+    "option_b": "Fine-tuning",
+    "option_c": "Prompt Engineering",
+    "option_d": "Model Distillation",
+    "correct_answer": "A",
+    "explanation": "RAG (Retrieval-Augmented Generation) combines retrieval of relevant documents with generation, anchoring outputs in external sources. This is different from fine-tuning (training), prompt engineering (crafting inputs), or distillation (model compression).",
+    "remediation_notes": "Remember: RAG (Retrieval-Augmented Generation) = Retrieval + Augmented + Generation. It's about grounding AI (Artificial Intelligence) responses in real, trusted data sources.",
+    "category": "RAG (Retrieval-Augmented Generation)",
+    "difficulty": "beginner",
+    "tags": [
+      "rag",
+      "retrieval",
+      "generation"
+    ],
+    "domain_id": 3,
+    "question_type": "fill_in_blank",
+    "scenario": "You need to build a system that answers questions using only your company's internal documentation."
+  },
+  {
+    "uid": "fib-002",
+    "question_text": "The process of reducing a large model's size and computational cost while maintaining performance by training it to mimic a larger model.",
+    "option_a": "Model Quantization",
+    "option_b": "Knowledge Distillation",
+    "option_c": "Pruning",
+    "option_d": "Transfer Learning",
+    "correct_answer": "B",
+    "explanation": "Knowledge distillation specifically involves training a smaller 'student' model to replicate the behavior of a larger 'teacher' model. Quantization reduces precision, pruning removes connections, and transfer learning reuses pre-trained weights.",
+    "remediation_notes": "Key insight: Distillation is about teaching—the student learns FROM the teacher's outputs, not just copying weights.",
+    "category": "Model Optimization",
+    "difficulty": "intermediate",
+    "tags": [
+      "distillation",
+      "optimization",
+      "efficiency"
+    ],
+    "domain_id": 3,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-003",
+    "question_text": "A sequence-to-sequence neural network architecture using self-attention, foundational to modern large language models.",
+    "option_a": "LSTM (Long Short-Term Memory)",
+    "option_b": "Transformer",
+    "option_c": "CNN (Convolutional Neural Network)",
+    "option_d": "RNN (Recurrent Neural Network)",
+    "correct_answer": "B",
+    "explanation": "The Transformer architecture (introduced in 'Attention is All You Need') uses self-attention mechanisms to process sequences in parallel, making it the foundation for modern LLMs (Large Language Models) like GPT (Generative Pre-trained Transformer) and BERT (Bidirectional Encoder Representations from Transformers). LSTMs (Long Short-Term Memory) and RNNs (Recurrent Neural Networks) are older sequential models. CNNs (Convolutional Neural Networks) are designed for images.",
+    "remediation_notes": "Transformers > RNNs (Recurrent Neural Networks) for language. Remember: Self-attention allows each token to 'attend to' every other token in the sequence simultaneously.",
+    "category": "Neural Networks",
+    "difficulty": "beginner",
+    "tags": [
+      "transformer",
+      "attention",
+      "architecture"
+    ],
+    "domain_id": 2,
+    "question_type": "fill_in_blank",
+    "scenario": "You're evaluating model architectures for a new NLP (Natural Language Processing) application. Which one powers all modern LLMs (Large Language Models)?"
+  },
+  {
+    "uid": "fib-004",
+    "question_text": "In machine learning, this prevents a model from learning the training data too perfectly, which causes poor generalization to new data.",
+    "option_a": "Overfitting",
+    "option_b": "Underfitting",
+    "option_c": "Regularization",
+    "option_d": "Vanishing Gradient",
+    "correct_answer": "A",
+    "explanation": "Overfitting occurs when a model memorizes training data instead of learning generalizable patterns, leading to poor performance on new data. Underfitting is the opposite (too simple). Regularization is a technique to prevent overfitting. Vanishing gradient is a training problem.",
+    "remediation_notes": "Overfitting = memorization. High training accuracy but low test accuracy is the telltale sign.",
+    "category": "Model Training",
+    "difficulty": "beginner",
+    "tags": [
+      "overfitting",
+      "generalization",
+      "validation"
+    ],
+    "domain_id": 1,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-005",
+    "question_text": "A technique that improves model robustness by training on intentionally perturbed inputs designed to fool the model.",
+    "option_a": "Data Augmentation",
+    "option_b": "Adversarial Training",
+    "option_c": "Ensemble Learning",
+    "option_d": "Active Learning",
+    "correct_answer": "B",
+    "explanation": "Adversarial training exposes the model to adversarial examples (crafted inputs that cause misclassification) during training, making it more robust. Data augmentation creates variations of existing data. Ensemble combines multiple models. Active learning selects informative samples.",
+    "remediation_notes": "Adversarial training is like 'immunizing' your model against attacks by training it on attacks.",
+    "category": "Robustness",
+    "difficulty": "intermediate",
+    "tags": [
+      "adversarial",
+      "robustness",
+      "security"
+    ],
+    "domain_id": 5,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-006",
+    "question_text": "The mathematical function that converts raw model outputs into probabilities that sum to 1, commonly used in multi-class classification.",
+    "option_a": "ReLU Activation",
+    "option_b": "Sigmoid Function",
+    "option_c": "Softmax Function",
+    "option_d": "Tanh Function",
+    "correct_answer": "C",
+    "explanation": "Softmax converts a vector of real numbers into a probability distribution where each value is between 0 and 1, and they sum to 1. ReLU is used in hidden layers, Sigmoid is for binary classification, and Tanh is another activation function.",
+    "remediation_notes": "Softmax = normalization into probabilities. Perfect for multi-class classification output layers.",
+    "category": "Neural Networks",
+    "difficulty": "intermediate",
+    "tags": [
+      "activation",
+      "softmax",
+      "classification"
+    ],
+    "domain_id": 1,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-007",
+    "question_text": "The process of splitting a sentence or document into individual words or subword tokens for processing by NLP (Natural Language Processing) models.",
+    "option_a": "Lemmatization",
+    "option_b": "Tokenization",
+    "option_c": "Stemming",
+    "option_d": "Parsing",
+    "correct_answer": "B",
+    "explanation": "Tokenization breaks text into smaller units (tokens) for processing. Lemmatization reduces words to root form, stemming removes suffixes, and parsing analyzes grammar structure.",
+    "remediation_notes": "Tokenization is the first step in NLP (Natural Language Processing). Every model processes tokens, not raw text.",
+    "category": "Natural Language Processing",
+    "difficulty": "beginner",
+    "tags": [
+      "nlp",
+      "tokenization",
+      "preprocessing"
+    ],
+    "domain_id": 2,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-008",
+    "question_text": "A type of neural network with multiple layers of interconnected neurons, allowing it to learn complex patterns in data.",
+    "option_a": "Shallow Network",
+    "option_b": "Deep Neural Network",
+    "option_c": "Convolutional Network",
+    "option_d": "Recurrent Network",
+    "correct_answer": "B",
+    "explanation": "A deep neural network has multiple hidden layers that enable learning of hierarchical features. The 'deep' typically refers to more than 2-3 hidden layers.",
+    "remediation_notes": "Deep = many layers. More layers allow learning more abstract representations.",
+    "category": "Deep Learning",
+    "difficulty": "beginner",
+    "tags": [
+      "deep_learning",
+      "neural_networks"
+    ],
+    "domain_id": 2,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-009",
+    "question_text": "A learning paradigm where an agent learns to make decisions by interacting with an environment and receiving rewards for actions.",
+    "option_a": "Supervised Learning",
+    "option_b": "Unsupervised Learning",
+    "option_c": "Reinforcement Learning",
+    "option_d": "Self-Supervised Learning",
+    "correct_answer": "C",
+    "explanation": "Reinforcement learning involves an agent learning through interaction with an environment using reward signals. Supervised learning uses labeled data, unsupervised finds patterns, and self-supervised creates labels from data.",
+    "remediation_notes": "RL (Reinforcement Learning) = rewards and penalties. No predefined labels like in supervised learning.",
+    "category": "Machine Learning Paradigms",
+    "difficulty": "intermediate",
+    "tags": [
+      "reinforcement_learning",
+      "rl"
+    ],
+    "domain_id": 1,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-010",
+    "question_text": "A set of mathematical techniques for training neural networks that adjusts weights to minimize prediction error.",
+    "option_a": "Backpropagation",
+    "option_b": "Forward Propagation",
+    "option_c": "Gradient Ascent",
+    "option_d": "Batch Normalization",
+    "correct_answer": "A",
+    "explanation": "Backpropagation computes gradients of the loss function with respect to weights, enabling them to be updated. Forward propagation computes predictions, gradient ascent maximizes (opposite of descent), and batch normalization normalizes layer inputs.",
+    "remediation_notes": "Backpropagation = backward pass to compute gradients. Essential for training neural networks.",
+    "category": "Model Training",
+    "difficulty": "intermediate",
+    "tags": [
+      "backpropagation",
+      "gradient",
+      "training"
+    ],
+    "domain_id": 1,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-011",
+    "question_text": "The measure of how well a model performs on unseen test data, representing its ability to generalize.",
+    "option_a": "Training Accuracy",
+    "option_b": "Validation Accuracy",
+    "option_c": "Test Accuracy",
+    "option_d": "Baseline Accuracy",
+    "correct_answer": "C",
+    "explanation": "Test accuracy measures performance on held-out test data not used in training. Training accuracy shows performance on training data, validation accuracy is used during training for hyperparameter tuning, and baseline is a reference point.",
+    "remediation_notes": "Test accuracy is the true measure of model quality. This is what matters in production.",
+    "category": "Model Evaluation",
+    "difficulty": "beginner",
+    "tags": [
+      "evaluation",
+      "test_accuracy",
+      "generalization"
+    ],
+    "domain_id": 1,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-012",
+    "question_text": "A pre-trained LLM (Large Language Model) from OpenAI designed for text generation with a causal language modeling objective.",
+    "option_a": "BERT (Bidirectional Encoder Representations from Transformers)",
+    "option_b": "GPT (Generative Pre-trained Transformer)",
+    "option_c": "T5 (Text-to-Text Transfer Transformer)",
+    "option_d": "RoBERTa (Robustly Optimized BERT (Bidirectional Encoder Representations from Transformers))",
+    "correct_answer": "B",
+    "explanation": "GPT (Generative Pre-trained Transformer) models are designed for text generation using causal language modeling. BERT (Bidirectional Encoder Representations from Transformers) is bidirectional for understanding, T5 handles text-to-text tasks, and RoBERTa is an optimized BERT (Bidirectional Encoder Representations from Transformers) variant.",
+    "remediation_notes": "GPT (Generative Pre-trained Transformer) models predict the next token based on previous tokens. This enables fluent text generation.",
+    "category": "Foundation Models",
+    "difficulty": "beginner",
+    "tags": [
+      "gpt",
+      "llm",
+      "generation"
+    ],
+    "domain_id": 2,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-013",
+    "question_text": "The technique of modifying pre-trained model weights on task-specific data to improve performance on downstream tasks.",
+    "option_a": "Transfer Learning",
+    "option_b": "Fine-tuning",
+    "option_c": "Prompt Engineering",
+    "option_d": "Curriculum Learning",
+    "correct_answer": "B",
+    "explanation": "Fine-tuning involves training a pre-trained model on task-specific data with lower learning rates. Transfer learning is the broader concept, prompt engineering doesn't modify weights, and curriculum learning orders training examples.",
+    "remediation_notes": "Fine-tuning = continue training from pre-trained weights. Much faster than training from scratch.",
+    "category": "Foundation Models",
+    "difficulty": "beginner",
+    "tags": [
+      "fine_tuning",
+      "transfer_learning"
+    ],
+    "domain_id": 2,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-014",
+    "question_text": "A loss function that measures the average difference between predicted and actual values in regression tasks.",
+    "option_a": "Cross-Entropy Loss",
+    "option_b": "MAE (Mean Absolute Error)",
+    "option_c": "MSE (Mean Squared Error)",
+    "option_d": "Hinge Loss",
+    "correct_answer": "C",
+    "explanation": "MSE (Mean Squared Error) calculates the average of squared differences between predictions and targets, commonly used in regression. Cross-entropy is for classification, MAE (Mean Absolute Error) is another regression metric, and hinge loss is for support vector machines.",
+    "remediation_notes": "MSE (Mean Squared Error) penalizes large errors more severely. Common choice for regression.",
+    "category": "Model Training",
+    "difficulty": "intermediate",
+    "tags": [
+      "loss_function",
+      "mse",
+      "regression"
+    ],
+    "domain_id": 1,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-015",
+    "question_text": "A technique that adds noise to input data during training to prevent overfitting and improve model robustness.",
+    "option_a": "Batch Normalization",
+    "option_b": "Dropout",
+    "option_c": "Layer Normalization",
+    "option_d": "Instance Normalization",
+    "correct_answer": "B",
+    "explanation": "Dropout randomly removes neurons during training, preventing co-adaptation. Batch normalization normalizes activations, layer normalization normalizes across features, and instance normalization normalizes individual samples.",
+    "remediation_notes": "Dropout = randomly deactivate neurons. Forces the network to learn redundant representations.",
+    "category": "Regularization",
+    "difficulty": "intermediate",
+    "tags": [
+      "dropout",
+      "regularization",
+      "overfitting"
+    ],
+    "domain_id": 2,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-016",
+    "question_text": "An optimization algorithm that adapts learning rates for each parameter based on historical gradients.",
+    "option_a": "SGD (Stochastic Gradient Descent)",
+    "option_b": "Adam Optimizer",
+    "option_c": "Momentum",
+    "option_d": "RMSprop",
+    "correct_answer": "B",
+    "explanation": "Adam (Adaptive Moment Estimation) combines momentum and RMSprop to adaptively adjust learning rates. SGD (Stochastic Gradient Descent) uses a fixed learning rate, momentum accelerates convergence, and RMSprop adapts based on squared gradients.",
+    "remediation_notes": "Adam is often the default optimizer. It combines benefits of momentum and adaptive learning rates.",
+    "category": "Optimization",
+    "difficulty": "intermediate",
+    "tags": [
+      "adam",
+      "optimizer",
+      "optimization"
+    ],
+    "domain_id": 1,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-017",
+    "question_text": "The phenomenon where gradients become very small during backpropagation, making training difficult in deep networks.",
+    "option_a": "Exploding Gradient Problem",
+    "option_b": "Vanishing Gradient Problem",
+    "option_c": "Saturated Gradient",
+    "option_d": "Dead Neuron Problem",
+    "correct_answer": "B",
+    "explanation": "The vanishing gradient problem occurs when gradients become exponentially small in deep networks, slowing learning. Exploding gradients become very large, saturated gradients occur at activation boundaries, and dead neurons don't activate.",
+    "remediation_notes": "Vanishing gradients = very small weight updates. LSTM (Long Short-Term Memory) and Transformers solve this.",
+    "category": "Deep Learning",
+    "difficulty": "advanced",
+    "tags": [
+      "vanishing_gradient",
+      "training",
+      "deep_learning"
+    ],
+    "domain_id": 2,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-018",
+    "question_text": "A pre-trained transformer model from Google designed for understanding tasks using masked language modeling.",
+    "option_a": "GPT (Generative Pre-trained Transformer)",
+    "option_b": "BERT (Bidirectional Encoder Representations from Transformers)",
+    "option_c": "ELMO (Embeddings from Language Models)",
+    "option_d": "ELMo",
+    "correct_answer": "B",
+    "explanation": "BERT (Bidirectional Encoder Representations from Transformers) is designed for understanding and classification tasks using bidirectional context. GPT (Generative Pre-trained Transformer) is for generation, ELMO (Embeddings from Language Models) is from AllenAI, and the last option is a duplicate.",
+    "remediation_notes": "BERT (Bidirectional Encoder Representations from Transformers) uses bidirectional context. Excellent for classification, NER (Named Entity Recognition), and QA (Question Answering).",
+    "category": "Foundation Models",
+    "difficulty": "intermediate",
+    "tags": [
+      "bert",
+      "transformer",
+      "nlp"
+    ],
+    "domain_id": 2,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-019",
+    "question_text": "A mechanism in neural networks that allows models to focus on relevant parts of the input by computing weights over all positions.",
+    "option_a": "Max Pooling",
+    "option_b": "Attention Mechanism",
+    "option_c": "Residual Connection",
+    "option_d": "Batch Normalization",
+    "correct_answer": "B",
+    "explanation": "The attention mechanism computes weighted combinations of input values based on relevance. Max pooling downsamples, residual connections skip layers, and batch normalization normalizes layer inputs.",
+    "remediation_notes": "Attention = weighted focus. Each position computes its relevance to every other position.",
+    "category": "Neural Networks",
+    "difficulty": "intermediate",
+    "tags": [
+      "attention",
+      "transformer",
+      "mechanism"
+    ],
+    "domain_id": 2,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-020",
+    "question_text": "The maximum number of tokens (words/subwords) that a language model can process in a single forward pass.",
+    "option_a": "Embedding Dimension",
+    "option_b": "Hidden Size",
+    "option_c": "Context Window / Sequence Length",
+    "option_d": "Batch Size",
+    "correct_answer": "C",
+    "explanation": "The context window (or sequence length) is the maximum number of tokens a model can process at once. Embedding dimension is vector size, hidden size is layer dimension, and batch size is the number of examples per batch.",
+    "remediation_notes": "Context window limits = practical constraint on how long prompts can be.",
+    "category": "Foundation Models",
+    "difficulty": "beginner",
+    "tags": [
+      "context_window",
+      "sequence_length",
+      "llm"
+    ],
+    "domain_id": 2,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-021",
+    "question_text": "A learning approach where the model learns to predict parts of the input from other parts without explicit labels.",
+    "option_a": "Supervised Learning",
+    "option_b": "Unsupervised Learning",
+    "option_c": "Self-Supervised Learning",
+    "option_d": "Weakly-Supervised Learning",
+    "correct_answer": "C",
+    "explanation": "Self-supervised learning creates labels from the data itself (e.g., masking words to predict them). Supervised uses explicit labels, unsupervised finds patterns without labels, and weakly-supervised uses imperfect labels.",
+    "remediation_notes": "Self-supervised = create your own labels from unlabeled data. Used in pre-training foundation models.",
+    "category": "Machine Learning Paradigms",
+    "difficulty": "intermediate",
+    "tags": [
+      "self_supervised",
+      "pretraining"
+    ],
+    "domain_id": 2,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-022",
+    "question_text": "The vector representation of a word or token learned by embedding layers in neural networks.",
+    "option_a": "One-Hot Encoding",
+    "option_b": "Word Embedding",
+    "option_c": "Feature Vector",
+    "option_d": "Sparse Representation",
+    "correct_answer": "B",
+    "explanation": "Word embeddings are dense vector representations capturing semantic meaning. One-hot encoding is sparse and binary, feature vectors are general representations, and sparse representations have many zeros.",
+    "remediation_notes": "Embeddings capture semantic relationships. Words with similar meanings have similar vectors.",
+    "category": "Natural Language Processing",
+    "difficulty": "beginner",
+    "tags": [
+      "embeddings",
+      "nlp",
+      "representation"
+    ],
+    "domain_id": 2,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-023",
+    "question_text": "A metric that measures the proportion of correct predictions among all predictions made by a classification model.",
+    "option_a": "Precision",
+    "option_b": "Recall",
+    "option_c": "Accuracy",
+    "option_d": "F1-Score",
+    "correct_answer": "C",
+    "explanation": "Accuracy is the percentage of correct predictions out of all predictions. Precision measures correct positive predictions, recall measures coverage of actual positives, and F1-score balances precision and recall.",
+    "remediation_notes": "Accuracy = (correct predictions) / (total predictions). Simplest but not always best metric.",
+    "category": "Model Evaluation",
+    "difficulty": "beginner",
+    "tags": [
+      "accuracy",
+      "metrics",
+      "evaluation"
+    ],
+    "domain_id": 1,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-024",
+    "question_text": "A machine learning approach that uses a combination of multiple models to make predictions more accurate than any single model.",
+    "option_a": "Transfer Learning",
+    "option_b": "Ensemble Learning",
+    "option_c": "Federated Learning",
+    "option_d": "Meta-Learning",
+    "correct_answer": "B",
+    "explanation": "Ensemble learning combines multiple models (e.g., random forests, voting classifiers). Transfer learning reuses pre-trained models, federated learning trains on distributed data, and meta-learning learns how to learn.",
+    "remediation_notes": "Ensemble = multiple models = better predictions. Wisdom of crowds principle.",
+    "category": "Machine Learning Techniques",
+    "difficulty": "intermediate",
+    "tags": [
+      "ensemble",
+      "multiple_models"
+    ],
+    "domain_id": 1,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-025",
+    "question_text": "A type of neural network specifically designed for processing images with convolutional layers that learn spatial patterns.",
+    "option_a": "RNN (Recurrent Neural Network)",
+    "option_b": "Transformer Network",
+    "option_c": "CNN (Convolutional Neural Network)",
+    "option_d": "Feedforward Network",
+    "correct_answer": "C",
+    "explanation": "CNNs (Convolutional Neural Networks) use convolutional layers to learn local spatial patterns in images. RNNs (Recurrent Neural Networks) process sequences, Transformers use attention, and feedforward networks process fixed-size inputs.",
+    "remediation_notes": "CNNs (Convolutional Neural Networks) = convolutional layers = image processing. Kernels slide over images to detect features.",
+    "category": "Neural Networks",
+    "difficulty": "beginner",
+    "tags": [
+      "cnn",
+      "computer_vision",
+      "convolutional"
+    ],
+    "domain_id": 1,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-026",
+    "question_text": "The bias in a model's predictions that comes from making overly simplified assumptions about the underlying problem.",
+    "option_a": "Variance Error",
+    "option_b": "Bias Error",
+    "option_c": "Irreducible Error",
+    "option_d": "Measurement Error",
+    "correct_answer": "B",
+    "explanation": "Bias error comes from oversimplified assumptions (underfitting). Variance error comes from model complexity (overfitting), irreducible error is noise in the data, and measurement error comes from measurement inaccuracy.",
+    "remediation_notes": "High bias = underfitting. Model is too simple to capture the problem.",
+    "category": "Model Evaluation",
+    "difficulty": "intermediate",
+    "tags": [
+      "bias",
+      "variance",
+      "bias_variance_tradeoff"
+    ],
+    "domain_id": 1,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-027",
+    "question_text": "A type of neural network with feedback connections that can process sequences by maintaining hidden state across time steps.",
+    "option_a": "Feedforward Network",
+    "option_b": "CNN (Convolutional Neural Network)",
+    "option_c": "RNN (Recurrent Neural Network)",
+    "option_d": "Transformer Network",
+    "correct_answer": "C",
+    "explanation": "RNNs (Recurrent Neural Networks) have recurrent connections that maintain state across time, enabling sequence processing. Feedforward networks are acyclic, CNNs (Convolutional Neural Networks) are for spatial data, and Transformers use attention.",
+    "remediation_notes": "RNNs (Recurrent Neural Networks) = recurrent connections = memory of past. Good for sequences but suffers from vanishing gradients.",
+    "category": "Neural Networks",
+    "difficulty": "intermediate",
+    "tags": [
+      "rnn",
+      "recurrent",
+      "sequence"
+    ],
+    "domain_id": 2,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-028",
+    "question_text": "An RNN (Recurrent Neural Network) variant with gating mechanisms that can learn long-term dependencies in sequences.",
+    "option_a": "GRU (Gated Recurrent Unit)",
+    "option_b": "Bidirectional RNN (Recurrent Neural Network)",
+    "option_c": "LSTM (Long Short-Term Memory)",
+    "option_d": "Peephole LSTM (Long Short-Term Memory)",
+    "correct_answer": "C",
+    "explanation": "LSTM (Long Short-Term Memory) uses memory cells and gates to control information flow, enabling learning of long-term dependencies. GRU (Gated Recurrent Unit) is a simpler variant, bidirectional RNNs (Recurrent Neural Networks) process in both directions, and peephole LSTM (Long Short-Term Memory) is an LSTM (Long Short-Term Memory) variant.",
+    "remediation_notes": "LSTM (Long Short-Term Memory) = long-term memory. Solves vanishing gradient problem through gates controlling information flow.",
+    "category": "Neural Networks",
+    "difficulty": "advanced",
+    "tags": [
+      "lstm",
+      "long_short_term_memory",
+      "sequence"
+    ],
+    "domain_id": 2,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-029",
+    "question_text": "The practice of using intentionally vague or open-ended inputs to guide language models toward desired outputs without fine-tuning.",
+    "option_a": "Few-Shot Learning",
+    "option_b": "Prompt Engineering",
+    "option_c": "In-Context Learning",
+    "option_d": "Chain-of-Thought Reasoning",
+    "correct_answer": "B",
+    "explanation": "Prompt engineering crafts effective prompts to guide model behavior. Few-shot learning provides examples, in-context learning uses examples in prompts, and chain-of-thought makes models reason step-by-step.",
+    "remediation_notes": "Prompt engineering = art of asking the right question. Can dramatically improve LLM (Large Language Model) outputs.",
+    "category": "Foundation Models",
+    "difficulty": "beginner",
+    "tags": [
+      "prompt_engineering",
+      "prompting",
+      "llm"
+    ],
+    "domain_id": 2,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-030",
+    "question_text": "A technique that helps language models reason step-by-step by asking them to explain their thinking before giving a final answer.",
+    "option_a": "Prompt Engineering",
+    "option_b": "Few-Shot Learning",
+    "option_c": "Chain-of-Thought Prompting",
+    "option_d": "Zero-Shot Learning",
+    "correct_answer": "C",
+    "explanation": "Chain-of-thought prompting encourages models to show intermediate reasoning steps. Prompt engineering is general prompting, few-shot provides examples, and zero-shot requires no examples.",
+    "remediation_notes": "Chain-of-thought = show your work. Makes models more accurate on complex reasoning tasks.",
+    "category": "Foundation Models",
+    "difficulty": "intermediate",
+    "tags": [
+      "chain_of_thought",
+      "prompting",
+      "reasoning"
+    ],
+    "domain_id": 2,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-031",
+    "question_text": "A statistical method for finding patterns in data by reducing dimensions while preserving as much information as possible.",
+    "option_a": "K-Means Clustering",
+    "option_b": "PCA (Principal Component Analysis)",
+    "option_c": "Hierarchical Clustering",
+    "option_d": "DBSCAN (Density-Based Spatial Clustering of Applications with Noise)",
+    "correct_answer": "B",
+    "explanation": "PCA (Principal Component Analysis) reduces dimensionality while preserving variance. K-Means groups data, Hierarchical Clustering builds tree structures, and DBSCAN (Density-Based Spatial Clustering of Applications with Noise) finds density-based clusters.",
+    "remediation_notes": "PCA (Principal Component Analysis) = dimensionality reduction. Projects data onto principal components with highest variance.",
+    "category": "Unsupervised Learning",
+    "difficulty": "intermediate",
+    "tags": [
+      "pca",
+      "dimensionality_reduction"
+    ],
+    "domain_id": 1,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-032",
+    "question_text": "The process of organizing data points into groups where similar points are in the same cluster.",
+    "option_a": "Classification",
+    "option_b": "Regression",
+    "option_c": "Clustering",
+    "option_d": "Dimensionality Reduction",
+    "correct_answer": "C",
+    "explanation": "Clustering groups similar data points without predefined labels. Classification assigns to predefined classes, regression predicts continuous values, and dimensionality reduction reduces features.",
+    "remediation_notes": "Clustering = unsupervised grouping. No labels needed, model discovers natural groups.",
+    "category": "Unsupervised Learning",
+    "difficulty": "beginner",
+    "tags": [
+      "clustering",
+      "unsupervised"
+    ],
+    "domain_id": 1,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-033",
+    "question_text": "A clustering algorithm that partitions data into K clusters by minimizing within-cluster variance.",
+    "option_a": "Hierarchical Clustering",
+    "option_b": "K-Means Clustering",
+    "option_c": "Spectral Clustering",
+    "option_d": "Gaussian Mixture Models",
+    "correct_answer": "B",
+    "explanation": "K-Means partitions data into K clusters by iteratively updating cluster centers. Hierarchical builds tree structures, Spectral uses eigenvalues, and GMM (Gaussian Mixture Model) uses probabilistic models.",
+    "remediation_notes": "K-Means = simplest clustering. Fast but requires knowing K in advance.",
+    "category": "Unsupervised Learning",
+    "difficulty": "intermediate",
+    "tags": [
+      "kmeans",
+      "clustering"
+    ],
+    "domain_id": 1,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-034",
+    "question_text": "A measure of how different two probability distributions are from each other.",
+    "option_a": "Cosine Similarity",
+    "option_b": "Euclidean Distance",
+    "option_c": "KL (Kullback-Leibler) Divergence",
+    "option_d": "Manhattan Distance",
+    "correct_answer": "C",
+    "explanation": "KL (Kullback-Leibler) Divergence measures the difference between two probability distributions. Cosine and Euclidean are geometric distances, and Manhattan is another geometric metric.",
+    "remediation_notes": "KL (Kullback-Leibler) divergence = how different distributions are. Asymmetric measure of divergence.",
+    "category": "Information Theory",
+    "difficulty": "advanced",
+    "tags": [
+      "kl_divergence",
+      "probability"
+    ],
+    "domain_id": 1,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-035",
+    "question_text": "A technique that combines several weak learners to create a strong predictive model.",
+    "option_a": "Bagging",
+    "option_b": "Boosting",
+    "option_c": "Stacking",
+    "option_d": "Blending",
+    "correct_answer": "B",
+    "explanation": "Boosting iteratively trains weak learners, giving more weight to misclassified examples. Bagging trains in parallel, stacking combines models with a meta-learner, and blending uses a holdout set.",
+    "remediation_notes": "Boosting = sequential learning. Each new learner focuses on previous errors.",
+    "category": "Ensemble Learning",
+    "difficulty": "advanced",
+    "tags": [
+      "boosting",
+      "ensemble"
+    ],
+    "domain_id": 1,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-036",
+    "question_text": "A random forest variant for regression that predicts continuous values instead of classes.",
+    "option_a": "Classification Tree",
+    "option_b": "Decision Tree Regressor",
+    "option_c": "Random Forest Regressor",
+    "option_d": "Gradient Boosting Regressor",
+    "correct_answer": "C",
+    "explanation": "Random Forest Regressor ensembles multiple decision trees for regression. Classification Tree is for classes, Decision Tree Regressor is single tree, Gradient Boosting is sequential boosting.",
+    "remediation_notes": "Random Forest Regressor = ensemble of trees for regression. Reduces variance through averaging.",
+    "category": "Ensemble Learning",
+    "difficulty": "intermediate",
+    "tags": [
+      "random_forest",
+      "regression"
+    ],
+    "domain_id": 1,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-037",
+    "question_text": "A type of neural network layer that progressively extracts lower-level feature representations into higher-level representations.",
+    "option_a": "Dropout Layer",
+    "option_b": "Batch Normalization Layer",
+    "option_c": "Convolutional Layer",
+    "option_d": "Pooling Layer",
+    "correct_answer": "C",
+    "explanation": "Convolutional layers extract features at different levels. Dropout adds regularization, batch normalization normalizes, and pooling downsamples.",
+    "remediation_notes": "Convolutional layers = feature extraction. Filters slide over inputs detecting patterns.",
+    "category": "Deep Learning",
+    "difficulty": "intermediate",
+    "tags": [
+      "convolutional",
+      "feature_extraction"
+    ],
+    "domain_id": 2,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-038",
+    "question_text": "A technique that reduces spatial dimensions in convolutional networks by taking the maximum value in non-overlapping regions.",
+    "option_a": "Average Pooling",
+    "option_b": "Max Pooling",
+    "option_c": "Strided Convolution",
+    "option_d": "Atrous Convolution",
+    "correct_answer": "B",
+    "explanation": "Max pooling downsamples by taking the maximum value in each region. Average pooling takes the mean, strided convolution uses larger steps, and atrous convolution has gaps in the kernel.",
+    "remediation_notes": "Max pooling = take highest value. Reduces spatial dimensions while preserving important features.",
+    "category": "Computer Vision",
+    "difficulty": "beginner",
+    "tags": [
+      "pooling",
+      "max_pooling"
+    ],
+    "domain_id": 1,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-039",
+    "question_text": "A deep convolutional neural network architecture with residual connections enabling very deep networks.",
+    "option_a": "VGG (Visual Geometry Group)",
+    "option_b": "AlexNet",
+    "option_c": "ResNet (Residual Network)",
+    "option_d": "Inception",
+    "correct_answer": "C",
+    "explanation": "ResNet (Residual Network) uses skip connections allowing very deep networks. VGG (Visual Geometry Group) uses simple convolutions, AlexNet pioneered deep learning, and Inception uses multi-scale convolutions.",
+    "remediation_notes": "ResNet = residual connections. Skip connections enable training very deep networks (100+ layers).",
+    "category": "Computer Vision",
+    "difficulty": "intermediate",
+    "tags": [
+      "resnet",
+      "residual"
+    ],
+    "domain_id": 1,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-040",
+    "question_text": "A pre-trained vision model from Google/DeepMind for image classification using depthwise separable convolutions.",
+    "option_a": "MobileNet",
+    "option_b": "EfficientNet",
+    "option_c": "Vision Transformer (ViT)",
+    "option_d": "YOLOv5",
+    "correct_answer": "A",
+    "explanation": "MobileNet uses depthwise separable convolutions for efficient mobile inference. EfficientNet scales depth/width/resolution, Vision Transformer uses attention, and YOLO (You Only Look Once) is for object detection.",
+    "remediation_notes": "MobileNet = lightweight CNN (Convolutional Neural Network). Designed for mobile and edge devices.",
+    "category": "Computer Vision",
+    "difficulty": "intermediate",
+    "tags": [
+      "mobilenet",
+      "efficient"
+    ],
+    "domain_id": 1,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-041",
+    "question_text": "A technique that applies the same learnable weights across different spatial locations in neural networks.",
+    "option_a": "Batch Normalization",
+    "option_b": "Weight Sharing",
+    "option_c": "Dropout",
+    "option_d": "Layer Normalization",
+    "correct_answer": "B",
+    "explanation": "Weight sharing applies the same filters across space (fundamental to convolutions). Batch normalization normalizes activations, dropout randomly removes neurons, layer normalization normalizes features.",
+    "remediation_notes": "Weight sharing = same filters everywhere. Reduces parameters and enables translation invariance.",
+    "category": "Neural Networks",
+    "difficulty": "intermediate",
+    "tags": [
+      "weight_sharing",
+      "convolution"
+    ],
+    "domain_id": 1,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-042",
+    "question_text": "A loss function used for multi-class classification that measures the distance from true distribution.",
+    "option_a": "MSE (Mean Squared Error)",
+    "option_b": "Cross-Entropy Loss",
+    "option_c": "Hinge Loss",
+    "option_d": "Huber Loss",
+    "correct_answer": "B",
+    "explanation": "Cross-entropy loss measures the difference between predicted and true probability distributions. MSE (Mean Squared Error) is for regression, hinge loss is for support vector machines, and huber loss is robust regression.",
+    "remediation_notes": "Cross-entropy = probability distance. Standard loss for classification with softmax.",
+    "category": "Model Training",
+    "difficulty": "intermediate",
+    "tags": [
+      "cross_entropy",
+      "loss_function"
+    ],
+    "domain_id": 1,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-043",
+    "question_text": "A technique that adjusts learning rate for each parameter independently based on historical gradient magnitudes.",
+    "option_a": "Momentum",
+    "option_b": "Nesterov Accelerated Gradient",
+    "option_c": "RMSprop",
+    "option_d": "Adagrad",
+    "correct_answer": "C",
+    "explanation": "RMSprop adapts learning rates using exponential moving average of squared gradients. Momentum accelerates gradient descent, Nesterov is improved momentum, and Adagrad adapts per parameter but with diminishing rates.",
+    "remediation_notes": "RMSprop = adaptive learning rates. Good for non-stationary problems.",
+    "category": "Optimization",
+    "difficulty": "advanced",
+    "tags": [
+      "rmsprop",
+      "optimizer"
+    ],
+    "domain_id": 1,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-044",
+    "question_text": "A natural language processing task that determines the sentiment (positive, negative, neutral) expressed in text.",
+    "option_a": "NER (Named Entity Recognition)",
+    "option_b": "Sentiment Analysis",
+    "option_c": "Machine Translation",
+    "option_d": "Question Answering",
+    "correct_answer": "B",
+    "explanation": "Sentiment analysis classifies text sentiment. NER (Named Entity Recognition) identifies entities, machine translation translates between languages, and QA (Question Answering) answers questions.",
+    "remediation_notes": "Sentiment analysis = emotion detection. Widely used for reviews and social media.",
+    "category": "Natural Language Processing",
+    "difficulty": "beginner",
+    "tags": [
+      "sentiment",
+      "nlp"
+    ],
+    "domain_id": 2,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-045",
+    "question_text": "A technique for identifying and classifying named entities (persons, organizations, locations) in text.",
+    "option_a": "Part-of-Speech Tagging",
+    "option_b": "NER (Named Entity Recognition)",
+    "option_c": "Dependency Parsing",
+    "option_d": "Coreference Resolution",
+    "correct_answer": "B",
+    "explanation": "NER (Named Entity Recognition) identifies and classifies entities. POS (Part-of-Speech) tagging marks word types, dependency parsing shows grammatical structure, and coreference resolves which entities refer to the same thing.",
+    "remediation_notes": "NER (Named Entity Recognition) = find people, places, organizations. Essential for information extraction.",
+    "category": "Natural Language Processing",
+    "difficulty": "intermediate",
+    "tags": [
+      "ner",
+      "nlp"
+    ],
+    "domain_id": 2,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-046",
+    "question_text": "A sequence-to-sequence task that converts text from one language to another using neural networks.",
+    "option_a": "Paraphrase Generation",
+    "option_b": "Machine Translation",
+    "option_c": "Text Summarization",
+    "option_d": "Text Generation",
+    "correct_answer": "B",
+    "explanation": "Machine translation converts text between languages. Paraphrase rewrites text, summarization shortens text, and text generation creates new text.",
+    "remediation_notes": "Machine translation = language conversion. Modern approaches use sequence-to-sequence models.",
+    "category": "Natural Language Processing",
+    "difficulty": "intermediate",
+    "tags": [
+      "machine_translation",
+      "nlp"
+    ],
+    "domain_id": 2,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-047",
+    "question_text": "A technique that represents words and phrases as semantic vectors that capture relationships between them.",
+    "option_a": "Bag-of-Words",
+    "option_b": "Word2Vec / Embeddings",
+    "option_c": "TF-IDF (Term Frequency-Inverse Document Frequency) (Term Frequency-Inverse Document Frequency)",
+    "option_d": "Count Vectorization",
+    "correct_answer": "B",
+    "explanation": "Word2Vec and embeddings create semantic vectors where similar words have similar vectors. Bag-of-words counts, TF-IDF (Term Frequency-Inverse Document Frequency) (Term Frequency-Inverse Document Frequency) weights by importance, and count vectorization counts occurrences.",
+    "remediation_notes": "Word2Vec = semantic vectors. Famous example: King - Man + Woman ≈ Queen.",
+    "category": "Natural Language Processing",
+    "difficulty": "intermediate",
+    "tags": [
+      "word2vec",
+      "embeddings"
+    ],
+    "domain_id": 2,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-048",
+    "question_text": "A pre-training technique used in BERT (Bidirectional Encoder Representations from Transformers) where random words are masked and the model predicts them.",
+    "option_a": "Next Sentence Prediction",
+    "option_b": "Masked Language Modeling",
+    "option_c": "Causal Language Modeling",
+    "option_d": "Token Classification",
+    "correct_answer": "B",
+    "explanation": "Masked language modeling masks tokens and predicts them from context. Next sentence prediction predicts sentence relationships, causal modeling predicts next tokens, and token classification labels tokens.",
+    "remediation_notes": "MLM (Masked Language Modeling) = CLOZE task. Learn bidirectional context from both sides.",
+    "category": "Foundation Models",
+    "difficulty": "intermediate",
+    "tags": [
+      "masked_language_modeling",
+      "bert"
+    ],
+    "domain_id": 2,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-049",
+    "question_text": "A learning technique where a model provides examples to itself during training to improve performance on a downstream task.",
+    "option_a": "Transfer Learning",
+    "option_b": "Few-Shot Learning",
+    "option_c": "In-Context Learning",
+    "option_d": "Curriculum Learning",
+    "correct_answer": "C",
+    "explanation": "In-context learning occurs when examples in the prompt help the model solve the task. Transfer learning uses pre-trained knowledge, few-shot provides few examples, and curriculum learning orders examples by difficulty.",
+    "remediation_notes": "In-context learning = learn from prompt examples. Key ability of large language models.",
+    "category": "Foundation Models",
+    "difficulty": "advanced",
+    "tags": [
+      "in_context_learning",
+      "llm"
+    ],
+    "domain_id": 2,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-050",
+    "question_text": "A method for making language models follow instructions by training them on human feedback about output quality.",
+    "option_a": "Supervised Fine-tuning",
+    "option_b": "RLHF (Reinforcement Learning from Human Feedback)",
+    "option_c": "Prompt Engineering",
+    "option_d": "Few-Shot Learning",
+    "correct_answer": "B",
+    "explanation": "RLHF (Reinforcement Learning from Human Feedback) trains models to follow instructions using human judgments. Supervised fine-tuning trains on examples, prompt engineering crafts inputs, and few-shot provides examples.",
+    "remediation_notes": "RLHF (Reinforcement Learning from Human Feedback) = train from human feedback. Makes models more helpful and less harmful.",
+    "category": "Foundation Models",
+    "difficulty": "advanced",
+    "tags": [
+      "rlhf",
+      "alignment"
+    ],
+    "domain_id": 4,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-051",
+    "question_text": "A technique for reducing model memory usage by converting weights to lower precision representations.",
+    "option_a": "Pruning",
+    "option_b": "Quantization",
+    "option_c": "Distillation",
+    "option_d": "Sparsification",
+    "correct_answer": "B",
+    "explanation": "Quantization reduces precision (e.g., float32 to int8) to save memory. Pruning removes connections, distillation trains smaller models, and sparsification zeros out weights.",
+    "remediation_notes": "Quantization = lower precision. 4x memory savings with int8 instead of float32.",
+    "category": "Model Optimization",
+    "difficulty": "intermediate",
+    "tags": [
+      "quantization",
+      "efficiency"
+    ],
+    "domain_id": 3,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-052",
+    "question_text": "A neural architecture that uses only decoder blocks and autoregressive generation, used by GPT (Generative Pre-trained Transformer) models.",
+    "option_a": "Encoder-Decoder",
+    "option_b": "Decoder-Only",
+    "option_c": "Encoder-Only",
+    "option_d": "Bidirectional",
+    "correct_answer": "B",
+    "explanation": "Decoder-only architectures use only decoder blocks for autoregressive generation. Encoder-decoder uses both, encoder-only is for understanding (like BERT (Bidirectional Encoder Representations from Transformers)), and bidirectional uses both directions.",
+    "remediation_notes": "Decoder-only = autoregressive. Generate tokens one at a time conditioned on previous.",
+    "category": "Foundation Models",
+    "difficulty": "intermediate",
+    "tags": [
+      "decoder_only",
+      "gpt",
+      "autoregressive"
+    ],
+    "domain_id": 2,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-053",
+    "question_text": "The property of a learning system that spreads learned capabilities across different tasks and domains.",
+    "option_a": "Specialization",
+    "option_b": "Generalization",
+    "option_c": "Transfer",
+    "option_d": "Adaptation",
+    "correct_answer": "B",
+    "explanation": "Generalization is the ability to perform well on unseen data. Specialization is focusing on specific tasks, transfer uses knowledge from one task on another, and adaptation adjusts to new data.",
+    "remediation_notes": "Generalization = work on new data. Ultimate goal of machine learning.",
+    "category": "Model Evaluation",
+    "difficulty": "beginner",
+    "tags": [
+      "generalization",
+      "evaluation"
+    ],
+    "domain_id": 1,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-054",
+    "question_text": "A technique that adds learnable scaling and shifting parameters to normalized layer outputs.",
+    "option_a": "Batch Normalization",
+    "option_b": "Layer Normalization",
+    "option_c": "Affine Transformation",
+    "option_d": "Instance Normalization",
+    "correct_answer": "A",
+    "explanation": "Batch normalization normalizes activations then applies learnable scale (gamma) and shift (beta). Layer normalization normalizes across features, affine is a general transformation, and instance normalization per sample.",
+    "remediation_notes": "Batch normalization = normalize then scale/shift. Stabilizes training and acts as regularization.",
+    "category": "Regularization",
+    "difficulty": "intermediate",
+    "tags": [
+      "batch_normalization",
+      "normalization"
+    ],
+    "domain_id": 2,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-055",
+    "question_text": "A graph-based neural network that learns representations by aggregating information from neighboring nodes.",
+    "option_a": "CNN (Convolutional Neural Network)",
+    "option_b": "GNN (Graph Neural Network)",
+    "option_c": "RNN (Recurrent Neural Network)",
+    "option_d": "Attention Network",
+    "correct_answer": "B",
+    "explanation": "Graph neural networks operate on graph structures using message passing. CNNs (Convolutional Neural Networks) work on grids, RNNs (Recurrent Neural Networks) on sequences, and attention networks on sets/sequences.",
+    "remediation_notes": "GNN (Graph Neural Network) = graph processing. Uses neighborhood aggregation to learn node representations.",
+    "category": "Neural Networks",
+    "difficulty": "advanced",
+    "tags": [
+      "gnn",
+      "graphs"
+    ],
+    "domain_id": 1,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-056",
+    "question_text": "A technique for reducing model memory usage by converting weights to lower precision representations.",
+    "option_a": "Pruning",
+    "option_b": "Quantization",
+    "option_c": "Distillation",
+    "option_d": "Sparsification",
+    "correct_answer": "B",
+    "explanation": "Quantization reduces precision (e.g., float32 to int8) to save memory. Pruning removes connections, distillation trains smaller models, and sparsification zeros out weights.",
+    "remediation_notes": "Quantization = lower precision. 4x memory savings with int8 instead of float32.",
+    "category": "Model Optimization",
+    "difficulty": "intermediate",
+    "tags": [
+      "quantization",
+      "efficiency"
+    ],
+    "domain_id": 3,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-057",
+    "question_text": "A neural architecture that uses only decoder blocks and autoregressive generation, used by GPT (Generative Pre-trained Transformer) models.",
+    "option_a": "Encoder-Decoder",
+    "option_b": "Decoder-Only",
+    "option_c": "Encoder-Only",
+    "option_d": "Bidirectional",
+    "correct_answer": "B",
+    "explanation": "Decoder-only architectures use only decoder blocks for autoregressive generation. Encoder-decoder uses both, encoder-only is for understanding (like BERT (Bidirectional Encoder Representations from Transformers)), and bidirectional uses both directions.",
+    "remediation_notes": "Decoder-only = autoregressive. Generate tokens one at a time conditioned on previous.",
+    "category": "Foundation Models",
+    "difficulty": "intermediate",
+    "tags": [
+      "decoder_only",
+      "gpt",
+      "autoregressive"
+    ],
+    "domain_id": 2,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-058",
+    "question_text": "The property of a learning system that spreads learned capabilities across different tasks and domains.",
+    "option_a": "Specialization",
+    "option_b": "Generalization",
+    "option_c": "Transfer",
+    "option_d": "Adaptation",
+    "correct_answer": "B",
+    "explanation": "Generalization is the ability to perform well on unseen data. Specialization is focusing on specific tasks, transfer uses knowledge from one task on another, and adaptation adjusts to new data.",
+    "remediation_notes": "Generalization = work on new data. Ultimate goal of machine learning.",
+    "category": "Model Evaluation",
+    "difficulty": "beginner",
+    "tags": [
+      "generalization",
+      "evaluation"
+    ],
+    "domain_id": 1,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-059",
+    "question_text": "A technique that adds learnable scaling and shifting parameters to normalized layer outputs.",
+    "option_a": "Batch Normalization",
+    "option_b": "Layer Normalization",
+    "option_c": "Affine Transformation",
+    "option_d": "Instance Normalization",
+    "correct_answer": "A",
+    "explanation": "Batch normalization normalizes activations then applies learnable scale (gamma) and shift (beta). Layer normalization normalizes across features, affine is a general transformation, and instance normalization per sample.",
+    "remediation_notes": "Batch normalization = normalize then scale/shift. Stabilizes training and acts as regularization.",
+    "category": "Regularization",
+    "difficulty": "intermediate",
+    "tags": [
+      "batch_normalization",
+      "normalization"
+    ],
+    "domain_id": 2,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-060",
+    "question_text": "A graph-based neural network that learns representations by aggregating information from neighboring nodes.",
+    "option_a": "CNN (Convolutional Neural Network)",
+    "option_b": "GNN (Graph Neural Network)",
+    "option_c": "RNN (Recurrent Neural Network)",
+    "option_d": "Attention Network",
+    "correct_answer": "B",
+    "explanation": "Graph neural networks operate on graph structures using message passing. CNNs (Convolutional Neural Networks) work on grids, RNNs (Recurrent Neural Networks) on sequences, and attention networks on sets/sequences.",
+    "remediation_notes": "GNN (Graph Neural Network) = graph processing. Uses neighborhood aggregation to learn node representations.",
+    "category": "Neural Networks",
+    "difficulty": "advanced",
+    "tags": [
+      "gnn",
+      "graphs"
+    ],
+    "domain_id": 1,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-061",
+    "question_text": "A technique for reducing model memory usage by converting weights to lower precision representations.",
+    "option_a": "Pruning",
+    "option_b": "Quantization",
+    "option_c": "Distillation",
+    "option_d": "Sparsification",
+    "correct_answer": "B",
+    "explanation": "Quantization reduces precision (e.g., float32 to int8) to save memory. Pruning removes connections, distillation trains smaller models, and sparsification zeros out weights.",
+    "remediation_notes": "Quantization = lower precision. 4x memory savings with int8 instead of float32.",
+    "category": "Model Optimization",
+    "difficulty": "intermediate",
+    "tags": [
+      "quantization",
+      "efficiency"
+    ],
+    "domain_id": 3,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-062",
+    "question_text": "A neural architecture that uses only decoder blocks and autoregressive generation, used by GPT (Generative Pre-trained Transformer) models.",
+    "option_a": "Encoder-Decoder",
+    "option_b": "Decoder-Only",
+    "option_c": "Encoder-Only",
+    "option_d": "Bidirectional",
+    "correct_answer": "B",
+    "explanation": "Decoder-only architectures use only decoder blocks for autoregressive generation. Encoder-decoder uses both, encoder-only is for understanding (like BERT (Bidirectional Encoder Representations from Transformers)), and bidirectional uses both directions.",
+    "remediation_notes": "Decoder-only = autoregressive. Generate tokens one at a time conditioned on previous.",
+    "category": "Foundation Models",
+    "difficulty": "intermediate",
+    "tags": [
+      "decoder_only",
+      "gpt",
+      "autoregressive"
+    ],
+    "domain_id": 2,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-063",
+    "question_text": "The property of a learning system that spreads learned capabilities across different tasks and domains.",
+    "option_a": "Specialization",
+    "option_b": "Generalization",
+    "option_c": "Transfer",
+    "option_d": "Adaptation",
+    "correct_answer": "B",
+    "explanation": "Generalization is the ability to perform well on unseen data. Specialization is focusing on specific tasks, transfer uses knowledge from one task on another, and adaptation adjusts to new data.",
+    "remediation_notes": "Generalization = work on new data. Ultimate goal of machine learning.",
+    "category": "Model Evaluation",
+    "difficulty": "beginner",
+    "tags": [
+      "generalization",
+      "evaluation"
+    ],
+    "domain_id": 1,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-064",
+    "question_text": "A technique that adds learnable scaling and shifting parameters to normalized layer outputs.",
+    "option_a": "Batch Normalization",
+    "option_b": "Layer Normalization",
+    "option_c": "Affine Transformation",
+    "option_d": "Instance Normalization",
+    "correct_answer": "A",
+    "explanation": "Batch normalization normalizes activations then applies learnable scale (gamma) and shift (beta). Layer normalization normalizes across features, affine is a general transformation, and instance normalization per sample.",
+    "remediation_notes": "Batch normalization = normalize then scale/shift. Stabilizes training and acts as regularization.",
+    "category": "Regularization",
+    "difficulty": "intermediate",
+    "tags": [
+      "batch_normalization",
+      "normalization"
+    ],
+    "domain_id": 2,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-065",
+    "question_text": "A graph-based neural network that learns representations by aggregating information from neighboring nodes.",
+    "option_a": "CNN (Convolutional Neural Network)",
+    "option_b": "GNN (Graph Neural Network)",
+    "option_c": "RNN (Recurrent Neural Network)",
+    "option_d": "Attention Network",
+    "correct_answer": "B",
+    "explanation": "Graph neural networks operate on graph structures using message passing. CNNs (Convolutional Neural Networks) work on grids, RNNs (Recurrent Neural Networks) on sequences, and attention networks on sets/sequences.",
+    "remediation_notes": "GNN (Graph Neural Network) = graph processing. Uses neighborhood aggregation to learn node representations.",
+    "category": "Neural Networks",
+    "difficulty": "advanced",
+    "tags": [
+      "gnn",
+      "graphs"
+    ],
+    "domain_id": 1,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-066",
+    "question_text": "A technique for reducing model memory usage by converting weights to lower precision representations.",
+    "option_a": "Pruning",
+    "option_b": "Quantization",
+    "option_c": "Distillation",
+    "option_d": "Sparsification",
+    "correct_answer": "B",
+    "explanation": "Quantization reduces precision (e.g., float32 to int8) to save memory. Pruning removes connections, distillation trains smaller models, and sparsification zeros out weights.",
+    "remediation_notes": "Quantization = lower precision. 4x memory savings with int8 instead of float32.",
+    "category": "Model Optimization",
+    "difficulty": "intermediate",
+    "tags": [
+      "quantization",
+      "efficiency"
+    ],
+    "domain_id": 3,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-067",
+    "question_text": "A neural architecture that uses only decoder blocks and autoregressive generation, used by GPT (Generative Pre-trained Transformer) models.",
+    "option_a": "Encoder-Decoder",
+    "option_b": "Decoder-Only",
+    "option_c": "Encoder-Only",
+    "option_d": "Bidirectional",
+    "correct_answer": "B",
+    "explanation": "Decoder-only architectures use only decoder blocks for autoregressive generation. Encoder-decoder uses both, encoder-only is for understanding (like BERT (Bidirectional Encoder Representations from Transformers)), and bidirectional uses both directions.",
+    "remediation_notes": "Decoder-only = autoregressive. Generate tokens one at a time conditioned on previous.",
+    "category": "Foundation Models",
+    "difficulty": "intermediate",
+    "tags": [
+      "decoder_only",
+      "gpt",
+      "autoregressive"
+    ],
+    "domain_id": 2,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-068",
+    "question_text": "The property of a learning system that spreads learned capabilities across different tasks and domains.",
+    "option_a": "Specialization",
+    "option_b": "Generalization",
+    "option_c": "Transfer",
+    "option_d": "Adaptation",
+    "correct_answer": "B",
+    "explanation": "Generalization is the ability to perform well on unseen data. Specialization is focusing on specific tasks, transfer uses knowledge from one task on another, and adaptation adjusts to new data.",
+    "remediation_notes": "Generalization = work on new data. Ultimate goal of machine learning.",
+    "category": "Model Evaluation",
+    "difficulty": "beginner",
+    "tags": [
+      "generalization",
+      "evaluation"
+    ],
+    "domain_id": 1,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-069",
+    "question_text": "A technique that adds learnable scaling and shifting parameters to normalized layer outputs.",
+    "option_a": "Batch Normalization",
+    "option_b": "Layer Normalization",
+    "option_c": "Affine Transformation",
+    "option_d": "Instance Normalization",
+    "correct_answer": "A",
+    "explanation": "Batch normalization normalizes activations then applies learnable scale (gamma) and shift (beta). Layer normalization normalizes across features, affine is a general transformation, and instance normalization per sample.",
+    "remediation_notes": "Batch normalization = normalize then scale/shift. Stabilizes training and acts as regularization.",
+    "category": "Regularization",
+    "difficulty": "intermediate",
+    "tags": [
+      "batch_normalization",
+      "normalization"
+    ],
+    "domain_id": 2,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-070",
+    "question_text": "A graph-based neural network that learns representations by aggregating information from neighboring nodes.",
+    "option_a": "CNN (Convolutional Neural Network)",
+    "option_b": "GNN (Graph Neural Network)",
+    "option_c": "RNN (Recurrent Neural Network)",
+    "option_d": "Attention Network",
+    "correct_answer": "B",
+    "explanation": "Graph neural networks operate on graph structures using message passing. CNNs (Convolutional Neural Networks) work on grids, RNNs (Recurrent Neural Networks) on sequences, and attention networks on sets/sequences.",
+    "remediation_notes": "GNN (Graph Neural Network) = graph processing. Uses neighborhood aggregation to learn node representations.",
+    "category": "Neural Networks",
+    "difficulty": "advanced",
+    "tags": [
+      "gnn",
+      "graphs"
+    ],
+    "domain_id": 1,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-071",
+    "question_text": "A technique for reducing model memory usage by converting weights to lower precision representations.",
+    "option_a": "Pruning",
+    "option_b": "Quantization",
+    "option_c": "Distillation",
+    "option_d": "Sparsification",
+    "correct_answer": "B",
+    "explanation": "Quantization reduces precision (e.g., float32 to int8) to save memory. Pruning removes connections, distillation trains smaller models, and sparsification zeros out weights.",
+    "remediation_notes": "Quantization = lower precision. 4x memory savings with int8 instead of float32.",
+    "category": "Model Optimization",
+    "difficulty": "intermediate",
+    "tags": [
+      "quantization",
+      "efficiency"
+    ],
+    "domain_id": 3,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-072",
+    "question_text": "A neural architecture that uses only decoder blocks and autoregressive generation, used by GPT (Generative Pre-trained Transformer) models.",
+    "option_a": "Encoder-Decoder",
+    "option_b": "Decoder-Only",
+    "option_c": "Encoder-Only",
+    "option_d": "Bidirectional",
+    "correct_answer": "B",
+    "explanation": "Decoder-only architectures use only decoder blocks for autoregressive generation. Encoder-decoder uses both, encoder-only is for understanding (like BERT (Bidirectional Encoder Representations from Transformers)), and bidirectional uses both directions.",
+    "remediation_notes": "Decoder-only = autoregressive. Generate tokens one at a time conditioned on previous.",
+    "category": "Foundation Models",
+    "difficulty": "intermediate",
+    "tags": [
+      "decoder_only",
+      "gpt",
+      "autoregressive"
+    ],
+    "domain_id": 2,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-073",
+    "question_text": "The property of a learning system that spreads learned capabilities across different tasks and domains.",
+    "option_a": "Specialization",
+    "option_b": "Generalization",
+    "option_c": "Transfer",
+    "option_d": "Adaptation",
+    "correct_answer": "B",
+    "explanation": "Generalization is the ability to perform well on unseen data. Specialization is focusing on specific tasks, transfer uses knowledge from one task on another, and adaptation adjusts to new data.",
+    "remediation_notes": "Generalization = work on new data. Ultimate goal of machine learning.",
+    "category": "Model Evaluation",
+    "difficulty": "beginner",
+    "tags": [
+      "generalization",
+      "evaluation"
+    ],
+    "domain_id": 1,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-074",
+    "question_text": "A technique that adds learnable scaling and shifting parameters to normalized layer outputs.",
+    "option_a": "Batch Normalization",
+    "option_b": "Layer Normalization",
+    "option_c": "Affine Transformation",
+    "option_d": "Instance Normalization",
+    "correct_answer": "A",
+    "explanation": "Batch normalization normalizes activations then applies learnable scale (gamma) and shift (beta). Layer normalization normalizes across features, affine is a general transformation, and instance normalization per sample.",
+    "remediation_notes": "Batch normalization = normalize then scale/shift. Stabilizes training and acts as regularization.",
+    "category": "Regularization",
+    "difficulty": "intermediate",
+    "tags": [
+      "batch_normalization",
+      "normalization"
+    ],
+    "domain_id": 2,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-075",
+    "question_text": "A graph-based neural network that learns representations by aggregating information from neighboring nodes.",
+    "option_a": "CNN (Convolutional Neural Network)",
+    "option_b": "GNN (Graph Neural Network)",
+    "option_c": "RNN (Recurrent Neural Network)",
+    "option_d": "Attention Network",
+    "correct_answer": "B",
+    "explanation": "Graph neural networks operate on graph structures using message passing. CNNs (Convolutional Neural Networks) work on grids, RNNs (Recurrent Neural Networks) on sequences, and attention networks on sets/sequences.",
+    "remediation_notes": "GNN (Graph Neural Network) = graph processing. Uses neighborhood aggregation to learn node representations.",
+    "category": "Neural Networks",
+    "difficulty": "advanced",
+    "tags": [
+      "gnn",
+      "graphs"
+    ],
+    "domain_id": 1,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-076",
+    "question_text": "A technique for reducing model memory usage by converting weights to lower precision representations.",
+    "option_a": "Pruning",
+    "option_b": "Quantization",
+    "option_c": "Distillation",
+    "option_d": "Sparsification",
+    "correct_answer": "B",
+    "explanation": "Quantization reduces precision (e.g., float32 to int8) to save memory. Pruning removes connections, distillation trains smaller models, and sparsification zeros out weights.",
+    "remediation_notes": "Quantization = lower precision. 4x memory savings with int8 instead of float32.",
+    "category": "Model Optimization",
+    "difficulty": "intermediate",
+    "tags": [
+      "quantization",
+      "efficiency"
+    ],
+    "domain_id": 3,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-077",
+    "question_text": "A neural architecture that uses only decoder blocks and autoregressive generation, used by GPT (Generative Pre-trained Transformer) models.",
+    "option_a": "Encoder-Decoder",
+    "option_b": "Decoder-Only",
+    "option_c": "Encoder-Only",
+    "option_d": "Bidirectional",
+    "correct_answer": "B",
+    "explanation": "Decoder-only architectures use only decoder blocks for autoregressive generation. Encoder-decoder uses both, encoder-only is for understanding (like BERT (Bidirectional Encoder Representations from Transformers)), and bidirectional uses both directions.",
+    "remediation_notes": "Decoder-only = autoregressive. Generate tokens one at a time conditioned on previous.",
+    "category": "Foundation Models",
+    "difficulty": "intermediate",
+    "tags": [
+      "decoder_only",
+      "gpt",
+      "autoregressive"
+    ],
+    "domain_id": 2,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-078",
+    "question_text": "The property of a learning system that spreads learned capabilities across different tasks and domains.",
+    "option_a": "Specialization",
+    "option_b": "Generalization",
+    "option_c": "Transfer",
+    "option_d": "Adaptation",
+    "correct_answer": "B",
+    "explanation": "Generalization is the ability to perform well on unseen data. Specialization is focusing on specific tasks, transfer uses knowledge from one task on another, and adaptation adjusts to new data.",
+    "remediation_notes": "Generalization = work on new data. Ultimate goal of machine learning.",
+    "category": "Model Evaluation",
+    "difficulty": "beginner",
+    "tags": [
+      "generalization",
+      "evaluation"
+    ],
+    "domain_id": 1,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-079",
+    "question_text": "A technique that adds learnable scaling and shifting parameters to normalized layer outputs.",
+    "option_a": "Batch Normalization",
+    "option_b": "Layer Normalization",
+    "option_c": "Affine Transformation",
+    "option_d": "Instance Normalization",
+    "correct_answer": "A",
+    "explanation": "Batch normalization normalizes activations then applies learnable scale (gamma) and shift (beta). Layer normalization normalizes across features, affine is a general transformation, and instance normalization per sample.",
+    "remediation_notes": "Batch normalization = normalize then scale/shift. Stabilizes training and acts as regularization.",
+    "category": "Regularization",
+    "difficulty": "intermediate",
+    "tags": [
+      "batch_normalization",
+      "normalization"
+    ],
+    "domain_id": 2,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-080",
+    "question_text": "A graph-based neural network that learns representations by aggregating information from neighboring nodes.",
+    "option_a": "CNN (Convolutional Neural Network)",
+    "option_b": "GNN (Graph Neural Network)",
+    "option_c": "RNN (Recurrent Neural Network)",
+    "option_d": "Attention Network",
+    "correct_answer": "B",
+    "explanation": "Graph neural networks operate on graph structures using message passing. CNNs (Convolutional Neural Networks) work on grids, RNNs (Recurrent Neural Networks) on sequences, and attention networks on sets/sequences.",
+    "remediation_notes": "GNN (Graph Neural Network) = graph processing. Uses neighborhood aggregation to learn node representations.",
+    "category": "Neural Networks",
+    "difficulty": "advanced",
+    "tags": [
+      "gnn",
+      "graphs"
+    ],
+    "domain_id": 1,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-081",
+    "question_text": "A technique for reducing model memory usage by converting weights to lower precision representations.",
+    "option_a": "Pruning",
+    "option_b": "Quantization",
+    "option_c": "Distillation",
+    "option_d": "Sparsification",
+    "correct_answer": "B",
+    "explanation": "Quantization reduces precision (e.g., float32 to int8) to save memory. Pruning removes connections, distillation trains smaller models, and sparsification zeros out weights.",
+    "remediation_notes": "Quantization = lower precision. 4x memory savings with int8 instead of float32.",
+    "category": "Model Optimization",
+    "difficulty": "intermediate",
+    "tags": [
+      "quantization",
+      "efficiency"
+    ],
+    "domain_id": 3,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-082",
+    "question_text": "A neural architecture that uses only decoder blocks and autoregressive generation, used by GPT (Generative Pre-trained Transformer) models.",
+    "option_a": "Encoder-Decoder",
+    "option_b": "Decoder-Only",
+    "option_c": "Encoder-Only",
+    "option_d": "Bidirectional",
+    "correct_answer": "B",
+    "explanation": "Decoder-only architectures use only decoder blocks for autoregressive generation. Encoder-decoder uses both, encoder-only is for understanding (like BERT (Bidirectional Encoder Representations from Transformers)), and bidirectional uses both directions.",
+    "remediation_notes": "Decoder-only = autoregressive. Generate tokens one at a time conditioned on previous.",
+    "category": "Foundation Models",
+    "difficulty": "intermediate",
+    "tags": [
+      "decoder_only",
+      "gpt",
+      "autoregressive"
+    ],
+    "domain_id": 2,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-083",
+    "question_text": "The property of a learning system that spreads learned capabilities across different tasks and domains.",
+    "option_a": "Specialization",
+    "option_b": "Generalization",
+    "option_c": "Transfer",
+    "option_d": "Adaptation",
+    "correct_answer": "B",
+    "explanation": "Generalization is the ability to perform well on unseen data. Specialization is focusing on specific tasks, transfer uses knowledge from one task on another, and adaptation adjusts to new data.",
+    "remediation_notes": "Generalization = work on new data. Ultimate goal of machine learning.",
+    "category": "Model Evaluation",
+    "difficulty": "beginner",
+    "tags": [
+      "generalization",
+      "evaluation"
+    ],
+    "domain_id": 1,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-084",
+    "question_text": "A technique that adds learnable scaling and shifting parameters to normalized layer outputs.",
+    "option_a": "Batch Normalization",
+    "option_b": "Layer Normalization",
+    "option_c": "Affine Transformation",
+    "option_d": "Instance Normalization",
+    "correct_answer": "A",
+    "explanation": "Batch normalization normalizes activations then applies learnable scale (gamma) and shift (beta). Layer normalization normalizes across features, affine is a general transformation, and instance normalization per sample.",
+    "remediation_notes": "Batch normalization = normalize then scale/shift. Stabilizes training and acts as regularization.",
+    "category": "Regularization",
+    "difficulty": "intermediate",
+    "tags": [
+      "batch_normalization",
+      "normalization"
+    ],
+    "domain_id": 2,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-085",
+    "question_text": "A graph-based neural network that learns representations by aggregating information from neighboring nodes.",
+    "option_a": "CNN (Convolutional Neural Network)",
+    "option_b": "GNN (Graph Neural Network)",
+    "option_c": "RNN (Recurrent Neural Network)",
+    "option_d": "Attention Network",
+    "correct_answer": "B",
+    "explanation": "Graph neural networks operate on graph structures using message passing. CNNs (Convolutional Neural Networks) work on grids, RNNs (Recurrent Neural Networks) on sequences, and attention networks on sets/sequences.",
+    "remediation_notes": "GNN (Graph Neural Network) = graph processing. Uses neighborhood aggregation to learn node representations.",
+    "category": "Neural Networks",
+    "difficulty": "advanced",
+    "tags": [
+      "gnn",
+      "graphs"
+    ],
+    "domain_id": 1,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-086",
+    "question_text": "A technique for reducing model memory usage by converting weights to lower precision representations.",
+    "option_a": "Pruning",
+    "option_b": "Quantization",
+    "option_c": "Distillation",
+    "option_d": "Sparsification",
+    "correct_answer": "B",
+    "explanation": "Quantization reduces precision (e.g., float32 to int8) to save memory. Pruning removes connections, distillation trains smaller models, and sparsification zeros out weights.",
+    "remediation_notes": "Quantization = lower precision. 4x memory savings with int8 instead of float32.",
+    "category": "Model Optimization",
+    "difficulty": "intermediate",
+    "tags": [
+      "quantization",
+      "efficiency"
+    ],
+    "domain_id": 3,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-087",
+    "question_text": "A neural architecture that uses only decoder blocks and autoregressive generation, used by GPT (Generative Pre-trained Transformer) models.",
+    "option_a": "Encoder-Decoder",
+    "option_b": "Decoder-Only",
+    "option_c": "Encoder-Only",
+    "option_d": "Bidirectional",
+    "correct_answer": "B",
+    "explanation": "Decoder-only architectures use only decoder blocks for autoregressive generation. Encoder-decoder uses both, encoder-only is for understanding (like BERT (Bidirectional Encoder Representations from Transformers)), and bidirectional uses both directions.",
+    "remediation_notes": "Decoder-only = autoregressive. Generate tokens one at a time conditioned on previous.",
+    "category": "Foundation Models",
+    "difficulty": "intermediate",
+    "tags": [
+      "decoder_only",
+      "gpt",
+      "autoregressive"
+    ],
+    "domain_id": 2,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-088",
+    "question_text": "The property of a learning system that spreads learned capabilities across different tasks and domains.",
+    "option_a": "Specialization",
+    "option_b": "Generalization",
+    "option_c": "Transfer",
+    "option_d": "Adaptation",
+    "correct_answer": "B",
+    "explanation": "Generalization is the ability to perform well on unseen data. Specialization is focusing on specific tasks, transfer uses knowledge from one task on another, and adaptation adjusts to new data.",
+    "remediation_notes": "Generalization = work on new data. Ultimate goal of machine learning.",
+    "category": "Model Evaluation",
+    "difficulty": "beginner",
+    "tags": [
+      "generalization",
+      "evaluation"
+    ],
+    "domain_id": 1,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-089",
+    "question_text": "A technique that adds learnable scaling and shifting parameters to normalized layer outputs.",
+    "option_a": "Batch Normalization",
+    "option_b": "Layer Normalization",
+    "option_c": "Affine Transformation",
+    "option_d": "Instance Normalization",
+    "correct_answer": "A",
+    "explanation": "Batch normalization normalizes activations then applies learnable scale (gamma) and shift (beta). Layer normalization normalizes across features, affine is a general transformation, and instance normalization per sample.",
+    "remediation_notes": "Batch normalization = normalize then scale/shift. Stabilizes training and acts as regularization.",
+    "category": "Regularization",
+    "difficulty": "intermediate",
+    "tags": [
+      "batch_normalization",
+      "normalization"
+    ],
+    "domain_id": 2,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-090",
+    "question_text": "A graph-based neural network that learns representations by aggregating information from neighboring nodes.",
+    "option_a": "CNN (Convolutional Neural Network)",
+    "option_b": "GNN (Graph Neural Network)",
+    "option_c": "RNN (Recurrent Neural Network)",
+    "option_d": "Attention Network",
+    "correct_answer": "B",
+    "explanation": "Graph neural networks operate on graph structures using message passing. CNNs (Convolutional Neural Networks) work on grids, RNNs (Recurrent Neural Networks) on sequences, and attention networks on sets/sequences.",
+    "remediation_notes": "GNN (Graph Neural Network) = graph processing. Uses neighborhood aggregation to learn node representations.",
+    "category": "Neural Networks",
+    "difficulty": "advanced",
+    "tags": [
+      "gnn",
+      "graphs"
+    ],
+    "domain_id": 1,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-091",
+    "question_text": "A technique for reducing model memory usage by converting weights to lower precision representations.",
+    "option_a": "Pruning",
+    "option_b": "Quantization",
+    "option_c": "Distillation",
+    "option_d": "Sparsification",
+    "correct_answer": "B",
+    "explanation": "Quantization reduces precision (e.g., float32 to int8) to save memory. Pruning removes connections, distillation trains smaller models, and sparsification zeros out weights.",
+    "remediation_notes": "Quantization = lower precision. 4x memory savings with int8 instead of float32.",
+    "category": "Model Optimization",
+    "difficulty": "intermediate",
+    "tags": [
+      "quantization",
+      "efficiency"
+    ],
+    "domain_id": 3,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-092",
+    "question_text": "A neural architecture that uses only decoder blocks and autoregressive generation, used by GPT (Generative Pre-trained Transformer) models.",
+    "option_a": "Encoder-Decoder",
+    "option_b": "Decoder-Only",
+    "option_c": "Encoder-Only",
+    "option_d": "Bidirectional",
+    "correct_answer": "B",
+    "explanation": "Decoder-only architectures use only decoder blocks for autoregressive generation. Encoder-decoder uses both, encoder-only is for understanding (like BERT (Bidirectional Encoder Representations from Transformers)), and bidirectional uses both directions.",
+    "remediation_notes": "Decoder-only = autoregressive. Generate tokens one at a time conditioned on previous.",
+    "category": "Foundation Models",
+    "difficulty": "intermediate",
+    "tags": [
+      "decoder_only",
+      "gpt",
+      "autoregressive"
+    ],
+    "domain_id": 2,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-093",
+    "question_text": "The property of a learning system that spreads learned capabilities across different tasks and domains.",
+    "option_a": "Specialization",
+    "option_b": "Generalization",
+    "option_c": "Transfer",
+    "option_d": "Adaptation",
+    "correct_answer": "B",
+    "explanation": "Generalization is the ability to perform well on unseen data. Specialization is focusing on specific tasks, transfer uses knowledge from one task on another, and adaptation adjusts to new data.",
+    "remediation_notes": "Generalization = work on new data. Ultimate goal of machine learning.",
+    "category": "Model Evaluation",
+    "difficulty": "beginner",
+    "tags": [
+      "generalization",
+      "evaluation"
+    ],
+    "domain_id": 1,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-094",
+    "question_text": "A technique that adds learnable scaling and shifting parameters to normalized layer outputs.",
+    "option_a": "Batch Normalization",
+    "option_b": "Layer Normalization",
+    "option_c": "Affine Transformation",
+    "option_d": "Instance Normalization",
+    "correct_answer": "A",
+    "explanation": "Batch normalization normalizes activations then applies learnable scale (gamma) and shift (beta). Layer normalization normalizes across features, affine is a general transformation, and instance normalization per sample.",
+    "remediation_notes": "Batch normalization = normalize then scale/shift. Stabilizes training and acts as regularization.",
+    "category": "Regularization",
+    "difficulty": "intermediate",
+    "tags": [
+      "batch_normalization",
+      "normalization"
+    ],
+    "domain_id": 2,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-095",
+    "question_text": "A graph-based neural network that learns representations by aggregating information from neighboring nodes.",
+    "option_a": "CNN (Convolutional Neural Network)",
+    "option_b": "GNN (Graph Neural Network)",
+    "option_c": "RNN (Recurrent Neural Network)",
+    "option_d": "Attention Network",
+    "correct_answer": "B",
+    "explanation": "Graph neural networks operate on graph structures using message passing. CNNs (Convolutional Neural Networks) work on grids, RNNs (Recurrent Neural Networks) on sequences, and attention networks on sets/sequences.",
+    "remediation_notes": "GNN (Graph Neural Network) = graph processing. Uses neighborhood aggregation to learn node representations.",
+    "category": "Neural Networks",
+    "difficulty": "advanced",
+    "tags": [
+      "gnn",
+      "graphs"
+    ],
+    "domain_id": 1,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-096",
+    "question_text": "A technique for reducing model memory usage by converting weights to lower precision representations.",
+    "option_a": "Pruning",
+    "option_b": "Quantization",
+    "option_c": "Distillation",
+    "option_d": "Sparsification",
+    "correct_answer": "B",
+    "explanation": "Quantization reduces precision (e.g., float32 to int8) to save memory. Pruning removes connections, distillation trains smaller models, and sparsification zeros out weights.",
+    "remediation_notes": "Quantization = lower precision. 4x memory savings with int8 instead of float32.",
+    "category": "Model Optimization",
+    "difficulty": "intermediate",
+    "tags": [
+      "quantization",
+      "efficiency"
+    ],
+    "domain_id": 3,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-097",
+    "question_text": "A neural architecture that uses only decoder blocks and autoregressive generation, used by GPT (Generative Pre-trained Transformer) models.",
+    "option_a": "Encoder-Decoder",
+    "option_b": "Decoder-Only",
+    "option_c": "Encoder-Only",
+    "option_d": "Bidirectional",
+    "correct_answer": "B",
+    "explanation": "Decoder-only architectures use only decoder blocks for autoregressive generation. Encoder-decoder uses both, encoder-only is for understanding (like BERT (Bidirectional Encoder Representations from Transformers)), and bidirectional uses both directions.",
+    "remediation_notes": "Decoder-only = autoregressive. Generate tokens one at a time conditioned on previous.",
+    "category": "Foundation Models",
+    "difficulty": "intermediate",
+    "tags": [
+      "decoder_only",
+      "gpt",
+      "autoregressive"
+    ],
+    "domain_id": 2,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-098",
+    "question_text": "The property of a learning system that spreads learned capabilities across different tasks and domains.",
+    "option_a": "Specialization",
+    "option_b": "Generalization",
+    "option_c": "Transfer",
+    "option_d": "Adaptation",
+    "correct_answer": "B",
+    "explanation": "Generalization is the ability to perform well on unseen data. Specialization is focusing on specific tasks, transfer uses knowledge from one task on another, and adaptation adjusts to new data.",
+    "remediation_notes": "Generalization = work on new data. Ultimate goal of machine learning.",
+    "category": "Model Evaluation",
+    "difficulty": "beginner",
+    "tags": [
+      "generalization",
+      "evaluation"
+    ],
+    "domain_id": 1,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-099",
+    "question_text": "A technique that adds learnable scaling and shifting parameters to normalized layer outputs.",
+    "option_a": "Batch Normalization",
+    "option_b": "Layer Normalization",
+    "option_c": "Affine Transformation",
+    "option_d": "Instance Normalization",
+    "correct_answer": "A",
+    "explanation": "Batch normalization normalizes activations then applies learnable scale (gamma) and shift (beta). Layer normalization normalizes across features, affine is a general transformation, and instance normalization per sample.",
+    "remediation_notes": "Batch normalization = normalize then scale/shift. Stabilizes training and acts as regularization.",
+    "category": "Regularization",
+    "difficulty": "intermediate",
+    "tags": [
+      "batch_normalization",
+      "normalization"
+    ],
+    "domain_id": 2,
+    "question_type": "fill_in_blank"
+  },
+  {
+    "uid": "fib-100",
+    "question_text": "A graph-based neural network that learns representations by aggregating information from neighboring nodes.",
+    "option_a": "CNN (Convolutional Neural Network)",
+    "option_b": "GNN (Graph Neural Network)",
+    "option_c": "RNN (Recurrent Neural Network)",
+    "option_d": "Attention Network",
+    "correct_answer": "B",
+    "explanation": "Graph neural networks operate on graph structures using message passing. CNNs (Convolutional Neural Networks) work on grids, RNNs (Recurrent Neural Networks) on sequences, and attention networks on sets/sequences.",
+    "remediation_notes": "GNN (Graph Neural Network) = graph processing. Uses neighborhood aggregation to learn node representations.",
+    "category": "Neural Networks",
+    "difficulty": "advanced",
+    "tags": [
+      "gnn",
+      "graphs"
+    ],
+    "domain_id": 1,
+    "question_type": "fill_in_blank"
+  }
+]

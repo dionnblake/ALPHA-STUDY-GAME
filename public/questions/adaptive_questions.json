@@ -1,0 +1,720 @@
+[
+  {
+    "id": "google_ai_ada_001",
+    "questionText": "An AI (Artificial Intelligence) system classifies incoming emails as 'spam' or 'not spam'. Which category of ML (Machine Learning) is being used?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Supervised Learning",
+    "category": "fundamentals",
+    "difficulty": "beginner",
+    "options": [
+      "Reinforcement Learning",
+      "Supervised Learning",
+      "Unsupervised Learning",
+      "Deep Learning only"
+    ],
+    "explanation": "Since the model learns from examples already labeled as spam/not-spam, it is supervised learning.",
+    "remediationNotes": "If you missed this, restate supervised learning in your own words. It's when you have labels. Unsupervised means no labels. Explore Chapter 2 for examples.",
+    "learningObjective": "Correctly identify supervised learning in a classification task.",
+    "tags": [
+      "fundamentals",
+      "supervised learning"
+    ],
+    "option_a": "Reinforcement Learning",
+    "option_b": "Supervised Learning",
+    "option_c": "Unsupervised Learning",
+    "option_d": "Deep Learning only"
+  },
+  {
+    "id": "google_ai_ada_002",
+    "questionText": "You want to find groups of similar products in your inventory without pre-existing categories. What ML (Machine Learning) approach is best?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Unsupervised Learning",
+    "category": "fundamentals",
+    "difficulty": "beginner",
+    "options": [
+      "Decision Trees",
+      "Reinforcement Learning",
+      "Supervised Learning",
+      "Unsupervised Learning"
+    ],
+    "explanation": "Unsupervised learning allows the model to discover patterns (groups) on its own without pre-labeled categories.",
+    "remediationNotes": "Think of unsupervised learning as 'finding natural groups.' If you missed this, look at clustering examples in Chapter 2.",
+    "learningObjective": "Recognize when labels are missing and unsupervised learning is needed.",
+    "tags": [
+      "fundamentals",
+      "unsupervised learning"
+    ],
+    "option_a": "Decision Trees",
+    "option_b": "Reinforcement Learning",
+    "option_c": "Supervised Learning",
+    "option_d": "Unsupervised Learning"
+  },
+  {
+    "id": "google_ai_ada_003",
+    "questionText": "True or False: Predictive AI (Artificial Intelligence) is only useful for predicting numerical values like stock prices.",
+    "questionType": "multiple_choice",
+    "correctAnswer": "False",
+    "category": "ai-applications",
+    "difficulty": "beginner",
+    "options": [
+      "False",
+      "True"
+    ],
+    "explanation": "Predictive AI (Artificial Intelligence) can predict numbers (Regression) or categories (Classification).",
+    "remediationNotes": "Regression vs Classification are the two main types of supervised learning. See Chapter 2 for details.",
+    "learningObjective": "Define the full scope of predictive AI (Artificial Intelligence) outputs.",
+    "tags": [
+      "fundamentals",
+      "predictions"
+    ],
+    "option_a": "False",
+    "option_b": "True"
+  },
+  {
+    "id": "google_ai_ada_004",
+    "questionText": "A robot learns to navigate a room by getting a point for distance traveled without hitting a wall. This is:",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Reinforcement Learning",
+    "category": "fundamentals",
+    "difficulty": "intermediate",
+    "options": [
+      "Clustering",
+      "Reinforcement Learning",
+      "Supervised Learning",
+      "Unsupervised Learning"
+    ],
+    "explanation": "Reinforcement learning uses a system of rewards (points) and penalties (hitting a wall) to train an agent.",
+    "remediationNotes": "Reinforcement learning is like 'trial and error' with a score. Study the 'agent-reward' loop in Chapter 2.",
+    "learningObjective": "Identify reinforcement learning by the Presence of rewards/penalties.",
+    "tags": [
+      "fundamentals",
+      "reinforcement learning"
+    ],
+    "option_a": "Clustering",
+    "option_b": "Reinforcement Learning",
+    "option_c": "Supervised Learning",
+    "option_d": "Unsupervised Learning"
+  },
+  {
+    "id": "google_ai_ada_005",
+    "questionText": "Bias in AI (Artificial Intelligence) is only a problem in the technical coding phase.",
+    "questionType": "multiple_choice",
+    "correctAnswer": "False",
+    "category": "bias-fairness",
+    "difficulty": "intermediate",
+    "options": [
+      "False",
+      "True"
+    ],
+    "explanation": "Bias can enter at any stage: data collection, problem definition, and model evaluation, not just coding.",
+    "remediationNotes": "Bias is often in the DATA itself, reflecting real-world prejudices. Check Chapter 8 on how bias enters systems.",
+    "learningObjective": "Identify the multi-stage nature of AI (Artificial Intelligence) bias risks.",
+    "tags": [
+      "ethics",
+      "bias"
+    ],
+    "option_a": "False",
+    "option_b": "True"
+  },
+  {
+    "id": "google_ai_ada_006",
+    "questionText": "Transparency in AI (Artificial Intelligence) means keeping the training data secret to protect user privacy.",
+    "questionType": "multiple_choice",
+    "correctAnswer": "False",
+    "category": "transparency",
+    "difficulty": "intermediate",
+    "options": [
+      "False",
+      "True"
+    ],
+    "explanation": "Transparency involves being open about the methodologies, data sources, and known limitations of an AI (Artificial Intelligence) system.",
+    "remediationNotes": "While privacy is important, transparency is about 'being open about the process.' Review Chapter 10 for the definition.",
+    "learningObjective": "Distinguish between transparency and absolute secrecy.",
+    "tags": [
+      "transparency",
+      "ethics"
+    ],
+    "option_a": "False",
+    "option_b": "True"
+  },
+  {
+    "id": "google_ai_ada_007",
+    "questionText": "Google Workspace AI (Artificial Intelligence) in Sheets ('Help me organize') can only perform simple arithmetic calculations.",
+    "questionType": "multiple_choice",
+    "correctAnswer": "False",
+    "category": "google-workspace",
+    "difficulty": "intermediate",
+    "options": [
+      "True",
+      "False"
+    ],
+    "explanation": "Workspace AI (Artificial Intelligence) in Sheets can help generate templates, categorize data, and suggest complex table structures.",
+    "remediationNotes": "Workspace AI (Artificial Intelligence) goes beyond simple formulas. It helps with 'generative organization.' See Chapter 13 features.",
+    "learningObjective": "Identify AI (Artificial Intelligence) capabilities within Google Sheets.",
+    "tags": [
+      "google-workspace",
+      "productivity"
+    ],
+    "option_a": "True",
+    "option_b": "False"
+  },
+  {
+    "id": "google_ai_ada_008",
+    "questionText": "Using AI (Artificial Intelligence) for summarization is primarily an example of:",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Productivity and Time Management",
+    "category": "automation",
+    "difficulty": "beginner",
+    "options": [
+      "Networking",
+      "Productivity and Time Management",
+      "New Content Creation",
+      "Database Security"
+    ],
+    "explanation": "Summarization saves time by condensing information, making users more productive.",
+    "remediationNotes": "Think about 'doing more in less time.' Summarization is a classic booster for researchers and professionals. Chapter 15.",
+    "learningObjective": "Understand how AI (Artificial Intelligence) improves daily work speed.",
+    "tags": [
+      "productivity",
+      "summarization"
+    ],
+    "option_a": "Networking",
+    "option_b": "Productivity and Time Management",
+    "option_c": "New Content Creation",
+    "option_d": "Database Security"
+  },
+  {
+    "id": "google_ai_ada_009",
+    "questionText": "AI (Artificial Intelligence) models 'hallucinate' because they have too much data.",
+    "questionType": "multiple_choice",
+    "correctAnswer": "False",
+    "category": "generative-models",
+    "difficulty": "intermediate",
+    "options": [
+      "True",
+      "False"
+    ],
+    "explanation": "Hallucinations often happen because the model is predicting the next most likely piece of information based on probability, even if it's factually incorrect.",
+    "remediationNotes": "It's not about data volume, but about the 'next token' prediction logic. Review Chapter 6 on how LLMs (Large Language Models) work.",
+    "learningObjective": "Identify the cause of GenAI hallucinations.",
+    "tags": [
+      "generative ai",
+      "hallucination"
+    ],
+    "option_a": "True",
+    "option_b": "False"
+  },
+  {
+    "id": "google_ai_ada_010",
+    "questionText": "Upskilling in AI (Artificial Intelligence) requires a PhD in Computer Science.",
+    "questionType": "multiple_choice",
+    "correctAnswer": "False",
+    "category": "upskilling",
+    "difficulty": "beginner",
+    "options": [
+      "True",
+      "False"
+    ],
+    "explanation": "Upskilling is about learning to USE AI (Artificial Intelligence) tools effectively in your current role, not necessarily building the core AI (Artificial Intelligence) math.",
+    "remediationNotes": "Don't be intimidated! Upskilling is for everyone. Check Chapter 19 on preparing for an AI (Artificial Intelligence)-powered career.",
+    "learningObjective": "Lower the barrier to entry for AI (Artificial Intelligence) career readiness.",
+    "tags": [
+      "future",
+      "career"
+    ],
+    "option_a": "True",
+    "option_b": "False"
+  },
+  {
+    "id": "google_ai_ada_011",
+    "questionText": "A weather app predicts rain tomorrow based on atmospheric pressure. This is an example of:",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Predictive AI (Artificial Intelligence)",
+    "category": "ai-applications",
+    "difficulty": "beginner",
+    "options": [
+      "Generative AI (Artificial Intelligence)",
+      "Predictive AI (Artificial Intelligence)",
+      "Self-Aware AI (Artificial Intelligence)",
+      "AGI (Artificial General Intelligence)"
+    ],
+    "explanation": "Predicting future outcomes based on historical and current data is the core of Predictive AI (Artificial Intelligence).",
+    "remediationNotes": "Review Chapter 2 on predictive vs generative patterns.",
+    "learningObjective": "Identify predictive tasks in daily software.",
+    "tags": [
+      "fundamentals",
+      "predictions"
+    ],
+    "option_a": "Generative AI (Artificial Intelligence)",
+    "option_b": "Predictive AI (Artificial Intelligence)",
+    "option_c": "Self-Aware AI (Artificial Intelligence)",
+    "option_d": "AGI (Artificial General Intelligence)"
+  },
+  {
+    "id": "google_ai_ada_012",
+    "questionText": "A model is trained to recognize faces but performs poorly on people with certain skin tones. This is called:",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Algorithmic Bias",
+    "category": "bias-fairness",
+    "difficulty": "beginner",
+    "options": [
+      "Algorithmic Bias",
+      "System Latency",
+      "Hardware Incompatibility",
+      "Encryption Error"
+    ],
+    "explanation": "Bias occurs when a model reflects the lack of diversity or existing prejudices in its training data.",
+    "remediationNotes": "Review Chapter 8 on fairness. Bias isn't just a technical glitch; it's a data representativeness problem.",
+    "learningObjective": "Recognize bias in biometric systems.",
+    "tags": [
+      "ethics",
+      "bias"
+    ],
+    "option_a": "Algorithmic Bias",
+    "option_b": "System Latency",
+    "option_c": "Hardware Incompatibility",
+    "option_d": "Encryption Error"
+  },
+  {
+    "id": "google_ai_ada_013",
+    "questionText": "In Google Docs, you can use AI (Artificial Intelligence) to summarize a 10-page document. This primarily helps with:",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Productivity",
+    "category": "google-workspace",
+    "difficulty": "beginner",
+    "options": [
+      "Productivity",
+      "Scientific Excellence",
+      "Privacy",
+      "Hardware Speed"
+    ],
+    "explanation": "Summarization allows users to grasp key points faster, increasing daily productivity.",
+    "remediationNotes": "Check Chapter 13 on Workspace efficiency.",
+    "learningObjective": "Identify productivity benefits of AI (Artificial Intelligence) summarization.",
+    "tags": [
+      "google-workspace",
+      "productivity"
+    ],
+    "option_a": "Productivity",
+    "option_b": "Scientific Excellence",
+    "option_c": "Privacy",
+    "option_d": "Hardware Speed"
+  },
+  {
+    "id": "google_ai_ada_014",
+    "questionText": "True or False: Deep Learning is a subset of Machine Learning.",
+    "questionType": "multiple_choice",
+    "correctAnswer": "True",
+    "category": "fundamentals",
+    "difficulty": "beginner",
+    "options": [
+      "True",
+      "False"
+    ],
+    "explanation": "Machine Learning is the broad field. Deep Learning specifically refers to using multi-layered neural networks.",
+    "remediationNotes": "Visualize the 'Onion': AI (Artificial Intelligence) > ML (Machine Learning) > Deep Learning. See Chapter 2.",
+    "learningObjective": "Understand the hierarchy of AI (Artificial Intelligence) fields.",
+    "tags": [
+      "fundamentals",
+      "deep learning"
+    ],
+    "option_a": "True",
+    "option_b": "False"
+  },
+  {
+    "id": "google_ai_ada_015",
+    "questionText": "An AI (Artificial Intelligence) principle states: 'Avoid creating or reinforcing unfair _____.'",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Bias",
+    "category": "google-principles",
+    "difficulty": "beginner",
+    "options": [
+      "Memory",
+      "Interest",
+      "Speed",
+      "Bias"
+    ],
+    "explanation": "One of Google's core AI (Artificial Intelligence) principles is to prevent the reinforcement of existing societal biases through algorithms.",
+    "remediationNotes": "Review the 7 AI (Artificial Intelligence) Principles in Chapter 7.",
+    "learningObjective": "Recall core ethical principles.",
+    "tags": [
+      "google-principles",
+      "ethics"
+    ],
+    "option_a": "Memory",
+    "option_b": "Interest",
+    "option_c": "Speed",
+    "option_d": "Bias"
+  },
+  {
+    "id": "google_ai_ada_016",
+    "questionText": "A chatbot that answers customer questions using only an internal company handbook is likely using:",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Grounding (or RAG (Retrieval-Augmented Generation))",
+    "category": "generative-models",
+    "difficulty": "intermediate",
+    "options": [
+      "Web Scraping only",
+      "Random Number Generation",
+      "Hardcoded If-Else logic",
+      "Grounding (or RAG (Retrieval-Augmented Generation))"
+    ],
+    "explanation": "Grounding ensures the model's responses are anchored in specific, trusted data sources.",
+    "remediationNotes": "Search for 'Grounding' or 'Vertex AI (Artificial Intelligence)' in Chapter 16.",
+    "learningObjective": "Identify grounding as a technique for accuracy.",
+    "tags": [
+      "llm",
+      "grounding"
+    ],
+    "option_a": "Web Scraping only",
+    "option_b": "Random Number Generation",
+    "option_c": "Hardcoded If-Else logic",
+    "option_d": "Grounding (or RAG (Retrieval-Augmented Generation))"
+  },
+  {
+    "id": "google_ai_ada_017",
+    "questionText": "Why is 'Human Review' necessary for high-stakes AI (Artificial Intelligence) applications like medical diagnosis?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "To provide accountability and catch errors",
+    "category": "transparency",
+    "difficulty": "intermediate",
+    "options": [
+      "To provide accountability and catch errors",
+      "Because humans are always faster than AI (Artificial Intelligence)",
+      "To avoid using computers",
+      "To make the process slower"
+    ],
+    "explanation": "Human oversight ensures that AI (Artificial Intelligence) remains a tool for augmentation and not a solo decision-maker in critical life-altering situations.",
+    "remediationNotes": "Review Chapter 11 on Safety and Reliability.",
+    "learningObjective": "Explain the role of human-in-the-loop.",
+    "tags": [
+      "transparency",
+      "accountability"
+    ],
+    "option_a": "To provide accountability and catch errors",
+    "option_b": "Because humans are always faster than AI (Artificial Intelligence)",
+    "option_c": "To avoid using computers",
+    "option_d": "To make the process slower"
+  },
+  {
+    "id": "google_ai_ada_018",
+    "questionText": "In a dataset of 1000 items, if 950 are one class (e.g., 'not spam'), 'Accuracy' can be misleading. What metric is better?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Precision or F1-Score",
+    "category": "fundamentals",
+    "difficulty": "intermediate",
+    "options": [
+      "Training Time",
+      "Accuracy",
+      "Database Size",
+      "Precision or F1-Score"
+    ],
+    "explanation": "In imbalanced datasets, simple accuracy looks high even if the model fails on the minority class. Precision/Recall/F1 provide a better picture.",
+    "remediationNotes": "Review 'Evaluating Models' in Chapter 17.",
+    "learningObjective": "Differentiate metrics for imbalanced data.",
+    "tags": [
+      "metrics",
+      "evaluation"
+    ],
+    "option_a": "Training Time",
+    "option_b": "Accuracy",
+    "option_c": "Database Size",
+    "option_d": "Precision or F1-Score"
+  },
+  {
+    "id": "google_ai_ada_019",
+    "questionText": "Which Google Workspace AI (Artificial Intelligence) feature helps you draft an email reply quickly?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Help me write (Gmail)",
+    "category": "google-workspace",
+    "difficulty": "beginner",
+    "options": [
+      "Mark as Spam",
+      "Move to Trash",
+      "Help me write (Gmail)",
+      "Filter"
+    ],
+    "explanation": "Gmail's generative AI (Artificial Intelligence) can draft entire messages based on a short prompt.",
+    "remediationNotes": "Check Chapter 13 features.",
+    "learningObjective": "Identify AI (Artificial Intelligence) in communication tools.",
+    "tags": [
+      "google-workspace",
+      "productivity"
+    ],
+    "option_a": "Mark as Spam",
+    "option_b": "Move to Trash",
+    "option_c": "Help me write (Gmail)",
+    "option_d": "Filter"
+  },
+  {
+    "id": "google_ai_ada_020",
+    "questionText": "True or False: AI (Artificial Intelligence) will likely eliminate all human jobs by 2030.",
+    "questionType": "multiple_choice",
+    "correctAnswer": "False",
+    "category": "future-of-work",
+    "difficulty": "beginner",
+    "options": [
+      "False",
+      "True"
+    ],
+    "explanation": "Expert consensus is that AI (Artificial Intelligence) will transform jobs and automate specific tasks, rather than replacing entire human professions.",
+    "remediationNotes": "Review Chapter 19 on AI (Artificial Intelligence)-ready careers.",
+    "learningObjective": "Dismiss myths about total job elimination.",
+    "tags": [
+      "future",
+      "career"
+    ],
+    "option_a": "False",
+    "option_b": "True"
+  },
+  {
+    "id": "google_ai_ada_021",
+    "questionText": "When you use AI (Artificial Intelligence) to generate a photo of a 'cybernetic cat', what is the model primarily doing?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Creating new data based on learned visual patterns",
+    "category": "creativity",
+    "difficulty": "beginner",
+    "options": [
+      "Converting text into a database entry",
+      "Creating new data based on learned visual patterns",
+      "Searching for existing cat photos",
+      "Editing a single photo from your phone"
+    ],
+    "explanation": "Generative image models 'dream' up new pixels that match the description provided in the prompt.",
+    "remediationNotes": "Check Chapter 6 on Generative AI (Artificial Intelligence) capabilities.",
+    "learningObjective": "Identify GenAI in visual content creation.",
+    "tags": [
+      "generative ai",
+      "creativity"
+    ],
+    "option_a": "Converting text into a database entry",
+    "option_b": "Creating new data based on learned visual patterns",
+    "option_c": "Searching for existing cat photos",
+    "option_d": "Editing a single photo from your phone"
+  },
+  {
+    "id": "google_ai_ada_022",
+    "questionText": "'Data Anonymization' in AI (Artificial Intelligence) ethics helps protect:",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Individual Privacy",
+    "category": "privacy-security",
+    "difficulty": "beginner",
+    "options": [
+      "Google's Profits",
+      "Computer Battery",
+      "Individual Privacy",
+      "Internet Speed"
+    ],
+    "explanation": "Anonymization removes personal identifiers so that people cannot be re-identified from the training data.",
+    "remediationNotes": "Review Chapter 9 on Security and Privacy principles.",
+    "learningObjective": "Explain the focus of data anonymization.",
+    "tags": [
+      "privacy",
+      "anonymization"
+    ],
+    "option_a": "Google's Profits",
+    "option_b": "Computer Battery",
+    "option_c": "Individual Privacy",
+    "option_d": "Internet Speed"
+  },
+  {
+    "id": "google_ai_ada_023",
+    "questionText": "Which AI (Artificial Intelligence) principle prevents creating technologies whose purpose is likely to cause overall harm?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Be socially beneficial",
+    "category": "google-principles",
+    "difficulty": "beginner",
+    "options": [
+      "Accountability",
+      "Privacy",
+      "Scientific excellence",
+      "Be socially beneficial"
+    ],
+    "explanation": "This principle ensures that AI (Artificial Intelligence) is developed for the greater good of society.",
+    "remediationNotes": "Review the first principle in Chapter 7.",
+    "learningObjective": "Identify the foundation of Google's AI (Artificial Intelligence) principles.",
+    "tags": [
+      "google-principles",
+      "ethics"
+    ],
+    "option_a": "Accountability.",
+    "option_b": "Privacy.",
+    "option_c": "Scientific excellence.",
+    "option_d": "Be socially beneficial."
+  },
+  {
+    "id": "google_ai_ada_024",
+    "questionText": "An AI (Artificial Intelligence) that recommends songs based on YOUR listening history is using:",
+    "questionType": "multiple_choice",
+    "correctAnswer": "ML (Personalized Recommendations)",
+    "category": "daily-workflows",
+    "difficulty": "beginner",
+    "options": [
+      "Random Shuffling",
+      "Manual Playlist Curation",
+      "Broadcast Scheduling",
+      "ML (Personalized Recommendations)"
+    ],
+    "explanation": "Recommendation systems use historical data to predict preferences for specific users.",
+    "remediationNotes": "Check Chapter 4 for daily Narrow AI (Artificial Intelligence) examples.",
+    "learningObjective": "Identify recommendation systems as AI (Artificial Intelligence) applications.",
+    "tags": [
+      "fundamentals",
+      "personalized"
+    ],
+    "option_a": "Random Shuffling",
+    "option_b": "Manual Playlist Curation",
+    "option_c": "Broadcast Scheduling",
+    "option_d": "ML (Personalized Recommendations)"
+  },
+  {
+    "id": "google_ai_ada_025",
+    "questionText": "The ability of an AI (Artificial Intelligence) model to maintain high performance across diverse conditions is called:",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Robustness",
+    "category": "transparency",
+    "difficulty": "intermediate",
+    "options": [
+      "Brittleness",
+      "Opacity",
+      "Robustness",
+      "Latency"
+    ],
+    "explanation": "Robust systems don't fail easily when the input changes slightly or contains noise.",
+    "remediationNotes": "See Chapter 11 on Safety and Reliability.",
+    "learningObjective": "Define AI (Artificial Intelligence) robustness.",
+    "tags": [
+      "safety",
+      "robustness"
+    ],
+    "option_a": "Brittleness",
+    "option_b": "Opacity",
+    "option_c": "Robustness",
+    "option_d": "Latency"
+  },
+  {
+    "id": "google_ai_ada_026",
+    "questionText": "A 'Hallucination' in a generative model means it has produced:",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Factually incorrect but fluent-sounding information",
+    "category": "generative-models",
+    "difficulty": "beginner",
+    "options": [
+      "A colorful background used in a different part of the workflow",
+      "A hidden message from the creator treated as a related idea rather than the best answer here",
+      "A virus used in a different part of the workflow",
+      "Factually incorrect but fluent-sounding information"
+    ],
+    "explanation": "Hallucinations are errors where the model speaks confidently about something that isn't true.",
+    "remediationNotes": "Check Chapter 6 on GenAI limitations.",
+    "learningObjective": "Define AI (Artificial Intelligence) hallucinations.",
+    "tags": [
+      "generative ai",
+      "hallucination"
+    ],
+    "option_a": "A colorful background used in a different part of the workflow",
+    "option_b": "A hidden message from the creator treated as a related idea rather than the best answer here",
+    "option_c": "A virus used in a different part of the workflow",
+    "option_d": "Factually incorrect but fluent-sounding information"
+  },
+  {
+    "id": "google_ai_ada_027",
+    "questionText": "The process of verifying that an AI (Artificial Intelligence) system respects international human rights norms is called:",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Ethical Impact Assessment",
+    "category": "google-principles",
+    "difficulty": "intermediate",
+    "options": [
+      "Hardware Audit",
+      "Memory Dump",
+      "Speed Test",
+      "Ethical Impact Assessment"
+    ],
+    "explanation": "Ethical assessments look beyond technology to societal impact before a system is released.",
+    "remediationNotes": "See Chapter 7 on Responsible AI (Artificial Intelligence) deployment.",
+    "learningObjective": "Understand the process of ethical verification.",
+    "tags": [
+      "ethics",
+      "assessment"
+    ],
+    "option_a": "Hardware Audit",
+    "option_b": "Memory Dump",
+    "option_c": "Speed Test",
+    "option_d": "Ethical Impact Assessment"
+  },
+  {
+    "id": "google_ai_ada_028",
+    "questionText": "In 'Prompt Engineering', asking the model to 'explain its reasoning step-by-step' is a technique used to improve:",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Complex problem-solving accuracy",
+    "category": "generative-models",
+    "difficulty": "intermediate",
+    "options": [
+      "User interface design",
+      "Response speed",
+      "File storage",
+      "Complex problem-solving accuracy"
+    ],
+    "explanation": "This technique (Chain of Thought) helps models logically work through multi-step tasks.",
+    "remediationNotes": "Review Chapter 18 on Effective Prompting.",
+    "learningObjective": "Identify Chain of Thought as an accuracy-boosting tactic.",
+    "tags": [
+      "prompting",
+      "logic"
+    ],
+    "option_a": "User interface design",
+    "option_b": "Response speed",
+    "option_c": "File storage",
+    "option_d": "Complex problem-solving accuracy."
+  },
+  {
+    "id": "google_ai_ada_029",
+    "questionText": "What does a 'Diagnostic AI (Artificial Intelligence)' primarily do?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Analyzes data to find the root",
+    "category": "ai-applications",
+    "difficulty": "beginner",
+    "options": [
+      "Creates new stories for all scenarios",
+      "Predicts the future stock market",
+      "Controls a physical robot for all scenarios",
+      "Analyzes data to find the root"
+    ],
+    "explanation": "Diagnostic AI (Artificial Intelligence) focuses on identifying 'why' something happened (e.g., diagnosing a faulty machine).",
+    "remediationNotes": "Review Chapter 2 on AI (Artificial Intelligence) types.",
+    "learningObjective": "Distinguish between Diagnostic and Predictive AI (Artificial Intelligence).",
+    "tags": [
+      "fundamentals",
+      "diagnostic"
+    ],
+    "option_a": "Creates new stories for all scenarios",
+    "option_b": "Predicts the future stock market",
+    "option_c": "Controls a physical robot for all scenarios",
+    "option_d": "Analyzes data to find the root"
+  },
+  {
+    "id": "google_ai_ada_030",
+    "questionText": "'Red Teaming' helps improve AI (Artificial Intelligence) safety by:",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Proactively identifying vulnerabilities and potential for harm before",
+    "category": "security-ethics",
+    "difficulty": "intermediate",
+    "options": [
+      "Removing all input data for all scenarios",
+      "Making the AI (Artificial Intelligence) 10x faster for all scenarios",
+      "Using only red-colored teams for coding for all scenarios",
+      "Proactively identifying vulnerabilities and potential for harm before"
+    ],
+    "explanation": "By acting as 'hackers' or 'adversaries', testers can find where the model might behave unsafely.",
+    "remediationNotes": "Check Chapter 11 for Red Teaming methodology.",
+    "learningObjective": "Explain the role of protective testing.",
+    "tags": [
+      "security",
+      "safety"
+    ],
+    "option_a": "Removing all input data for all scenarios",
+    "option_b": "Making the AI (Artificial Intelligence) 10x faster for all scenarios",
+    "option_c": "Using only red-colored teams for coding for all scenarios",
+    "option_d": "Proactively identifying vulnerabilities and potential for harm before"
+  }
+]

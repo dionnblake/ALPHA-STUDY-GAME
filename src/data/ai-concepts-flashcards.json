@@ -1,0 +1,1402 @@
+[
+    {
+        "id": 1,
+        "term": "AI (Artificial Intelligence)",
+        "definition": "The field concerned with building systems that perform tasks requiring human-like intelligence.",
+        "category": "fundamentals",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 2,
+        "term": "ML (Machine Learning)",
+        "definition": "A subset of AI (Artificial Intelligence) where systems learn patterns from data instead of relying solely on explicit rules.",
+        "category": "fundamentals",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 3,
+        "term": "Supervised Learning",
+        "definition": "A type of ML (Machine Learning) that uses labeled data to train models to map inputs to known outputs.",
+        "category": "fundamentals",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 4,
+        "term": "Unsupervised Learning",
+        "definition": "A type of ML (Machine Learning) where the system finds hidden structures or patterns in data WITHOUT labels.",
+        "category": "fundamentals",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 5,
+        "term": "Narrow AI (Artificial Intelligence)",
+        "definition": "AI (Artificial Intelligence) that is specialized in performing a single task or a limited range of tasks (also called Weak AI (Artificial Intelligence)).",
+        "category": "ai-types",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 6,
+        "term": "AGI (Artificial General Intelligence)",
+        "definition": "Hypothetical AI (Artificial Intelligence) that can perform any intellectual task a human can across any domain.",
+        "category": "ai-types",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 7,
+        "term": "Generative AI (Artificial Intelligence)",
+        "definition": "A class of AI (Artificial Intelligence) models that can generate new content like text, images, or code from scratch.",
+        "category": "generative-models",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 8,
+        "term": "Algorithmic Bias",
+        "definition": "When an AI (Artificial Intelligence) system produces unfair results due to historical prejudices in its training data.",
+        "category": "bias-fairness",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 9,
+        "term": "Grounding",
+        "definition": "The process of anchoring AI (Artificial Intelligence) outputs in verifiable, real-world data sources to reduce hallucinations.",
+        "category": "generative-models",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 10,
+        "term": "Prompt Engineering",
+        "definition": "The practice of crafting specific inputs to guide AI (Artificial Intelligence) models toward more accurate or creative outputs.",
+        "category": "daily-workflows",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 11,
+        "term": "Hallucination",
+        "definition": "An error where a generative model confidently produces output that is factually incorrect or nonsensical.",
+        "category": "generative-models",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 12,
+        "term": "Multi-modal AI (Artificial Intelligence)",
+        "definition": "Models capable of processing and generating multiple types of data, such as text, images, and audio, simultaneously.",
+        "category": "generative-models",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 13,
+        "term": "Reinforcement Learning",
+        "definition": "A learning method where an AI (Artificial Intelligence) explores an environment and receives rewards or penalties to optimize behavior.",
+        "category": "fundamentals",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 14,
+        "term": "LLM (Large Language Model)",
+        "definition": "A deep learning model trained on vast amounts of text data to understand and generate human-like language.",
+        "category": "generative-models",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 15,
+        "term": "Zero-Shot Prompting",
+        "definition": "Providing the AI (Artificial Intelligence) with a task instruction but NO examples of how to perform it.",
+        "category": "generative-models",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 16,
+        "term": "Few-Shot Prompting",
+        "definition": "Including a few examples in the prompt to help the AI (Artificial Intelligence) understand the desired format or task logic.",
+        "category": "generative-models",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 17,
+        "term": "Socially Beneficial",
+        "definition": "A core Google AI (Artificial Intelligence) Principle stating that AI (Artificial Intelligence) development should aim to improve people's lives.",
+        "category": "google-principles",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 18,
+        "term": "Avoiding Bias",
+        "definition": "A Google AI (Artificial Intelligence) Principle emphasizing the importance of not creating or reinforcing unfair prejudices.",
+        "category": "google-principles",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 19,
+        "term": "Privacy by Design",
+        "definition": "Ensuring that user data protection and privacy are integrated into the AI (Artificial Intelligence) development process from the start.",
+        "category": "privacy-security",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 20,
+        "term": "Scientific Excellence",
+        "definition": "Google's commitment to rigorous testing and research standards in AI (Artificial Intelligence) development.",
+        "category": "google-principles",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 21,
+        "term": "Data Augmentation",
+        "definition": "Increasing the diversity of training data by creating modified versions of existing data points.",
+        "category": "fundamentals",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 22,
+        "term": "Hyperparameter",
+        "definition": "Settings used to control the learning process of an AI (Artificial Intelligence) model, such as 'learning rate' or 'batch size'.",
+        "category": "fundamentals",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 23,
+        "term": "Neural Network",
+        "definition": "A computing system inspired by the biological brain, consisting of interconnected layers of artificial neurons.",
+        "category": "fundamentals",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 24,
+        "term": "Diffusion Model",
+        "definition": "A type of generative AI (Artificial Intelligence) model common in image generation that creates content by reversing a noise process.",
+        "category": "generative-models",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 25,
+        "term": "Transformer",
+        "definition": "A revolutionary neural network architecture that uses 'attention' to process data sequences more efficiently.",
+        "category": "fundamentals",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 26,
+        "term": "Google Gemini",
+        "definition": "Google's most capable family of multimodal generative AI (Artificial Intelligence) models.",
+        "category": "google-tools",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 27,
+        "term": "AutoML",
+        "definition": "Google Cloud service that allows users with limited ML (Machine Learning) expertise to train high-quality models.",
+        "category": "automl",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 28,
+        "term": "Vertex AI (Artificial Intelligence) Search",
+        "definition": "Google's platform for building personalized search and conversation experiences using AI (Artificial Intelligence).",
+        "category": "google-tools",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 29,
+        "term": "AI (Artificial Intelligence) in Google Sheets",
+        "definition": "Using tools like Gemini or Help Me Organize to automate data classification and analysis.",
+        "category": "google-workspace",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 30,
+        "term": "AI (Artificial Intelligence) for Summarization",
+        "definition": "Using AI (Artificial Intelligence) to condense large documents or email threads into brief, actionable points.",
+        "category": "workspace-ai",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 31,
+        "term": "Context Window",
+        "definition": "The maximum amount of information (tokens) an AI (Artificial Intelligence) model can 'remember' during a conversation.",
+        "category": "generative-models",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 32,
+        "term": "Data Drift",
+        "definition": "When the input data to an AI (Artificial Intelligence) system changes over time, causing the model's accuracy to degrade.",
+        "category": "fundamentals",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 33,
+        "term": "Adversarial Attack",
+        "definition": "Providing corrupted or misleading input to an AI (Artificial Intelligence) to trick it into performing incorrectly or unsafely.",
+        "category": "privacy-security",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 34,
+        "term": "Model Explainability",
+        "definition": "The ability to understand and describe the internal reasoning of an AI (Artificial Intelligence) model's decision.",
+        "category": "transparency",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 35,
+        "term": "Human-in-the-loop",
+        "definition": "Integrating human review and oversight into AI (Artificial Intelligence) workflows to ensure quality and accountability.",
+        "category": "transparency",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 36,
+        "term": "Augmentation (vs. Replacement)",
+        "definition": "The goal of using AI (Artificial Intelligence) to enhance human capabilities rather than replacing people in their roles.",
+        "category": "upskilling",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 37,
+        "term": "Digital Sovereignty",
+        "definition": "The principle of maintaining control over personal data and digital identity in the age of AI (Artificial Intelligence).",
+        "category": "privacy-security",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 38,
+        "term": "AI (Artificial Intelligence) Sandbox",
+        "definition": "A secure, isolated environment for testing AI (Artificial Intelligence) models and prompts without impacting production systems.",
+        "category": "privacy-security",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 39,
+        "term": "Temperature (AI (Artificial Intelligence) Setting)",
+        "definition": "A parameter in generative models that controls the randomness or creativity of the output.",
+        "category": "generative-models",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 40,
+        "term": "Chain of Thought",
+        "definition": "A prompting technique where the AI (Artificial Intelligence) is asked to explain its reasoning step-by-step.",
+        "category": "daily-workflows",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 41,
+        "term": "Vector Database",
+        "definition": "A specialized database used to store and retrieve high-dimensional data (embeddings) for AI (Artificial Intelligence) systems.",
+        "category": "fundamentals",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 42,
+        "term": "Inference",
+        "definition": "The process of a trained AI (Artificial Intelligence) model using its learned knowledge to provide an output for a new input.",
+        "category": "fundamentals",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 43,
+        "term": "Foundational Model",
+        "definition": "A large-scale AI (Artificial Intelligence) model trained on massive datasets that can be adapted to many different downstream tasks.",
+        "category": "fundamentals",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 44,
+        "term": "Google Vertex AI (Artificial Intelligence)",
+        "definition": "An enterprise platform for building and scaling AI (Artificial Intelligence) models, including access to Google's specialized hardware.",
+        "category": "google-tools",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 45,
+        "term": "Prompt Chaining",
+        "definition": "Breaking a complex task into multiple smaller prompts, using the output of one as the input for the next.",
+        "category": "daily-workflows",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 46,
+        "term": "Transparency",
+        "definition": "Providing clear information about how an AI (Artificial Intelligence) model was trained, its data, and how it makes its decisions.",
+        "category": "transparency",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 47,
+        "term": "Accountability",
+        "definition": "The principle that developers and companies are responsible for the outcomes and impact of their AI (Artificial Intelligence) systems.",
+        "category": "google-principles",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 48,
+        "term": "System Prompt",
+        "definition": "High-level instructions that define the core personality and safety rules for a generative AI (Artificial Intelligence) model.",
+        "category": "daily-workflows",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 49,
+        "term": "Token",
+        "definition": "A small unit of text (like a word or a syllable) that an AI (Artificial Intelligence) model processes to understand and generate language.",
+        "category": "fundamentals",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 50,
+        "term": "Ensemble Learning",
+        "definition": "Combining the predictions of multiple AI (Artificial Intelligence) models to create a more robust and accurate overall result.",
+        "category": "fundamentals",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 51,
+        "term": "Training Data",
+        "definition": "The examples used to teach a model patterns before it is tested or used in production.",
+        "category": "fundamentals",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 52,
+        "term": "Test Data",
+        "definition": "Data held back from training so engineers can estimate how well a model handles new examples.",
+        "category": "evaluation",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 53,
+        "term": "Validation Data",
+        "definition": "A separate dataset used during development to compare model versions and tune settings.",
+        "category": "evaluation",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 54,
+        "term": "Feature",
+        "definition": "An input variable a model uses to make a prediction, such as age, price, category, or word count.",
+        "category": "fundamentals",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 55,
+        "term": "Label",
+        "definition": "The known answer in supervised learning, such as spam or not spam, that the model learns to predict.",
+        "category": "fundamentals",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 56,
+        "term": "Classification",
+        "definition": "A machine learning task where the model assigns an input to a category or class.",
+        "category": "models",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 57,
+        "term": "Regression",
+        "definition": "A machine learning task where the model predicts a number, such as cost, risk, or temperature.",
+        "category": "models",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 58,
+        "term": "Clustering",
+        "definition": "An unsupervised learning method that groups similar examples without using predefined labels.",
+        "category": "models",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 59,
+        "term": "Overfitting",
+        "definition": "When a model memorizes training data too closely and performs poorly on new examples.",
+        "category": "evaluation",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 60,
+        "term": "Underfitting",
+        "definition": "When a model is too simple or poorly trained to capture useful patterns in the data.",
+        "category": "evaluation",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 61,
+        "term": "Generalization",
+        "definition": "A model's ability to perform well on new data that was not part of its training set.",
+        "category": "evaluation",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 62,
+        "term": "Loss Function",
+        "definition": "A mathematical measure of how wrong a model's prediction is during training.",
+        "category": "training",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 63,
+        "term": "Gradient Descent",
+        "definition": "An optimization method that updates model weights in the direction that reduces error.",
+        "category": "training",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 64,
+        "term": "Learning Rate",
+        "definition": "A training setting that controls how large each update to the model's weights should be.",
+        "category": "training",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 65,
+        "term": "Epoch",
+        "definition": "One full pass through the training dataset during model training.",
+        "category": "training",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 66,
+        "term": "Batch Size",
+        "definition": "The number of training examples processed before the model updates its weights.",
+        "category": "training",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 67,
+        "term": "Parameter",
+        "definition": "A learned value inside a model, such as a neural network weight, that affects its output.",
+        "category": "training",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 68,
+        "term": "Weight",
+        "definition": "A model value that controls how strongly one input or neuron influences the next calculation.",
+        "category": "deep-learning",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 69,
+        "term": "Bias Term",
+        "definition": "A learned value added to a model calculation so predictions can shift up or down.",
+        "category": "deep-learning",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 70,
+        "term": "Activation Function",
+        "definition": "A function that lets neural networks learn nonlinear patterns instead of only straight-line relationships.",
+        "category": "deep-learning",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 71,
+        "term": "ReLU",
+        "definition": "A common activation function that returns zero for negative values and keeps positive values unchanged.",
+        "category": "deep-learning",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 72,
+        "term": "Backpropagation",
+        "definition": "The process neural networks use to calculate how each weight contributed to an error.",
+        "category": "deep-learning",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 73,
+        "term": "CNN (Convolutional Neural Network)",
+        "definition": "A neural network architecture often used for images because it learns local visual patterns.",
+        "category": "deep-learning",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 74,
+        "term": "RNN (Recurrent Neural Network)",
+        "definition": "A neural network designed for sequence data by passing information from one step to the next.",
+        "category": "deep-learning",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 75,
+        "term": "LSTM (Long Short-Term Memory)",
+        "definition": "A type of RNN (Recurrent Neural Network) built to remember useful information across longer sequences.",
+        "category": "deep-learning",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 76,
+        "term": "Attention Mechanism",
+        "definition": "A model technique that lets the system focus on the most relevant parts of the input.",
+        "category": "generative-models",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 77,
+        "term": "Self-Attention",
+        "definition": "An attention method where each token compares itself with other tokens in the same input.",
+        "category": "generative-models",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 78,
+        "term": "Embedding",
+        "definition": "A numeric representation of text, images, users, or items that captures meaning or similarity.",
+        "category": "generative-models",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 79,
+        "term": "Semantic Similarity",
+        "definition": "How close two pieces of content are in meaning, even if they use different words.",
+        "category": "nlp",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 80,
+        "term": "Cosine Similarity",
+        "definition": "A measurement often used with embeddings to compare how similar two vectors are in direction.",
+        "category": "nlp",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 81,
+        "term": "NLP (Natural Language Processing)",
+        "definition": "The branch of AI (Artificial Intelligence) focused on understanding, generating, or transforming human language.",
+        "category": "nlp",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 82,
+        "term": "Named Entity Recognition",
+        "definition": "An NLP (Natural Language Processing) task that identifies names of people, places, companies, dates, and similar entities in text.",
+        "category": "nlp",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 83,
+        "term": "Sentiment Analysis",
+        "definition": "An NLP (Natural Language Processing) task that estimates whether text expresses a positive, negative, or neutral attitude.",
+        "category": "nlp",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 84,
+        "term": "Text Classification",
+        "definition": "Assigning text to categories, such as support issue type, topic, urgency, or intent.",
+        "category": "nlp",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 85,
+        "term": "Intent Detection",
+        "definition": "Identifying what a user is trying to do from their message or query.",
+        "category": "nlp",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 86,
+        "term": "Stemming",
+        "definition": "Reducing words to rough root forms, such as running and runner becoming run.",
+        "category": "nlp",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 87,
+        "term": "Lemmatization",
+        "definition": "Reducing words to dictionary forms using grammar, such as better becoming good.",
+        "category": "nlp",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 88,
+        "term": "Stop Words",
+        "definition": "Common words such as the, and, or is that are sometimes removed during text processing.",
+        "category": "nlp",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 89,
+        "term": "Tokenizer",
+        "definition": "A tool or algorithm that breaks text into tokens a model can process.",
+        "category": "generative-models",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 90,
+        "term": "Subword Tokenization",
+        "definition": "Breaking text into pieces smaller than words so models can handle rare or new words more flexibly.",
+        "category": "generative-models",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 91,
+        "term": "Pretraining",
+        "definition": "Training a model on broad data before adapting it to a narrower task.",
+        "category": "training",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 92,
+        "term": "Fine-Tuning",
+        "definition": "Further training a pretrained model on task-specific data to change or improve its behavior.",
+        "category": "training",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 93,
+        "term": "Instruction Tuning",
+        "definition": "Training a model on examples of instructions and desired responses so it follows user requests better.",
+        "category": "generative-models",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 94,
+        "term": "RLHF (Reinforcement Learning from Human Feedback)",
+        "definition": "A training approach that uses human preference judgments to shape model behavior.",
+        "category": "generative-models",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 95,
+        "term": "Reward Model",
+        "definition": "A model trained to score outputs according to human preferences or task goals.",
+        "category": "training",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 96,
+        "term": "Alignment",
+        "definition": "The effort to make AI (Artificial Intelligence) systems behave in ways that match human goals, rules, and values.",
+        "category": "responsible-ai",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 97,
+        "term": "AI (Artificial Intelligence) Safety",
+        "definition": "The field focused on reducing harmful, unreliable, or unintended behavior in AI (Artificial Intelligence) systems.",
+        "category": "responsible-ai",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 98,
+        "term": "Red Teaming",
+        "definition": "Testing an AI (Artificial Intelligence) system by deliberately trying to make it fail, break rules, or produce unsafe outputs.",
+        "category": "privacy-security",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 99,
+        "term": "Jailbreak",
+        "definition": "A prompt or technique designed to bypass a model's safety rules or intended restrictions.",
+        "category": "privacy-security",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 100,
+        "term": "Prompt Injection",
+        "definition": "An attack where hidden or hostile instructions try to override the intended behavior of an AI (Artificial Intelligence) system.",
+        "category": "privacy-security",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 101,
+        "term": "Data Poisoning",
+        "definition": "An attack that corrupts training data so the model learns harmful or misleading patterns.",
+        "category": "privacy-security",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 102,
+        "term": "Model Inversion",
+        "definition": "An attack that tries to infer sensitive training data from a model's outputs or behavior.",
+        "category": "privacy-security",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 103,
+        "term": "Membership Inference",
+        "definition": "An attack that tries to determine whether a specific record was included in model training data.",
+        "category": "privacy-security",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 104,
+        "term": "Differential Privacy",
+        "definition": "A privacy method that adds controlled noise so individual records are harder to identify.",
+        "category": "privacy-security",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 105,
+        "term": "Federated Learning",
+        "definition": "A training method where models learn from data across devices or organizations without centralizing the raw data.",
+        "category": "privacy-security",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 106,
+        "term": "Anonymization",
+        "definition": "Removing or altering personal identifiers so data is less likely to reveal a specific person.",
+        "category": "privacy-security",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 107,
+        "term": "PII (Personally Identifiable Information)",
+        "definition": "Information that can identify a person, such as name, address, ID number, or email address.",
+        "category": "privacy-security",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 108,
+        "term": "Data Minimization",
+        "definition": "Collecting and using only the data needed for a specific purpose.",
+        "category": "privacy-security",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 109,
+        "term": "Consent",
+        "definition": "Permission from a person or organization to collect, use, or share data under stated conditions.",
+        "category": "responsible-ai",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 110,
+        "term": "Fairness Metric",
+        "definition": "A measurement used to compare model outcomes across groups and check for unfair differences.",
+        "category": "bias-fairness",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 111,
+        "term": "Disparate Impact",
+        "definition": "A pattern where a system harms or disadvantages one group more than another, even without explicit intent.",
+        "category": "bias-fairness",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 112,
+        "term": "Representation Bias",
+        "definition": "Bias caused when some groups or cases are underrepresented or misrepresented in the data.",
+        "category": "bias-fairness",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 113,
+        "term": "Measurement Bias",
+        "definition": "Bias caused when the data collected does not accurately measure the thing it claims to measure.",
+        "category": "bias-fairness",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 114,
+        "term": "Selection Bias",
+        "definition": "Bias caused when the examples chosen for a dataset are not representative of the real population.",
+        "category": "bias-fairness",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 115,
+        "term": "Proxy Variable",
+        "definition": "A variable that indirectly stands in for another factor, sometimes exposing sensitive traits by accident.",
+        "category": "bias-fairness",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 116,
+        "term": "Confusion Matrix",
+        "definition": "A table showing correct and incorrect predictions across classes, often split into true and false positives and negatives.",
+        "category": "evaluation",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 117,
+        "term": "True Positive",
+        "definition": "A case where the model correctly predicts that something belongs to the positive class.",
+        "category": "evaluation",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 118,
+        "term": "False Positive",
+        "definition": "A case where the model incorrectly predicts the positive class.",
+        "category": "evaluation",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 119,
+        "term": "True Negative",
+        "definition": "A case where the model correctly predicts that something does not belong to the positive class.",
+        "category": "evaluation",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 120,
+        "term": "False Negative",
+        "definition": "A case where the model incorrectly misses something that belongs to the positive class.",
+        "category": "evaluation",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 121,
+        "term": "Precision",
+        "definition": "The share of positive predictions that were actually correct.",
+        "category": "evaluation",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 122,
+        "term": "Recall",
+        "definition": "The share of actual positive cases that the model successfully found.",
+        "category": "evaluation",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 123,
+        "term": "F1 Score",
+        "definition": "A metric that balances precision and recall into one score.",
+        "category": "evaluation",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 124,
+        "term": "Accuracy",
+        "definition": "The share of all predictions the model got right.",
+        "category": "evaluation",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 125,
+        "term": "ROC (Receiver Operating Characteristic) Curve",
+        "definition": "A chart that shows the tradeoff between true positive rate and false positive rate across thresholds.",
+        "category": "evaluation",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 126,
+        "term": "AUC (Area Under the Curve)",
+        "definition": "A single score summarizing how well a classifier separates positive and negative examples across thresholds.",
+        "category": "evaluation",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 127,
+        "term": "Cross-Validation",
+        "definition": "A testing method that trains and evaluates a model across multiple splits of the data.",
+        "category": "evaluation",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 128,
+        "term": "Holdout Set",
+        "definition": "A portion of data kept separate from training and tuning until final evaluation.",
+        "category": "evaluation",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 129,
+        "term": "Baseline Model",
+        "definition": "A simple model used as a comparison point to judge whether a more complex model is worth using.",
+        "category": "evaluation",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 130,
+        "term": "Benchmark",
+        "definition": "A standard dataset, task, or test used to compare models under similar conditions.",
+        "category": "evaluation",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 131,
+        "term": "Model Card",
+        "definition": "A document that describes a model's intended use, limits, training data, and evaluation results.",
+        "category": "transparency",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 132,
+        "term": "Data Sheet",
+        "definition": "A document that explains how a dataset was collected, processed, labeled, and intended to be used.",
+        "category": "transparency",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 133,
+        "term": "Audit Trail",
+        "definition": "A record of data, model, prompt, or decision changes that helps teams trace what happened later.",
+        "category": "transparency",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 134,
+        "term": "XAI (Explainable AI (Artificial Intelligence))",
+        "definition": "Methods that make AI (Artificial Intelligence) predictions easier for humans to inspect and understand.",
+        "category": "transparency",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 135,
+        "term": "Feature Importance",
+        "definition": "A method for estimating which inputs had the most influence on a model's prediction.",
+        "category": "transparency",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 136,
+        "term": "SHAP (Shapley Additive Explanations)",
+        "definition": "An explainability method that estimates how much each feature contributed to an individual prediction.",
+        "category": "transparency",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 137,
+        "term": "LIME",
+        "definition": "An explainability method that approximates a complex model near one prediction with a simpler model.",
+        "category": "transparency",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 138,
+        "term": "RAG (Retrieval-Augmented Generation)",
+        "definition": "A pattern where a generative model retrieves relevant source material before writing an answer.",
+        "category": "generative-models",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 139,
+        "term": "Retriever",
+        "definition": "The part of a RAG (Retrieval-Augmented Generation) system that searches for relevant documents or chunks before generation.",
+        "category": "generative-models",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 140,
+        "term": "Chunking",
+        "definition": "Splitting documents into smaller pieces so they can be searched, embedded, or passed into a model.",
+        "category": "generative-models",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 141,
+        "term": "Reranking",
+        "definition": "Reordering retrieved results so the most useful items are placed near the top before generation.",
+        "category": "generative-models",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 142,
+        "term": "Knowledge Graph",
+        "definition": "A structured network of entities and relationships that can help systems reason over connected facts.",
+        "category": "generative-models",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 143,
+        "term": "Function Calling",
+        "definition": "A model capability where the AI (Artificial Intelligence) returns structured arguments for a tool or API (Application Programming Interface) instead of plain text.",
+        "category": "daily-workflows",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 144,
+        "term": "Tool Use",
+        "definition": "Allowing an AI (Artificial Intelligence) system to call external functions, search tools, databases, or applications to complete a task.",
+        "category": "daily-workflows",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 145,
+        "term": "Agent",
+        "definition": "An AI (Artificial Intelligence) system that can plan steps, use tools, and act toward a goal with some autonomy.",
+        "category": "daily-workflows",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 146,
+        "term": "Workflow Automation",
+        "definition": "Using software or AI (Artificial Intelligence) to run repeatable business steps with less manual effort.",
+        "category": "daily-workflows",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 147,
+        "term": "Human Review",
+        "definition": "A checkpoint where a person inspects, approves, edits, or rejects an AI (Artificial Intelligence) output.",
+        "category": "responsible-ai",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 148,
+        "term": "Escalation Path",
+        "definition": "A defined process for sending uncertain or risky AI (Artificial Intelligence) outputs to a human or higher-control system.",
+        "category": "responsible-ai",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 149,
+        "term": "Confidence Score",
+        "definition": "A number that estimates how certain a model is about its prediction, though it may not always be calibrated.",
+        "category": "evaluation",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 150,
+        "term": "Calibration",
+        "definition": "How closely a model's confidence scores match the actual chance of being correct.",
+        "category": "evaluation",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 151,
+        "term": "Threshold",
+        "definition": "A cutoff value used to decide when a model score becomes a positive prediction or action.",
+        "category": "evaluation",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 152,
+        "term": "Anomaly Detection",
+        "definition": "Finding unusual patterns or records that differ strongly from normal behavior.",
+        "category": "models",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 153,
+        "term": "Recommendation System",
+        "definition": "An AI (Artificial Intelligence) system that suggests items, content, or actions based on user behavior and item similarity.",
+        "category": "models",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 154,
+        "term": "Collaborative Filtering",
+        "definition": "A recommendation method that uses patterns from similar users or items to make suggestions.",
+        "category": "models",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 155,
+        "term": "Content-Based Filtering",
+        "definition": "A recommendation method that suggests items similar to ones a user already liked.",
+        "category": "models",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 156,
+        "term": "Decision Tree",
+        "definition": "A model that makes predictions by following a tree of if-then splits.",
+        "category": "models",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 157,
+        "term": "Random Forest",
+        "definition": "An ensemble of decision trees whose predictions are combined to improve reliability.",
+        "category": "models",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 158,
+        "term": "Gradient Boosting",
+        "definition": "An ensemble method that builds models in sequence, with each one correcting errors from earlier models.",
+        "category": "models",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 159,
+        "term": "Support Vector Machine",
+        "definition": "A model that separates classes by finding a boundary with the widest possible margin.",
+        "category": "models",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 160,
+        "term": "K-Means",
+        "definition": "A clustering algorithm that groups data into k clusters by repeatedly updating cluster centers.",
+        "category": "models",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 161,
+        "term": "PCA (Principal Component Analysis)",
+        "definition": "A dimensionality reduction method that compresses data while preserving major patterns of variation.",
+        "category": "models",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 162,
+        "term": "Dimensionality Reduction",
+        "definition": "Reducing the number of variables in data while keeping the most useful information.",
+        "category": "models",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 163,
+        "term": "Normalization",
+        "definition": "Rescaling data values to a common range so features are easier for models to compare.",
+        "category": "data-prep",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 164,
+        "term": "Standardization",
+        "definition": "Rescaling values so they have a mean of zero and a standard deviation of one.",
+        "category": "data-prep",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 165,
+        "term": "One-Hot Encoding",
+        "definition": "Representing categories as separate binary columns so models can process them numerically.",
+        "category": "data-prep",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 166,
+        "term": "Missing Value Imputation",
+        "definition": "Filling in missing data using a rule, statistic, or model-based estimate.",
+        "category": "data-prep",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 167,
+        "term": "Data Leakage",
+        "definition": "When training data accidentally includes information that would not be available at prediction time.",
+        "category": "data-prep",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 168,
+        "term": "Synthetic Data",
+        "definition": "Artificially generated data used for testing, training, privacy protection, or rare-case simulation.",
+        "category": "data-prep",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 169,
+        "term": "Labeling",
+        "definition": "The process of assigning correct answers, categories, or annotations to training examples.",
+        "category": "data-prep",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 170,
+        "term": "Annotation Guideline",
+        "definition": "Instructions that tell human labelers how to label data consistently.",
+        "category": "data-prep",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 171,
+        "term": "Active Learning",
+        "definition": "A training strategy where the model asks for labels on examples that would teach it the most.",
+        "category": "training",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 172,
+        "term": "Transfer Learning",
+        "definition": "Reusing knowledge from a model trained on one task to improve performance on another task.",
+        "category": "training",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 173,
+        "term": "Distillation",
+        "definition": "Training a smaller model to imitate a larger model's behavior.",
+        "category": "training",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 174,
+        "term": "Quantization",
+        "definition": "Reducing the precision of model numbers to make the model smaller or faster.",
+        "category": "deployment",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 175,
+        "term": "Pruning",
+        "definition": "Removing less useful model weights or connections to reduce size and computation.",
+        "category": "deployment",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 176,
+        "term": "Latency",
+        "definition": "The time it takes for an AI (Artificial Intelligence) system to return a result after receiving input.",
+        "category": "deployment",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 177,
+        "term": "Throughput",
+        "definition": "How many requests or examples a system can process in a given amount of time.",
+        "category": "deployment",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 178,
+        "term": "Model Serving",
+        "definition": "Running a trained model behind an application or API (Application Programming Interface) so users can get predictions.",
+        "category": "deployment",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 179,
+        "term": "Batch Inference",
+        "definition": "Generating predictions for many records at once instead of responding to one live request at a time.",
+        "category": "deployment",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 180,
+        "term": "Online Inference",
+        "definition": "Generating predictions in response to live user or system requests.",
+        "category": "deployment",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 181,
+        "term": "Model Monitoring",
+        "definition": "Tracking model quality, inputs, outputs, latency, and errors after deployment.",
+        "category": "deployment",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 182,
+        "term": "Concept Drift",
+        "definition": "When the relationship between inputs and correct outputs changes over time.",
+        "category": "deployment",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 183,
+        "term": "Shadow Deployment",
+        "definition": "Running a new model beside the current system without letting it affect real user outcomes yet.",
+        "category": "deployment",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 184,
+        "term": "A/B Testing",
+        "definition": "Comparing two system versions with different user groups to measure which performs better.",
+        "category": "deployment",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 185,
+        "term": "Canary Release",
+        "definition": "Rolling out a new model or feature to a small group first so problems can be caught early.",
+        "category": "deployment",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 186,
+        "term": "MLOps",
+        "definition": "Practices for building, deploying, monitoring, and maintaining machine learning systems reliably.",
+        "category": "deployment",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 187,
+        "term": "Pipeline",
+        "definition": "A sequence of steps that moves data through preparation, training, evaluation, or deployment.",
+        "category": "deployment",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 188,
+        "term": "Experiment Tracking",
+        "definition": "Recording model settings, datasets, metrics, and outputs so training runs can be compared later.",
+        "category": "deployment",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 189,
+        "term": "Reproducibility",
+        "definition": "The ability to rerun an experiment or pipeline and get the same or very similar result.",
+        "category": "deployment",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 190,
+        "term": "Versioning",
+        "definition": "Tracking changes to data, code, prompts, models, or configurations over time.",
+        "category": "deployment",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 191,
+        "term": "Multimodal Model",
+        "definition": "A model that can work with more than one type of input or output, such as text, images, audio, or video.",
+        "category": "generative-models",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 192,
+        "term": "Vision-Language Model",
+        "definition": "A model that connects visual information with language so it can describe, answer, or reason about images.",
+        "category": "generative-models",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 193,
+        "term": "Speech Recognition",
+        "definition": "AI (Artificial Intelligence) that converts spoken language into written text.",
+        "category": "multimodal-ai",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 194,
+        "term": "Text-to-Speech",
+        "definition": "AI (Artificial Intelligence) that converts written text into spoken audio.",
+        "category": "multimodal-ai",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 195,
+        "term": "Computer Vision",
+        "definition": "The branch of AI (Artificial Intelligence) focused on interpreting images, video, and other visual data.",
+        "category": "multimodal-ai",
+        "difficulty": "beginner"
+    },
+    {
+        "id": 196,
+        "term": "Object Detection",
+        "definition": "A computer vision task that finds objects in an image and identifies their locations.",
+        "category": "multimodal-ai",
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 197,
+        "term": "Image Segmentation",
+        "definition": "A computer vision task that assigns each pixel or region of an image to a class.",
+        "category": "multimodal-ai",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 198,
+        "term": "GAN (Generative Adversarial Network)",
+        "definition": "A generative model made of two networks: one creates examples and the other judges them.",
+        "category": "generative-models",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 199,
+        "term": "VAE (Variational Autoencoder)",
+        "definition": "A generative model that learns a compressed representation and samples from it to create new examples.",
+        "category": "generative-models",
+        "difficulty": "advanced"
+    },
+    {
+        "id": 200,
+        "term": "Autoregressive Model",
+        "definition": "A model that generates output step by step, with each new piece depending on earlier pieces.",
+        "category": "generative-models",
+        "difficulty": "advanced"
+    }
+]

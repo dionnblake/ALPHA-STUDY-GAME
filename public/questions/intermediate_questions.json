@@ -1,0 +1,278 @@
+[
+  {
+    "id": "google_ai_int_001",
+    "questionText": "Your skin cancer detection AI (Artificial Intelligence) hits 98% accuracy on training data but drops to 65% on patients from different geographic regions. What is the most likely root cause?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Data Shift (Representative Bias)",
+    "category": "bias-fairness",
+    "difficulty": "intermediate",
+    "options": [
+      "Overfitting to Training Distribution",
+      "Data Shift (Representative Bias)",
+      "Suboptimal Learning Rate Schedule",
+      "Model Architecture Mismatch"
+    ],
+    "explanation": "Representative bias occurs when training data doesn't reflect the diversity of the real-world population where the model is deployed.",
+    "remediationNotes": "Review Chapter 8 on Bias and Fairness in datasets.",
+    "learningObjective": "Identify and explain data diversity failures.",
+    "tags": [
+      "bias",
+      "fairness",
+      "data"
+    ],
+    "option_a": "Overfitting to Training Distribution",
+    "option_b": "Data Shift (Representative Bias)",
+    "option_c": "Suboptimal Learning Rate Schedule",
+    "option_d": "Model Architecture Mismatch"
+  },
+  {
+    "id": "google_ai_int_002",
+    "questionText": "A bank's complex model denies a loan. Regulators require a specific explanation for why the applicant was rejected. Which approach directly addresses this requirement?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "XAI (Explainable AI (Artificial Intelligence)) Methods",
+    "category": "transparency",
+    "difficulty": "intermediate",
+    "options": [
+      "Model Compression (Quantization)",
+      "XAI (Explainable AI (Artificial Intelligence)) Methods",
+      "A/B Testing with Control Groups",
+      "Transfer Learning from Pre-trained Models"
+    ],
+    "explanation": "Explainable AI (Artificial Intelligence) provides tools to make complex model decision-making interpretable and auditable by humans.",
+    "remediationNotes": "Review Chapter 10 on Explainability.",
+    "learningObjective": "Apply explainability to a business scenario.",
+    "tags": [
+      "transparency",
+      "explainability"
+    ],
+    "option_a": "Model Compression (Quantization)",
+    "option_b": "XAI (Explainable AI (Artificial Intelligence)) Methods",
+    "option_c": "A/B Testing with Control Groups",
+    "option_d": "Transfer Learning from Pre-trained Models"
+  },
+  {
+    "id": "google_ai_int_003",
+    "questionText": "In a hospital, missing a serious diagnosis (False Negative) is far more dangerous than a false alarm (False Positive). Which metric should the AI (Artificial Intelligence) team prioritize?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Recall (Sensitivity)",
+    "category": "model-evaluation",
+    "difficulty": "intermediate",
+    "options": [
+      "Precision (Positive Predictive Value)",
+      "Recall (Sensitivity)",
+      "F1-Score (Harmonic Mean)",
+      "AUC-ROC (Area Under the Curve - Receiver Operating Characteristic) (Area Under the Curve - Receiver Operating Characteristic) (Overall Discrimination)"
+    ],
+    "explanation": "Recall measures the ability to find all positive cases. High recall ensures fewer diseases go undetected.",
+    "remediationNotes": "Think: If you can't afford to MISS one, you need high Recall. See Ch 17.",
+    "learningObjective": "Differentiate between precision and recall in a medical context.",
+    "tags": [
+      "metrics",
+      "recall"
+    ],
+    "option_a": "Precision (Positive Predictive Value)",
+    "option_b": "Recall (Sensitivity)",
+    "option_c": "F1-Score (Harmonic Mean)",
+    "option_d": "AUC-ROC (Area Under the Curve - Receiver Operating Characteristic) (Area Under the Curve - Receiver Operating Characteristic) (Overall Discrimination)"
+  },
+  {
+    "id": "google_ai_int_013",
+    "questionText": "RAG (Retrieval-Augmented Generation) retrieves documents before generating an answer. Why is this more reliable than relying solely on the LLM (Large Language Model)'s trained memory?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "It grounds answers in external facts, reducing hallucinations.",
+    "category": "generative-models",
+    "difficulty": "intermediate",
+    "options": [
+      "RAG (Retrieval-Augmented Generation) processes inputs faster than standard LLM (Large Language Model) inference.",
+      "It grounds answers in external facts, reducing hallucinations.",
+      "RAG (Retrieval-Augmented Generation) retrains the model on new data overnight automatically.",
+      "RAG (Retrieval-Augmented Generation) eliminates the need for any GPU (Graphics Processing Unit) processing."
+    ],
+    "explanation": "RAG (Retrieval-Augmented Generation) provides context the model can reference before answering, preventing guessing based on outdated training data.",
+    "remediationNotes": "Check the 'Grounding AI (Artificial Intelligence)' section in Chapter 16.",
+    "learningObjective": "Identify fact-grounding techniques for GenAI.",
+    "tags": [
+      "rag",
+      "llm"
+    ],
+    "option_a": "RAG (Retrieval-Augmented Generation) processes inputs faster than standard LLM (Large Language Model) inference.",
+    "option_b": "It grounds answers in external facts, reducing hallucinations.",
+    "option_c": "RAG (Retrieval-Augmented Generation) retrains the model on new data overnight automatically.",
+    "option_d": "RAG (Retrieval-Augmented Generation) eliminates the need for any GPU (Graphics Processing Unit) processing."
+  },
+  {
+    "id": "google_ai_int_004",
+    "questionText": "A retailer wants a customized demand prediction model but has limited historical data. What is the core trade-off they face between building custom vs. using a pre-trained API (Application Programming Interface)?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Custom models need more data and in-house expertise to build.",
+    "category": "google-tools",
+    "difficulty": "intermediate",
+    "options": [
+      "Pre-trained APIs (Application Programming Interfaces) require fine-tuning before any practical use.",
+      "Custom models need more data and in-house expertise to build.",
+      "Cloud APIs (Application Programming Interfaces) are never suitable for custom business use cases.",
+      "Model accuracy depends primarily on available hardware specifications."
+    ],
+    "explanation": "Custom models offer better fit but require significant data and team effort compared to off-the-shelf AI (Artificial Intelligence) APIs (Application Programming Interfaces).",
+    "remediationNotes": "Review Chapter 12 and 14 on Cloud AI (Artificial Intelligence) and build-vs-buy decisions.",
+    "learningObjective": "Weigh the build-vs-buy decisions for AI (Artificial Intelligence).",
+    "tags": [
+      "cloud-ai",
+      "google-cloud"
+    ],
+    "option_a": "Pre-trained APIs (Application Programming Interfaces) require fine-tuning before any practical use.",
+    "option_b": "Custom models need more data and in-house expertise to build.",
+    "option_c": "Cloud APIs (Application Programming Interfaces) are never suitable for custom business use cases.",
+    "option_d": "Model accuracy depends primarily on available hardware specifications."
+  },
+  {
+    "id": "google_ai_int_005",
+    "questionText": "A fairness audit reveals your hiring AI (Artificial Intelligence) rejects more candidates from one demographic — yet no such rule exists in the code. What is the most likely cause?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Proxy variables in training data correlate with protected attributes.",
+    "category": "bias-fairness",
+    "difficulty": "intermediate",
+    "options": [
+      "The training dataset is too small for generalization.",
+      "Proxy variables in training data correlate with protected attributes.",
+      "The model's interface is poorly designed for diverse users.",
+      "Training labels were stored in an incorrect file format."
+    ],
+    "explanation": "Models can learn bias from proxies — data that isn't the sensitive attribute but is highly correlated with it (e.g., zip code correlating with race).",
+    "remediationNotes": "Review Chapter 8 on 'Indirect Bias' and proxies.",
+    "learningObjective": "Identify indirect bias in AI (Artificial Intelligence) systems.",
+    "tags": [
+      "ethics",
+      "bias"
+    ],
+    "option_a": "The training dataset is too small for generalization.",
+    "option_b": "Proxy variables in training data correlate with protected attributes.",
+    "option_c": "The model's interface is poorly designed for diverse users.",
+    "option_d": "Training labels were stored in an incorrect file format."
+  },
+  {
+    "id": "google_ai_int_006",
+    "questionText": "A developer wants to improve an LLM (Large Language Model)'s output on a niche legal summarization task without retraining the model. They consider Zero-Shot vs. Few-Shot prompting. What is the key difference?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Zero-shot provides no examples; Few-shot includes example outputs in the prompt.",
+    "category": "generative-models",
+    "difficulty": "intermediate",
+    "options": [
+      "Zero-shot uses images; Few-shot uses only text input.",
+      "Zero-shot provides no examples; Few-shot includes example outputs in the prompt.",
+      "Zero-shot needs a GPU (Graphics Processing Unit) cluster; Few-shot runs on standard CPUs (Central Processing Units).",
+      "Both methods produce functionally identical results for all tasks."
+    ],
+    "explanation": "Few-shot prompting is an in-context learning technique that significantly improves performance on narrow or complex tasks.",
+    "remediationNotes": "Check prompting tips in Chapter 18.",
+    "learningObjective": "Compare Zero-shot and Few-shot prompting.",
+    "tags": [
+      "prompting",
+      "llm"
+    ],
+    "option_a": "Zero-shot uses images; Few-shot uses only text input.",
+    "option_b": "Zero-shot provides no examples; Few-shot includes example outputs in the prompt.",
+    "option_c": "Zero-shot needs a GPU (Graphics Processing Unit) cluster; Few-shot runs on standard CPUs (Central Processing Units).",
+    "option_d": "Both methods produce functionally identical results for all tasks."
+  },
+  {
+    "id": "google_ai_int_007",
+    "questionText": "A developer uses Vertex AI (Artificial Intelligence) to manage their entire model lifecycle. What is the primary advantage of this unified MLOps platform?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "It streamlines model training through reliable, monitored production deployment.",
+    "category": "google-tools",
+    "difficulty": "intermediate",
+    "options": [
+      "It generates full application front-end code automatically.",
+      "It streamlines model training through reliable, monitored production deployment.",
+      "It allows models to run without any power source.",
+      "It functions as a social network for AI (Artificial Intelligence) research teams."
+    ],
+    "explanation": "MLOps focuses on deploying and maintaining ML (Machine Learning) models at scale reliably — Vertex AI (Artificial Intelligence) provides that unified pipeline.",
+    "remediationNotes": "Review 'Vertex AI (Artificial Intelligence) and MLOps' in Chapter 16.",
+    "learningObjective": "Identify the value proposition of Vertex AI (Artificial Intelligence).",
+    "tags": [
+      "google-cloud",
+      "vertex-ai"
+    ],
+    "option_a": "It generates full application front-end code automatically.",
+    "option_b": "It streamlines model training through reliable, monitored production deployment.",
+    "option_c": "It allows models to run without any power source.",
+    "option_d": "It functions as a social network for AI (Artificial Intelligence) research teams."
+  },
+  {
+    "id": "google_ai_int_008",
+    "questionText": "In a classification model, a colleague suggests using overall accuracy as the sole success metric. Why is a Confusion Matrix a more informative evaluation tool?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "It shows predicted vs. true class breakdowns.",
+    "category": "model-evaluation",
+    "difficulty": "intermediate",
+    "options": [
+      "It calculates the total GPU (Graphics Processing Unit) cost of model training.",
+      "It shows predicted vs. true class breakdowns.",
+      "It syncs model weights to external cloud storage.",
+      "It randomizes training batches to reduce overfitting."
+    ],
+    "explanation": "A confusion matrix exposes False Positives and False Negatives that overall accuracy hides, giving a complete picture of model behavior.",
+    "remediationNotes": "Review the 'Performance Evaluation' section in Chapter 17.",
+    "learningObjective": "Interpret a confusion matrix for classification tasks.",
+    "tags": [
+      "metrics",
+      "classification"
+    ],
+    "option_a": "It calculates the total GPU (Graphics Processing Unit) cost of model training.",
+    "option_b": "It shows predicted vs. true class breakdowns.",
+    "option_c": "It syncs model weights to external cloud storage.",
+    "option_d": "It randomizes training batches to reduce overfitting."
+  },
+  {
+    "id": "google_ai_int_009",
+    "questionText": "Google's 7th AI (Artificial Intelligence) Principle focuses on scientific excellence and peer review. Why is rigorous testing essential specifically to this principle?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "To ensure technologies are safe and meet rigorous scientific standards.",
+    "category": "google-principles",
+    "difficulty": "intermediate",
+    "options": [
+      "To protect proprietary research from public access.",
+      "To ensure technologies are safe and meet rigorous scientific standards.",
+      "To generate automatic revenue for the research department.",
+      "To restrict model access to credentialed scientists only."
+    ],
+    "explanation": "Scientific rigor prevents the release of hype and ensures AI (Artificial Intelligence) behaves predictably and safely in the real world.",
+    "remediationNotes": "Review Chapter 7 for the 7th AI (Artificial Intelligence) principle.",
+    "learningObjective": "Relate scientific standards to ethical AI (Artificial Intelligence) outcomes.",
+    "tags": [
+      "google-principles",
+      "science"
+    ],
+    "option_a": "To protect proprietary research from public access.",
+    "option_b": "To ensure technologies are safe and meet rigorous scientific standards.",
+    "option_c": "To generate automatic revenue for the research department.",
+    "option_d": "To restrict model access to credentialed scientists only."
+  },
+  {
+    "id": "google_ai_int_010",
+    "questionText": "An AI (Artificial Intelligence) system is deployed at the edge of a remote factory rather than in a central cloud. What is the primary operational benefit of this architecture?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Data stays local, reducing latency and protecting privacy.",
+    "category": "google-tools",
+    "difficulty": "intermediate",
+    "options": [
+      "The system has better resistance to physical shocks and vibration.",
+      "Data stays local, reducing latency and protecting privacy.",
+      "The AI (Artificial Intelligence) can autonomously repair malfunctioning hardware components.",
+      "The model consumes less electricity than cloud-based alternatives."
+    ],
+    "explanation": "Edge computing processes data on-site, eliminating the lag of sending data to a central cloud and keeping sensitive data local.",
+    "remediationNotes": "Review Chapter 16 tools for edge deployment.",
+    "learningObjective": "Define edge computing in an AI (Artificial Intelligence) context.",
+    "tags": [
+      "edge-computing",
+      "infrastructure"
+    ],
+    "option_a": "The system has better resistance to physical shocks and vibration.",
+    "option_b": "Data stays local, reducing latency and protecting privacy.",
+    "option_c": "The AI (Artificial Intelligence) can autonomously repair malfunctioning hardware components.",
+    "option_d": "The model consumes less electricity than cloud-based alternatives."
+  }
+]

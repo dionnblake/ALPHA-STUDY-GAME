@@ -1,0 +1,176 @@
+/* src/screens/FlashcardsScreen.css */
+.flashcards-screen {
+  animation: fadeIn 0.8s ease-out;
+  padding-bottom: 2rem;
+}
+
+.flashcards-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 1.5rem;
+}
+
+.deck-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.deck-filter-bar {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  padding: 0.75rem 1.25rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.deck-select {
+  background: transparent;
+  border: none;
+  color: var(--text-base);
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Neural Card Container */
+.neural-card-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  perspective: 1500px;
+}
+
+.holographic-card {
+  width: 100%;
+  max-width: 600px;
+  height: 380px;
+  cursor: pointer;
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.holographic-card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border-vibrant);
+  background: var(--bg-mica);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.card-face::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% -20%, hsla(215, 100%, 65%, 0.1), transparent 70%);
+}
+
+.card-inner-back {
+  transform: rotateY(180deg);
+  background: radial-gradient(circle at 100% 100%, hsla(150, 80%, 50%, 0.05), transparent 60%),
+              var(--bg-mica);
+}
+
+.card-domain-slug {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-prompt {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.4;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.card-resolution {
+  font-size: 1.15rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.card-resolution strong {
+  display: block;
+  color: var(--color-success);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* Card Controls */
+.deck-controls {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  background: var(--bg-surface);
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  border: 1px solid var(--border-subtle);
+}
+
+.control-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-base);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.control-btn:hover:not(:disabled) {
+  background: var(--bg-active);
+  color: var(--primary);
+  transform: scale(1.1);
+}
+
+.control-btn:disabled {
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+
+.deck-pos {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
+.deck-pos span {
+  color: var(--text-muted);
+  font-weight: 400;
+}

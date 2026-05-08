@@ -1,0 +1,2702 @@
+[
+  {
+    "id": "prompt_engineering_course_001",
+    "uid": "prompt_engineering_course_001",
+    "questionText": "What is the main goal of prompt engineering?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "To guide an AI (Artificial Intelligence) model toward useful outputs",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "To guide an AI (Artificial Intelligence) model toward useful outputs",
+      "To replace model training with manual scripting",
+      "To make every AI (Artificial Intelligence) response longer by default",
+      "To avoid giving the model any context"
+    ],
+    "explanation": "Prompt engineering guides AI (Artificial Intelligence) models toward useful, relevant outputs.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Prompt engineering",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "To guide an AI (Artificial Intelligence) model toward useful outputs",
+    "option_b": "To replace model training with manual scripting",
+    "option_c": "To make every AI (Artificial Intelligence) response longer by default",
+    "option_d": "To avoid giving the model any context"
+  },
+  {
+    "id": "prompt_engineering_course_002",
+    "uid": "prompt_engineering_course_002",
+    "questionText": "Why did David's first ad-copy prompt produce generic output in the transcript example?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "It lacked a target audience and product-specific details",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "It lacked a target audience and product-specific details",
+      "It used too many formatting constraints",
+      "It asked for too many versions at once",
+      "It required the AI (Artificial Intelligence) to browse the web first"
+    ],
+    "explanation": "Generic output almost always traces back to missing audience and product-specific detail.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Prompt specificity",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "It lacked a target audience and product-specific details",
+    "option_b": "It used too many formatting constraints",
+    "option_c": "It asked for too many versions at once",
+    "option_d": "It required the AI (Artificial Intelligence) to browse the web first"
+  },
+  {
+    "id": "prompt_engineering_course_003",
+    "uid": "prompt_engineering_course_003",
+    "questionText": "Which revision best turns a weak prompt into a stronger one?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Explain the key causes of climate change in 100 words for high school students",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Tell me everything about climate change in bullet points",
+      "Explain the key causes of climate change in 100 words for high school students",
+      "Write all you know about climate change as a summary",
+      "Give me a general climate change overview with no length limit"
+    ],
+    "explanation": "Strong prompts have specific topic + audience + length/format constraints.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Prompt quality",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Tell me everything about climate change in bullet points",
+    "option_b": "Explain the key causes of climate change in 100 words for high school students",
+    "option_c": "Write all you know about climate change as a summary",
+    "option_d": "Give me a general climate change overview with no length limit"
+  },
+  {
+    "id": "prompt_engineering_course_004",
+    "uid": "prompt_engineering_course_004",
+    "questionText": "According to the course, how do large language models primarily generate responses?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "By predicting the next token from patterns in training data",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "By predicting the next token from patterns in training data",
+      "By reasoning step-by-step exactly like a human expert",
+      "By searching the internet live for every answer",
+      "By selecting from a fixed list of approved sentences"
+    ],
+    "explanation": "LLMs (Large Language Models) predict the next token based on patterns in training data.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: LLM (Large Language Model) fundamentals",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "By predicting the next token from patterns in training data",
+    "option_b": "By reasoning step-by-step exactly like a human expert",
+    "option_c": "By searching the internet live for every answer",
+    "option_d": "By selecting from a fixed list of approved sentences"
+  },
+  {
+    "id": "prompt_engineering_course_005",
+    "uid": "prompt_engineering_course_005",
+    "questionText": "What is tokenization in the context of prompt engineering?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Breaking text into smaller units the model can process",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Breaking text into smaller units the model can process",
+      "Encrypting prompts before sending them to a model",
+      "Scoring each prompt on a 100-point scale",
+      "Converting prompts into images for multimodal use"
+    ],
+    "explanation": "Tokenization breaks text into smaller units the model processes.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Tokenization",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Breaking text into smaller units the model can process",
+    "option_b": "Encrypting prompts before sending them to a model",
+    "option_c": "Scoring each prompt on a 100-point scale",
+    "option_d": "Converting prompts into images for multimodal use"
+  },
+  {
+    "id": "prompt_engineering_course_006",
+    "uid": "prompt_engineering_course_006",
+    "questionText": "What does a model's context window control?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "How much text or conversation it can hold in memory",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "How much text or conversation it can hold in memory",
+      "How many tokens the model allows per API (Application Programming Interface) session",
+      "How fast the model generates its first response token",
+      "How many users can share a single prompt library"
+    ],
+    "explanation": "Context window = max amount of text/conversation the model can hold in working memory.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Context window",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "How much text or conversation it can hold in memory",
+    "option_b": "How many tokens the model allows per API (Application Programming Interface) session",
+    "option_c": "How fast the model generates its first response token",
+    "option_d": "How many users can share a single prompt library"
+  },
+  {
+    "id": "prompt_engineering_course_007",
+    "uid": "prompt_engineering_course_007",
+    "questionText": "Which set best matches the course's anatomy of a good prompt?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Task, audience, context or role, and format constraints",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Task, audience, context or role, and format constraints",
+      "Vague request, longer wording, and extra filler",
+      "Only a persona and nothing else",
+      "A question mark and four answer choices"
+    ],
+    "explanation": "Strong prompt anatomy: task + audience + context/role + format constraints.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Prompt anatomy",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Task, audience, context or role, and format constraints",
+    "option_b": "Vague request, longer wording, and extra filler",
+    "option_c": "Only a persona and nothing else",
+    "option_d": "A question mark and four answer choices"
+  },
+  {
+    "id": "prompt_engineering_course_008",
+    "uid": "prompt_engineering_course_008",
+    "questionText": "Why does naming the audience improve a prompt?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "It helps the model adjust tone, detail level, and vocabulary",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "It helps the model adjust tone, detail level, and vocabulary",
+      "It forces the model to generate a longer answer",
+      "It guarantees the answer will be factually correct",
+      "It removes the need for any other prompt detail"
+    ],
+    "explanation": "Naming the audience lets the model adjust tone, detail level, and vocabulary.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Audience in prompts",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "It helps the model adjust tone, detail level, and vocabulary",
+    "option_b": "It forces the model to generate a longer answer",
+    "option_c": "It guarantees the answer will be factually correct",
+    "option_d": "It removes the need for any other prompt detail"
+  },
+  {
+    "id": "prompt_engineering_course_009",
+    "uid": "prompt_engineering_course_009",
+    "questionText": "What is the biggest problem with the prompt 'Write a post about productivity'?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "It leaves out audience, role, and style guidance",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "It leaves out audience, role, and style guidance",
+      "It uses too much technical vocabulary",
+      "It is too narrow to generate ideas",
+      "It can only work in image models"
+    ],
+    "explanation": "'Write a post about X' lacks audience, role, style, length — all crucial for quality.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Prompt weaknesses",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "It leaves out audience, role, and style guidance",
+    "option_b": "It uses too much technical vocabulary",
+    "option_c": "It is too narrow to generate ideas",
+    "option_d": "It can only work in image models"
+  },
+  {
+    "id": "prompt_engineering_course_010",
+    "uid": "prompt_engineering_course_010",
+    "questionText": "In the course, what is the value of assigning a role such as 'You're a productivity coach'?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "It gives the model a clearer point of view",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "It gives the model a clearer point of view",
+      "It bypasses the model's context length limit",
+      "It prevents hallucinations entirely",
+      "It automatically formats the answer as JSON (JavaScript Object Notation)"
+    ],
+    "explanation": "Assigning a role gives the model a clear point of view and expertise frame.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Personas",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "It gives the model a clearer point of view",
+    "option_b": "It bypasses the model's context length limit",
+    "option_c": "It prevents hallucinations entirely",
+    "option_d": "It automatically formats the answer as JSON (JavaScript Object Notation)"
+  },
+  {
+    "id": "prompt_engineering_course_011",
+    "uid": "prompt_engineering_course_011",
+    "questionText": "What does the course suggest you do when a prompt is too lengthy and starts drifting?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Tighten the request and remove unnecessary wording",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Tighten the request and remove unnecessary wording",
+      "Add even more examples until the prompt is massive",
+      "Never revise it once written",
+      "Switch to a random unrelated model"
+    ],
+    "explanation": "Tighten and remove unnecessary wording when prompts drift or get verbose.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Prompt refinement",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Tighten the request and remove unnecessary wording",
+    "option_b": "Add even more examples until the prompt is massive",
+    "option_c": "Never revise it once written",
+    "option_d": "Switch to a random unrelated model"
+  },
+  {
+    "id": "prompt_engineering_course_012",
+    "uid": "prompt_engineering_course_012",
+    "questionText": "If an AI (Artificial Intelligence) response goes off-topic, what is the best first fix?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Restate the task with tighter scope and explicit boundaries",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Restate the task with tighter scope and explicit boundaries",
+      "Accept the answer and move",
+      "Ask for a longer answer without changing anything",
+      "Delete the original task from the prompt"
+    ],
+    "explanation": "Restate the task with tighter scope and explicit boundaries.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Fixing off-topic output",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Restate the task with tighter scope and explicit boundaries",
+    "option_b": "Accept the answer and move",
+    "option_c": "Ask for a longer answer without changing anything",
+    "option_d": "Delete the original task from the prompt"
+  },
+  {
+    "id": "prompt_engineering_course_013",
+    "uid": "prompt_engineering_course_013",
+    "questionText": "What should you add first when a model's answer is missing important detail?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Relevant context and concrete constraints",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Relevant context and concrete constraints",
+      "A warning that the answer must be perfect",
+      "More praise for the model",
+      "A request to answer in all caps"
+    ],
+    "explanation": "Missing detail? Add relevant context and concrete constraints first.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Adding detail",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Relevant context and concrete constraints",
+    "option_b": "A warning that the answer must be perfect",
+    "option_c": "More praise for the model",
+    "option_d": "A request to answer in all caps"
+  },
+  {
+    "id": "prompt_engineering_course_014",
+    "uid": "prompt_engineering_course_014",
+    "questionText": "What does the course mean by fine-tuning prompts?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Iteratively revising prompts based on the quality",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Iteratively revising prompts based on the quality",
+      "Retraining the full model on new weights",
+      "Buying a larger subscription plan",
+      "Saving prompts in a folder without changing them"
+    ],
+    "explanation": "Fine-tuning prompts = iteratively revising based on output quality (not model retraining).",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Prompt tuning",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Iteratively revising prompts based on the quality",
+    "option_b": "Retraining the full model on new weights",
+    "option_c": "Buying a larger subscription plan",
+    "option_d": "Saving prompts in a folder without changing them"
+  },
+  {
+    "id": "prompt_engineering_course_015",
+    "uid": "prompt_engineering_course_015",
+    "questionText": "What is multimodal prompting?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Prompting with more than one input type such as text and images",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Prompting with more than one input type such as text and images",
+      "Sending the same text prompt to four models at once",
+      "Using only spoken prompts instead of written ones",
+      "Mixing beginner and advanced questions in one quiz"
+    ],
+    "explanation": "Multimodal prompting uses multiple input types (text + image, etc.).",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Multimodal prompting",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Prompting with more than one input type such as text and images",
+    "option_b": "Sending the same text prompt to four models at once",
+    "option_c": "Using only spoken prompts instead of written ones",
+    "option_d": "Mixing beginner and advanced questions in one quiz"
+  },
+  {
+    "id": "prompt_engineering_course_016",
+    "uid": "prompt_engineering_course_016",
+    "questionText": "In practical terms, what is context engineering?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Structuring background info so the model has the right material",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Structuring background info so the model has the right material",
+      "Building hardware specifically for faster AI (Artificial Intelligence) training",
+      "Turning prompts into a visual user interface theme",
+      "Compressing and resizing images before uploading them"
+    ],
+    "explanation": "Context engineering = structuring background info so the model has the right material.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Context engineering",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Structuring background info so the model has the right material",
+    "option_b": "Building hardware specifically for faster AI (Artificial Intelligence) training",
+    "option_c": "Turning prompts into a visual user interface theme",
+    "option_d": "Compressing and resizing images before uploading them"
+  },
+  {
+    "id": "prompt_engineering_course_017",
+    "uid": "prompt_engineering_course_017",
+    "questionText": "How does the course describe agentic AI (Artificial Intelligence) at a high level?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "AI (Artificial Intelligence) systems that can plan and act across multi-step tasks",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "AI (Artificial Intelligence) systems that can plan and act across multi-step tasks",
+      "AI (Artificial Intelligence) that only answers one short question at a time",
+      "AI (Artificial Intelligence) that works only for robotics hardware",
+      "A chatbot with no memory or tools"
+    ],
+    "explanation": "Agentic AI (Artificial Intelligence) plans and acts across multi-step tasks, often using tools.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Agentic AI (Artificial Intelligence)",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "AI (Artificial Intelligence) systems that can plan and act across multi-step tasks",
+    "option_b": "AI (Artificial Intelligence) that only answers one short question at a time",
+    "option_c": "AI (Artificial Intelligence) that works only for robotics hardware",
+    "option_d": "A chatbot with no memory or tools"
+  },
+  {
+    "id": "prompt_engineering_course_018",
+    "uid": "prompt_engineering_course_018",
+    "questionText": "Why were GitHub Copilot and no-code app builders included in the course?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "They show prompt-driven AI (Artificial Intelligence) being applied to real software",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "They show prompt-driven AI (Artificial Intelligence) being applied to real software",
+      "They replace the need to understand prompting",
+      "They only matter for hardware engineers",
+      "They are examples of non-AI (Artificial Intelligence) software tools"
+    ],
+    "explanation": "Copilot and no-code builders show prompt-driven AI (Artificial Intelligence) applied to real software creation.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Prompt-driven software",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "They show prompt-driven AI (Artificial Intelligence) being applied to real software",
+    "option_b": "They replace the need to understand prompting",
+    "option_c": "They only matter for hardware engineers",
+    "option_d": "They are examples of non-AI (Artificial Intelligence) software tools"
+  },
+  {
+    "id": "prompt_engineering_course_019",
+    "uid": "prompt_engineering_course_019",
+    "questionText": "What is the clearest reason to customize a GPT (Generative Pre-trained Transformer) or assistant with your own context?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "To align outputs to a specific project, domain, or source set",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "To align outputs to a specific project, domain, or source set",
+      "To remove the need for good prompts going forward",
+      "To automatically convert every answer into an image",
+      "To bypass human review and verification steps"
+    ],
+    "explanation": "Custom GPTs/assistants align outputs to specific projects, domains, or source sets.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Custom GPTs (Generative Pre-trained Transformers)",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "To align outputs to a specific project, domain, or source set",
+    "option_b": "To remove the need for good prompts going forward",
+    "option_c": "To automatically convert every answer into an image",
+    "option_d": "To bypass human review and verification steps"
+  },
+  {
+    "id": "prompt_engineering_course_020",
+    "uid": "prompt_engineering_course_020",
+    "questionText": "In the data-analysis demo, why is a structured prompt useful for building an Excel dashboard?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "It helps the AI (Artificial Intelligence) organize metrics, formulas, and presentation expectations",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "It helps the AI (Artificial Intelligence) organize metrics, formulas, and presentation expectations",
+      "It makes spreadsheet data unnecessary",
+      "It guarantees the dashboard will be visually perfect",
+      "It prevents any need to check the formulas"
+    ],
+    "explanation": "Structured prompts organize metrics, formulas, and presentation expectations for dashboards.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Dashboard prompting",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "It helps the AI (Artificial Intelligence) organize metrics, formulas, and presentation expectations",
+    "option_b": "It makes spreadsheet data unnecessary",
+    "option_c": "It guarantees the dashboard will be visually perfect",
+    "option_d": "It prevents any need to check the formulas"
+  },
+  {
+    "id": "prompt_engineering_course_021",
+    "uid": "prompt_engineering_course_021",
+    "questionText": "What makes the Python-roadmap education demo a prompt-engineering use case?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "The prompt tailors a learning path to the learner's goal and level",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "The prompt tailors a learning path to the learner's goal and level",
+      "The model is writing low-level programming compiler code",
+      "The prompt avoids structure so the roadmap stays creative",
+      "The output depends entirely on the model temperature setting"
+    ],
+    "explanation": "Tailored learning prompts adjust to goal and skill level — a canonical prompt engineering use case.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Education prompting",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "The prompt tailors a learning path to the learner's goal and level",
+    "option_b": "The model is writing low-level programming compiler code",
+    "option_c": "The prompt avoids structure so the roadmap stays creative",
+    "option_d": "The output depends entirely on the model temperature setting"
+  },
+  {
+    "id": "prompt_engineering_course_022",
+    "uid": "prompt_engineering_course_022",
+    "questionText": "When asking an AI (Artificial Intelligence) to generate images from text, what usually improves the result most?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Specific details about subject, style, mood, and composition",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Specific details about subject, style, mood, and composition",
+      "Using the shortest possible prompt every time",
+      "Avoiding descriptive adjectives altogether",
+      "Leaving the output open to any interpretation"
+    ],
+    "explanation": "Specific subject, style, mood, and composition produce the best AI (Artificial Intelligence) images.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Image prompting",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Specific details about subject, style, mood, and composition",
+    "option_b": "Using the shortest possible prompt every time",
+    "option_c": "Avoiding descriptive adjectives altogether",
+    "option_d": "Leaving the output open to any interpretation"
+  },
+  {
+    "id": "prompt_engineering_course_023",
+    "uid": "prompt_engineering_course_023",
+    "questionText": "What is one strong use of multimodal prompting when analyzing images with ChatGPT?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Combining the image with a task-specific question about what you want analyzed",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Combining the image with a task-specific question about what you want analyzed",
+      "Uploading the image without any instruction",
+      "Assuming the model already knows what matters",
+      "Replacing the image with a plain text summary only"
+    ],
+    "explanation": "Pair the image with a specific question about what you want analyzed.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Multimodal analysis",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Combining the image with a task-specific question about what you want analyzed",
+    "option_b": "Uploading the image without any instruction",
+    "option_c": "Assuming the model already knows what matters",
+    "option_d": "Replacing the image with a plain text summary only"
+  },
+  {
+    "id": "prompt_engineering_course_024",
+    "uid": "prompt_engineering_course_024",
+    "questionText": "Why does the course call out tools like OpenAI Codex and LangChain?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "They show how prompting connects to coding and workflow orchestration",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "They show how prompting connects to coding and workflow orchestration",
+      "They are only relevant to video editing",
+      "They remove the need to understand model behavior",
+      "They are examples of hardware accelerators"
+    ],
+    "explanation": "Codex and LangChain show how prompting connects to coding and workflow orchestration.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Prompt tooling",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "They show how prompting connects to coding and workflow orchestration",
+    "option_b": "They are only relevant to video editing",
+    "option_c": "They remove the need to understand model behavior",
+    "option_d": "They are examples of hardware accelerators"
+  },
+  {
+    "id": "prompt_engineering_course_025",
+    "uid": "prompt_engineering_course_025",
+    "questionText": "What is the practical role of MCP (Model Context Protocol) in the context of this course's tooling section?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "A way for AI (Artificial Intelligence) systems to connect to tools",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "A way for AI (Artificial Intelligence) systems to connect to tools",
+      "A video compression format for AI (Artificial Intelligence)-generated media",
+      "A visual prompt style used only for image generation",
+      "A scoring benchmark designed for spreadsheet-based AI (Artificial Intelligence)"
+    ],
+    "explanation": "MCP (Model Context Protocol) = a way for AI (Artificial Intelligence) systems to connect to tools and data sources.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: MCP (Model Context Protocol)",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "A way for AI (Artificial Intelligence) systems to connect to tools",
+    "option_b": "A video compression format for AI (Artificial Intelligence)-generated media",
+    "option_c": "A visual prompt style used only for image generation",
+    "option_d": "A scoring benchmark designed for spreadsheet-based AI (Artificial Intelligence)"
+  },
+  {
+    "id": "prompt_engineering_course_026",
+    "uid": "prompt_engineering_course_026",
+    "questionText": "What makes a cinematic video prompt stronger in Google Flow or similar tools?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Concrete camera, scene, lighting, and motion direction",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Concrete camera, scene, lighting, and motion direction",
+      "Only naming a genre and hoping for the best",
+      "Avoiding all visual detail to keep it flexible",
+      "Using unrelated technical jargon"
+    ],
+    "explanation": "Concrete camera angles, scene, lighting, and motion direction produce stronger video output.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Video prompting",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Concrete camera, scene, lighting, and motion direction",
+    "option_b": "Only naming a genre and hoping for the best",
+    "option_c": "Avoiding all visual detail to keep it flexible",
+    "option_d": "Using unrelated technical jargon"
+  },
+  {
+    "id": "prompt_engineering_course_027",
+    "uid": "prompt_engineering_course_027",
+    "questionText": "In the Google Flow section, what does 'frames to video' refer to?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Turning still images or frames into moving video sequences",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Turning still images or frames into moving video sequences",
+      "Reducing a long prompt into four sentences",
+      "Exporting text into a storyboard PDF (Portable Document Format)",
+      "Converting captions into voice-only output"
+    ],
+    "explanation": "Frames-to-video turns still images/frames into moving video sequences.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Frames-to-video",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Turning still images or frames into moving video sequences",
+    "option_b": "Reducing a long prompt into four sentences",
+    "option_c": "Exporting text into a storyboard PDF (Portable Document Format)",
+    "option_d": "Converting captions into voice-only output"
+  },
+  {
+    "id": "prompt_engineering_course_028",
+    "uid": "prompt_engineering_course_028",
+    "questionText": "What does the 'ingredients to video' idea emphasize?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Building a scene from specified characters, objects, and visual style",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Building a scene from specified characters, objects, and visual style",
+      "Writing executable code before generating any visual media content",
+      "Deliberately avoiding all reference materials when constructing prompts",
+      "Generating audio-only content without any visual component output"
+    ],
+    "explanation": "'Ingredients to video' = building a scene from specified characters, objects, settings, and style.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Ingredients-to-video",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Building a scene from specified characters, objects, and visual style",
+    "option_b": "Writing executable code before generating any visual media content",
+    "option_c": "Deliberately avoiding all reference materials when constructing prompts",
+    "option_d": "Generating audio-only content without any visual component output"
+  },
+  {
+    "id": "prompt_engineering_course_029",
+    "uid": "prompt_engineering_course_029",
+    "questionText": "What is the point of scene builder in an AI (Artificial Intelligence) video workflow?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "To arrange and extend clips into a coherent sequence",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "To arrange and extend clips into a coherent sequence",
+      "To tokenize a text prompt for debugging",
+      "To remove the need for a storyboard",
+      "To translate prompts into a spreadsheet"
+    ],
+    "explanation": "Scene builder arranges and extends clips into a coherent video sequence.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Scene builder",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "To arrange and extend clips into a coherent sequence",
+    "option_b": "To tokenize a text prompt for debugging",
+    "option_c": "To remove the need for a storyboard",
+    "option_d": "To translate prompts into a spreadsheet"
+  },
+  {
+    "id": "prompt_engineering_course_030",
+    "uid": "prompt_engineering_course_030",
+    "questionText": "Why does the course revisit prompt structure later with action verbs, theme, persona, format, exemplar, and tone?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Stronger outputs come from combining several prompt controls",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Stronger outputs come from combining several prompt controls",
+      "Prompt structure only matters for social media video content",
+      "All prompts should follow the exact same template always",
+      "Tone is the only prompt field that actually matters"
+    ],
+    "explanation": "Strong outputs combine multiple prompt controls: action verbs, theme, persona, format, exemplar, tone.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Prompt controls",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Stronger outputs come from combining several prompt controls",
+    "option_b": "Prompt structure only matters for social media video content",
+    "option_c": "All prompts should follow the exact same template always",
+    "option_d": "Tone is the only prompt field that actually matters"
+  },
+  {
+    "id": "prompt_engineering_course_031",
+    "uid": "prompt_engineering_course_031",
+    "questionText": "What is the value of adding an exemplar to a prompt?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "It gives the model a concrete pattern to imitate",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "It gives the model a concrete pattern to imitate",
+      "It removes the need for a task description",
+      "It always shortens the answer automatically",
+      "It locks the model into factual accuracy"
+    ],
+    "explanation": "An exemplar gives the model a concrete pattern to imitate (few-shot prompting).",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Exemplars",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "It gives the model a concrete pattern to imitate",
+    "option_b": "It removes the need for a task description",
+    "option_c": "It always shortens the answer automatically",
+    "option_d": "It locks the model into factual accuracy"
+  },
+  {
+    "id": "prompt_engineering_course_032",
+    "uid": "prompt_engineering_course_032",
+    "questionText": "What is the practical purpose of a prompt library?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "To save and reuse tested prompts for recurring tasks",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "To save and reuse tested prompts for recurring tasks",
+      "To store model weights locally",
+      "To avoid ever revising prompts again",
+      "To replace documentation for AI (Artificial Intelligence) tools"
+    ],
+    "explanation": "A prompt library saves tested prompts for reuse on recurring tasks.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Prompt library",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "To save and reuse tested prompts for recurring tasks",
+    "option_b": "To store model weights locally",
+    "option_c": "To avoid ever revising prompts again",
+    "option_d": "To replace documentation for AI (Artificial Intelligence) tools"
+  },
+  {
+    "id": "prompt_engineering_course_033",
+    "uid": "prompt_engineering_course_033",
+    "questionText": "How does AI (Artificial Intelligence)-enhanced research benefit from strong prompting?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "It steers search and summarization toward a specific research goal",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "It steers search and summarization toward a specific research goal",
+      "It removes the need to verify sources for accuracy",
+      "It works best when the research question is undefined",
+      "It only applies to entertainment and creative content"
+    ],
+    "explanation": "Prompts steer AI (Artificial Intelligence)-enhanced research (search, summarization, organization) toward specific goals.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: AI (Artificial Intelligence) research",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "It steers search and summarization toward a specific research goal",
+    "option_b": "It removes the need to verify sources for accuracy",
+    "option_c": "It works best when the research question is undefined",
+    "option_d": "It only applies to entertainment and creative content"
+  },
+  {
+    "id": "prompt_engineering_course_034",
+    "uid": "prompt_engineering_course_034",
+    "questionText": "What does the Canva AI (Artificial Intelligence) presentation segment show about prompt engineering?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Prompting can shape both the content and the structure",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Prompting can shape both the content and the structure",
+      "Slides should be generated with no human review",
+      "Presentation prompts are unrelated to audience needs",
+      "Visual tools do not depend on good instructions"
+    ],
+    "explanation": "Prompts shape both content and structure of AI (Artificial Intelligence)-generated presentations.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Presentation prompting",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Prompting can shape both the content and the structure",
+    "option_b": "Slides should be generated with no human review",
+    "option_c": "Presentation prompts are unrelated to audience needs",
+    "option_d": "Visual tools do not depend on good instructions"
+  },
+  {
+    "id": "prompt_engineering_course_035",
+    "uid": "prompt_engineering_course_035",
+    "questionText": "What is one sensible way to use ChatGPT for programming according to the course?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "For code generation, completion, review, and explanation with human verification",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "For code generation, completion, review, and explanation with human verification",
+      "As a complete replacement for testing and debugging",
+      "Only for writing comments, never code",
+      "Without checking whether the output actually runs"
+    ],
+    "explanation": "Use AI (Artificial Intelligence) for code gen, completion, review, explanation — with human verification.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: AI (Artificial Intelligence) for coding",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "For code generation, completion, review, and explanation with human verification",
+    "option_b": "As a complete replacement for testing and debugging",
+    "option_c": "Only for writing comments, never code",
+    "option_d": "Without checking whether the output actually runs"
+  },
+  {
+    "id": "prompt_engineering_course_036",
+    "uid": "prompt_engineering_course_036",
+    "questionText": "What does prompt tuning try to improve over time?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "The reliability and usefulness of outputs for a recurring task",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "The reliability and usefulness of outputs for a recurring task",
+      "The physical speed of your computer",
+      "The number of monitors in your setup",
+      "The model's underlying training corpus directly"
+    ],
+    "explanation": "Prompt tuning improves output reliability and usefulness for recurring tasks over time.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Prompt tuning",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "The reliability and usefulness of outputs for a recurring task",
+    "option_b": "The physical speed of your computer",
+    "option_c": "The number of monitors in your setup",
+    "option_d": "The model's underlying training corpus directly"
+  },
+  {
+    "id": "pe_new_001",
+    "uid": "pe_new_001",
+    "questionText": "What does the acronym TCREI (Task, Context, References, Evaluate, Iterate) stand for in Google's prompting framework?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Task, Context, References, Evaluate, Iterate",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Task, Context, References, Evaluate, Iterate",
+      "Test, Create, Review, Edit, Implement",
+      "Think, Code, Run, Export, Import",
+      "Target, Constraint, Result, Example, Input"
+    ],
+    "explanation": "TCREI (Task, Context, References, Evaluate, Iterate) = Task, Context, References, Evaluate, Iterate. Mnemonic: Thoughtfully Create Really Excellent Inputs.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: TCREI (Task, Context, References, Evaluate, Iterate) framework",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Task, Context, References, Evaluate, Iterate",
+    "option_b": "Test, Create, Review, Edit, Implement",
+    "option_c": "Think, Code, Run, Export, Import",
+    "option_d": "Target, Constraint, Result, Example, Input"
+  },
+  {
+    "id": "pe_new_002",
+    "uid": "pe_new_002",
+    "questionText": "What is the mnemonic Google suggests for remembering the TCREI (Task, Context, References, Evaluate, Iterate) framework?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Thoughtfully Create Really Excellent Inputs",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Think Carefully, Run Every Input",
+      "Thoughtfully Create Really Excellent Inputs",
+      "Try Creating Refined Expert Instructions",
+      "Test Context Before Running Everything"
+    ],
+    "explanation": "'Thoughtfully Create Really Excellent Inputs' helps recall Task, Context, References, Evaluate, Iterate.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: TCREI (Task, Context, References, Evaluate, Iterate) framework",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Think Carefully, Run Every Input",
+    "option_b": "Thoughtfully Create Really Excellent Inputs",
+    "option_c": "Try Creating Refined Expert Instructions",
+    "option_d": "Test Context Before Running Everything"
+  },
+  {
+    "id": "pe_new_003",
+    "uid": "pe_new_003",
+    "questionText": "In the TCREI (Task, Context, References, Evaluate, Iterate) framework, what belongs in the 'References' step?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Examples, past work samples, or style guides for the AI (Artificial Intelligence) to imitate",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "The official documentation and user manuals for the AI (Artificial Intelligence) model itself",
+      "Examples, past work samples, or style guides for the AI (Artificial Intelligence) to imitate",
+      "A comprehensive list of every prompt you have ever previously written",
+      "Direct hyperlinks to the AI (Artificial Intelligence) company's corporate website homepage"
+    ],
+    "explanation": "References are concrete examples (documents, samples, style guides) that show the model what 'good' looks like.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: TCREI (Task, Context, References, Evaluate, Iterate) framework",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "The official documentation and user manuals for the AI (Artificial Intelligence) model itself",
+    "option_b": "Examples, past work samples, or style guides for the AI (Artificial Intelligence) to imitate",
+    "option_c": "A comprehensive list of every prompt you have ever previously written",
+    "option_d": "Direct hyperlinks to the AI (Artificial Intelligence) company's corporate website homepage"
+  },
+  {
+    "id": "pe_new_004",
+    "uid": "pe_new_004",
+    "questionText": "Which of the four iteration methods involves splitting a complex prompt into a sequence of smaller tasks?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Breaking it down (prompt chaining)",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Rephrasing",
+      "Adding constraints",
+      "Breaking it down (prompt chaining)",
+      "Revisiting the framework"
+    ],
+    "explanation": "Breaking it down splits one heavy prompt into sequential steps — each building on the last.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Iteration methods",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Rephrasing",
+    "option_b": "Adding constraints",
+    "option_c": "Breaking it down (prompt chaining)",
+    "option_d": "Revisiting the framework"
+  },
+  {
+    "id": "pe_new_005",
+    "uid": "pe_new_005",
+    "questionText": "ABI (What does 'Always Be Iterating') mean in prompt engineering?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Plan to refine prompts — great outputs come from iteration, not luck",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Always use the same prompt without changes",
+      "Plan to refine prompts — great outputs come from iteration, not luck",
+      "Always buy the latest AI (Artificial Intelligence) model",
+      "Accept whatever the AI (Artificial Intelligence) generates on the first try"
+    ],
+    "explanation": "ABI (Always Be Iterating) is the course's core philosophy: expect to refine prompts across multiple rounds.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Iteration methods",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Always use the same prompt without changes",
+    "option_b": "Plan to refine prompts — great outputs come from iteration, not luck",
+    "option_c": "Always buy the latest AI (Artificial Intelligence) model",
+    "option_d": "Accept whatever the AI (Artificial Intelligence) generates on the first try"
+  },
+  {
+    "id": "pe_new_006",
+    "uid": "pe_new_006",
+    "questionText": "Which prompt technique uses 2-5 examples to shape the AI (Artificial Intelligence)'s response pattern?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Few-shot prompting",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Zero-shot prompting",
+      "Chain-of-thought prompting",
+      "Few-shot prompting",
+      "Meta-prompting"
+    ],
+    "explanation": "Few-shot prompting provides examples so the model can imitate the desired pattern.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Few-shot prompting",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Zero-shot prompting",
+    "option_b": "Chain-of-thought prompting",
+    "option_c": "Few-shot prompting",
+    "option_d": "Meta-prompting"
+  },
+  {
+    "id": "pe_new_007",
+    "uid": "pe_new_007",
+    "questionText": "What is zero-shot prompting?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Giving no examples — just the task instruction",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Providing multiple examples before asking the question",
+      "Giving no examples — just the task instruction",
+      "Using zero words in the prompt",
+      "Asking the model to generate zero outputs"
+    ],
+    "explanation": "Zero-shot = direct instruction with no examples. Works for clear, unambiguous tasks.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Zero-shot prompting",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Providing multiple examples before asking the question",
+    "option_b": "Giving no examples — just the task instruction",
+    "option_c": "Using zero words in the prompt",
+    "option_d": "Asking the model to generate zero outputs"
+  },
+  {
+    "id": "pe_new_008",
+    "uid": "pe_new_008",
+    "questionText": "What is meta-prompting?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Using AI (Artificial Intelligence) to help you design a better prompt",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Using AI (Artificial Intelligence) to help you design a better prompt",
+      "Writing prompts about metadata",
+      "Prompting multiple models simultaneously",
+      "Deleting old prompts from your library"
+    ],
+    "explanation": "Meta-prompting enlists the AI (Artificial Intelligence)'s help to craft or improve a prompt — prompting about prompting.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Meta-prompting",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Using AI (Artificial Intelligence) to help you design a better prompt",
+    "option_b": "Writing prompts about metadata",
+    "option_c": "Prompting multiple models simultaneously",
+    "option_d": "Deleting old prompts from your library"
+  },
+  {
+    "id": "pe_new_009",
+    "uid": "pe_new_009",
+    "questionText": "What is the primary purpose of assigning a persona in a prompt?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "To filter the AI (Artificial Intelligence)'s response toward a specific expertise level and tone",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "To significantly increase the speed of the AI (Artificial Intelligence) model's response time",
+      "To filter the AI (Artificial Intelligence)'s response toward a specific expertise level and tone",
+      "To fundamentally change the underlying AI (Artificial Intelligence) model being used for generation",
+      "To circumvent and bypass the AI (Artificial Intelligence) model's built-in safety restrictions"
+    ],
+    "explanation": "A persona shapes expertise and tone — 'Act as a senior data analyst' produces different output than no role.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Persona prompting",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "To significantly increase the speed of the AI (Artificial Intelligence) model's response time",
+    "option_b": "To filter the AI (Artificial Intelligence)'s response toward a specific expertise level and tone",
+    "option_c": "To fundamentally change the underlying AI (Artificial Intelligence) model being used for generation",
+    "option_d": "To circumvent and bypass the AI (Artificial Intelligence) model's built-in safety restrictions"
+  },
+  {
+    "id": "pe_new_010",
+    "uid": "pe_new_010",
+    "questionText": "Which element of a prompt most directly controls the shape of the output?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "The format specification — table, list, JSON (JavaScript Object Notation), or paragraph",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "The opening greeting or politeness of the prompt message",
+      "The persona or role assignment given to the AI (Artificial Intelligence) model",
+      "The format specification — table, list, JSON (JavaScript Object Notation), or paragraph",
+      "The total character length of the full prompt submission"
+    ],
+    "explanation": "Format specification (table, bullets, JSON (JavaScript Object Notation), etc.) directly controls output shape.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Output formatting",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "The opening greeting or politeness of the prompt message",
+    "option_b": "The persona or role assignment given to the AI (Artificial Intelligence) model",
+    "option_c": "The format specification — table, list, JSON (JavaScript Object Notation), or paragraph",
+    "option_d": "The total character length of the full prompt submission"
+  },
+  {
+    "id": "pe_new_011",
+    "uid": "pe_new_011",
+    "questionText": "A prompt produces a vague, generic blog post. Which TCREI (Task, Context, References, Evaluate, Iterate) element is most likely missing?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Context — add audience, goal, tone, and constraints",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Task — specify the action and format more precisely",
+      "Context — add audience, goal, tone, and constraints",
+      "Evaluate — review the output for accuracy and tone",
+      "Iterate — refine based on what the output was missing"
+    ],
+    "explanation": "Generic output almost always means missing Context — audience, goal, tone, and constraints.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: TCREI (Task, Context, References, Evaluate, Iterate) framework",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Task — specify the action and format more precisely",
+    "option_b": "Context — add audience, goal, tone, and constraints",
+    "option_c": "Evaluate — review the output for accuracy and tone",
+    "option_d": "Iterate — refine based on what the output was missing"
+  },
+  {
+    "id": "pe_new_012",
+    "uid": "pe_new_012",
+    "questionText": "What is prompt chaining?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Using the output of one prompt as input to the next in a sequence",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Connecting multiple AI (Artificial Intelligence) models together",
+      "Using the output of one prompt as input to the next in a sequence",
+      "Writing the longest possible single prompt",
+      "Repeating the same prompt until it works"
+    ],
+    "explanation": "Prompt chaining breaks complex tasks into sequential steps, each building on the previous output.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Prompt chaining",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Connecting multiple AI (Artificial Intelligence) models together",
+    "option_b": "Using the output of one prompt as input to the next in a sequence",
+    "option_c": "Writing the longest possible single prompt",
+    "option_d": "Repeating the same prompt until it works"
+  },
+  {
+    "id": "pe_new_013",
+    "uid": "pe_new_013",
+    "questionText": "When is chain-of-thought (CoT) prompting most useful?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Tasks requiring step-by-step reasoning like math, logic, or analysis",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Straightforward yes-or-no questions with obvious single answers",
+      "Tasks requiring step-by-step reasoning like math, logic, or analysis",
+      "Generating images from text descriptions using visual AI (Artificial Intelligence) models",
+      "Translating content between different human spoken languages"
+    ],
+    "explanation": "CoT elicits reasoning steps before the final answer — most useful for logic, math, and analysis.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Chain-of-thought",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Straightforward yes-or-no questions with obvious single answers",
+    "option_b": "Tasks requiring step-by-step reasoning like math, logic, or analysis",
+    "option_c": "Generating images from text descriptions using visual AI (Artificial Intelligence) models",
+    "option_d": "Translating content between different human spoken languages"
+  },
+  {
+    "id": "pe_new_014",
+    "uid": "pe_new_014",
+    "questionText": "What is the biggest risk of accepting AI (Artificial Intelligence) output without evaluating it?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "hallucinations, bias, and errors reach production unchecked",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "the generated output might be shorter than expected",
+      "hallucinations, bias, and errors reach production unchecked",
+      "the AI (Artificial Intelligence) model might experience slower response times",
+      "you might receive an overwhelming number of suggestions"
+    ],
+    "explanation": "Without evaluation, hallucinations, bias, and errors can cause real-world harm.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Evaluation",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "the generated output might be shorter than expected",
+    "option_b": "hallucinations, bias, and errors reach production unchecked",
+    "option_c": "the AI (Artificial Intelligence) model might experience slower response times",
+    "option_d": "you might receive an overwhelming number of suggestions"
+  },
+  {
+    "id": "pe_new_015",
+    "uid": "pe_new_015",
+    "questionText": "Which iteration method adds boundaries like word count or topic exclusions to tighten output?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Adding constraints",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Revisiting the framework",
+      "Rephrasing",
+      "Breaking it down",
+      "Adding constraints"
+    ],
+    "explanation": "Constraints narrow scope — word limits, exclusions, audience specs, format requirements.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Iteration methods",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Revisiting the framework",
+    "option_b": "Rephrasing",
+    "option_c": "Breaking it down",
+    "option_d": "Adding constraints"
+  },
+  {
+    "id": "pe_new_016",
+    "uid": "pe_new_016",
+    "questionText": "What does 'grounding' mean in the context of AI (Artificial Intelligence) outputs?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Anchoring responses in verifiable source material to reduce hallucination",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Running the AI (Artificial Intelligence) model exclusively on locally hosted server hardware",
+      "Anchoring responses in verifiable source material to reduce hallucination",
+      "Connecting the AI (Artificial Intelligence) system to live internet access for real-time data",
+      "Training the model on carefully curated ground-truth labeled datasets"
+    ],
+    "explanation": "Grounding ties AI (Artificial Intelligence) output to verifiable sources, reducing hallucination risk.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Grounding",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Running the AI (Artificial Intelligence) model exclusively on locally hosted server hardware",
+    "option_b": "Anchoring responses in verifiable source material to reduce hallucination",
+    "option_c": "Connecting the AI (Artificial Intelligence) system to live internet access for real-time data",
+    "option_d": "Training the model on carefully curated ground-truth labeled datasets"
+  },
+  {
+    "id": "pe_new_017",
+    "uid": "pe_new_017",
+    "questionText": "You want the AI (Artificial Intelligence) to write in your brand voice. Which TCREI (Task, Context, References, Evaluate, Iterate) step handles this?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "References — provide past writing samples to imitate",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Task — define the action verb and output format clearly",
+      "Context — add audience details and project constraints",
+      "References — provide past writing samples to imitate",
+      "Iterate — revise the prompt based on output quality"
+    ],
+    "explanation": "References — attach past work samples or style guides so the model imitates your voice.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: TCREI (Task, Context, References, Evaluate, Iterate) framework",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Task — define the action verb and output format clearly",
+    "option_b": "Context — add audience details and project constraints",
+    "option_c": "References — provide past writing samples to imitate",
+    "option_d": "Iterate — revise the prompt based on output quality"
+  },
+  {
+    "id": "pe_new_018",
+    "uid": "pe_new_018",
+    "questionText": "What is the recommended number of examples for few-shot prompting?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "2-5",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "0",
+      "2-5",
+      "50+",
+      "Exactly 1"
+    ],
+    "explanation": "2-5 examples is the sweet spot — enough for pattern recognition without overwhelming context.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Few-shot prompting",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "0",
+    "option_b": "2-5",
+    "option_c": "50+",
+    "option_d": "Exactly 1"
+  },
+  {
+    "id": "pe_new_019",
+    "uid": "pe_new_019",
+    "questionText": "Why should you specify the audience in your prompt?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "It adjusts tone, vocabulary, and detail level for the intended reader",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Specifying an audience makes the AI (Artificial Intelligence) model respond more quickly",
+      "It adjusts tone, vocabulary, and detail level for the intended reader",
+      "All AI (Artificial Intelligence) models require an audience specification in every prompt",
+      "Naming an audience completely eliminates the risk of hallucination"
+    ],
+    "explanation": "Audience shapes tone, vocabulary, and detail — 'for a CEO (Chief Executive Officer)' vs 'for a junior developer' produces very different output.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Audience specification",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Specifying an audience makes the AI (Artificial Intelligence) model respond more quickly",
+    "option_b": "It adjusts tone, vocabulary, and detail level for the intended reader",
+    "option_c": "All AI (Artificial Intelligence) models require an audience specification in every prompt",
+    "option_d": "Naming an audience completely eliminates the risk of hallucination"
+  },
+  {
+    "id": "pe_new_020",
+    "uid": "pe_new_020",
+    "questionText": "What is a prompt library?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "A collection of tested, reusable prompts saved for recurring tasks",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "A comprehensive database containing every available AI (Artificial Intelligence) model worldwide",
+      "A collection of tested, reusable prompts saved for recurring tasks",
+      "A physical library building containing books and resources about AI (Artificial Intelligence)",
+      "The AI (Artificial Intelligence) model's internal memory system for storing learned parameters"
+    ],
+    "explanation": "A prompt library saves tested prompts for reuse, compounding productivity over time.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Prompt libraries",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "A comprehensive database containing every available AI (Artificial Intelligence) model worldwide",
+    "option_b": "A collection of tested, reusable prompts saved for recurring tasks",
+    "option_c": "A physical library building containing books and resources about AI (Artificial Intelligence)",
+    "option_d": "The AI (Artificial Intelligence) model's internal memory system for storing learned parameters"
+  },
+  {
+    "id": "pe_new_021",
+    "uid": "pe_new_021",
+    "questionText": "What does 'temperature' control in AI (Artificial Intelligence) text generation?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Output randomness — lower is more deterministic, higher is creative",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "The speed at which the model generates its first response token",
+      "Output randomness — lower is more deterministic, higher is creative",
+      "The physical temperature of the server hardware running the model",
+      "The maximum number of tokens the model will include in output"
+    ],
+    "explanation": "Temperature controls randomness: low = focused/deterministic, high = varied/creative.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Model parameters",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "The speed at which the model generates its first response token",
+    "option_b": "Output randomness — lower is more deterministic, higher is creative",
+    "option_c": "The physical temperature of the server hardware running the model",
+    "option_d": "The maximum number of tokens the model will include in output"
+  },
+  {
+    "id": "pe_new_022",
+    "uid": "pe_new_022",
+    "questionText": "What is the context window of an LLM (Large Language Model)?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "The maximum amount of text the model can process in a single exchange",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "The physical display screen where you type your prompt text input",
+      "The maximum amount of text the model can process in a single exchange",
+      "The total size of the dataset the model was originally trained on",
+      "The maximum time limit allocated for generating each model response"
+    ],
+    "explanation": "Context window = max tokens (input + output) the model can handle in one exchange.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Context window",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "The physical display screen where you type your prompt text input",
+    "option_b": "The maximum amount of text the model can process in a single exchange",
+    "option_c": "The total size of the dataset the model was originally trained on",
+    "option_d": "The maximum time limit allocated for generating each model response"
+  },
+  {
+    "id": "pe_new_023",
+    "uid": "pe_new_023",
+    "questionText": "You ask AI (Artificial Intelligence) to summarize a report but the output misses key financials. Best first fix?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Add context specifying what to focus on: revenue, margins, YoY growth",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Immediately switch to a completely different AI (Artificial Intelligence) model platform",
+      "Add context specifying what to focus on: revenue, margins, YoY growth",
+      "Make the prompt significantly shorter to reduce model confusion",
+      "Submit the identical prompt again without making any modifications"
+    ],
+    "explanation": "Add specific context about what matters — the model can't guess your priorities without guidance.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Iteration methods",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Immediately switch to a completely different AI (Artificial Intelligence) model platform",
+    "option_b": "Add context specifying what to focus on: revenue, margins, YoY growth",
+    "option_c": "Make the prompt significantly shorter to reduce model confusion",
+    "option_d": "Submit the identical prompt again without making any modifications"
+  },
+  {
+    "id": "pe_new_024",
+    "uid": "pe_new_024",
+    "questionText": "What distinguishes a 'prompt' from a simple 'question'?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "A prompt includes persona, context, constraints, examples, and format",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Prompts are simply longer versions of a basic question format",
+      "A prompt includes persona, context, constraints, examples, and format",
+      "Questions consistently produce better AI (Artificial Intelligence) output than prompts do",
+      "There is no functional difference between prompts and questions"
+    ],
+    "explanation": "A prompt is richer: persona + context + constraints + examples + format, not just a bare question.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Prompt fundamentals",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Prompts are simply longer versions of a basic question format",
+    "option_b": "A prompt includes persona, context, constraints, examples, and format",
+    "option_c": "Questions consistently produce better AI (Artificial Intelligence) output than prompts do",
+    "option_d": "There is no functional difference between prompts and questions"
+  },
+  {
+    "id": "pe_new_025",
+    "uid": "pe_new_025",
+    "questionText": "What is the primary risk of using vague, open-ended prompts?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Higher chance of hallucination, irrelevant output, and generic responses",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "The AI (Artificial Intelligence) model generates its response significantly too quickly",
+      "Higher chance of hallucination, irrelevant output, and generic responses",
+      "The AI (Artificial Intelligence) system categorically refuses to answer the given prompt",
+      "The generated output is consistently too short to be useful"
+    ],
+    "explanation": "Vague prompts produce vague output — and increase hallucination risk because the model fills gaps with noise.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Prompt quality",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "The AI (Artificial Intelligence) model generates its response significantly too quickly",
+    "option_b": "Higher chance of hallucination, irrelevant output, and generic responses",
+    "option_c": "The AI (Artificial Intelligence) system categorically refuses to answer the given prompt",
+    "option_d": "The generated output is consistently too short to be useful"
+  },
+  {
+    "id": "pe_new_026",
+    "uid": "pe_new_026",
+    "questionText": "Which prompt technique asks the AI (Artificial Intelligence) to help you write a better prompt?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Meta-prompting",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Few-shot",
+      "Chain-of-thought",
+      "Meta-prompting",
+      "Zero-shot"
+    ],
+    "explanation": "Meta-prompting uses the AI (Artificial Intelligence) itself to design or improve your prompt.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Meta-prompting",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Few-shot",
+    "option_b": "Chain-of-thought",
+    "option_c": "Meta-prompting",
+    "option_d": "Zero-shot"
+  },
+  {
+    "id": "pe_new_027",
+    "uid": "pe_new_027",
+    "questionText": "What is 'context engineering' as described in the course?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Structuring background info so the model has the right material",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Constructing physical server infrastructure for running AI (Artificial Intelligence) models",
+      "Structuring background info so the model has the right material",
+      "Modifying the AI (Artificial Intelligence) model's internal architecture and neural weights",
+      "Deliberately removing all contextual information from every prompt"
+    ],
+    "explanation": "Context engineering = curating and structuring what goes into the model's context window for best results.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Context engineering",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Constructing physical server infrastructure for running AI (Artificial Intelligence) models",
+    "option_b": "Structuring background info so the model has the right material",
+    "option_c": "Modifying the AI (Artificial Intelligence) model's internal architecture and neural weights",
+    "option_d": "Deliberately removing all contextual information from every prompt"
+  },
+  {
+    "id": "pe_new_028",
+    "uid": "pe_new_028",
+    "questionText": "What should you do when the AI (Artificial Intelligence)'s first response is 60% correct?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Iterate — add constraints, refine context, and provide better examples",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Accept the 60% correct output and move on to the next task",
+      "Iterate — add constraints, refine context, and provide better examples",
+      "Delete everything and start the entire project completely from scratch",
+      "Report a bug to the AI (Artificial Intelligence) provider's customer support team immediately"
+    ],
+    "explanation": "60% correct is a strong starting point — iterate with constraints, context, and references to close the gap.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Iteration methods",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Accept the 60% correct output and move on to the next task",
+    "option_b": "Iterate — add constraints, refine context, and provide better examples",
+    "option_c": "Delete everything and start the entire project completely from scratch",
+    "option_d": "Report a bug to the AI (Artificial Intelligence) provider's customer support team immediately"
+  },
+  {
+    "id": "pe_new_029",
+    "uid": "pe_new_029",
+    "questionText": "Why is specifying output format important in a prompt?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Without it, the model defaults to its own formatting which may not fit",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Including format specifications makes the AI (Artificial Intelligence) process requests harder",
+      "Without it, the model defaults to its own formatting which may not fit",
+      "Format specification is a mandatory separate step in the TCREI (Task, Context, References, Evaluate, Iterate) framework",
+      "Specifying output format reduces the overall cost of the API (Application Programming Interface) request"
+    ],
+    "explanation": "Without format specs, the model chooses its own structure which often doesn't match your workflow.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Output formatting",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Including format specifications makes the AI (Artificial Intelligence) process requests harder",
+    "option_b": "Without it, the model defaults to its own formatting which may not fit",
+    "option_c": "Format specification is a mandatory separate step in the TCREI (Task, Context, References, Evaluate, Iterate) framework",
+    "option_d": "Specifying output format reduces the overall cost of the API (Application Programming Interface) request"
+  },
+  {
+    "id": "pe_new_030",
+    "uid": "pe_new_030",
+    "questionText": "What is the role of 'Evaluate' in the TCREI (Task, Context, References, Evaluate, Iterate) framework?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Critically review output for accuracy, relevance, bias, and format",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Let the AI (Artificial Intelligence) automatically evaluate its own output without review",
+      "Critically review output for accuracy, relevance, bias, and format",
+      "Skip evaluation entirely when you're working under time pressure",
+      "Evaluate which AI (Artificial Intelligence) model platform you should switch to instead"
+    ],
+    "explanation": "Evaluate = check output against your criteria before accepting. Never skip this step.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: TCREI (Task, Context, References, Evaluate, Iterate) framework",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Let the AI (Artificial Intelligence) automatically evaluate its own output without review",
+    "option_b": "Critically review output for accuracy, relevance, bias, and format",
+    "option_c": "Skip evaluation entirely when you're working under time pressure",
+    "option_d": "Evaluate which AI (Artificial Intelligence) model platform you should switch to instead"
+  },
+  {
+    "id": "pe_new_031",
+    "uid": "pe_new_031",
+    "questionText": "Which of these is an example of adding a constraint to a prompt?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Write a 150-word description for dog owners aged 25-40, no exclamation marks",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Write a general article about dogs for any audience",
+      "Write a 150-word description for dog owners aged 25-40, no exclamation marks",
+      "Tell me everything you know about dogs in any format",
+      "Produce a comprehensive dog encyclopedia with all breeds"
+    ],
+    "explanation": "Word count + audience + exclusion = multiple constraints tightening the output.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Constraints",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Write a general article about dogs for any audience",
+    "option_b": "Write a 150-word description for dog owners aged 25-40, no exclamation marks",
+    "option_c": "Tell me everything you know about dogs in any format",
+    "option_d": "Produce a comprehensive dog encyclopedia with all breeds"
+  },
+  {
+    "id": "pe_new_032",
+    "uid": "pe_new_032",
+    "questionText": "What makes a prompt 'reusable'?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "It's templated enough to work across similar tasks with variable swaps",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "It's so specific to one unique situation that it can never be reused",
+      "It's templated enough to work across similar tasks with variable swaps",
+      "It is the longest possible prompt that can fit the context window",
+      "It has been used exactly one time and then permanently discarded"
+    ],
+    "explanation": "Reusable prompts are templated — swap variables (product, audience, goal) for recurring tasks.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Prompt libraries",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "It's so specific to one unique situation that it can never be reused",
+    "option_b": "It's templated enough to work across similar tasks with variable swaps",
+    "option_c": "It is the longest possible prompt that can fit the context window",
+    "option_d": "It has been used exactly one time and then permanently discarded"
+  },
+  {
+    "id": "pe_new_033",
+    "uid": "pe_new_033",
+    "questionText": "What is 'hallucination' in AI (Artificial Intelligence)?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "AI (Artificial Intelligence) producing confident but factually incorrect content",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "the AI (Artificial Intelligence) generating visual artifacts in rendered image outputs",
+      "AI (Artificial Intelligence) producing confident but factually incorrect content",
+      "a hardware malfunction that disrupts model performance",
+      "the AI (Artificial Intelligence) systematically refusing to generate any responses"
+    ],
+    "explanation": "Hallucination = the model produces plausible-sounding but wrong or invented information.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Hallucinations",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "the AI (Artificial Intelligence) generating visual artifacts in rendered image outputs",
+    "option_b": "AI (Artificial Intelligence) producing confident but factually incorrect content",
+    "option_c": "a hardware malfunction that disrupts model performance",
+    "option_d": "the AI (Artificial Intelligence) systematically refusing to generate any responses"
+  },
+  {
+    "id": "pe_new_034",
+    "uid": "pe_new_034",
+    "questionText": "What is the best approach when you need AI (Artificial Intelligence) to match a specific writing style?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Provide 2-3 examples of the desired style as references",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Describe the style in abstract terms only",
+      "Provide 2-3 examples of the desired style as references",
+      "Hope the AI (Artificial Intelligence) guesses correctly",
+      "Use the longest possible prompt"
+    ],
+    "explanation": "Concrete examples (few-shot references) work far better than abstract style descriptions.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: References",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Describe the style in abstract terms only",
+    "option_b": "Provide 2-3 examples of the desired style as references",
+    "option_c": "Hope the AI (Artificial Intelligence) guesses correctly",
+    "option_d": "Use the longest possible prompt"
+  },
+  {
+    "id": "pe_new_035",
+    "uid": "pe_new_035",
+    "questionText": "How does multimodal prompting differ from text-only prompting?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "It combines different input types like text plus images or audio",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "It simultaneously runs the same prompt across multiple AI (Artificial Intelligence) models",
+      "It combines different input types like text plus images or audio",
+      "It is a technique that only functions on mobile device platforms",
+      "It requires advanced programming skills to implement effectively"
+    ],
+    "explanation": "Multimodal = multiple input modalities in one prompt (text + image, text + audio, etc.).",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Multimodal prompting",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "It simultaneously runs the same prompt across multiple AI (Artificial Intelligence) models",
+    "option_b": "It combines different input types like text plus images or audio",
+    "option_c": "It is a technique that only functions on mobile device platforms",
+    "option_d": "It requires advanced programming skills to implement effectively"
+  },
+  {
+    "id": "pe_new_036",
+    "uid": "pe_new_036",
+    "questionText": "What should you do before using AI (Artificial Intelligence)-generated code in production?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Review, test, and verify the code works correctly and securely first",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Deploy AI (Artificial Intelligence)-generated code immediately — it is always correct and secure",
+      "Review, test, and verify the code works correctly and securely first",
+      "Delete all code comments before deploying to streamline the codebase",
+      "Rename all variables in the generated code to match your conventions"
+    ],
+    "explanation": "AI (Artificial Intelligence) code is a draft — review for bugs, security issues, and correctness before deploying.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: AI (Artificial Intelligence) for coding",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Deploy AI (Artificial Intelligence)-generated code immediately — it is always correct and secure",
+    "option_b": "Review, test, and verify the code works correctly and securely first",
+    "option_c": "Delete all code comments before deploying to streamline the codebase",
+    "option_d": "Rename all variables in the generated code to match your conventions"
+  },
+  {
+    "id": "pe_new_037",
+    "uid": "pe_new_037",
+    "questionText": "What is the benefit of using transitional phrases when providing references in a prompt?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "They signal to the AI (Artificial Intelligence) where references begin and how to use them",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Transitional phrases primarily serve to make prompts unnecessarily long",
+      "They signal to the AI (Artificial Intelligence) where references begin and how to use them",
+      "Transitional phrases consistently confuse AI (Artificial Intelligence) models and reduce quality",
+      "All AI (Artificial Intelligence) models require transitional phrases as a mandatory input format"
+    ],
+    "explanation": "Phrases like 'Refer to these materials...' or 'Base your response on...' tell the model how to use attached references.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: References",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Transitional phrases primarily serve to make prompts unnecessarily long",
+    "option_b": "They signal to the AI (Artificial Intelligence) where references begin and how to use them",
+    "option_c": "Transitional phrases consistently confuse AI (Artificial Intelligence) models and reduce quality",
+    "option_d": "All AI (Artificial Intelligence) models require transitional phrases as a mandatory input format"
+  },
+  {
+    "id": "pe_new_038",
+    "uid": "pe_new_038",
+    "questionText": "When should you use a persona like 'Act as a financial analyst' in a prompt?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "When you want the AI (Artificial Intelligence) to adopt a specific expertise and perspective",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Never assign personas — they have no effect on AI (Artificial Intelligence) output quality",
+      "When you want the AI (Artificial Intelligence) to adopt a specific expertise and perspective",
+      "Only when writing fiction or other creative storytelling content",
+      "Only when the AI (Artificial Intelligence) explicitly requests that you assign it a role"
+    ],
+    "explanation": "Personas shape expertise, vocabulary, and analytical lens — effective across all domains, not just creative.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Persona prompting",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Never assign personas — they have no effect on AI (Artificial Intelligence) output quality",
+    "option_b": "When you want the AI (Artificial Intelligence) to adopt a specific expertise and perspective",
+    "option_c": "Only when writing fiction or other creative storytelling content",
+    "option_d": "Only when the AI (Artificial Intelligence) explicitly requests that you assign it a role"
+  },
+  {
+    "id": "pe_new_039",
+    "uid": "pe_new_039",
+    "questionText": "What is the relationship between prompt length and prompt quality?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Quality depends on clarity and specificity, not length",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Longer prompts are always better",
+      "Shorter prompts are always better",
+      "Quality depends on clarity and specificity, not length",
+      "The ideal prompt is exactly 100 words"
+    ],
+    "explanation": "A short, clear, specific prompt often outperforms a long vague one. Quality > length.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Prompt quality",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Longer prompts are always better",
+    "option_b": "Shorter prompts are always better",
+    "option_c": "Quality depends on clarity and specificity, not length",
+    "option_d": "The ideal prompt is exactly 100 words"
+  },
+  {
+    "id": "pe_new_040",
+    "uid": "pe_new_040",
+    "questionText": "Which iteration method involves trying alternative ways to express the same request?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Rephrasing or using analogies",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Revisiting the framework",
+      "Breaking it down",
+      "Rephrasing or using analogies",
+      "Adding constraints"
+    ],
+    "explanation": "Rephrasing tries alternative wording or analogies — sometimes a different framing clicks better.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Iteration methods",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Revisiting the framework",
+    "option_b": "Breaking it down",
+    "option_c": "Rephrasing or using analogies",
+    "option_d": "Adding constraints"
+  },
+  {
+    "id": "pe_new_041",
+    "uid": "pe_new_041",
+    "questionText": "What is an AI (Artificial Intelligence) agent as described in the prompting course?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "An AI (Artificial Intelligence) system that can plan, take actions, and use tools across tasks",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "A human operator who manually manages and operates AI (Artificial Intelligence) tool interfaces",
+      "An AI (Artificial Intelligence) system that can plan, take actions, and use tools across tasks",
+      "A customer service chatbot that follows strictly scripted response trees",
+      "An AI (Artificial Intelligence) model that is limited to only generating visual image outputs"
+    ],
+    "explanation": "AI (Artificial Intelligence) agents plan, act, and use tools — going beyond simple question-answering to complete workflows.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: AI (Artificial Intelligence) agents",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "A human operator who manually manages and operates AI (Artificial Intelligence) tool interfaces",
+    "option_b": "An AI (Artificial Intelligence) system that can plan, take actions, and use tools across tasks",
+    "option_c": "A customer service chatbot that follows strictly scripted response trees",
+    "option_d": "An AI (Artificial Intelligence) model that is limited to only generating visual image outputs"
+  },
+  {
+    "id": "pe_new_042",
+    "uid": "pe_new_042",
+    "questionText": "How do you create an effective AI (Artificial Intelligence) agent using prompting?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Assign persona, provide context, define interactions, set stop phrase",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Write one single brief instruction with no additional context",
+      "Assign persona, provide context, define interactions, set stop phrase",
+      "Let the AI (Artificial Intelligence) system decide its own configuration and behavior rules",
+      "Use only highly technical AI (Artificial Intelligence) terminology in the agent setup prompt"
+    ],
+    "explanation": "Effective agents need persona + context + interaction rules + stop conditions + output expectations.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: AI (Artificial Intelligence) agents",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Write one single brief instruction with no additional context",
+    "option_b": "Assign persona, provide context, define interactions, set stop phrase",
+    "option_c": "Let the AI (Artificial Intelligence) system decide its own configuration and behavior rules",
+    "option_d": "Use only highly technical AI (Artificial Intelligence) terminology in the agent setup prompt"
+  },
+  {
+    "id": "pe_new_043",
+    "uid": "pe_new_043",
+    "questionText": "What does the course recommend doing with prompts that produce consistently good results?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Save them in a prompt library for ongoing reuse and iteration",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Delete proven prompts immediately after each individual use",
+      "Save them in a prompt library for ongoing reuse and iteration",
+      "Keep successful prompts private and never share with teammates",
+      "Never modify a prompt once it has produced a satisfactory result"
+    ],
+    "explanation": "Save winning prompts in a library — reuse, remix, and build on them over time.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Prompt libraries",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Delete proven prompts immediately after each individual use",
+    "option_b": "Save them in a prompt library for ongoing reuse and iteration",
+    "option_c": "Keep successful prompts private and never share with teammates",
+    "option_d": "Never modify a prompt once it has produced a satisfactory result"
+  },
+  {
+    "id": "pe_new_044",
+    "uid": "pe_new_044",
+    "questionText": "What is the 'Iterate' step in TCREI (Task, Context, References, Evaluate, Iterate)?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Refining the prompt based on evaluation to improve output quality",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Accepting whatever the AI (Artificial Intelligence) produces on the very first attempt",
+      "Refining the prompt based on evaluation to improve output quality",
+      "Deleting the entire conversation and restarting completely fresh",
+      "Switching to a different AI (Artificial Intelligence) model platform without any changes"
+    ],
+    "explanation": "Iterate = refine based on what evaluation revealed. Adjust task, context, or references and try again.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: TCREI (Task, Context, References, Evaluate, Iterate) framework",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Accepting whatever the AI (Artificial Intelligence) produces on the very first attempt",
+    "option_b": "Refining the prompt based on evaluation to improve output quality",
+    "option_c": "Deleting the entire conversation and restarting completely fresh",
+    "option_d": "Switching to a different AI (Artificial Intelligence) model platform without any changes"
+  },
+  {
+    "id": "pe_new_045",
+    "uid": "pe_new_045",
+    "questionText": "Which type of prompt is best for getting consistent formatting across multiple requests?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Structured templates with explicit format specifications and examples",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Prompts that are deliberately vague and completely open-ended",
+      "Structured templates with explicit format specifications and examples",
+      "Prompts consisting of only a single word with no additional context",
+      "Prompts that intentionally omit all examples and reference material"
+    ],
+    "explanation": "Templates with explicit format specs ensure consistency — especially for recurring tasks.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Output formatting",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Prompts that are deliberately vague and completely open-ended",
+    "option_b": "Structured templates with explicit format specifications and examples",
+    "option_c": "Prompts consisting of only a single word with no additional context",
+    "option_d": "Prompts that intentionally omit all examples and reference material"
+  },
+  {
+    "id": "pe_new_046",
+    "uid": "pe_new_046",
+    "questionText": "What does 'top-p' (nucleus sampling) control in AI (Artificial Intelligence) generation?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Word choice diversity by limiting the probability pool sampled from",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "The total number of paragraphs included in the model's response",
+      "Word choice diversity by limiting the probability pool sampled from",
+      "The amount of physical processing power allocated to the request",
+      "The specific language the model uses to generate its response"
+    ],
+    "explanation": "Top-p limits sampling to the smallest set of tokens whose cumulative probability reaches p — controls diversity.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Model parameters",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "The total number of paragraphs included in the model's response",
+    "option_b": "Word choice diversity by limiting the probability pool sampled from",
+    "option_c": "The amount of physical processing power allocated to the request",
+    "option_d": "The specific language the model uses to generate its response"
+  },
+  {
+    "id": "pe_new_047",
+    "uid": "pe_new_047",
+    "questionText": "When crafting a prompt for data analysis, what should you specify?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Specify the analysis you want, the output format, and focus areas",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Simply paste the raw data file with no instructions or context",
+      "Specify the analysis you want, the output format, and focus areas",
+      "Provide only the file name and let the AI (Artificial Intelligence) determine the analysis",
+      "Ask the AI (Artificial Intelligence) to guess what type of analysis would be most useful"
+    ],
+    "explanation": "Specify the analysis type, output format, and focus areas — don't make the model guess your intent.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Data analysis prompting",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Simply paste the raw data file with no instructions or context",
+    "option_b": "Specify the analysis you want, the output format, and focus areas",
+    "option_c": "Provide only the file name and let the AI (Artificial Intelligence) determine the analysis",
+    "option_d": "Ask the AI (Artificial Intelligence) to guess what type of analysis would be most useful"
+  },
+  {
+    "id": "pe_new_048",
+    "uid": "pe_new_048",
+    "questionText": "What is the difference between 'fine-tuning a model' and 'fine-tuning a prompt'?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Model fine-tuning changes weights; prompt tuning revises instructions",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "They describe exactly the same process with different terminology",
+      "Model fine-tuning changes weights; prompt tuning revises instructions",
+      "Fine-tuning a prompt is significantly more expensive than a model",
+      "Fine-tuning the underlying model is always the necessary approach"
+    ],
+    "explanation": "Model fine-tuning changes internal weights. Prompt fine-tuning iterates on instructions — no model changes.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Prompt tuning",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "They describe exactly the same process with different terminology",
+    "option_b": "Model fine-tuning changes weights; prompt tuning revises instructions",
+    "option_c": "Fine-tuning a prompt is significantly more expensive than a model",
+    "option_d": "Fine-tuning the underlying model is always the necessary approach"
+  },
+  {
+    "id": "pe_new_049",
+    "uid": "pe_new_049",
+    "questionText": "What is the recommended responsible AI (Artificial Intelligence) practice at the end of the prompting course?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Disclose AI (Artificial Intelligence) use, protect private data, always verify output accuracy",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Share all prompts and results publicly on social media platforms",
+      "Disclose AI (Artificial Intelligence) use, protect private data, always verify output accuracy",
+      "Use AI (Artificial Intelligence) tools without informing any coworkers or collaborators",
+      "Trust every AI (Artificial Intelligence) output without any verification or fact-checking"
+    ],
+    "explanation": "The responsible AI (Artificial Intelligence) checklist: disclose AI (Artificial Intelligence) use, protect private data, verify outputs.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Responsible AI (Artificial Intelligence)",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Share all prompts and results publicly on social media platforms",
+    "option_b": "Disclose AI (Artificial Intelligence) use, protect private data, always verify output accuracy",
+    "option_c": "Use AI (Artificial Intelligence) tools without informing any coworkers or collaborators",
+    "option_d": "Trust every AI (Artificial Intelligence) output without any verification or fact-checking"
+  },
+  {
+    "id": "pe_new_050",
+    "uid": "pe_new_050",
+    "questionText": "When generating a presentation with AI (Artificial Intelligence), what makes the biggest difference in output quality?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Specifying audience, key messages, slide structure, and visual style",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Using the newest and most expensive available AI (Artificial Intelligence) model version",
+      "Specifying audience, key messages, slide structure, and visual style",
+      "Keeping the presentation prompt as brief and minimal as possible",
+      "Letting the AI (Artificial Intelligence) autonomously decide the entire presentation structure"
+    ],
+    "explanation": "Audience + key messages + structure + style = a prompt that produces usable presentations.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Presentation prompting",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Using the newest and most expensive available AI (Artificial Intelligence) model version",
+    "option_b": "Specifying audience, key messages, slide structure, and visual style",
+    "option_c": "Keeping the presentation prompt as brief and minimal as possible",
+    "option_d": "Letting the AI (Artificial Intelligence) autonomously decide the entire presentation structure"
+  },
+  {
+    "id": "pe_new_051",
+    "uid": "pe_new_051",
+    "questionText": "What does the course mean by 'power-up strategies' for prompting?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Advanced techniques like meta-prompting that elevate prompt quality",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Purchasing more powerful hardware to run larger AI (Artificial Intelligence) models",
+      "Advanced techniques like meta-prompting that elevate prompt quality",
+      "Paying for premium subscription tiers on AI (Artificial Intelligence) tool platforms",
+      "Adding more display monitors to your workstation for multitasking"
+    ],
+    "explanation": "Power-up strategies are advanced techniques (meta-prompting, agent design) covered in later modules.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Advanced techniques",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Purchasing more powerful hardware to run larger AI (Artificial Intelligence) models",
+    "option_b": "Advanced techniques like meta-prompting that elevate prompt quality",
+    "option_c": "Paying for premium subscription tiers on AI (Artificial Intelligence) tool platforms",
+    "option_d": "Adding more display monitors to your workstation for multitasking"
+  },
+  {
+    "id": "pe_new_052",
+    "uid": "pe_new_052",
+    "questionText": "In prompt engineering, what is the role of 'negative constraints'?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "They specify what to exclude or avoid in the output",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "They make the AI (Artificial Intelligence) produce negative content",
+      "They specify what to exclude or avoid in the output",
+      "They reduce the model's accuracy",
+      "They are never useful"
+    ],
+    "explanation": "Negative constraints ('do not include jargon', 'avoid bullet points') are powerful for tightening output.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Constraints",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "They make the AI (Artificial Intelligence) produce negative content",
+    "option_b": "They specify what to exclude or avoid in the output",
+    "option_c": "They reduce the model's accuracy",
+    "option_d": "They are never useful"
+  },
+  {
+    "id": "pe_new_053",
+    "uid": "pe_new_053",
+    "questionText": "What does the course say about using AI (Artificial Intelligence) as a writing partner for emails?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "AI (Artificial Intelligence) drafts quickly; humans review for tone, accuracy, appropriateness",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "AI (Artificial Intelligence) should autonomously write and send all emails without oversight",
+      "AI (Artificial Intelligence) drafts quickly; humans review for tone, accuracy, appropriateness",
+      "Professional emails should never involve any AI (Artificial Intelligence)-powered assistance",
+      "AI (Artificial Intelligence)-drafted emails are reliable enough to skip human review entirely"
+    ],
+    "explanation": "AI (Artificial Intelligence) drafts fast; humans verify tone, accuracy, and appropriateness before hitting send.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: AI (Artificial Intelligence) for writing",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "AI (Artificial Intelligence) should autonomously write and send all emails without oversight",
+    "option_b": "AI (Artificial Intelligence) drafts quickly; humans review for tone, accuracy, appropriateness",
+    "option_c": "Professional emails should never involve any AI (Artificial Intelligence)-powered assistance",
+    "option_d": "AI (Artificial Intelligence)-drafted emails are reliable enough to skip human review entirely"
+  },
+  {
+    "id": "pe_new_054",
+    "uid": "pe_new_054",
+    "questionText": "What is the value of combining text and image inputs in a single prompt?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Visual context adds information that text descriptions might miss",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Combining text and images always produces superior text output",
+      "Visual context adds information that text descriptions might miss",
+      "Multimodal input is inherently slower, which implies higher quality",
+      "Combining modalities is only useful for fine art generation tasks"
+    ],
+    "explanation": "Visual context adds information that text descriptions might miss — enabling richer analysis and generation.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Multimodal prompting",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Combining text and images always produces superior text output",
+    "option_b": "Visual context adds information that text descriptions might miss",
+    "option_c": "Multimodal input is inherently slower, which implies higher quality",
+    "option_d": "Combining modalities is only useful for fine art generation tasks"
+  },
+  {
+    "id": "pe_new_055",
+    "uid": "pe_new_055",
+    "questionText": "What does the course recommend when AI (Artificial Intelligence) output contains factual claims?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Verify claims against reliable authoritative sources before using them",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Trust all factual claims — AI (Artificial Intelligence) models are trained on verified facts",
+      "Verify claims against reliable authoritative sources before using them",
+      "Ignore factual claims since they are not the main purpose of AI (Artificial Intelligence)",
+      "Add additional unverified facts to supplement the AI (Artificial Intelligence)'s initial output"
+    ],
+    "explanation": "Always verify factual claims. AI (Artificial Intelligence) predicts plausible tokens, not verified truth.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Evaluation",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Trust all factual claims — AI (Artificial Intelligence) models are trained on verified facts",
+    "option_b": "Verify claims against reliable authoritative sources before using them",
+    "option_c": "Ignore factual claims since they are not the main purpose of AI (Artificial Intelligence)",
+    "option_d": "Add additional unverified facts to supplement the AI (Artificial Intelligence)'s initial output"
+  },
+  {
+    "id": "pe_new_056",
+    "uid": "pe_new_056",
+    "questionText": "How does specifying a word count constraint improve prompt output?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "It prevents verbosity and forces the model to prioritize key info",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Word count constraints provide no benefit to output quality",
+      "It prevents verbosity and forces the model to prioritize key info",
+      "Adding word limits makes the AI (Artificial Intelligence) model process requests more slowly",
+      "AI (Artificial Intelligence) models always ignore word count specifications in every prompt"
+    ],
+    "explanation": "Word count forces concision — the model must prioritize what matters most within the limit.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Constraints",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Word count constraints provide no benefit to output quality",
+    "option_b": "It prevents verbosity and forces the model to prioritize key info",
+    "option_c": "Adding word limits makes the AI (Artificial Intelligence) model process requests more slowly",
+    "option_d": "AI (Artificial Intelligence) models always ignore word count specifications in every prompt"
+  },
+  {
+    "id": "pe_new_057",
+    "uid": "pe_new_057",
+    "questionText": "What is the course's position on AI (Artificial Intelligence) replacing human creativity?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "AI (Artificial Intelligence) augments creativity — generating options humans direct and refine",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "AI (Artificial Intelligence) has fully replaced the need for human creative contribution",
+      "AI (Artificial Intelligence) augments creativity — generating options humans direct and refine",
+      "Human creativity has become irrelevant in the age of AI (Artificial Intelligence) tools",
+      "AI (Artificial Intelligence) tools cannot meaningfully assist with any creative activities"
+    ],
+    "explanation": "AI (Artificial Intelligence) augments, not replaces. Humans provide creative direction; AI (Artificial Intelligence) expands the option space.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: AI (Artificial Intelligence) and creativity",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "AI (Artificial Intelligence) has fully replaced the need for human creative contribution",
+    "option_b": "AI (Artificial Intelligence) augments creativity — generating options humans direct and refine",
+    "option_c": "Human creativity has become irrelevant in the age of AI (Artificial Intelligence) tools",
+    "option_d": "AI (Artificial Intelligence) tools cannot meaningfully assist with any creative activities"
+  },
+  {
+    "id": "pe_new_058",
+    "uid": "pe_new_058",
+    "questionText": "When building an AI (Artificial Intelligence) agent, what is a 'stop phrase'?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "A trigger word that ends the agent loop and prompts a summary",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "A command phrase that forces the AI (Artificial Intelligence) model to shut down",
+      "A trigger word that ends the agent loop and prompts a summary",
+      "A content moderation filter applied to all generated output",
+      "A security passphrase required before the agent will respond"
+    ],
+    "explanation": "A stop phrase (e.g., 'BREAK') signals the agent to end the session and produce takeaways.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: AI (Artificial Intelligence) agents",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "A command phrase that forces the AI (Artificial Intelligence) model to shut down",
+    "option_b": "A trigger word that ends the agent loop and prompts a summary",
+    "option_c": "A content moderation filter applied to all generated output",
+    "option_d": "A security passphrase required before the agent will respond"
+  },
+  {
+    "id": "pe_new_059",
+    "uid": "pe_new_059",
+    "questionText": "What makes AI (Artificial Intelligence)-assisted research more effective than a basic web search?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "AI (Artificial Intelligence) synthesizes, summarizes, and organizes sources toward a specific goal",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "AI (Artificial Intelligence)-enhanced research always produces the single correct answer",
+      "AI (Artificial Intelligence) synthesizes, summarizes, and organizes sources toward a specific goal",
+      "AI (Artificial Intelligence) research completely replaces the need to evaluate source quality",
+      "AI (Artificial Intelligence)-powered research is always faster than any alternative approach"
+    ],
+    "explanation": "AI (Artificial Intelligence) synthesizes and organizes across sources — going beyond a list of links to structured insights.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: AI (Artificial Intelligence) research",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "AI (Artificial Intelligence)-enhanced research always produces the single correct answer",
+    "option_b": "AI (Artificial Intelligence) synthesizes, summarizes, and organizes sources toward a specific goal",
+    "option_c": "AI (Artificial Intelligence) research completely replaces the need to evaluate source quality",
+    "option_d": "AI (Artificial Intelligence)-powered research is always faster than any alternative approach"
+  },
+  {
+    "id": "pe_new_060",
+    "uid": "pe_new_060",
+    "questionText": "What is the primary purpose of the 'Task' element in TCREI (Task, Context, References, Evaluate, Iterate)?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Clearly stating what you want done, including persona and format",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Describing the specific AI (Artificial Intelligence) model that will process your prompt",
+      "Clearly stating what you want done, including persona and format",
+      "Setting the temperature and top-p model generation parameters",
+      "Listing your personal preferences unrelated to the current task"
+    ],
+    "explanation": "Task = what you want done + who the AI (Artificial Intelligence) should act as + what format to deliver.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: TCREI (Task, Context, References, Evaluate, Iterate) framework",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Describing the specific AI (Artificial Intelligence) model that will process your prompt",
+    "option_b": "Clearly stating what you want done, including persona and format",
+    "option_c": "Setting the temperature and top-p model generation parameters",
+    "option_d": "Listing your personal preferences unrelated to the current task"
+  },
+  {
+    "id": "pe_new_061",
+    "uid": "pe_new_061",
+    "questionText": "Why does the course emphasize using action verbs in prompts?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "They give the model a clear, concrete task to perform",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "They make prompts appear more polished and professional",
+      "They give the model a clear, concrete task to perform",
+      "They reduce the total number of tokens the model uses",
+      "They prevent the model from producing any hallucinations"
+    ],
+    "explanation": "Action verbs provide clear direction — 'compare X and Y' is far more actionable than 'tell me about X and Y'.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Prompt structure",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "They make prompts appear more polished and professional",
+    "option_b": "They give the model a clear, concrete task to perform",
+    "option_c": "They reduce the total number of tokens the model uses",
+    "option_d": "They prevent the model from producing any hallucinations"
+  },
+  {
+    "id": "pe_new_062",
+    "uid": "pe_new_062",
+    "questionText": "What is the recommended approach when the AI (Artificial Intelligence) misunderstands your intent?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Rephrase more explicitly and add context about what you want",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Assume the AI (Artificial Intelligence) tool is incapable of helping with your task",
+      "Rephrase more explicitly and add context about what you want",
+      "Type the same prompt again using capital letters throughout",
+      "Submit the exact same prompt again without any modifications"
+    ],
+    "explanation": "Rephrase with more explicit task description and additional context — don't just repeat.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Iteration methods",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Assume the AI (Artificial Intelligence) tool is incapable of helping with your task",
+    "option_b": "Rephrase more explicitly and add context about what you want",
+    "option_c": "Type the same prompt again using capital letters throughout",
+    "option_d": "Submit the exact same prompt again without any modifications"
+  },
+  {
+    "id": "pe_new_063",
+    "uid": "pe_new_063",
+    "questionText": "What role does the 'Context' element play in the TCREI (Task, Context, References, Evaluate, Iterate) framework?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "It provides background, audience, constraints, and goals for the AI (Artificial Intelligence)",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Context replaces and eliminates the need for a Task element",
+      "It provides background, audience, constraints, and goals for the AI (Artificial Intelligence)",
+      "Context is optional and rarely improves the quality of AI (Artificial Intelligence) output",
+      "Context specifies which AI (Artificial Intelligence) model platform you should be using"
+    ],
+    "explanation": "Context = background, audience, constraints, goals. More context generally produces more targeted output.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: TCREI (Task, Context, References, Evaluate, Iterate) framework",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Context replaces and eliminates the need for a Task element",
+    "option_b": "It provides background, audience, constraints, and goals for the AI (Artificial Intelligence)",
+    "option_c": "Context is optional and rarely improves the quality of AI (Artificial Intelligence) output",
+    "option_d": "Context specifies which AI (Artificial Intelligence) model platform you should be using"
+  },
+  {
+    "id": "pe_new_064",
+    "uid": "pe_new_064",
+    "questionText": "The course describes four iteration methods. Which one involves going back to add more Task, Context, or Reference detail?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Going back to add more Task, Context, or Reference detail to prompt",
+    "category": "prompt-basics",
+    "difficulty": "adaptive",
+    "options": [
+      "Splitting the prompt into a sequence of smaller subtask prompts",
+      "Trying alternative wording or analogies to express the same request",
+      "Going back to add more Task, Context, or Reference detail to prompt",
+      "Narrowing scope with constraints like word count or topic exclusions"
+    ],
+    "explanation": "Revisiting the framework means going back to T, C, or R to add missing detail.",
+    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
+    "learningObjective": "Prompt Engineering: Iteration methods",
+    "tags": [
+      "prompt-engineering-full-course",
+      "transcript-derived",
+      "prompt-basics"
+    ],
+    "option_a": "Splitting the prompt into a sequence of smaller subtask prompts",
+    "option_b": "Trying alternative wording or analogies to express the same request",
+    "option_c": "Going back to add more Task, Context, or Reference detail to prompt",
+    "option_d": "Narrowing scope with constraints like word count or topic exclusions"
+  }
+]

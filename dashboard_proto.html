@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Study Game - Mission Control</title>
+    <link rel="stylesheet" href="design_system.css">
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            background: radial-gradient(circle at 50% 50%, var(--bg-surface), var(--bg-deep));
+        }
+
+        /* Sidebar Nav */
+        .sidebar {
+            width: 260px;
+            height: 100%;
+            border-right: 1px solid var(--border-subtle);
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            overflow-y: auto;
+        }
+
+        .nav-item {
+            padding: 12px 16px;
+            border-radius: 8px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            transition: all 0.2s;
+        }
+
+        .nav-item:hover, .nav-item.active {
+            background: hsla(230, 20%, 30%, 0.4);
+            color: var(--text-primary);
+        }
+
+        .nav-item.active {
+            border-left: 3px solid var(--domain-1);
+        }
+
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            padding: 40px;
+            overflow-y: auto;
+        }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 24px;
+            margin-top: 32px;
+        }
+
+        .mission-card {
+            padding: 24px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .domain-tag {
+            font-size: 11px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--domain-color);
+        }
+
+        .mission-title {
+            font-size: 20px;
+            margin: 8px 0;
+            color: var(--text-primary);
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 4px;
+            background: var(--border-subtle);
+            border-radius: 2px;
+            margin-top: 12px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: var(--domain-color);
+            box-shadow: 0 0 10px var(--domain-color);
+        }
+
+        .stats-summary {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .stat-box {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .stat-value {
+            font-family: 'Outfit';
+            font-size: 32px;
+            color: var(--text-primary);
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        /* Domain Specific Card colors override */
+        .d1 { --domain-color: var(--domain-1); --active-domain-glow: var(--domain-1-glow); }
+        .d2 { --domain-color: var(--domain-2); --active-domain-glow: var(--domain-2-glow); }
+        .d3 { --domain-color: var(--domain-3); --active-domain-glow: var(--domain-3-glow); }
+        .d4 { --domain-color: var(--domain-4); --active-domain-glow: var(--domain-4-glow); }
+        .d5 { --domain-color: var(--domain-5); --active-domain-glow: var(--domain-5-glow); }
+
+        .mission-card:hover {
+            --active-domain-color: var(--domain-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar glass-panel">
+        <h2 style="font-size: 1.2rem; margin-bottom: 2rem;">AI COMMAND</h2>
+        <a href="#" class="nav-item active">Dashboard</a>
+        <a href="#" class="nav-item">Search</a>
+        <a href="#" class="nav-item">Achievements</a>
+        <a href="#" class="nav-item">Analytics</a>
+        <div style="flex: 1;"></div>
+        <a href="#" class="nav-item">Settings</a>
+    </div>
+
+    <div class="main-content">
+        <div class="hud-scanline"></div>
+        <div class="stats-summary">
+            <div class="stat-box glass-panel">
+                <div class="stat-value">12</div>
+                <div class="stat-label">Day Streak</div>
+            </div>
+            <div class="stat-box glass-panel">
+                <div class="stat-value">84%</div>
+                <div class="stat-label">Avg. Accuracy</div>
+            </div>
+            <div class="stat-box glass-panel">
+                <div class="stat-value">412</div>
+                <div class="stat-label">Questions Solved</div>
+            </div>
+        </div>
+
+        <h2 class="hud-title">ACTIVE SECTORS</h2>
+        <div class="dashboard-grid">
+            <div class="mission-card glass-card d1">
+                <div class="domain-tag">Domain 1</div>
+                <h3 class="mission-title">AI & ML Fundamentals</h3>
+                <div>
+                    <div style="display: flex; justify-content: space-between; font-size: 12px; color: var(--text-muted);">
+                        <span>Coverage</span>
+                        <span>42%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 42%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mission-card glass-card d2">
+                <div class="domain-tag">Domain 2</div>
+                <h3 class="mission-title">Generative AI Basics</h3>
+                <div>
+                    <div style="display: flex; justify-content: space-between; font-size: 12px; color: var(--text-muted);">
+                        <span>Coverage</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 80%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mission-card glass-card d3">
+                <div class="domain-tag">Domain 3</div>
+                <h3 class="mission-title">Foundation Models</h3>
+                <div>
+                    <div style="display: flex; justify-content: space-between; font-size: 12px; color: var(--text-muted);">
+                        <span>Coverage</span>
+                        <span>15%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 15%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mission-card glass-card d4">
+                <div class="domain-tag">Domain 4</div>
+                <h3 class="mission-title">Responsible AI</h3>
+                <div>
+                    <div style="display: flex; justify-content: space-between; font-size: 12px; color: var(--text-muted);">
+                        <span>Coverage</span>
+                        <span>92%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 92%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mission-card glass-card d5">
+                <div class="domain-tag">Domain 5</div>
+                <h3 class="mission-title">Security & Compliance</h3>
+                <div>
+                    <div style="display: flex; justify-content: space-between; font-size: 12px; color: var(--text-muted);">
+                        <span>Coverage</span>
+                        <span>55%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 55%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

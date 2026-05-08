@@ -1,0 +1,132 @@
+[
+  {
+    "id": "google_ai_adv_001",
+    "questionText": "When fine-tuning an LLM (Large Language Model) using RLHF (Reinforcement Learning from Human Feedback), why is the Reward Model step critical before final policy optimization?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "It creates a proxy for human preferences the model can optimize against.",
+    "category": "generative-models",
+    "difficulty": "advanced",
+    "options": [
+      "It expands the model's total parameter count for fine-tuning.",
+      "It creates a proxy for human preferences the model can optimize against.",
+      "It reduces inference cost by compressing transformer layer weights.",
+      "It restricts outputs to a predefined set of safe responses."
+    ],
+    "explanation": "RLHF (Reinforcement Learning from Human Feedback) requires a way to score model outputs. The Reward Model acts as a proxy for human judgment, allowing thousands of training iterations without human intervention.",
+    "remediationNotes": "Review the 'RLHF (Reinforcement Learning from Human Feedback) Workflow' in the Advanced Model Training section.",
+    "learningObjective": "Explain the role of Reward Models in RLHF (Reinforcement Learning from Human Feedback).",
+    "tags": [
+      "llm",
+      "rlhf",
+      "fine-tuning"
+    ],
+    "option_a": "It expands the model's total parameter count for fine-tuning.",
+    "option_b": "It creates a proxy for human preferences the model can optimize against.",
+    "option_c": "It reduces inference cost by compressing transformer layer weights.",
+    "option_d": "It restricts outputs to a predefined set of safe responses."
+  },
+  {
+    "id": "google_ai_adv_002",
+    "questionText": "In a transformer-based architecture, what is the primary function of the Multi-Head Attention mechanism?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "To attend to multiple representation subspaces simultaneously.",
+    "category": "ai-architecture",
+    "difficulty": "advanced",
+    "options": [
+      "To accelerate individual floating-point CPU (Central Processing Unit) operations.",
+      "To attend to multiple representation subspaces simultaneously.",
+      "To store factual memories across long context windows.",
+      "To encrypt attention weights and prevent model extraction."
+    ],
+    "explanation": "Multi-head attention enables the model to focus on different parts of the input sequence — such as grammar vs. context — at the same time.",
+    "remediationNotes": "Check the 'Attention is All You Need' summary in the architecture module.",
+    "learningObjective": "Describe the mechanics of transformer attention heads.",
+    "tags": [
+      "transformer",
+      "attention",
+      "deep-learning"
+    ],
+    "option_a": "To accelerate individual floating-point CPU (Central Processing Unit) operations.",
+    "option_b": "To attend to multiple representation subspaces simultaneously.",
+    "option_c": "To store factual memories across long context windows.",
+    "option_d": "To encrypt attention weights and prevent model extraction."
+  },
+  {
+    "id": "google_ai_adv_003",
+    "questionText": "Error analysis shows your model is underfitting — it performs poorly on both training and validation data. Which adjustment is most likely to reduce this high bias?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Adding model complexity or improving feature engineering.",
+    "category": "model-evaluation",
+    "difficulty": "advanced",
+    "options": [
+      "Increasing dropout rate to 0.9 to force more sparsity.",
+      "Adding model complexity or improving feature engineering.",
+      "Adding more L2 regularization to penalize large weights.",
+      "Reducing the training dataset to cut processing noise."
+    ],
+    "explanation": "High bias (underfitting) means the model is too simple. Increasing complexity helps the model learn more nuanced patterns in the data.",
+    "remediationNotes": "Review the 'Bias-Variance Tradeoff' in the advanced metrics section.",
+    "learningObjective": "Identify solutions for high bias in deep learning.",
+    "tags": [
+      "bias",
+      "underfitting",
+      "evaluation"
+    ],
+    "option_a": "Increasing dropout rate to 0.9 to force more sparsity.",
+    "option_b": "Adding model complexity or improving feature engineering.",
+    "option_c": "Adding more L2 regularization to penalize large weights.",
+    "option_d": "Reducing the training dataset to cut processing noise."
+  },
+  {
+    "id": "google_ai_adv_004",
+    "questionText": "When deploying a model using a Canary Deployment strategy, what is the primary risk mitigation benefit?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Limits failure impact by first deploying to a small user subset.",
+    "category": "mlops",
+    "difficulty": "advanced",
+    "options": [
+      "Ensures both model versions run simultaneously on all traffic.",
+      "Limits failure impact by first deploying to a small user subset.",
+      "Increases server uptime by 50% over standard blue-green deployment.",
+      "Reduces cloud storage cost by purging all prior model versions."
+    ],
+    "explanation": "Canary deployments allow for real-world monitoring with minimal blast radius if the new model version behaves unexpectedly.",
+    "remediationNotes": "Review deployment strategies in the MLOps module.",
+    "learningObjective": "Define canary deployment in an ML (Machine Learning) context.",
+    "tags": [
+      "mlops",
+      "deployment",
+      "reliability"
+    ],
+    "option_a": "Ensures both model versions run simultaneously on all traffic.",
+    "option_b": "Limits failure impact by first deploying to a small user subset.",
+    "option_c": "Increases server uptime by 50% over standard blue-green deployment.",
+    "option_d": "Reduces cloud storage cost by purging all prior model versions."
+  },
+  {
+    "id": "google_ai_adv_005",
+    "questionText": "In Adversarial Machine Learning, what specifically distinguishes an Evasion Attack from other attack types?",
+    "questionType": "multiple_choice",
+    "correctAnswer": "Imperceptible input modifications that force the model to misclassify.",
+    "category": "security",
+    "difficulty": "advanced",
+    "options": [
+      "Deleting model weights from the server to disable access.",
+      "Imperceptible input modifications that force the model to misclassify.",
+      "Poisoning training data with fake examples until accuracy collapses.",
+      "Sending rapid API (Application Programming Interface) calls to crash the inference server (DDoS)."
+    ],
+    "explanation": "Evasion attacks exploit the model's decision boundaries by making subtle input changes, forcing errors without modifying the model itself.",
+    "remediationNotes": "Review the 'AI (Artificial Intelligence) Security' section on adversarial attacks.",
+    "learningObjective": "Identify security risks in AI (Artificial Intelligence) inference.",
+    "tags": [
+      "security",
+      "adversarial",
+      "evasion"
+    ],
+    "option_a": "Deleting model weights from the server to disable access.",
+    "option_b": "Imperceptible input modifications that force the model to misclassify.",
+    "option_c": "Poisoning training data with fake examples until accuracy collapses.",
+    "option_d": "Sending rapid API (Application Programming Interface) calls to crash the inference server (DDoS)."
+  }
+]
