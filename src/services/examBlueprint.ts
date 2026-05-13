@@ -167,6 +167,34 @@ export const DOMAINS: Domain[] = [
             "genai-gcp-maturity"
         ],
         color: "#7DD3FC" // Sky
+    },
+    {
+        id: 14,
+        name: "Domain 14: AWS Certified AI Practitioner",
+        weight: 0.20,
+        categories: [
+            "aws-ai-ml-fundamentals",
+            "aws-learning-types",
+            "aws-model-lifecycle",
+            "aws-model-performance",
+            "aws-sagemaker",
+            "aws-ai-services",
+            "aws-generative-ai",
+            "aws-data-services",
+            "aws-llm-concepts",
+            "aws-prompt-engineering",
+            "aws-nlp-techniques",
+            "aws-model-customization",
+            "aws-responsible-ai",
+            "aws-data-privacy",
+            "aws-ai-security",
+            "aws-security-model",
+            "aws-ai-use-cases",
+            "aws-data-preparation",
+            "aws-model-deployment",
+            "aws-mlops-lifecycle"
+        ],
+        color: "#F59E0B" // AWS orange
     }
 ];
 

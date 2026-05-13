@@ -7,6 +7,7 @@ const NAV_ITEMS = [
   { path: '/quiz?track=google-ai-professional-cert', label: 'Google AI Professional' },
   { path: '/quiz?track=genai-on-google-cloud', label: 'GenAI on Google Cloud' },
   { path: '/quiz?track=prompt-engineering-full-course', label: 'Prompt Engineering' },
+  { path: '/quiz?track=aws-certified-ai-practitioner', label: 'AWS Certified AI Practitioner' },
   { path: '/generative-ai-leader', label: 'Generative AI Leader' },
   { path: '/fill-in-blank', label: 'Fill in the Blank' },
   { path: '/flashcards', label: 'AI Concepts' },

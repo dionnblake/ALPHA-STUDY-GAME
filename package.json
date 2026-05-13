@@ -10,6 +10,7 @@
     "build:genai-leader-bank": "node scripts/build-genai-leader-question-bank.mjs",
     "build:genai-google-cloud-bank": "node scripts/build-genai-google-cloud-question-bank.mjs",
     "build:prompt-engineering-bank": "node scripts/build-prompt-engineering-question-bank.mjs",
+    "build:aws-ai-practitioner-bank": "node scripts/build-aws-ai-practitioner-question-bank.mjs",
     "expand:track-banks": "node scripts/expand-track-question-banks.mjs",
     "sanitize:question-leaks": "node scripts/sanitize-question-leaks.mjs",
     "sanitize:truncated-stems": "node scripts/sanitize-truncated-question-stems.mjs",

@@ -7,7 +7,8 @@ export const TRACK_DEFINITIONS = [
     { tag: 'google-ai-professional-cert', label: 'AI Professional' },
     { tag: 'prompt-engineering-full-course', label: 'Prompt Engineering' },
     { tag: 'google-generative-ai-leader', label: 'GenAI Leader' },
-    { tag: 'genai-on-google-cloud', label: 'GenAI on Google Cloud' }
+    { tag: 'genai-on-google-cloud', label: 'GenAI on Google Cloud' },
+    { tag: 'aws-certified-ai-practitioner', label: 'AWS Certified AI Practitioner' }
 ] as const;
 
 export interface DashboardStats {

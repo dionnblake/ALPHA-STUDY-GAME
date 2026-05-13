@@ -152,6 +152,10 @@ body::before {
   font-size: 15px;
 }
 
+.app-shell.sidebar-scroll-enabled .nav-item {
+  font-size: 11px;
+}
+
 .nav-item::before {
   content: "";
   position: absolute;

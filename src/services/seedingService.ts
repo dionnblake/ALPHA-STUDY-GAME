@@ -8,7 +8,8 @@ const FILES = [
     '/questions/fill_in_blank_questions.json',
     '/questions/google_ai_professional_cert.json',
     '/questions/prompt_engineering_full_course_questions.json',
-    '/questions/genai_on_google_cloud_questions.json'
+    '/questions/genai_on_google_cloud_questions.json',
+    '/questions/aws_certified_ai_practitioner_questions.json'
 ];
 
 type RawQuestion = {

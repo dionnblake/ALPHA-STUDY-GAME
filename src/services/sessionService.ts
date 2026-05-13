@@ -82,7 +82,10 @@ export async function endSession(): Promise<number> {
     // Update streak
     await checkAndUpdateStreak();
 
-    const sessionId = result.lastInsertId ?? 0;
+    const sessionId =
+        result && 'lastInsertId' in result && typeof result.lastInsertId === 'number'
+            ? result.lastInsertId
+            : 0;
     currentSession = null;
     return sessionId;
 }

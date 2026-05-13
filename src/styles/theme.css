@@ -71,7 +71,8 @@ h1, h2, h3, .brand-title, .page-title {
     linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02)),
     rgba(7, 11, 20, 0.75);
   backdrop-filter: blur(28px);
-  height: 100vh;
+  height: 100%;
+  min-height: 0;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -142,6 +143,46 @@ h1, h2, h3, .brand-title, .page-title {
 
 .sidebar.sidebar-overflowing .nav-list::-webkit-scrollbar {
   width: 8px;
+}
+
+.app-shell.sidebar-scroll-enabled .sidebar {
+  padding: 12px 10px;
+}
+
+.app-shell.sidebar-scroll-enabled .brand-block {
+  margin-bottom: 8px;
+}
+
+.app-shell.sidebar-scroll-enabled .brand-kicker {
+  font-size: 8px;
+}
+
+.app-shell.sidebar-scroll-enabled .brand-title {
+  font-size: 16px;
+  line-height: 1.05;
+}
+
+.app-shell.sidebar-scroll-enabled .brand-subtitle {
+  font-size: 9px;
+  margin: 4px 0;
+}
+
+.app-shell.sidebar-scroll-enabled .version-pill {
+  margin-top: 4px;
+  font-size: 8px;
+  padding: 1px 6px;
+}
+
+.app-shell.sidebar-scroll-enabled .nav-list {
+  gap: 4px;
+  min-height: 0;
+}
+
+.app-shell.sidebar-scroll-enabled .nav-item {
+  padding: 6px 10px;
+  min-height: 34px;
+  font-size: 11px;
+  line-height: 1.15;
 }
 
 .nav-item {
