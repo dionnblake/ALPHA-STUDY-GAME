@@ -7,6 +7,7 @@ import { CheckCircle, XCircle, ArrowRight, Pause, Database, Timer, Info } from '
 import { FillInBlankQuestion } from '../components/FillInBlankQuestion';
 import { logGrowthEvent, parseChallengeToken } from '../services/growthService';
 import { QuizMode } from '../types/models';
+import { motion, AnimatePresence } from 'framer-motion';
 import './QuizScreen.css';
 
 export function QuizScreen() {
@@ -186,8 +187,16 @@ export function QuizScreen() {
                                 <button className="btn-primary" onClick={togglePause}>RESUME SESSION</button>
                             </div>
                         ) : (
-                            <div className={`quiz-card-wrapper ${state === 'feedback' ? 'feedback-active' : ''}`}>
-                                <div className="quiz-main-logic">
+                            <AnimatePresence mode="wait">
+                                <motion.div
+                                    key={currentQuestion.uid}
+                                    initial={{ opacity: 0, x: 20, filter: "blur(4px)" }}
+                                    animate={{ opacity: 1, x: 0, filter: "blur(0px)" }}
+                                    exit={{ opacity: 0, x: -20, filter: "blur(4px)" }}
+                                    transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+                                    className={`quiz-card-wrapper ${state === 'feedback' ? 'feedback-active' : ''}`}
+                                >
+                                    <div className="quiz-main-logic">
                                     <div className="question-category-label">
                                         {(currentQuestion.category || 'GENERAL AI KNOWLEDGE')} • {targetDifficulty.toUpperCase()}
                                     </div>
@@ -344,7 +353,8 @@ export function QuizScreen() {
                                         </div>
                                     </div>
                                 )}
-                            </div>
+                                </motion.div>
+                            </AnimatePresence>
                         )}
                     </div>
                 </div>

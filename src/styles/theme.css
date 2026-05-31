@@ -1,28 +1,28 @@
 :root {
-  --bg-0: #05070d;
-  --bg-1: #0a1020;
-  --bg-2: #0f1729;
-  --surface: rgba(16, 23, 38, 0.78);
-  --surface-strong: rgba(20, 29, 46, 0.92);
+  --bg-0: #030509;
+  --bg-1: #080d1b;
+  --bg-2: #0c1426;
+  --surface: rgba(16, 23, 38, 0.75);
+  --surface-strong: rgba(20, 29, 46, 0.90);
   --border: rgba(255, 255, 255, 0.08);
-  --border-strong: rgba(255, 255, 255, 0.14);
-  --text-1: #f5f7fa;
-  --text-2: #b7c0d1;
-  --text-3: #7e8aa3;
-  --cyan: #28d7ff;
-  --orange: #ffa63d;
-  --green: #57f287;
-  --pink: #ff5cb8;
-  --purple: #9b5cff;
-  --yellow: #ffd84d;
-  --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.35);
-  --shadow-md: 0 12px 30px rgba(0, 0, 0, 0.25);
+  --border-strong: rgba(255, 255, 255, 0.16);
+  --text-1: #fdfdfe;
+  --text-2: #b4bfd4;
+  --text-3: #7583a1;
+  --cyan: #1cd4ff;
+  --orange: #ff9d2e;
+  --green: #48f57e;
+  --pink: #ff4db1;
+  --purple: #9047ff;
+  --yellow: #ffd338;
+  --shadow-lg: 0 24px 64px rgba(0, 0, 0, 0.45);
+  --shadow-md: 0 16px 36px rgba(0, 0, 0, 0.35);
   --radius-xl: 24px;
   --radius-lg: 20px;
   --radius-md: 16px;
   --sidebar-w: 280px;
-  --glow-cyan: 0 0 20px rgba(40, 215, 255, 0.4);
-  --glow-purple: 0 0 20px rgba(155, 92, 255, 0.4);
+  --glow-cyan: 0 0 24px rgba(28, 212, 255, 0.5);
+  --glow-purple: 0 0 24px rgba(144, 71, 255, 0.5);
 }
 
 * {
@@ -41,11 +41,13 @@ body {
   font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: var(--text-1);
   background:
-    radial-gradient(circle at 20% 15%, rgba(40, 215, 255, 0.12), transparent 28%),
-    radial-gradient(circle at 80% 20%, rgba(155, 92, 255, 0.12), transparent 22%),
-    linear-gradient(180deg, var(--bg-0), var(--bg-1) 55%, var(--bg-2));
+    radial-gradient(ellipse at 15% 10%, rgba(28, 212, 255, 0.15), transparent 30%),
+    radial-gradient(ellipse at 85% 15%, rgba(144, 71, 255, 0.15), transparent 25%),
+    linear-gradient(180deg, var(--bg-0), var(--bg-1) 50%, var(--bg-2));
+  background-attachment: fixed;
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, .brand-title, .page-title {
@@ -636,9 +638,9 @@ h1, h2, h3, .brand-title, .page-title {
 }
 
 @keyframes pulse-border {
-  0% { box-shadow: 0 0 0 0 rgba(40, 215, 255, 0.4); }
-  70% { box-shadow: 0 0 0 10px rgba(40, 215, 255, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(40, 215, 255, 0); }
+  0% { box-shadow: 0 0 0 0 rgba(28, 212, 255, 0.5); }
+  70% { box-shadow: 0 0 0 12px rgba(28, 212, 255, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(28, 212, 255, 0); }
 }
 
 @media (max-width: 1200px) {

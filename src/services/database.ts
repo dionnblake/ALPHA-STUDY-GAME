@@ -150,10 +150,10 @@ export async function getDb(): Promise<Database | MockDatabase> {
     const versionRes = await db.select<{ value: string }[]>("SELECT value FROM settings WHERE key = 'db_version'");
     const currentVersion = versionRes.length > 0 ? parseInt(versionRes[0].value) : 1;
 
-    if (currentVersion < 18) {
-        // Clear questions to force a fresh seed — picks up new premium content
+    if (currentVersion < 20) {
+        // Clear questions to force a fresh seed — full AWS practitioner rebuild from transcript
         await db.execute("DELETE FROM questions");
-        await db.execute("INSERT OR REPLACE INTO settings (key, value) VALUES ('db_version', '18')");
+        await db.execute("INSERT OR REPLACE INTO settings (key, value) VALUES ('db_version', '20')");
     }
     
     return db;

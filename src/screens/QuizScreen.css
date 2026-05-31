@@ -6,11 +6,12 @@
     display: grid;
     grid-template-rows: auto minmax(0, 1fr);
     position: relative;
-    background: radial-gradient(circle at 10% 20%, rgba(40, 215, 255, 0.08), transparent 45%),
-        linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
+    background: radial-gradient(circle at 10% 20%, rgba(28, 212, 255, 0.12), transparent 50%),
+        radial-gradient(circle at 90% 80%, rgba(144, 71, 255, 0.12), transparent 50%),
+        linear-gradient(180deg, var(--bg-0) 0%, var(--bg-1) 100%);
     overflow: hidden;
-    color: var(--text-primary);
-    font-family: 'Space Grotesk', sans-serif;
+    color: var(--text-1);
+    font-family: 'Inter', sans-serif;
 }
 
 /* TOP BAR */
@@ -312,8 +313,9 @@
 
 .option-hud-card:not(:disabled):hover {
     background: rgba(255, 255, 255, 0.08);
-    border-color: rgba(255, 255, 255, 0.2);
-    transform: translateX(8px);
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateX(8px) scale(1.02);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
 }
 
 .option-hud-card:disabled {
@@ -321,9 +323,9 @@
 }
 
 .option-hud-card.selected {
-    background: rgba(0, 243, 255, 0.1);
-    border-color: var(--primary);
-    box-shadow: 0 0 20px rgba(0, 243, 255, 0.15);
+    background: rgba(28, 212, 255, 0.15);
+    border-color: var(--cyan);
+    box-shadow: 0 0 24px rgba(28, 212, 255, 0.25), inset 0 0 10px rgba(28, 212, 255, 0.1);
 }
 
 .option-hud-card.correct {

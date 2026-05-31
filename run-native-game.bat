@@ -1,6 +1,6 @@
 @echo off
 setlocal
-set "PROJECT=C:\Users\illpr\Desktop\VIBE CODING PROJECTS\AI STUDY GAME WINDOWS 11"
+set "PROJECT=C:\UsersALPHA\Desktop\VIBE CODING PROJECTS\AI STUDY GAME WINDOWS 11"
 set "APP_EXE=%PROJECT%\src-tauri\target\debug\ai-study-game.exe"
 set "VITE_BAT=%PROJECT%\run-vite-dev.bat"
 

@@ -6,6 +6,7 @@ import FocusPanelPremium from "./FocusPanelPremium";
 import { useCallback, useEffect, useState } from "react";
 import { DashboardStats, getDashboardStats } from "../services/analyticsService";
 import { DOMAINS } from "../services/examBlueprint";
+import { motion } from "framer-motion";
 
 export default function PremiumDashboardLayout() {
   const [stats, setStats] = useState<DashboardStats | null>(null);
@@ -53,8 +54,24 @@ export default function PremiumDashboardLayout() {
     : undefined;
 
   return (
-    <>
-      <div className="topbar fade-up">
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      variants={{
+        hidden: { opacity: 0 },
+        visible: {
+          opacity: 1,
+          transition: { staggerChildren: 0.1 }
+        }
+      }}
+    >
+      <motion.div
+        className="topbar"
+        variants={{
+          hidden: { opacity: 0, y: -20 },
+          visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeOut" } }
+        }}
+      >
         <div>
           <h1 className="page-title">Dashboard</h1>
           <p className="page-subtitle">
@@ -64,26 +81,45 @@ export default function PremiumDashboardLayout() {
         <div className="topbar-right">
           <StreakPill days={streakDays} />
         </div>
-      </div>
+      </motion.div>
 
-      <StatsGridPremium stats={stats} />
+      <motion.div
+        variants={{
+          hidden: { opacity: 0, scale: 0.95 },
+          visible: { opacity: 1, scale: 1, transition: { duration: 0.4, ease: "easeOut" } }
+        }}
+      >
+        <StatsGridPremium stats={stats} />
+      </motion.div>
 
       <div style={{ height: 24 }} />
 
       <section className="dashboard-grid">
-        <div className="left-stack">
+        <motion.div
+          className="left-stack"
+          variants={{
+            hidden: { opacity: 0, x: -20 },
+            visible: { opacity: 1, x: 0, transition: { duration: 0.5, ease: "easeOut" } }
+          }}
+        >
           <MissionListPremium stats={stats} />
-        </div>
+        </motion.div>
 
-        <div className="right-stack">
+        <motion.div
+          className="right-stack"
+          variants={{
+            hidden: { opacity: 0, x: 20 },
+            visible: { opacity: 1, x: 0, transition: { duration: 0.5, ease: "easeOut" } }
+          }}
+        >
           <MasteryPanelPremium stats={stats} />
           <FocusPanelPremium
             rankTitle={stats?.rankTitle || "AI Trainee"}
             nextFocus={weakestDomain?.name}
             isLoading={!stats}
           />
-        </div>
+        </motion.div>
       </section>
-    </>
+    </motion.div>
   );
 }

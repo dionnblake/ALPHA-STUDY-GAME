@@ -197,10 +197,10 @@ function AppContent({ isReady, zoom, mainAreaRef }: { isReady: boolean, zoom: nu
                     <AnimatePresence mode="wait">
                         <motion.div
                             key={routeKey}
-                            initial={{ opacity: 0, y: 10 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            exit={{ opacity: 0, y: -10 }}
-                            transition={{ duration: 0.2, ease: "easeOut" }}
+                            initial={{ opacity: 0, scale: 0.98, filter: "blur(4px)" }}
+                            animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
+                            exit={{ opacity: 0, scale: 1.02, filter: "blur(4px)" }}
+                            transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
                             style={{ height: "100%" }}
                         >
                             <Routes location={location} key={routeKey}>
