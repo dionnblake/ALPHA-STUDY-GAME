@@ -17,8 +17,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Overfitting",
+      "Threshold Tuning",
+      "Random Forest",
+      "Machine Learning"
+    ],
+    "correctAnswer": "Machine Learning"
   },
   {
     "uid": "google_fib_200_002",
@@ -38,8 +43,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Deep Learning",
+      "Hyperparameter Tuning",
+      "Machine Learning",
+      "Recall"
+    ],
+    "correctAnswer": "Deep Learning"
   },
   {
     "uid": "google_fib_200_003",
@@ -59,8 +69,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Early Stopping",
+      "Neural Network",
+      "Class Imbalance",
+      "Precision"
+    ],
+    "correctAnswer": "Neural Network"
   },
   {
     "uid": "google_fib_200_004",
@@ -80,8 +95,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Regression",
+      "Supervised Learning",
+      "Feature Engineering",
+      "Reinforcement Learning"
+    ],
+    "correctAnswer": "Supervised Learning"
   },
   {
     "uid": "google_fib_200_005",
@@ -101,8 +121,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Regularization",
+      "Unsupervised Learning",
+      "Normalization",
+      "Ensemble Learning"
+    ],
+    "correctAnswer": "Unsupervised Learning"
   },
   {
     "uid": "google_fib_200_006",
@@ -122,8 +147,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Reinforcement Learning",
+      "Machine Learning",
+      "Decision Tree",
+      "Batch Size"
+    ],
+    "correctAnswer": "Reinforcement Learning"
   },
   {
     "uid": "google_fib_200_007",
@@ -143,8 +173,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Domain Adaptation",
+      "Classification",
+      "Deep Learning",
+      "Data Leakage"
+    ],
+    "correctAnswer": "Classification"
   },
   {
     "uid": "google_fib_200_008",
@@ -164,8 +199,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Regression",
+      "Random Forest",
+      "Epoch",
+      "One-Hot Encoding"
+    ],
+    "correctAnswer": "Regression"
   },
   {
     "uid": "google_fib_200_009",
@@ -185,8 +225,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Overfitting",
+      "Transfer Learning",
+      "Supervised Learning",
+      "Recall"
+    ],
+    "correctAnswer": "Overfitting"
   },
   {
     "uid": "google_fib_200_010",
@@ -206,8 +251,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Recall",
+      "Underfitting",
+      "Reinforcement Learning",
+      "Hyperparameter Tuning"
+    ],
+    "correctAnswer": "Underfitting"
   },
   {
     "uid": "google_fib_200_011",
@@ -227,8 +277,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Loss Function",
+      "Underfitting",
+      "Ground Truth",
+      "Unsupervised Learning"
+    ],
+    "correctAnswer": "Loss Function"
   },
   {
     "uid": "google_fib_200_012",
@@ -248,8 +303,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Hyperparameter Tuning",
+      "Confusion Matrix",
+      "Overfitting",
+      "Gradient Descent"
+    ],
+    "correctAnswer": "Gradient Descent"
   },
   {
     "uid": "google_fib_200_013",
@@ -269,8 +329,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Learning Rate",
+      "One-Hot Encoding",
+      "Backpropagation",
+      "Class Imbalance"
+    ],
+    "correctAnswer": "Backpropagation"
   },
   {
     "uid": "google_fib_200_014",
@@ -290,8 +355,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Decision Boundary",
+      "Ground Truth",
+      "Loss Function",
+      "Learning Rate"
+    ],
+    "correctAnswer": "Learning Rate"
   },
   {
     "uid": "google_fib_200_015",
@@ -311,8 +381,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Transfer Learning",
+      "Gradient Descent",
+      "Epoch",
+      "Machine Learning"
+    ],
+    "correctAnswer": "Epoch"
   },
   {
     "uid": "google_fib_200_016",
@@ -332,8 +407,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Hyperparameter Tuning",
+      "Batch Size",
+      "Threshold Tuning",
+      "Dropout"
+    ],
+    "correctAnswer": "Batch Size"
   },
   {
     "uid": "google_fib_200_017",
@@ -353,8 +433,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Regularization",
+      "Underfitting",
+      "Confusion Matrix",
+      "Domain Adaptation"
+    ],
+    "correctAnswer": "Regularization"
   },
   {
     "uid": "google_fib_200_018",
@@ -374,8 +459,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Confusion Matrix",
+      "Dropout",
+      "F1 Score",
+      "Ground Truth"
+    ],
+    "correctAnswer": "Dropout"
   },
   {
     "uid": "google_fib_200_019",
@@ -395,8 +485,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Cross-Validation",
+      "Grid Search",
+      "Reinforcement Learning",
+      "Confusion Matrix"
+    ],
+    "correctAnswer": "Cross-Validation"
   },
   {
     "uid": "google_fib_200_020",
@@ -416,8 +511,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Data Leakage",
+      "Feature Engineering",
+      "Overfitting",
+      "Domain Adaptation"
+    ],
+    "correctAnswer": "Data Leakage"
   },
   {
     "uid": "google_fib_200_021",
@@ -437,8 +537,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Data Leakage",
+      "Dropout",
+      "Class Imbalance",
+      "Feature Engineering"
+    ],
+    "correctAnswer": "Class Imbalance"
   },
   {
     "uid": "google_fib_200_022",
@@ -458,8 +563,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "One-Hot Encoding",
+      "Feature Engineering",
+      "Random Forest",
+      "Cross-Validation"
+    ],
+    "correctAnswer": "Feature Engineering"
   },
   {
     "uid": "google_fib_200_023",
@@ -479,8 +589,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Normalization",
+      "Decision Boundary",
+      "Regularization",
+      "F1 Score"
+    ],
+    "correctAnswer": "Normalization"
   },
   {
     "uid": "google_fib_200_024",
@@ -500,8 +615,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Domain Adaptation",
+      "One-Hot Encoding",
+      "Standardization",
+      "Ensemble Learning"
+    ],
+    "correctAnswer": "Standardization"
   },
   {
     "uid": "google_fib_200_025",
@@ -521,8 +641,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Precision",
+      "Recall",
+      "Class Imbalance",
+      "Supervised Learning"
+    ],
+    "correctAnswer": "Precision"
   },
   {
     "uid": "google_fib_200_026",
@@ -542,8 +667,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Backpropagation",
+      "Recall",
+      "Learning Rate",
+      "F1 Score"
+    ],
+    "correctAnswer": "Recall"
   },
   {
     "uid": "google_fib_200_027",
@@ -563,8 +693,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Dropout",
+      "Cross-Validation",
+      "Grid Search",
+      "F1 Score"
+    ],
+    "correctAnswer": "F1 Score"
   },
   {
     "uid": "google_fib_200_028",
@@ -584,8 +719,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Data Leakage",
+      "Hyperparameter Tuning",
+      "Confusion Matrix",
+      "Deep Learning"
+    ],
+    "correctAnswer": "Confusion Matrix"
   },
   {
     "uid": "google_fib_200_029",
@@ -605,8 +745,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Variational Autoencoder",
+      "Transformer",
+      "Chunking",
+      "Retrieval-Augmented Generation"
+    ],
+    "correctAnswer": "Transformer"
   },
   {
     "uid": "google_fib_200_030",
@@ -626,8 +771,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "FAISS (Facebook AI (Artificial Intelligence) Similarity Search)",
+      "Agent",
+      "Chunking",
+      "Attention Mechanism"
+    ],
+    "correctAnswer": "Attention Mechanism"
   },
   {
     "uid": "google_fib_200_031",
@@ -647,8 +797,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Variational Autoencoder",
+      "Positional Encoding",
+      "Self-Attention",
+      "Diffusion Model"
+    ],
+    "correctAnswer": "Self-Attention"
   },
   {
     "uid": "google_fib_200_032",
@@ -668,8 +823,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Positional Encoding",
+      "Few-Shot Prompting",
+      "Fine-Tuning",
+      "Zero-Shot Prompting"
+    ],
+    "correctAnswer": "Positional Encoding"
   },
   {
     "uid": "google_fib_200_033",
@@ -689,8 +849,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Embedding",
+      "Token",
+      "Tokenization",
+      "Context Window"
+    ],
+    "correctAnswer": "Tokenization"
   },
   {
     "uid": "google_fib_200_034",
@@ -710,8 +875,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Context Window",
+      "Embedding",
+      "Token",
+      "Tokenization"
+    ],
+    "correctAnswer": "Token"
   },
   {
     "uid": "google_fib_200_035",
@@ -731,8 +901,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Token",
+      "Context Window",
+      "Tokenization",
+      "Embedding"
+    ],
+    "correctAnswer": "Embedding"
   },
   {
     "uid": "google_fib_200_036",
@@ -752,8 +927,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Token",
+      "Context Window",
+      "Tokenization",
+      "Embedding"
+    ],
+    "correctAnswer": "Context Window"
   },
   {
     "uid": "google_fib_200_037",
@@ -773,8 +953,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Generator",
+      "Fine-Tuning",
+      "HNSW (Hierarchical Navigable Small World)",
+      "Temperature"
+    ],
+    "correctAnswer": "Fine-Tuning"
   },
   {
     "uid": "google_fib_200_038",
@@ -794,8 +979,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Tool Calling",
+      "Zero-Shot Prompting",
+      "Foundation Model",
+      "Top-p Sampling"
+    ],
+    "correctAnswer": "Foundation Model"
   },
   {
     "uid": "google_fib_200_039",
@@ -815,8 +1005,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Prompt Engineering",
+      "Attention Mechanism",
+      "Self-Attention",
+      "Diffusion Model"
+    ],
+    "correctAnswer": "Prompt Engineering"
   },
   {
     "uid": "google_fib_200_040",
@@ -836,8 +1031,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Zero-Shot Prompting",
+      "Foundation Model",
+      "Transformer",
+      "Generator"
+    ],
+    "correctAnswer": "Zero-Shot Prompting"
   },
   {
     "uid": "google_fib_200_041",
@@ -857,8 +1057,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "FAISS (Facebook AI (Artificial Intelligence) Similarity Search)",
+      "Reranking",
+      "Few-Shot Prompting",
+      "Foundation Model"
+    ],
+    "correctAnswer": "Few-Shot Prompting"
   },
   {
     "uid": "google_fib_200_042",
@@ -878,8 +1083,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Chain-of-Thought",
+      "Chunking",
+      "Agent",
+      "Fine-Tuning"
+    ],
+    "correctAnswer": "Chain-of-Thought"
   },
   {
     "uid": "google_fib_200_043",
@@ -899,8 +1109,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Temperature",
+      "Generator",
+      "Top-p Sampling",
+      "Variational Autoencoder"
+    ],
+    "correctAnswer": "Temperature"
   },
   {
     "uid": "google_fib_200_044",
@@ -920,8 +1135,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Foundation Model",
+      "Top-p Sampling",
+      "Multimodal Model",
+      "Diffusion Model"
+    ],
+    "correctAnswer": "Top-p Sampling"
   },
   {
     "uid": "google_fib_200_045",
@@ -941,8 +1161,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Feature Importance",
+      "Explainability",
+      "LIME",
+      "Hallucination"
+    ],
+    "correctAnswer": "Hallucination"
   },
   {
     "uid": "google_fib_200_046",
@@ -962,8 +1187,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Vector Database",
+      "Foundation Prompt Template",
+      "Chunking",
+      "Retrieval-Augmented Generation"
+    ],
+    "correctAnswer": "Retrieval-Augmented Generation"
   },
   {
     "uid": "google_fib_200_047",
@@ -983,8 +1213,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Temperature",
+      "Vector Database",
+      "Foundation Model",
+      "HNSW (Hierarchical Navigable Small World)"
+    ],
+    "correctAnswer": "Vector Database"
   },
   {
     "uid": "google_fib_200_048",
@@ -1004,8 +1239,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "HNSW (Hierarchical Navigable Small World)",
+      "Cosine Similarity",
+      "Diffusion Model",
+      "Tool Calling"
+    ],
+    "correctAnswer": "Cosine Similarity"
   },
   {
     "uid": "google_fib_200_049",
@@ -1025,8 +1265,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Chunking",
+      "HNSW (Hierarchical Navigable Small World)",
+      "Semantic Search",
+      "Agent"
+    ],
+    "correctAnswer": "Chunking"
   },
   {
     "uid": "google_fib_200_050",
@@ -1046,8 +1291,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Discriminator",
+      "Reranking",
+      "Top-p Sampling",
+      "Noise Schedule"
+    ],
+    "correctAnswer": "Reranking"
   },
   {
     "uid": "google_fib_200_051",
@@ -1067,8 +1317,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Multimodal Model",
+      "Reranking",
+      "Chunking",
+      "Discriminator"
+    ],
+    "correctAnswer": "Multimodal Model"
   },
   {
     "uid": "google_fib_200_052",
@@ -1088,8 +1343,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Few-Shot Prompting",
+      "Chunking",
+      "Diffusion Model",
+      "Generator"
+    ],
+    "correctAnswer": "Diffusion Model"
   },
   {
     "uid": "google_fib_200_053",
@@ -1109,8 +1369,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Noise Schedule",
+      "Top-p Sampling",
+      "Prompt Engineering",
+      "Generator"
+    ],
+    "correctAnswer": "Noise Schedule"
   },
   {
     "uid": "google_fib_200_054",
@@ -1130,8 +1395,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Mode Collapse",
+      "GAN (Generative Adversarial Network)",
+      "Top-p Sampling",
+      "Transformer"
+    ],
+    "correctAnswer": "GAN (Generative Adversarial Network)"
   },
   {
     "uid": "google_fib_200_055",
@@ -1151,8 +1421,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Diffusion Model",
+      "Multimodal Model",
+      "Generator",
+      "Reranking"
+    ],
+    "correctAnswer": "Generator"
   },
   {
     "uid": "google_fib_200_056",
@@ -1172,8 +1447,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Chain-of-Thought",
+      "Fine-Tuning",
+      "Mode Collapse",
+      "Discriminator"
+    ],
+    "correctAnswer": "Discriminator"
   },
   {
     "uid": "google_fib_200_057",
@@ -1193,8 +1473,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Mode Collapse",
+      "Few-Shot Prompting",
+      "GAN (Generative Adversarial Network)",
+      "ANN (Approximate Nearest Neighbor) Search"
+    ],
+    "correctAnswer": "Mode Collapse"
   },
   {
     "uid": "google_fib_200_058",
@@ -1214,8 +1499,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Variational Autoencoder",
+      "GAN (Generative Adversarial Network)",
+      "Positional Encoding",
+      "Noise Schedule"
+    ],
+    "correctAnswer": "Variational Autoencoder"
   },
   {
     "uid": "google_fib_200_059",
@@ -1235,8 +1525,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Reranking",
+      "Attention Mechanism",
+      "Latent Space",
+      "Discriminator"
+    ],
+    "correctAnswer": "Latent Space"
   },
   {
     "uid": "google_fib_200_060",
@@ -1256,8 +1551,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Queue",
+      "Autoscaling",
+      "MLOps",
+      "Model Registry"
+    ],
+    "correctAnswer": "MLOps"
   },
   {
     "uid": "google_fib_200_061",
@@ -1277,8 +1577,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Model Registry",
+      "Model Drift",
+      "Data Lake",
+      "Data Versioning"
+    ],
+    "correctAnswer": "Model Registry"
   },
   {
     "uid": "google_fib_200_062",
@@ -1298,8 +1603,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Canary Deployment",
+      "Concept Drift",
+      "MLOps",
+      "Feature Store"
+    ],
+    "correctAnswer": "Canary Deployment"
   },
   {
     "uid": "google_fib_200_063",
@@ -1319,8 +1629,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Model Drift",
+      "Rate Limiting",
+      "Canary Deployment",
+      "Shadow Deployment"
+    ],
+    "correctAnswer": "Shadow Deployment"
   },
   {
     "uid": "google_fib_200_064",
@@ -1340,8 +1655,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Model Registry",
+      "Shadow Deployment",
+      "Caching",
+      "A/B Testing"
+    ],
+    "correctAnswer": "A/B Testing"
   },
   {
     "uid": "google_fib_200_065",
@@ -1361,8 +1681,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Feature Store",
+      "Data Warehouse",
+      "Monitoring",
+      "Model Drift"
+    ],
+    "correctAnswer": "Model Drift"
   },
   {
     "uid": "google_fib_200_066",
@@ -1382,8 +1707,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Rate Limiting",
+      "Concept Drift",
+      "Model Drift",
+      "Observability"
+    ],
+    "correctAnswer": "Concept Drift"
   },
   {
     "uid": "google_fib_200_067",
@@ -1403,8 +1733,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Monitoring",
+      "Model Drift",
+      "Data Drift",
+      "Concept Drift"
+    ],
+    "correctAnswer": "Data Drift"
   },
   {
     "uid": "google_fib_200_068",
@@ -1424,8 +1759,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Shadow Deployment",
+      "A/B Testing",
+      "Telemetry",
+      "Monitoring"
+    ],
+    "correctAnswer": "Monitoring"
   },
   {
     "uid": "google_fib_200_069",
@@ -1445,8 +1785,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Feature Store",
+      "Telemetry",
+      "Autoscaling",
+      "Model Versioning"
+    ],
+    "correctAnswer": "Feature Store"
   },
   {
     "uid": "google_fib_200_070",
@@ -1466,8 +1811,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Data Drift",
+      "MLOps",
+      "Observability",
+      "ETL (Extract, Transform, Load)"
+    ],
+    "correctAnswer": "ETL (Extract, Transform, Load)"
   },
   {
     "uid": "google_fib_200_071",
@@ -1487,8 +1837,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Data Warehouse",
+      "Monitoring",
+      "Model Drift",
+      "Data Lake"
+    ],
+    "correctAnswer": "Data Warehouse"
   },
   {
     "uid": "google_fib_200_072",
@@ -1508,8 +1863,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Data Lake",
+      "Data Warehouse",
+      "Canary Deployment",
+      "Telemetry"
+    ],
+    "correctAnswer": "Data Lake"
   },
   {
     "uid": "google_fib_200_073",
@@ -1529,8 +1889,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "API (Application Programming Interface)",
+      "Gemini",
+      "Edge AI (Artificial Intelligence)",
+      "GPU (Graphics Processing Unit)"
+    ],
+    "correctAnswer": "API (Application Programming Interface)"
   },
   {
     "uid": "google_fib_200_074",
@@ -1550,8 +1915,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "JSON (JavaScript Object Notation)",
+      "gRPC",
+      "REST (Representational State Transfer)",
+      "Gemini"
+    ],
+    "correctAnswer": "REST (Representational State Transfer)"
   },
   {
     "uid": "google_fib_200_075",
@@ -1571,8 +1941,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Quantization",
+      "REST (Representational State Transfer)",
+      "gRPC",
+      "Gemini"
+    ],
+    "correctAnswer": "gRPC"
   },
   {
     "uid": "google_fib_200_076",
@@ -1592,8 +1967,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Distillation",
+      "Pruning",
+      "REST (Representational State Transfer)",
+      "JSON (JavaScript Object Notation)"
+    ],
+    "correctAnswer": "JSON (JavaScript Object Notation)"
   },
   {
     "uid": "google_fib_200_077",
@@ -1613,8 +1993,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "TPU (Tensor Processing Unit)",
+      "Pruning",
+      "GPU (Graphics Processing Unit)",
+      "Edge AI (Artificial Intelligence)"
+    ],
+    "correctAnswer": "GPU (Graphics Processing Unit)"
   },
   {
     "uid": "google_fib_200_078",
@@ -1634,8 +2019,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Edge AI (Artificial Intelligence)",
+      "gRPC",
+      "TPU (Tensor Processing Unit)",
+      "Pruning"
+    ],
+    "correctAnswer": "TPU (Tensor Processing Unit)"
   },
   {
     "uid": "google_fib_200_079",
@@ -1655,8 +2045,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "TPU (Tensor Processing Unit)",
+      "Quantization",
+      "Gemini",
+      "GPU (Graphics Processing Unit)"
+    ],
+    "correctAnswer": "Quantization"
   },
   {
     "uid": "google_fib_200_080",
@@ -1676,8 +2071,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Quantization",
+      "GPU (Graphics Processing Unit)",
+      "Pruning",
+      "JSON (JavaScript Object Notation)"
+    ],
+    "correctAnswer": "Pruning"
   },
   {
     "uid": "google_fib_200_081",
@@ -1697,8 +2097,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Gemini",
+      "Pruning",
+      "REST (Representational State Transfer)",
+      "Distillation"
+    ],
+    "correctAnswer": "Distillation"
   },
   {
     "uid": "google_fib_200_082",
@@ -1718,8 +2123,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Quantization",
+      "JSON (JavaScript Object Notation)",
+      "Distillation",
+      "Edge AI (Artificial Intelligence)"
+    ],
+    "correctAnswer": "Edge AI (Artificial Intelligence)"
   },
   {
     "uid": "google_fib_200_083",
@@ -1739,8 +2149,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Federated Learning",
+      "Least Privilege",
+      "Encryption in Transit",
+      "RBAC (Role-Based Access Control)"
+    ],
+    "correctAnswer": "Federated Learning"
   },
   {
     "uid": "google_fib_200_084",
@@ -1760,8 +2175,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Least Privilege",
+      "Jailbreak",
+      "Differential Privacy",
+      "Output Validation"
+    ],
+    "correctAnswer": "Differential Privacy"
   },
   {
     "uid": "google_fib_200_085",
@@ -1781,8 +2201,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Federated Learning",
+      "Prompt Injection",
+      "PII (Personally Identifiable Information)",
+      "Output Validation"
+    ],
+    "correctAnswer": "PII (Personally Identifiable Information)"
   },
   {
     "uid": "google_fib_200_086",
@@ -1802,8 +2227,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Least Privilege",
+      "Output Validation",
+      "Safety Policy",
+      "PII (Personally Identifiable Information)"
+    ],
+    "correctAnswer": "Least Privilege"
   },
   {
     "uid": "google_fib_200_087",
@@ -1823,8 +2253,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "PII (Personally Identifiable Information)",
+      "Encryption in Transit",
+      "Guardrails",
+      "RBAC (Role-Based Access Control)"
+    ],
+    "correctAnswer": "RBAC (Role-Based Access Control)"
   },
   {
     "uid": "google_fib_200_088",
@@ -1844,8 +2279,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "IAM (Identity and Access Management)",
+      "Moderation",
+      "Encryption in Transit",
+      "Encryption at Rest"
+    ],
+    "correctAnswer": "IAM (Identity and Access Management)"
   },
   {
     "uid": "google_fib_200_089",
@@ -1865,8 +2305,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Guardrails",
+      "PII (Personally Identifiable Information)",
+      "Federated Learning",
+      "Encryption at Rest"
+    ],
+    "correctAnswer": "Encryption at Rest"
   },
   {
     "uid": "google_fib_200_090",
@@ -1886,8 +2331,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Moderation",
+      "IAM (Identity and Access Management)",
+      "Jailbreak",
+      "Encryption in Transit"
+    ],
+    "correctAnswer": "Encryption in Transit"
   },
   {
     "uid": "google_fib_200_091",
@@ -1907,8 +2357,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Guardrails",
+      "Jailbreak",
+      "Prompt Injection",
+      "Federated Learning"
+    ],
+    "correctAnswer": "Prompt Injection"
   },
   {
     "uid": "google_fib_200_092",
@@ -1928,8 +2383,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Jailbreak",
+      "Moderation",
+      "Encryption at Rest",
+      "Output Validation"
+    ],
+    "correctAnswer": "Jailbreak"
   },
   {
     "uid": "google_fib_200_093",
@@ -1949,8 +2409,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Encryption in Transit",
+      "IAM (Identity and Access Management)",
+      "Guardrails",
+      "Differential Privacy"
+    ],
+    "correctAnswer": "Guardrails"
   },
   {
     "uid": "google_fib_200_094",
@@ -1970,8 +2435,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Moderation",
+      "IAM (Identity and Access Management)",
+      "PII (Personally Identifiable Information) Redaction",
+      "Encryption at Rest"
+    ],
+    "correctAnswer": "Moderation"
   },
   {
     "uid": "google_fib_200_095",
@@ -1991,8 +2461,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Guardrails",
+      "Output Validation",
+      "Red Teaming",
+      "PII (Personally Identifiable Information)"
+    ],
+    "correctAnswer": "Red Teaming"
   },
   {
     "uid": "google_fib_200_096",
@@ -2012,8 +2487,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "LIME",
+      "Explainability",
+      "SHAP (Shapley Additive Explanations)",
+      "Human-in-the-Loop"
+    ],
+    "correctAnswer": "Human-in-the-Loop"
   },
   {
     "uid": "google_fib_200_097",
@@ -2033,8 +2513,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Hallucination",
+      "Reproducibility",
+      "Confidence Score",
+      "Model Card"
+    ],
+    "correctAnswer": "Confidence Score"
   },
   {
     "uid": "google_fib_200_098",
@@ -2054,8 +2539,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Audit Log",
+      "Model Card",
+      "SHAP (Shapley Additive Explanations)",
+      "Explainability"
+    ],
+    "correctAnswer": "Explainability"
   },
   {
     "uid": "google_fib_200_099",
@@ -2075,8 +2565,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Confidence Score",
+      "Incident Response",
+      "Hallucination",
+      "SHAP (Shapley Additive Explanations)"
+    ],
+    "correctAnswer": "SHAP (Shapley Additive Explanations)"
   },
   {
     "uid": "google_fib_200_100",
@@ -2096,8 +2591,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "SHAP (Shapley Additive Explanations)",
+      "LIME",
+      "Human-in-the-Loop",
+      "Explainability"
+    ],
+    "correctAnswer": "LIME"
   },
   {
     "uid": "google_fib_200_101",
@@ -2117,8 +2617,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Incident Response",
+      "Model Card",
+      "Rollback",
+      "LIME"
+    ],
+    "correctAnswer": "Model Card"
   },
   {
     "uid": "google_fib_200_102",
@@ -2138,8 +2643,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "SHAP (Shapley Additive Explanations)",
+      "Data Provenance",
+      "Explainability",
+      "Model Card"
+    ],
+    "correctAnswer": "Data Provenance"
   },
   {
     "uid": "google_fib_200_103",
@@ -2159,8 +2669,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Audit Log",
+      "Data Provenance",
+      "Model Card",
+      "LIME"
+    ],
+    "correctAnswer": "Audit Log"
   },
   {
     "uid": "google_fib_200_104",
@@ -2180,8 +2695,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Incident Response",
+      "Rollback",
+      "Explainability",
+      "Feature Importance"
+    ],
+    "correctAnswer": "Incident Response"
   },
   {
     "uid": "google_fib_200_105",
@@ -2201,8 +2721,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Human-in-the-Loop",
+      "Reproducibility",
+      "Rollback",
+      "Feature Importance"
+    ],
+    "correctAnswer": "Rollback"
   },
   {
     "uid": "google_fib_200_106",
@@ -2222,8 +2747,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "MLOps",
+      "Rate Limiting",
+      "Blue-Green Deployment",
+      "Autoscaling"
+    ],
+    "correctAnswer": "Blue-Green Deployment"
   },
   {
     "uid": "google_fib_200_107",
@@ -2243,8 +2773,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "A/B Testing",
+      "Model Versioning",
+      "Rate Limiting",
+      "Autoscaling"
+    ],
+    "correctAnswer": "Autoscaling"
   },
   {
     "uid": "google_fib_200_108",
@@ -2264,8 +2799,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Feature Store",
+      "Blue-Green Deployment",
+      "Model Versioning",
+      "Rate Limiting"
+    ],
+    "correctAnswer": "Rate Limiting"
   },
   {
     "uid": "google_fib_200_109",
@@ -2285,8 +2825,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Caching",
+      "Data Warehouse",
+      "A/B Testing",
+      "Rate Limiting"
+    ],
+    "correctAnswer": "Caching"
   },
   {
     "uid": "google_fib_200_110",
@@ -2306,8 +2851,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Data Lake",
+      "ETL (Extract, Transform, Load)",
+      "Model Versioning",
+      "Queue"
+    ],
+    "correctAnswer": "Queue"
   },
   {
     "uid": "google_fib_200_111",
@@ -2327,8 +2877,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "ANN (Approximate Nearest Neighbor) Search",
+      "Chain-of-Thought",
+      "HNSW (Hierarchical Navigable Small World)",
+      "Temperature"
+    ],
+    "correctAnswer": "ANN (Approximate Nearest Neighbor) Search"
   },
   {
     "uid": "google_fib_200_112",
@@ -2348,8 +2903,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "FAISS (Facebook AI (Artificial Intelligence) Similarity Search)",
+      "ANN (Approximate Nearest Neighbor) Search",
+      "Top-p Sampling",
+      "HNSW (Hierarchical Navigable Small World)"
+    ],
+    "correctAnswer": "HNSW (Hierarchical Navigable Small World)"
   },
   {
     "uid": "google_fib_200_113",
@@ -2369,8 +2929,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Discriminator",
+      "FAISS (Facebook AI (Artificial Intelligence) Similarity Search)",
+      "ANN (Approximate Nearest Neighbor) Search",
+      "Mode Collapse"
+    ],
+    "correctAnswer": "FAISS (Facebook AI (Artificial Intelligence) Similarity Search)"
   },
   {
     "uid": "google_fib_200_114",
@@ -2390,8 +2955,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "GPT (Generative Pre-trained Transformer)",
+      "Recommendation System",
+      "OCR (Optical Character Recognition)",
+      "Lemmatization"
+    ],
+    "correctAnswer": "OCR (Optical Character Recognition)"
   },
   {
     "uid": "google_fib_200_115",
@@ -2411,8 +2981,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "OCR (Optical Character Recognition)",
+      "ASR (Automatic Speech Recognition)",
+      "Spam Filter",
+      "Stemming"
+    ],
+    "correctAnswer": "ASR (Automatic Speech Recognition)"
   },
   {
     "uid": "google_fib_200_116",
@@ -2432,8 +3007,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Fraud Detection",
+      "Sentiment Analysis",
+      "TTS (Text-to-Speech)",
+      "Synthetic Data"
+    ],
+    "correctAnswer": "TTS (Text-to-Speech)"
   },
   {
     "uid": "google_fib_200_117",
@@ -2453,8 +3033,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Word2Vec",
+      "Named Entity Recognition",
+      "TTS (Text-to-Speech)",
+      "Anomaly Detection"
+    ],
+    "correctAnswer": "Named Entity Recognition"
   },
   {
     "uid": "google_fib_200_118",
@@ -2474,8 +3059,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Sentiment Analysis",
+      "BERT (Bidirectional Encoder Representations from Transformers)",
+      "Lemmatization",
+      "Recommendation System"
+    ],
+    "correctAnswer": "Sentiment Analysis"
   },
   {
     "uid": "google_fib_200_119",
@@ -2495,8 +3085,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "OCR (Optical Character Recognition)",
+      "Stop Words",
+      "Recommendation System",
+      "Topic Modeling"
+    ],
+    "correctAnswer": "Topic Modeling"
   },
   {
     "uid": "google_fib_200_120",
@@ -2516,8 +3111,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "TF-IDF (Term Frequency-Inverse Document Frequency) (Term Frequency-Inverse Document Frequency)",
+      "Topic Modeling",
+      "Stemming",
+      "Spam Filter"
+    ],
+    "correctAnswer": "Stemming"
   },
   {
     "uid": "google_fib_200_121",
@@ -2537,8 +3137,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Lemmatization",
+      "Anomaly Detection",
+      "TTS (Text-to-Speech)",
+      "Stop Words"
+    ],
+    "correctAnswer": "Lemmatization"
   },
   {
     "uid": "google_fib_200_122",
@@ -2558,8 +3163,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "BERT (Bidirectional Encoder Representations from Transformers)",
+      "Stop Words",
+      "Anomaly Detection",
+      "N-gram"
+    ],
+    "correctAnswer": "Stop Words"
   },
   {
     "uid": "google_fib_200_123",
@@ -2579,8 +3189,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "TF-IDF (Term Frequency-Inverse Document Frequency) (Term Frequency-Inverse Document Frequency)",
+      "Topic Modeling",
+      "Stop Words",
+      "Stemming"
+    ],
+    "correctAnswer": "TF-IDF (Term Frequency-Inverse Document Frequency) (Term Frequency-Inverse Document Frequency)"
   },
   {
     "uid": "google_fib_200_124",
@@ -2600,8 +3215,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Stemming",
+      "N-gram",
+      "Recommendation System",
+      "Sentiment Analysis"
+    ],
+    "correctAnswer": "N-gram"
   },
   {
     "uid": "google_fib_200_125",
@@ -2621,8 +3241,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Word2Vec",
+      "Named Entity Recognition",
+      "Recommendation System",
+      "TTS (Text-to-Speech)"
+    ],
+    "correctAnswer": "Word2Vec"
   },
   {
     "uid": "google_fib_200_126",
@@ -2642,8 +3267,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "BERT (Bidirectional Encoder Representations from Transformers)",
+      "Spam Filter",
+      "TF-IDF (Term Frequency-Inverse Document Frequency) (Term Frequency-Inverse Document Frequency)",
+      "Topic Modeling"
+    ],
+    "correctAnswer": "BERT (Bidirectional Encoder Representations from Transformers)"
   },
   {
     "uid": "google_fib_200_127",
@@ -2663,8 +3293,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Stemming",
+      "GPT (Generative Pre-trained Transformer)",
+      "Topic Modeling",
+      "Fraud Detection"
+    ],
+    "correctAnswer": "GPT (Generative Pre-trained Transformer)"
   },
   {
     "uid": "google_fib_200_128",
@@ -2684,8 +3319,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Gemini",
+      "Pruning",
+      "API (Application Programming Interface)",
+      "JSON (JavaScript Object Notation)"
+    ],
+    "correctAnswer": "Gemini"
   },
   {
     "uid": "google_fib_200_129",
@@ -2705,8 +3345,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "RLHF (Reinforcement Learning from Human Feedback)",
+      "DPO (Direct Preference Optimization)",
+      "Alignment",
+      "Reward Model"
+    ],
+    "correctAnswer": "RLHF (Reinforcement Learning from Human Feedback)"
   },
   {
     "uid": "google_fib_200_130",
@@ -2726,8 +3371,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "RLHF (Reinforcement Learning from Human Feedback)",
+      "Reward Model",
+      "DPO (Direct Preference Optimization)",
+      "Alignment"
+    ],
+    "correctAnswer": "DPO (Direct Preference Optimization)"
   },
   {
     "uid": "google_fib_200_131",
@@ -2747,8 +3397,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Reward Model",
+      "RLHF (Reinforcement Learning from Human Feedback)",
+      "DPO (Direct Preference Optimization)",
+      "Alignment"
+    ],
+    "correctAnswer": "Reward Model"
   },
   {
     "uid": "google_fib_200_132",
@@ -2768,8 +3423,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "DPO (Direct Preference Optimization)",
+      "RLHF (Reinforcement Learning from Human Feedback)",
+      "Reward Model",
+      "Alignment"
+    ],
+    "correctAnswer": "Alignment"
   },
   {
     "uid": "google_fib_200_133",
@@ -2789,8 +3449,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Spam Filter",
+      "Synthetic Data",
+      "Fraud Detection",
+      "BERT (Bidirectional Encoder Representations from Transformers)"
+    ],
+    "correctAnswer": "Synthetic Data"
   },
   {
     "uid": "google_fib_200_134",
@@ -2810,8 +3475,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "One-Hot Encoding",
+      "Learning Rate",
+      "Cross-Validation",
+      "Transfer Learning"
+    ],
+    "correctAnswer": "Transfer Learning"
   },
   {
     "uid": "google_fib_200_135",
@@ -2831,8 +3501,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Batch Size",
+      "Domain Adaptation",
+      "Dropout",
+      "Regularization"
+    ],
+    "correctAnswer": "Domain Adaptation"
   },
   {
     "uid": "google_fib_200_136",
@@ -2852,8 +3527,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Confusion Matrix",
+      "Hyperparameter Tuning",
+      "F1 Score",
+      "Regularization"
+    ],
+    "correctAnswer": "Hyperparameter Tuning"
   },
   {
     "uid": "google_fib_200_137",
@@ -2873,8 +3553,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Underfitting",
+      "Regularization",
+      "Grid Search",
+      "Learning Rate"
+    ],
+    "correctAnswer": "Grid Search"
   },
   {
     "uid": "google_fib_200_138",
@@ -2894,8 +3579,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Grid Search",
+      "Normalization",
+      "Random Search",
+      "Ground Truth"
+    ],
+    "correctAnswer": "Random Search"
   },
   {
     "uid": "google_fib_200_139",
@@ -2915,8 +3605,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Bayesian Optimization",
+      "Domain Adaptation",
+      "Regression",
+      "Unsupervised Learning"
+    ],
+    "correctAnswer": "Bayesian Optimization"
   },
   {
     "uid": "google_fib_200_140",
@@ -2936,8 +3631,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Early Stopping",
+      "Class Imbalance",
+      "Backpropagation",
+      "Overfitting"
+    ],
+    "correctAnswer": "Early Stopping"
   },
   {
     "uid": "google_fib_200_141",
@@ -2957,8 +3657,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Blue-Green Deployment",
+      "Checkpoint",
+      "Caching",
+      "Shadow Deployment"
+    ],
+    "correctAnswer": "Checkpoint"
   },
   {
     "uid": "google_fib_200_142",
@@ -2978,8 +3683,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Data Provenance",
+      "Reproducibility",
+      "Model Card",
+      "SHAP (Shapley Additive Explanations)"
+    ],
+    "correctAnswer": "Reproducibility"
   },
   {
     "uid": "google_fib_200_143",
@@ -2999,8 +3709,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Discriminator",
+      "Agent",
+      "Noise Schedule",
+      "Foundation Prompt Template"
+    ],
+    "correctAnswer": "Foundation Prompt Template"
   },
   {
     "uid": "google_fib_200_144",
@@ -3020,8 +3735,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Zero-Shot Prompting",
+      "Attention Mechanism",
+      "Chunking",
+      "Tool Calling"
+    ],
+    "correctAnswer": "Tool Calling"
   },
   {
     "uid": "google_fib_200_145",
@@ -3041,8 +3761,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Self-Attention",
+      "Foundation Prompt Template",
+      "Agent",
+      "Diffusion Model"
+    ],
+    "correctAnswer": "Agent"
   },
   {
     "uid": "google_fib_200_146",
@@ -3062,8 +3787,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Zero-Shot Prompting",
+      "Transformer",
+      "Semantic Search",
+      "Self-Attention"
+    ],
+    "correctAnswer": "Semantic Search"
   },
   {
     "uid": "google_fib_200_147",
@@ -3083,8 +3813,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Decision Tree",
+      "Recall",
+      "Bayesian Optimization",
+      "Ground Truth"
+    ],
+    "correctAnswer": "Ground Truth"
   },
   {
     "uid": "google_fib_200_148",
@@ -3104,8 +3839,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Decision Boundary",
+      "Threshold Tuning",
+      "Batch Size",
+      "Learning Rate"
+    ],
+    "correctAnswer": "Threshold Tuning"
   },
   {
     "uid": "google_fib_200_149",
@@ -3125,8 +3865,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Word2Vec",
+      "Fraud Detection",
+      "Recommendation System",
+      "N-gram"
+    ],
+    "correctAnswer": "Recommendation System"
   },
   {
     "uid": "google_fib_200_150",
@@ -3146,8 +3891,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Lemmatization",
+      "Spam Filter",
+      "Word2Vec",
+      "Named Entity Recognition"
+    ],
+    "correctAnswer": "Spam Filter"
   },
   {
     "uid": "google_fib_200_151",
@@ -3167,8 +3917,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Lemmatization",
+      "Anomaly Detection",
+      "N-gram",
+      "Recommendation System"
+    ],
+    "correctAnswer": "Anomaly Detection"
   },
   {
     "uid": "google_fib_200_152",
@@ -3188,8 +3943,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Stop Words",
+      "Fraud Detection",
+      "OCR (Optical Character Recognition)",
+      "GPT (Generative Pre-trained Transformer)"
+    ],
+    "correctAnswer": "Fraud Detection"
   },
   {
     "uid": "google_fib_200_153",
@@ -3209,8 +3969,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Decision Boundary",
+      "Data Leakage",
+      "Feature Engineering",
+      "Machine Learning"
+    ],
+    "correctAnswer": "Decision Boundary"
   },
   {
     "uid": "google_fib_200_154",
@@ -3230,8 +3995,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Regression",
+      "Decision Tree",
+      "Machine Learning",
+      "Random Forest"
+    ],
+    "correctAnswer": "Random Forest"
   },
   {
     "uid": "google_fib_200_155",
@@ -3251,8 +4021,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Batch Size",
+      "F1 Score",
+      "Regularization",
+      "Decision Tree"
+    ],
+    "correctAnswer": "Decision Tree"
   },
   {
     "uid": "google_fib_200_156",
@@ -3272,8 +4047,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Underfitting",
+      "Unsupervised Learning",
+      "Ensemble Learning",
+      "Cross-Validation"
+    ],
+    "correctAnswer": "Ensemble Learning"
   },
   {
     "uid": "google_fib_200_157",
@@ -3293,8 +4073,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Regression",
+      "Random Search",
+      "Supervised Learning",
+      "One-Hot Encoding"
+    ],
+    "correctAnswer": "One-Hot Encoding"
   },
   {
     "uid": "google_fib_200_158",
@@ -3314,8 +4099,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Incident Response",
+      "SHAP (Shapley Additive Explanations)",
+      "Feature Importance",
+      "Hallucination"
+    ],
+    "correctAnswer": "Feature Importance"
   },
   {
     "uid": "google_fib_200_159",
@@ -3335,8 +4125,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Differential Privacy",
+      "IAM (Identity and Access Management)",
+      "Least Privilege",
+      "Safety Policy"
+    ],
+    "correctAnswer": "Safety Policy"
   },
   {
     "uid": "google_fib_200_160",
@@ -3356,8 +4151,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Output Validation",
+      "Safety Policy",
+      "Federated Learning",
+      "Jailbreak"
+    ],
+    "correctAnswer": "Output Validation"
   },
   {
     "uid": "google_fib_200_161",
@@ -3377,8 +4177,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "RBAC (Role-Based Access Control)",
+      "PII (Personally Identifiable Information) Redaction",
+      "Jailbreak",
+      "Guardrails"
+    ],
+    "correctAnswer": "PII (Personally Identifiable Information) Redaction"
   },
   {
     "uid": "google_fib_200_162",
@@ -3398,8 +4203,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Blue-Green Deployment",
+      "Telemetry",
+      "Rate Limiting",
+      "Model Versioning"
+    ],
+    "correctAnswer": "Model Versioning"
   },
   {
     "uid": "google_fib_200_163",
@@ -3419,8 +4229,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "ETL (Extract, Transform, Load)",
+      "Data Versioning",
+      "Canary Deployment",
+      "Blue-Green Deployment"
+    ],
+    "correctAnswer": "Data Versioning"
   },
   {
     "uid": "google_fib_200_164",
@@ -3440,8 +4255,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Telemetry",
+      "Model Versioning",
+      "Caching",
+      "ETL (Extract, Transform, Load)"
+    ],
+    "correctAnswer": "Telemetry"
   },
   {
     "uid": "google_fib_200_165",
@@ -3461,8 +4281,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Observability",
+      "Monitoring",
+      "Rate Limiting",
+      "Blue-Green Deployment"
+    ],
+    "correctAnswer": "Observability"
   },
   {
     "uid": "google_fib_200_166",
@@ -3482,8 +4307,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Supervised Learning",
+      "One-Hot Encoding",
+      "Machine Learning",
+      "Normalization"
+    ],
+    "correctAnswer": "Machine Learning"
   },
   {
     "uid": "google_fib_200_167",
@@ -3503,8 +4333,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Deep Learning",
+      "Confusion Matrix",
+      "Batch Size",
+      "Machine Learning"
+    ],
+    "correctAnswer": "Deep Learning"
   },
   {
     "uid": "google_fib_200_168",
@@ -3524,8 +4359,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Neural Network",
+      "Standardization",
+      "Epoch",
+      "Unsupervised Learning"
+    ],
+    "correctAnswer": "Neural Network"
   },
   {
     "uid": "google_fib_200_169",
@@ -3545,8 +4385,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Supervised Learning",
+      "Grid Search",
+      "Neural Network",
+      "F1 Score"
+    ],
+    "correctAnswer": "Supervised Learning"
   },
   {
     "uid": "google_fib_200_170",
@@ -3566,8 +4411,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Gradient Descent",
+      "Unsupervised Learning",
+      "Ground Truth",
+      "Learning Rate"
+    ],
+    "correctAnswer": "Unsupervised Learning"
   },
   {
     "uid": "google_fib_200_171",
@@ -3587,8 +4437,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Machine Learning",
+      "Reinforcement Learning",
+      "Overfitting",
+      "Dropout"
+    ],
+    "correctAnswer": "Reinforcement Learning"
   },
   {
     "uid": "google_fib_200_172",
@@ -3608,8 +4463,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Grid Search",
+      "Loss Function",
+      "Classification",
+      "Overfitting"
+    ],
+    "correctAnswer": "Classification"
   },
   {
     "uid": "google_fib_200_173",
@@ -3629,8 +4489,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "F1 Score",
+      "Regularization",
+      "Regression",
+      "Confusion Matrix"
+    ],
+    "correctAnswer": "Regression"
   },
   {
     "uid": "google_fib_200_174",
@@ -3650,8 +4515,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Loss Function",
+      "Overfitting",
+      "Class Imbalance",
+      "Normalization"
+    ],
+    "correctAnswer": "Overfitting"
   },
   {
     "uid": "google_fib_200_175",
@@ -3671,8 +4541,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Decision Tree",
+      "Epoch",
+      "Underfitting",
+      "Regularization"
+    ],
+    "correctAnswer": "Underfitting"
   },
   {
     "uid": "google_fib_200_176",
@@ -3692,8 +4567,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Normalization",
+      "Loss Function",
+      "Grid Search",
+      "Overfitting"
+    ],
+    "correctAnswer": "Loss Function"
   },
   {
     "uid": "google_fib_200_177",
@@ -3713,8 +4593,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Recall",
+      "Gradient Descent",
+      "Grid Search",
+      "Backpropagation"
+    ],
+    "correctAnswer": "Gradient Descent"
   },
   {
     "uid": "google_fib_200_178",
@@ -3734,8 +4619,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Loss Function",
+      "Backpropagation",
+      "Grid Search",
+      "Precision"
+    ],
+    "correctAnswer": "Backpropagation"
   },
   {
     "uid": "google_fib_200_179",
@@ -3755,8 +4645,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Learning Rate",
+      "Cross-Validation",
+      "Decision Tree",
+      "Transfer Learning"
+    ],
+    "correctAnswer": "Learning Rate"
   },
   {
     "uid": "google_fib_200_180",
@@ -3776,8 +4671,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Decision Boundary",
+      "Learning Rate",
+      "Epoch",
+      "Confusion Matrix"
+    ],
+    "correctAnswer": "Epoch"
   },
   {
     "uid": "google_fib_200_181",
@@ -3797,8 +4697,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Transfer Learning",
+      "Batch Size",
+      "One-Hot Encoding",
+      "Cross-Validation"
+    ],
+    "correctAnswer": "Batch Size"
   },
   {
     "uid": "google_fib_200_182",
@@ -3818,8 +4723,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Regularization",
+      "Random Search",
+      "Deep Learning",
+      "Grid Search"
+    ],
+    "correctAnswer": "Regularization"
   },
   {
     "uid": "google_fib_200_183",
@@ -3839,8 +4749,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Early Stopping",
+      "Hyperparameter Tuning",
+      "Grid Search",
+      "Dropout"
+    ],
+    "correctAnswer": "Dropout"
   },
   {
     "uid": "google_fib_200_184",
@@ -3860,8 +4775,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Dropout",
+      "Class Imbalance",
+      "Neural Network",
+      "Cross-Validation"
+    ],
+    "correctAnswer": "Cross-Validation"
   },
   {
     "uid": "google_fib_200_185",
@@ -3881,8 +4801,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Early Stopping",
+      "Dropout",
+      "Data Leakage",
+      "Decision Tree"
+    ],
+    "correctAnswer": "Data Leakage"
   },
   {
     "uid": "google_fib_200_186",
@@ -3902,8 +4827,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Overfitting",
+      "Class Imbalance",
+      "Regression",
+      "Classification"
+    ],
+    "correctAnswer": "Class Imbalance"
   },
   {
     "uid": "google_fib_200_187",
@@ -3923,8 +4853,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Class Imbalance",
+      "Hyperparameter Tuning",
+      "Feature Engineering",
+      "Underfitting"
+    ],
+    "correctAnswer": "Feature Engineering"
   },
   {
     "uid": "google_fib_200_188",
@@ -3944,8 +4879,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Learning Rate",
+      "Normalization",
+      "Dropout",
+      "One-Hot Encoding"
+    ],
+    "correctAnswer": "Normalization"
   },
   {
     "uid": "google_fib_200_189",
@@ -3965,8 +4905,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Precision",
+      "Loss Function",
+      "Recall",
+      "Standardization"
+    ],
+    "correctAnswer": "Standardization"
   },
   {
     "uid": "google_fib_200_190",
@@ -3986,8 +4931,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Precision",
+      "Early Stopping",
+      "Regression",
+      "Transfer Learning"
+    ],
+    "correctAnswer": "Precision"
   },
   {
     "uid": "google_fib_200_191",
@@ -4007,8 +4957,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Grid Search",
+      "Decision Boundary",
+      "Loss Function",
+      "Recall"
+    ],
+    "correctAnswer": "Recall"
   },
   {
     "uid": "google_fib_200_192",
@@ -4028,8 +4983,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "F1 Score",
+      "Grid Search",
+      "Decision Boundary",
+      "Feature Engineering"
+    ],
+    "correctAnswer": "F1 Score"
   },
   {
     "uid": "google_fib_200_193",
@@ -4049,8 +5009,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Underfitting",
+      "One-Hot Encoding",
+      "Batch Size",
+      "Confusion Matrix"
+    ],
+    "correctAnswer": "Confusion Matrix"
   },
   {
     "uid": "google_fib_200_194",
@@ -4070,8 +5035,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Transformer",
+      "HNSW (Hierarchical Navigable Small World)",
+      "Vector Database",
+      "Multimodal Model"
+    ],
+    "correctAnswer": "Transformer"
   },
   {
     "uid": "google_fib_200_195",
@@ -4091,8 +5061,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Attention Mechanism",
+      "Agent",
+      "Mode Collapse",
+      "HNSW (Hierarchical Navigable Small World)"
+    ],
+    "correctAnswer": "Attention Mechanism"
   },
   {
     "uid": "google_fib_200_196",
@@ -4112,8 +5087,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Temperature",
+      "Self-Attention",
+      "Latent Space",
+      "Vector Database"
+    ],
+    "correctAnswer": "Self-Attention"
   },
   {
     "uid": "google_fib_200_197",
@@ -4133,8 +5113,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Generator",
+      "Variational Autoencoder",
+      "Few-Shot Prompting",
+      "Positional Encoding"
+    ],
+    "correctAnswer": "Positional Encoding"
   },
   {
     "uid": "google_fib_200_198",
@@ -4154,8 +5139,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Tokenization",
+      "Context Window",
+      "Token",
+      "Embedding"
+    ],
+    "correctAnswer": "Tokenization"
   },
   {
     "uid": "google_fib_200_199",
@@ -4175,8 +5165,13 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Token",
+      "Tokenization",
+      "Embedding",
+      "Context Window"
+    ],
+    "correctAnswer": "Token"
   },
   {
     "uid": "google_fib_200_200",
@@ -4196,7 +5191,12 @@
       "multiple-choice"
     ],
     "question_type": "fill_in_blank",
-    "options": [],
-    "correctAnswer": ""
+    "options": [
+      "Context Window",
+      "Tokenization",
+      "Embedding",
+      "Token"
+    ],
+    "correctAnswer": "Embedding"
   }
 ]
