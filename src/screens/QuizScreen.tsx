@@ -16,10 +16,12 @@ export function QuizScreen() {
     const location = window.location.hash;
 
     // Detect fill_in_blank from URL path
-    let type = (searchParams.get('type') || 'mixed') as any;
-    if (location.includes('/fill-in-blank')) {
-        type = 'fill_in_blank';
-    }
+    const rawType = searchParams.get('type') || 'mixed';
+    const validTypes = ['mixed', 'domain', 'fill_in_blank'] as const;
+    type QuizType = typeof validTypes[number];
+    const type: QuizType = location.includes('/fill-in-blank')
+        ? 'fill_in_blank'
+        : (validTypes as readonly string[]).includes(rawType) ? rawType as QuizType : 'mixed';
     const trackTagFromPath = location.includes('/generative-ai-leader')
         ? 'google-generative-ai-leader'
         : undefined;
@@ -35,7 +37,7 @@ export function QuizScreen() {
         state, currentQuestion, currentIndex, totalQuestions,
         selectedLetter, selectedLetters, isCorrect, timeLeft, isPaused,
         sessionId, error, submitAnswer, selectOption, finalizeAnswer, nextQuestion, togglePause,
-        mode, timeLimitMinutes, targetDifficulty, difficultyAdjustment, topicFocus
+        mode, timeLimitMinutes, targetDifficulty, difficultyAdjustment, topicFocus, timerEnabled
     } = useQuiz(type, domainId, 20, trackTag || undefined, quizMode);
 
 
@@ -158,12 +160,14 @@ export function QuizScreen() {
                 </div>
 
                 <div className="top-bar-center">
-                    <div className="timer-badge">
-                        <Timer size={16} />
-                        <span className={timeLeft < 15 ? 'critical' : ''}>
-                            {mode === 'practice' ? 'OPEN' : `${Math.floor(timeLeft / 60)}:${(timeLeft % 60).toString().padStart(2, '0')}`}
-                        </span>
-                    </div>
+                    {timerEnabled && (
+                        <div className="timer-badge">
+                            <Timer size={16} />
+                            <span className={timeLeft < 15 ? 'critical' : ''}>
+                                {mode === 'practice' ? 'OPEN' : `${Math.floor(timeLeft / 60)}:${(timeLeft % 60).toString().padStart(2, '0')}`}
+                            </span>
+                        </div>
+                    )}
                 </div>
 
                 <div className="top-bar-right">

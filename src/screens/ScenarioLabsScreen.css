@@ -1,0 +1,167 @@
+.labs-root {
+  animation: fadeIn 0.4s ease-out;
+  padding-bottom: 5rem;
+}
+
+.lab-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.lab-workspace {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.blocks-bank {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 1.5rem;
+  min-height: 400px;
+}
+
+.blocks-bank h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  color: var(--text-base);
+}
+
+.prompt-block {
+  background: var(--bg-mica);
+  border: 1px solid var(--border-subtle);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  cursor: grab;
+  color: var(--text-base);
+  font-weight: 500;
+  transition: all 0.2s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.prompt-block:active {
+  cursor: grabbing;
+}
+
+.prompt-block:hover {
+  border-color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+.prompt-block.dragging {
+  opacity: 0.5;
+  border-style: dashed;
+}
+
+.prompt-builder {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.drop-slot {
+  background: rgba(0,0,0,0.2);
+  border: 2px dashed var(--border-subtle);
+  border-radius: 12px;
+  min-height: 80px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.drop-slot.drag-over {
+  border-color: var(--primary);
+  background: rgba(var(--primary-rgb), 0.1);
+}
+
+.drop-slot.filled {
+  border-style: solid;
+  border-color: var(--primary-light);
+  background: var(--bg-mica);
+}
+
+.slot-label {
+  position: absolute;
+  top: -10px;
+  left: 16px;
+  background: var(--bg-base);
+  padding: 0 8px;
+  font-size: 10px;
+  font-weight: 800;
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.drop-slot .prompt-block {
+  margin-bottom: 0;
+  cursor: grab;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+.lab-actions {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-evaluate {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 0 20px var(--primary-glow);
+}
+
+.btn-evaluate:hover:not(:disabled) {
+  filter: brightness(1.2);
+  transform: translateY(-2px);
+}
+
+.btn-evaluate:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.lab-feedback {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.lab-feedback.success {
+  background: rgba(87, 242, 135, 0.1);
+  border: 1px solid var(--color-success);
+  color: var(--color-success);
+  box-shadow: 0 0 20px rgba(87, 242, 135, 0.2);
+}
+
+.lab-feedback.error {
+  background: rgba(237, 66, 69, 0.1);
+  border: 1px solid var(--color-error);
+  color: var(--color-error);
+}

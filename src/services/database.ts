@@ -172,6 +172,8 @@ export async function forceReSeedQuestions(): Promise<void> {
     await database.execute("DELETE FROM questions");
     // Reset version to ensure seed picks it up
     await database.execute("INSERT OR REPLACE INTO settings (key, value) VALUES ('db_version', '1')");
+    // Invalidate the singleton so next getDb() re-runs the migration gate
+    db = null;
 }
 
 export async function executeSystemPurge(): Promise<void> {

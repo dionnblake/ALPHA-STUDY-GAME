@@ -287,6 +287,5 @@ export async function getDashboardStats(): Promise<DashboardStats> {
         rankTitle: getRankTitle(level)
     };
 
-    console.log("Analytics generated:", finalStats);
     return finalStats;
 }

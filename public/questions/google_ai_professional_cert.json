@@ -9,8 +9,8 @@
     "difficulty": "adaptive",
     "options": [
       "Collaborator-style AI (Artificial Intelligence) is mainly useful inside large enterprise teams",
-      "Task-completer AI (Artificial Intelligence) is more advanced because it needs less back-and-forth",
-      "A collaborator model should require less human judgment than a task-completer tool",
+      "Task-completer AI (Artificial Intelligence) is actually more advanced because it requires less back-and-forth interaction from the human user",
+      "A collaborator model should naturally require less human judgment and oversight than a simpler task-completer tool does",
       "A collaborator mindset treats AI (Artificial Intelligence) as a partner that extends human capability rather than just completing tasks"
     ],
     "explanation": "A collaborator mindset treats AI (Artificial Intelligence) as a partner extending human capability, not just a task-completer.",
@@ -22,8 +22,8 @@
       "ai-fundamentals"
     ],
     "option_a": "Collaborator-style AI (Artificial Intelligence) is mainly useful inside large enterprise teams",
-    "option_b": "Task-completer AI (Artificial Intelligence) is more advanced because it needs less back-and-forth",
-    "option_c": "A collaborator model should require less human judgment than a task-completer tool",
+    "option_b": "Task-completer AI (Artificial Intelligence) is actually more advanced because it requires less back-and-forth interaction from the human user",
+    "option_c": "A collaborator model should naturally require less human judgment and oversight than a simpler task-completer tool does",
     "option_d": "A collaborator mindset treats AI (Artificial Intelligence) as a partner that extends human capability rather than just completing tasks"
   },
   {
@@ -36,9 +36,9 @@
     "difficulty": "adaptive",
     "options": [
       "They predict the statistically most likely next token based on training patterns",
-      "They perform internet searches in real-time",
-      "They retrieve pre-written responses from a database",
-      "They use handwritten rules to construct responses"
+      "They perform live internet searches in real-time to retrieve the most up-to-date information available",
+      "They retrieve and assemble pre-written response templates stored in a curated knowledge database",
+      "They apply a large set of handwritten expert rules and logic trees to construct each response step by step"
     ],
     "explanation": "LLMs (Large Language Models) predict the statistically most likely next token from patterns learned during training.",
     "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
@@ -49,9 +49,9 @@
       "ai-fundamentals"
     ],
     "option_a": "They predict the statistically most likely next token based on training patterns",
-    "option_b": "They perform internet searches in real-time",
-    "option_c": "They retrieve pre-written responses from a database",
-    "option_d": "They use handwritten rules to construct responses"
+    "option_b": "They perform live internet searches in real-time to retrieve the most up-to-date information available",
+    "option_c": "They retrieve and assemble pre-written response templates stored in a curated knowledge database",
+    "option_d": "They apply a large set of handwritten expert rules and logic trees to construct each response step by step"
   },
   {
     "id": "google_ai_cert_fund_003",
@@ -143,10 +143,10 @@
     "category": "ai-collab-mindset",
     "difficulty": "adaptive",
     "options": [
-      "Being extremely brief to save processing time",
+      "Being as brief and minimal as possible in your prompt to reduce processing time and avoid confusing the model",
       "Providing specific, descriptive details about the visual concept",
       "Using technical AI (Artificial Intelligence) terminology",
-      "Using stock photo references only"
+      "Using only existing stock photo references rather than attempting to describe any original visual concepts"
     ],
     "explanation": "Specific descriptive detail about style, subject, and composition is what drives image quality.",
     "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
@@ -156,10 +156,10 @@
       "google-ai-cert",
       "ai-fundamentals"
     ],
-    "option_a": "Being extremely brief to save processing time",
+    "option_a": "Being as brief and minimal as possible in your prompt to reduce processing time and avoid confusing the model",
     "option_b": "Providing specific, descriptive details about the visual concept",
     "option_c": "Using technical AI (Artificial Intelligence) terminology",
-    "option_d": "Using stock photo references only"
+    "option_d": "Using only existing stock photo references rather than attempting to describe any original visual concepts"
   },
   {
     "id": "google_ai_cert_fund_007",
@@ -226,8 +226,8 @@
     "options": [
       "generative AI (Artificial Intelligence) is a subset of ML (Machine Learning) that creates new content",
       "machine learning is more advanced and complex than gen AI (Artificial Intelligence)",
-      "they are fundamentally the same technology and discipline",
-      "they are completely separate and unrelated technical fields"
+      "they are fundamentally the same technology and there is no meaningful technical distinction between them",
+      "they are completely separate and unrelated technical fields with no shared underlying methods or theory"
     ],
     "explanation": "Generative AI (Artificial Intelligence) is a subset of ML (Machine Learning), which is a subset of AI (Artificial Intelligence).",
     "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
@@ -239,8 +239,8 @@
     ],
     "option_a": "generative AI (Artificial Intelligence) is a subset of ML (Machine Learning) that creates new content",
     "option_b": "machine learning is more advanced and complex than gen AI (Artificial Intelligence)",
-    "option_c": "they are fundamentally the same technology and discipline",
-    "option_d": "they are completely separate and unrelated technical fields"
+    "option_c": "they are fundamentally the same technology and there is no meaningful technical distinction between them",
+    "option_d": "they are completely separate and unrelated technical fields with no shared underlying methods or theory"
   },
   {
     "id": "google_ai_cert_fund_010",
@@ -441,7 +441,7 @@
     "difficulty": "adaptive",
     "options": [
       "Narrow AI (Artificial Intelligence) is mostly theoretical, while AGI (Artificial General Intelligence) powers today’s mainstream products",
-      "Narrow AI (Artificial Intelligence) is more capable overall because it is optimized for software tools",
+      "Narrow AI (Artificial Intelligence) is actually more capable overall because it is highly optimized for software-based tools and real-world workflows",
       "Narrow AI (Artificial Intelligence) handles specific tasks, while AGI (Artificial General Intelligence) would generalize across domains like a human",
       "AGI (Artificial General Intelligence) already exists anywhere a model can solve more than one kind of problem"
     ],
@@ -454,7 +454,7 @@
       "ai-fundamentals"
     ],
     "option_a": "Narrow AI (Artificial Intelligence) is mostly theoretical, while AGI (Artificial General Intelligence) powers today’s mainstream products",
-    "option_b": "Narrow AI (Artificial Intelligence) is more capable overall because it is optimized for software tools",
+    "option_b": "Narrow AI (Artificial Intelligence) is actually more capable overall because it is highly optimized for software-based tools and real-world workflows",
     "option_c": "Narrow AI (Artificial Intelligence) handles specific tasks, while AGI (Artificial General Intelligence) would generalize across domains like a human",
     "option_d": "AGI (Artificial General Intelligence) already exists anywhere a model can solve more than one kind of problem"
   },
@@ -1170,7 +1170,7 @@
     "difficulty": "adaptive",
     "options": [
       "Documentation is unnecessary — simply use the AI (Artificial Intelligence) output directly",
-      "Documenting reasoning unnecessarily slows down decision-making speed",
+      "Documenting the reasoning behind every AI-assisted decision unnecessarily slows down team decision-making speed and agility",
       "Document what AI (Artificial Intelligence) recommended, what you verified, and why you decided",
       "Documentation of AI (Artificial Intelligence)-assisted decisions is only for technical teams"
     ],
@@ -1183,7 +1183,7 @@
       "ai-fundamentals"
     ],
     "option_a": "Documentation is unnecessary — simply use the AI (Artificial Intelligence) output directly",
-    "option_b": "Documenting reasoning unnecessarily slows down decision-making speed",
+    "option_b": "Documenting the reasoning behind every AI-assisted decision unnecessarily slows down team decision-making speed and agility",
     "option_c": "Document what AI (Artificial Intelligence) recommended, what you verified, and why you decided",
     "option_d": "Documentation of AI (Artificial Intelligence)-assisted decisions is only for technical teams"
   },
@@ -1196,8 +1196,8 @@
     "category": "ai-collab-mindset",
     "difficulty": "adaptive",
     "options": [
-      "There is no difference",
-      "Zero-shot is more advanced than few-shot",
+      "There is effectively no functional difference since both approaches rely on the same base model weights",
+      "Zero-shot is more advanced than few-shot because it works without any example scaffolding or guidance",
       "Zero-shot provides no examples; few-shot provides 1-3 examples",
       "Few-shot means asking the same prompt multiple times"
     ],
@@ -1209,8 +1209,8 @@
       "google-ai-cert",
       "ai-fundamentals"
     ],
-    "option_a": "There is no difference",
-    "option_b": "Zero-shot is more advanced than few-shot",
+    "option_a": "There is effectively no functional difference since both approaches rely on the same base model weights",
+    "option_b": "Zero-shot is more advanced than few-shot because it works without any example scaffolding or guidance",
     "option_c": "Zero-shot provides no examples; few-shot provides 1-3 examples",
     "option_d": "Few-shot means asking the same prompt multiple times"
   },
@@ -1439,8 +1439,8 @@
     "category": "ai-collab-mindset",
     "difficulty": "adaptive",
     "options": [
-      "There is no measurable difference between the two approaches",
-      "Manual timelines always produce higher-quality project plans",
+      "There is no meaningful measurable difference in quality or accuracy between the two approaches",
+      "Manual timelines typically produce higher-quality and more reliable project plans than AI-assisted ones",
       "AI (Artificial Intelligence)-generated timelines are always error-free and need no review",
       "AI (Artificial Intelligence) quickly generates structured timelines with dependencies and milestones"
     ],
@@ -1452,8 +1452,8 @@
       "google-ai-cert",
       "ai-fundamentals"
     ],
-    "option_a": "There is no measurable difference between the two approaches",
-    "option_b": "Manual timelines always produce higher-quality project plans",
+    "option_a": "There is no meaningful measurable difference in quality or accuracy between the two approaches",
+    "option_b": "Manual timelines typically produce higher-quality and more reliable project plans than AI-assisted ones",
     "option_c": "AI (Artificial Intelligence)-generated timelines are always error-free and need no review",
     "option_d": "AI (Artificial Intelligence) quickly generates structured timelines with dependencies and milestones"
   },
@@ -1628,10 +1628,10 @@
     "category": "ai-collab-mindset",
     "difficulty": "adaptive",
     "options": [
-      "A social media platform",
-      "A type of database",
+      "A real-time social media monitoring and trend analysis platform",
+      "A type of relational database used for storing and querying unstructured research data",
       "An AI (Artificial Intelligence)-powered research tool",
-      "Only for academic researchers"
+      "A tool available only to academic researchers and university-affiliated institutions"
     ],
     "explanation": "Gemini Deep Research is an AI (Artificial Intelligence)-powered research tool that synthesizes multiple web sources.",
     "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
@@ -1641,10 +1641,10 @@
       "google-ai-cert",
       "ai-fundamentals"
     ],
-    "option_a": "A social media platform",
-    "option_b": "A type of database",
+    "option_a": "A real-time social media monitoring and trend analysis platform",
+    "option_b": "A type of relational database used for storing and querying unstructured research data",
     "option_c": "An AI (Artificial Intelligence)-powered research tool",
-    "option_d": "Only for academic researchers"
+    "option_d": "A tool available only to academic researchers and university-affiliated institutions"
   },
   {
     "id": "google_ai_cert_rsrch_002",
@@ -1736,10 +1736,10 @@
     "category": "ai-collab-mindset",
     "difficulty": "adaptive",
     "options": [
-      "Audio Overview produces the same output as standard text summaries",
+      "Audio Overview produces functionally the same information output as standard text-based document summaries just in a different format",
       "NotebookLM does not include any audio-related features or capabilities",
       "Converts document summaries into a spoken podcast-style AI (Artificial Intelligence) narrative",
-      "Audio Overview is available exclusively for technical documentation"
+      "Audio Overview is available exclusively when working with technical documentation and API reference materials in NotebookLM"
     ],
     "explanation": "Audio Overview generates a podcast-style discussion between two AI (Artificial Intelligence) hosts based on your source material.",
     "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
@@ -1749,10 +1749,10 @@
       "google-ai-cert",
       "ai-fundamentals"
     ],
-    "option_a": "Audio Overview produces the same output as standard text summaries",
+    "option_a": "Audio Overview produces functionally the same information output as standard text-based document summaries just in a different format",
     "option_b": "NotebookLM does not include any audio-related features or capabilities",
     "option_c": "Converts document summaries into a spoken podcast-style AI (Artificial Intelligence) narrative",
-    "option_d": "Audio Overview is available exclusively for technical documentation"
+    "option_d": "Audio Overview is available exclusively when working with technical documentation and API reference materials in NotebookLM"
   },
   {
     "id": "google_ai_cert_rsrch_006",
@@ -1763,10 +1763,10 @@
     "category": "ai-collab-mindset",
     "difficulty": "adaptive",
     "options": [
-      "Precious stones",
+      "Decorative visual elements embedded in the Gemini interface",
       "A type of database treated as a related idea rather than the best answer here",
       "Reusable AI (Artificial Intelligence) assistants with custom personas, expertise",
-      "Only for entertainment"
+      "Only available inside Google Workspace for enterprise accounts"
     ],
     "explanation": "",
     "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
@@ -1776,10 +1776,10 @@
       "google-ai-cert",
       "ai-fundamentals"
     ],
-    "option_a": "Precious stones",
+    "option_a": "Decorative visual elements embedded in the Gemini interface",
     "option_b": "A type of database treated as a related idea rather than the best answer here",
     "option_c": "Reusable AI (Artificial Intelligence) assistants with custom personas, expertise",
-    "option_d": "Only for entertainment"
+    "option_d": "Only available inside Google Workspace for enterprise accounts"
   },
   {
     "id": "google_ai_cert_rsrch_007",
@@ -1790,10 +1790,10 @@
     "category": "ai-collab-mindset",
     "difficulty": "adaptive",
     "options": [
-      "Gems are only for casual chats, not structured research workflows",
+      "Gems are only suited for casual conversational chats and are not effective in structured research or analytical workflows",
       "Research quality depends on human experts, so Gems add little value",
       "Create a 'research analyst' Gem with clear criteria so findings are evaluated consistently across projects",
-      "Gems help with formatting, but they are not useful for evaluating evidence"
+      "Gems can help with basic formatting tasks, but they are not reliably useful for critically evaluating research evidence"
     ],
     "explanation": "",
     "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
@@ -1803,10 +1803,10 @@
       "google-ai-cert",
       "ai-fundamentals"
     ],
-    "option_a": "Gems are only for casual chats, not structured research workflows",
+    "option_a": "Gems are only suited for casual conversational chats and are not effective in structured research or analytical workflows",
     "option_b": "Research quality depends on human experts, so Gems add little value",
     "option_c": "Create a 'research analyst' Gem with clear criteria so findings are evaluated consistently across projects",
-    "option_d": "Gems help with formatting, but they are not useful for evaluating evidence"
+    "option_d": "Gems can help with basic formatting tasks, but they are not reliably useful for critically evaluating research evidence"
   },
   {
     "id": "google_ai_cert_rsrch_008",
@@ -2033,10 +2033,10 @@
     "category": "ai-collab-mindset",
     "difficulty": "adaptive",
     "options": [
-      "Gemini Live is designed exclusively for casual entertainment use",
+      "Gemini Live is designed exclusively for casual entertainment and social conversation, not for professional preparation or practice",
       "Gemini is unable to simulate or roleplay realistic conversations",
       "Before difficult conversations — practice with real-time AI (Artificial Intelligence) roleplay",
-      "Live conversation practice provides no meaningful preparation value"
+      "Live roleplay-based conversation practice provides no meaningful or measurable preparation value for real professional interactions"
     ],
     "explanation": "Gemini Live roleplays conversations so you can rehearse before real high-stakes interactions.",
     "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
@@ -2046,10 +2046,10 @@
       "google-ai-cert",
       "ai-fundamentals"
     ],
-    "option_a": "Gemini Live is designed exclusively for casual entertainment use",
+    "option_a": "Gemini Live is designed exclusively for casual entertainment and social conversation, not for professional preparation or practice",
     "option_b": "Gemini is unable to simulate or roleplay realistic conversations",
     "option_c": "Before difficult conversations — practice with real-time AI (Artificial Intelligence) roleplay",
-    "option_d": "Live conversation practice provides no meaningful preparation value"
+    "option_d": "Live roleplay-based conversation practice provides no meaningful or measurable preparation value for real professional interactions"
   },
   {
     "id": "google_ai_cert_writ_007",
@@ -2060,10 +2060,10 @@
     "category": "ai-collab-mindset",
     "difficulty": "adaptive",
     "options": [
-      "Practice is pointless — just present without any prior rehearsal",
+      "Presentation practice is largely pointless since most experienced speakers perform better without any structured prior rehearsal",
       "AI (Artificial Intelligence) tools cannot meaningfully evaluate presentation effectiveness",
       "AI (Artificial Intelligence) feedback identifies gaps, weak arguments, and likely tough questions",
-      "Presentations should never be practiced or rehearsed beforehand"
+      "Presentations should never be formally practiced beforehand because over-rehearsal makes the delivery feel overly scripted and unnatural"
     ],
     "explanation": "AI (Artificial Intelligence) feedback catches gaps, unclear points, weak arguments, and anticipated audience questions.",
     "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
@@ -2073,10 +2073,10 @@
       "google-ai-cert",
       "ai-fundamentals"
     ],
-    "option_a": "Practice is pointless — just present without any prior rehearsal",
+    "option_a": "Presentation practice is largely pointless since most experienced speakers perform better without any structured prior rehearsal",
     "option_b": "AI (Artificial Intelligence) tools cannot meaningfully evaluate presentation effectiveness",
     "option_c": "AI (Artificial Intelligence) feedback identifies gaps, weak arguments, and likely tough questions",
-    "option_d": "Presentations should never be practiced or rehearsed beforehand"
+    "option_d": "Presentations should never be formally practiced beforehand because over-rehearsal makes the delivery feel overly scripted and unnatural"
   },
   {
     "id": "google_ai_cert_writ_008",
@@ -2088,7 +2088,7 @@
     "difficulty": "adaptive",
     "options": [
       "AI (Artificial Intelligence) can only improve grammar; style changes still require full manual rewriting",
-      "All professional writing should use the same tone to avoid inconsistency",
+      "All professional writing should use the same consistent tone across all audiences to avoid confusion and ensure brand clarity",
       "AI (Artificial Intelligence) can rewrite content to match different styles when you specify the audience and tone",
       "Communication style matters less than adding more information to the draft"
     ],
@@ -2101,7 +2101,7 @@
       "ai-fundamentals"
     ],
     "option_a": "AI (Artificial Intelligence) can only improve grammar; style changes still require full manual rewriting",
-    "option_b": "All professional writing should use the same tone to avoid inconsistency",
+    "option_b": "All professional writing should use the same consistent tone across all audiences to avoid confusion and ensure brand clarity",
     "option_c": "AI (Artificial Intelligence) can rewrite content to match different styles when you specify the audience and tone",
     "option_d": "Communication style matters less than adding more information to the draft"
   },
@@ -2141,10 +2141,10 @@
     "category": "ai-collab-mindset",
     "difficulty": "adaptive",
     "options": [
-      "Skip the feedback step entirely and send the draft immediately",
+      "Skip the feedback review step entirely and send the draft immediately while your intent and context are still fresh",
       "Only feedback from human reviewers provides any meaningful value",
       "Ask AI (Artificial Intelligence) to critique your draft as if it were the intended recipient",
-      "Feedback before sending important communications is unnecessary"
+      "Soliciting feedback before sending important communications is unnecessary and may signal a lack of confidence in your own writing"
     ],
     "explanation": "Ask AI (Artificial Intelligence) to critique as the target recipient — surfaces weak points before you send.",
     "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
@@ -2154,10 +2154,10 @@
       "google-ai-cert",
       "ai-fundamentals"
     ],
-    "option_a": "Skip the feedback step entirely and send the draft immediately",
+    "option_a": "Skip the feedback review step entirely and send the draft immediately while your intent and context are still fresh",
     "option_b": "Only feedback from human reviewers provides any meaningful value",
     "option_c": "Ask AI (Artificial Intelligence) to critique your draft as if it were the intended recipient",
-    "option_d": "Feedback before sending important communications is unnecessary"
+    "option_d": "Soliciting feedback before sending important communications is unnecessary and may signal a lack of confidence in your own writing"
   },
   {
     "id": "google_ai_cert_cont_001",
@@ -2222,10 +2222,10 @@
     "category": "ai-collab-mindset",
     "difficulty": "adaptive",
     "options": [
-      "A social media content scheduling and analytics platform",
+      "A social media content scheduling, publishing, and performance analytics platform integrated with Google tools",
       "A third-party tool that Google does not actually offer",
       "Google's AI (Artificial Intelligence) video generation model that creates video from text",
-      "An animation-only tool for creating cartoon-style graphics"
+      "An animation-focused tool exclusively designed for creating cartoon-style graphics and 2D illustrated visual assets"
     ],
     "explanation": "Veo is Google's AI (Artificial Intelligence) video generation model that creates video from text descriptions.",
     "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
@@ -2235,10 +2235,10 @@
       "google-ai-cert",
       "ai-fundamentals"
     ],
-    "option_a": "A social media content scheduling and analytics platform",
+    "option_a": "A social media content scheduling, publishing, and performance analytics platform integrated with Google tools",
     "option_b": "A third-party tool that Google does not actually offer",
     "option_c": "Google's AI (Artificial Intelligence) video generation model that creates video from text",
-    "option_d": "An animation-only tool for creating cartoon-style graphics"
+    "option_d": "An animation-focused tool exclusively designed for creating cartoon-style graphics and 2D illustrated visual assets"
   },
   {
     "id": "google_ai_cert_cont_004",
@@ -2249,7 +2249,7 @@
     "category": "ai-collab-mindset",
     "difficulty": "adaptive",
     "options": [
-      "Generate one version and keep it unless there is a technical problem",
+      "Generate a single version and commit to it unless there is an obvious technical or rendering problem with the output",
       "Variation generation mostly wastes time and weakens creative direction",
       "Generate several variations with small prompt changes, then compare them against the campaign goal",
       "Too many variations make review impossible, so a single output is usually better"
@@ -2262,7 +2262,7 @@
       "google-ai-cert",
       "ai-fundamentals"
     ],
-    "option_a": "Generate one version and keep it unless there is a technical problem",
+    "option_a": "Generate a single version and commit to it unless there is an obvious technical or rendering problem with the output",
     "option_b": "Variation generation mostly wastes time and weakens creative direction",
     "option_c": "Generate several variations with small prompt changes, then compare them against the campaign goal",
     "option_d": "Too many variations make review impossible, so a single output is usually better"
@@ -2279,7 +2279,7 @@
       "Brand guidelines matter less with AI (Artificial Intelligence) because the model already knows common styles",
       "Guidelines only help human designers, not AI (Artificial Intelligence) content workflows",
       "Guidelines keep AI (Artificial Intelligence)-generated content aligned with your brand voice, look, and channel standards",
-      "Brand consistency is optional as long as the content is technically accurate"
+      "Brand consistency is largely optional as long as the content is technically accurate and meets the functional requirements"
     ],
     "explanation": "Guidelines keep AI (Artificial Intelligence) output aligned with brand voice, look, and channel standards.",
     "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
@@ -2292,7 +2292,7 @@
     "option_a": "Brand guidelines matter less with AI (Artificial Intelligence) because the model already knows common styles",
     "option_b": "Guidelines only help human designers, not AI (Artificial Intelligence) content workflows",
     "option_c": "Guidelines keep AI (Artificial Intelligence)-generated content aligned with your brand voice, look, and channel standards",
-    "option_d": "Brand consistency is optional as long as the content is technically accurate"
+    "option_d": "Brand consistency is largely optional as long as the content is technically accurate and meets the functional requirements"
   },
   {
     "id": "google_ai_cert_cont_006",
@@ -2358,7 +2358,7 @@
     "difficulty": "adaptive",
     "options": [
       "Ignore AI (Artificial Intelligence) feedback entirely — rely on human instinct and intuition",
-      "Content should generally not be subjected to any kind of critique",
+      "Content should generally not be subjected to formal critique as it disrupts creative flow and slows down production timelines significantly",
       "Ask AI (Artificial Intelligence) to critique against readability, brand, and effectiveness criteria",
       "AI (Artificial Intelligence)-generated feedback is meaningless and provides no actionable insight"
     ],
@@ -2371,7 +2371,7 @@
       "ai-fundamentals"
     ],
     "option_a": "Ignore AI (Artificial Intelligence) feedback entirely — rely on human instinct and intuition",
-    "option_b": "Content should generally not be subjected to any kind of critique",
+    "option_b": "Content should generally not be subjected to formal critique as it disrupts creative flow and slows down production timelines significantly",
     "option_c": "Ask AI (Artificial Intelligence) to critique against readability, brand, and effectiveness criteria",
     "option_d": "AI (Artificial Intelligence)-generated feedback is meaningless and provides no actionable insight"
   },
@@ -2439,9 +2439,9 @@
     "difficulty": "adaptive",
     "options": [
       "KPIs (Key Performance Indicators) are unnecessary overhead that slow down project execution",
-      "All performance metrics are equally important and interchangeable",
+      "All performance metrics are equally important, equally reliable, and can be used interchangeably without any meaningful loss of analytical value",
       "KPIs (Key Performance Indicators) clarify what success means and align the team on outcomes",
-      "Measurement activities slow down projects without providing value"
+      "Measurement and tracking activities consistently slow down project execution without providing any meaningful strategic or operational value"
     ],
     "explanation": "KPIs (Key Performance Indicators) clarify what success looks like and align teams on measurable outcomes.",
     "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
@@ -2452,9 +2452,9 @@
       "ai-fundamentals"
     ],
     "option_a": "KPIs (Key Performance Indicators) are unnecessary overhead that slow down project execution",
-    "option_b": "All performance metrics are equally important and interchangeable",
+    "option_b": "All performance metrics are equally important, equally reliable, and can be used interchangeably without any meaningful loss of analytical value",
     "option_c": "KPIs (Key Performance Indicators) clarify what success means and align the team on outcomes",
-    "option_d": "Measurement activities slow down projects without providing value"
+    "option_d": "Measurement and tracking activities consistently slow down project execution without providing any meaningful strategic or operational value"
   },
   {
     "id": "google_ai_cert_data_002",
@@ -2468,7 +2468,7 @@
       "SOAR (Situation, Obstacle, Action, Result) is mainly a storytelling device, not an analysis framework",
       "SOAR (Situation, Obstacle, Action, Result) is designed for sports recaps rather than business performance",
       "SOAR (Situation, Obstacle, Action, Result) gives you a structure for linking the situation, obstacle, action, and result",
-      "Strong analysis should stay open-ended instead of following a set framework"
+      "Strong performance analysis should stay open-ended and exploratory rather than following any rigid structured framework"
     ],
     "explanation": "SOAR (Situation, Obstacle, Action, Result) structures business performance analysis.",
     "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
@@ -2481,7 +2481,7 @@
     "option_a": "SOAR (Situation, Obstacle, Action, Result) is mainly a storytelling device, not an analysis framework",
     "option_b": "SOAR (Situation, Obstacle, Action, Result) is designed for sports recaps rather than business performance",
     "option_c": "SOAR (Situation, Obstacle, Action, Result) gives you a structure for linking the situation, obstacle, action, and result",
-    "option_d": "Strong analysis should stay open-ended instead of following a set framework"
+    "option_d": "Strong performance analysis should stay open-ended and exploratory rather than following any rigid structured framework"
   },
   {
     "id": "google_ai_cert_data_003",
@@ -2574,9 +2574,9 @@
     "difficulty": "adaptive",
     "options": [
       "AI (Artificial Intelligence) tools cannot provide meaningful help with data visualization",
-      "Data should not be visualized — tables are always more effective",
+      "Data should rarely be visualized since well-formatted tables are almost always more precise and actionable for decision-making",
       "AI (Artificial Intelligence) suggests chart types, creates visual drafts, and refines them",
-      "Data visualization is a specialized skill only for graphic designers"
+      "Data visualization is a highly specialized technical skill reserved exclusively for trained graphic designers and credentialed data scientists"
     ],
     "explanation": "AI (Artificial Intelligence) suggests chart types, creates drafts, and refines based on the story you want to tell.",
     "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
@@ -2587,9 +2587,9 @@
       "ai-fundamentals"
     ],
     "option_a": "AI (Artificial Intelligence) tools cannot provide meaningful help with data visualization",
-    "option_b": "Data should not be visualized — tables are always more effective",
+    "option_b": "Data should rarely be visualized since well-formatted tables are almost always more precise and actionable for decision-making",
     "option_c": "AI (Artificial Intelligence) suggests chart types, creates visual drafts, and refines them",
-    "option_d": "Data visualization is a specialized skill only for graphic designers"
+    "option_d": "Data visualization is a highly specialized technical skill reserved exclusively for trained graphic designers and credentialed data scientists"
   },
   {
     "id": "google_ai_cert_data_007",
@@ -2600,10 +2600,10 @@
     "category": "ai-collab-mindset",
     "difficulty": "adaptive",
     "options": [
-      "A recreational game with no practical business application value",
+      "A recreational strategy game that uses business terminology but has no practical real-world application or planning value",
       "A tool that only large enterprise companies can afford to implement",
       "An interactive AI (Artificial Intelligence) tool to test business scenarios and forecast outcomes",
-      "Business simulation is an unnecessary step in the planning process"
+      "Business scenario simulation is an unnecessary step that adds complexity and overhead without improving planning accuracy"
     ],
     "explanation": "A business simulator is an interactive AI (Artificial Intelligence) tool for testing scenarios and forecasting outcomes.",
     "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
@@ -2613,10 +2613,10 @@
       "google-ai-cert",
       "ai-fundamentals"
     ],
-    "option_a": "A recreational game with no practical business application value",
+    "option_a": "A recreational strategy game that uses business terminology but has no practical real-world application or planning value",
     "option_b": "A tool that only large enterprise companies can afford to implement",
     "option_c": "An interactive AI (Artificial Intelligence) tool to test business scenarios and forecast outcomes",
-    "option_d": "Business simulation is an unnecessary step in the planning process"
+    "option_d": "Business scenario simulation is an unnecessary step that adds complexity and overhead without improving planning accuracy"
   },
   {
     "id": "google_ai_cert_data_008",
@@ -2735,10 +2735,10 @@
     "category": "ai-collab-mindset",
     "difficulty": "adaptive",
     "options": [
-      "A niche music genre associated with creative tooling and software culture",
-      "Software development fundamentally always requires deep technical knowledge",
+      "A niche music genre closely associated with the creative developer community and hacker software culture",
+      "Software development fundamentally always requires deep technical knowledge and formal training and cannot be done meaningfully without it",
       "Building software from natural-language instructions with AI (Artificial Intelligence) implementing",
-      "Only professional programmers with formal training can build applications"
+      "Only professional programmers with formal computer science training and years of hands-on experience can realistically build functional applications"
     ],
     "explanation": "Vibe coding = building software from natural-language instructions with AI (Artificial Intelligence) handling implementation.",
     "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
@@ -2748,10 +2748,10 @@
       "google-ai-cert",
       "ai-fundamentals"
     ],
-    "option_a": "A niche music genre associated with creative tooling and software culture",
-    "option_b": "Software development fundamentally always requires deep technical knowledge",
+    "option_a": "A niche music genre closely associated with the creative developer community and hacker software culture",
+    "option_b": "Software development fundamentally always requires deep technical knowledge and formal training and cannot be done meaningfully without it",
     "option_c": "Building software from natural-language instructions with AI (Artificial Intelligence) implementing",
-    "option_d": "Only professional programmers with formal training can build applications"
+    "option_d": "Only professional programmers with formal computer science training and years of hands-on experience can realistically build functional applications"
   },
   {
     "id": "google_ai_cert_app_002",
@@ -2789,10 +2789,10 @@
     "category": "ai-collab-mindset",
     "difficulty": "adaptive",
     "options": [
-      "A professional digital audio workstation for music production",
-      "A product that Google has not actually released or announced",
+      "A professional digital audio workstation and sound design environment built specifically for music production",
+      "A product concept that Google has publicly discussed but has not yet officially released or made generally available",
       "A platform for exploring, testing, and prototyping with Google AI (Artificial Intelligence)",
-      "A product exclusively available to large enterprise technical teams"
+      "A paid product available exclusively to large enterprise technical teams through Google Cloud licensing contracts"
     ],
     "explanation": "Google AI (Artificial Intelligence) Studio is the prototyping platform for exploring, testing, and tuning with Google's AI (Artificial Intelligence) models.",
     "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
@@ -2802,10 +2802,10 @@
       "google-ai-cert",
       "ai-fundamentals"
     ],
-    "option_a": "A professional digital audio workstation for music production",
-    "option_b": "A product that Google has not actually released or announced",
+    "option_a": "A professional digital audio workstation and sound design environment built specifically for music production",
+    "option_b": "A product concept that Google has publicly discussed but has not yet officially released or made generally available",
     "option_c": "A platform for exploring, testing, and prototyping with Google AI (Artificial Intelligence)",
-    "option_d": "A product exclusively available to large enterprise technical teams"
+    "option_d": "A paid product available exclusively to large enterprise technical teams through Google Cloud licensing contracts"
   },
   {
     "id": "google_ai_cert_app_004",
@@ -2843,8 +2843,8 @@
     "category": "ai-collab-mindset",
     "difficulty": "adaptive",
     "options": [
-      "Only complex enterprise systems",
-      "Vibe coding is only for games",
+      "Only large-scale complex enterprise systems that require a professional software engineering team to build and maintain",
+      "Vibe coding is primarily useful for building simple interactive games and entertainment experiences, not practical tools",
       "Simple tools like trackers, calculators, forms, dashboards",
       "Apps can't be built without professional coding"
     ],
@@ -2856,8 +2856,8 @@
       "google-ai-cert",
       "ai-fundamentals"
     ],
-    "option_a": "Only complex enterprise systems",
-    "option_b": "Vibe coding is only for games",
+    "option_a": "Only large-scale complex enterprise systems that require a professional software engineering team to build and maintain",
+    "option_b": "Vibe coding is primarily useful for building simple interactive games and entertainment experiences, not practical tools",
     "option_c": "Simple tools like trackers, calculators, forms, dashboards",
     "option_d": "Apps can't be built without professional coding"
   },
@@ -3087,9 +3087,9 @@
     "difficulty": "adaptive",
     "options": [
       "AI (Artificial Intelligence) can't identify dependencies",
-      "Dependencies don't matter in projects",
+      "Dependencies rarely matter in well-organized projects since team members naturally account for them",
       "AI (Artificial Intelligence) analyzes task descriptions to flag relationships",
-      "All dependencies are obvious"
+      "All meaningful project dependencies are immediately obvious to any experienced project manager"
     ],
     "explanation": "AI (Artificial Intelligence) analyzes task descriptions to flag relationships and dependencies humans might miss.",
     "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
@@ -3100,9 +3100,9 @@
       "ai-fundamentals"
     ],
     "option_a": "AI (Artificial Intelligence) can't identify dependencies",
-    "option_b": "Dependencies don't matter in projects",
+    "option_b": "Dependencies rarely matter in well-organized projects since team members naturally account for them",
     "option_c": "AI (Artificial Intelligence) analyzes task descriptions to flag relationships",
-    "option_d": "All dependencies are obvious"
+    "option_d": "All meaningful project dependencies are immediately obvious to any experienced project manager"
   },
   {
     "id": "google_ai_cert_brain_015",
@@ -3140,10 +3140,10 @@
     "category": "ai-collab-mindset",
     "difficulty": "adaptive",
     "options": [
-      "They're all identical",
-      "All tools serve the same purpose",
+      "They are all functionally identical tools with different names but the same underlying collaboration purpose",
+      "All collaboration tools serve the same general purpose and can be used interchangeably without meaningful loss of productivity",
       "Use hubs when you need AI (Artificial Intelligence) Q&A",
-      "Hubs replace everything"
+      "Knowledge hubs fully replace all other collaboration tools once they are properly set up and their content is populated"
     ],
     "explanation": "",
     "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
@@ -3153,10 +3153,10 @@
       "google-ai-cert",
       "ai-fundamentals"
     ],
-    "option_a": "They're all identical",
-    "option_b": "All tools serve the same purpose",
+    "option_a": "They are all functionally identical tools with different names but the same underlying collaboration purpose",
+    "option_b": "All collaboration tools serve the same general purpose and can be used interchangeably without meaningful loss of productivity",
     "option_c": "Use hubs when you need AI (Artificial Intelligence) Q&A",
-    "option_d": "Hubs replace everything"
+    "option_d": "Knowledge hubs fully replace all other collaboration tools once they are properly set up and their content is populated"
   },
   {
     "id": "google_ai_cert_brain_017",
@@ -3167,7 +3167,7 @@
     "category": "ai-collab-mindset",
     "difficulty": "adaptive",
     "options": [
-      "Skip validation early so you do not slow down promising ideas",
+      "Skip early validation phases entirely so you do not unnecessarily slow down promising ideas while they still have momentum",
       "Idea quality is obvious without structured critique or testing",
       "Use Gemini to stress-test the idea by probing risks, objections, value, and cost before you commit",
       "Business-case questions can wait until after you have already built the solution"
@@ -3180,7 +3180,7 @@
       "google-ai-cert",
       "ai-fundamentals"
     ],
-    "option_a": "Skip validation early so you do not slow down promising ideas",
+    "option_a": "Skip early validation phases entirely so you do not unnecessarily slow down promising ideas while they still have momentum",
     "option_b": "Idea quality is obvious without structured critique or testing",
     "option_c": "Use Gemini to stress-test the idea by probing risks, objections, value, and cost before you commit",
     "option_d": "Business-case questions can wait until after you have already built the solution"
@@ -3195,9 +3195,9 @@
     "difficulty": "adaptive",
     "options": [
       "AI (Artificial Intelligence) brainstorming adds no value",
-      "Teams don't need diverse input",
+      "Teams rarely need diverse input when the problem is clearly defined and the team has domain expertise",
       "AI (Artificial Intelligence) generates diverse ideas, challenges assumptions",
-      "Solo brainstorming is always better"
+      "Solo brainstorming is usually more focused and productive than any group-based approach"
     ],
     "explanation": "",
     "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
@@ -3208,9 +3208,9 @@
       "ai-fundamentals"
     ],
     "option_a": "AI (Artificial Intelligence) brainstorming adds no value",
-    "option_b": "Teams don't need diverse input",
+    "option_b": "Teams rarely need diverse input when the problem is clearly defined and the team has domain expertise",
     "option_c": "AI (Artificial Intelligence) generates diverse ideas, challenges assumptions",
-    "option_d": "Solo brainstorming is always better"
+    "option_d": "Solo brainstorming is usually more focused and productive than any group-based approach"
   },
   {
     "id": "google_ai_cert_brain_019",
@@ -3464,10 +3464,10 @@
     "category": "ai-collab-mindset",
     "difficulty": "adaptive",
     "options": [
-      "Use a broad note like 'fix it' and let the model decide what matters",
+      "Use a broad instruction like \"fix it\" and let the model independently determine which aspects of the writing actually need improvement",
       "Detailed feedback limits creativity, so vague feedback works better",
       "Give targeted feedback on what to change, such as concision, evidence, jargon, or repetition",
-      "Feedback matters less than rerunning the same prompt several times"
+      "Detailed targeted feedback matters far less than simply rerunning the original prompt several times until a satisfying draft appears"
     ],
     "explanation": "Give targeted feedback on specific aspects (concision, evidence, jargon, repetition).",
     "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
@@ -3477,10 +3477,10 @@
       "google-ai-cert",
       "ai-fundamentals"
     ],
-    "option_a": "Use a broad note like 'fix it' and let the model decide what matters",
+    "option_a": "Use a broad instruction like \"fix it\" and let the model independently determine which aspects of the writing actually need improvement",
     "option_b": "Detailed feedback limits creativity, so vague feedback works better",
     "option_c": "Give targeted feedback on what to change, such as concision, evidence, jargon, or repetition",
-    "option_d": "Feedback matters less than rerunning the same prompt several times"
+    "option_d": "Detailed targeted feedback matters far less than simply rerunning the original prompt several times until a satisfying draft appears"
   },
   {
     "id": "google_ai_cert_writ_012",
@@ -3491,10 +3491,10 @@
     "category": "ai-collab-mindset",
     "difficulty": "adaptive",
     "options": [
-      "Rely on your first draft so the delivery still feels natural",
+      "Rely entirely on your first draft so the delivery still feels spontaneous and natural rather than over-rehearsed",
       "Practice is less useful than polishing the slides one more time",
       "Rehearse with Gemini Live, refine your points, time the talk, and prepare for hard questions",
-      "Objections are best handled improvisationally instead of in advance"
+      "Difficult objections are best handled improvisationally in the moment rather than anticipated and prepared for in advance"
     ],
     "explanation": "Rehearse with Gemini Live, refine points, time the talk, and prepare for hard questions.",
     "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
@@ -3504,10 +3504,10 @@
       "google-ai-cert",
       "ai-fundamentals"
     ],
-    "option_a": "Rely on your first draft so the delivery still feels natural",
+    "option_a": "Rely entirely on your first draft so the delivery still feels spontaneous and natural rather than over-rehearsed",
     "option_b": "Practice is less useful than polishing the slides one more time",
     "option_c": "Rehearse with Gemini Live, refine your points, time the talk, and prepare for hard questions",
-    "option_d": "Objections are best handled improvisationally instead of in advance"
+    "option_d": "Difficult objections are best handled improvisationally in the moment rather than anticipated and prepared for in advance"
   },
   {
     "id": "google_ai_cert_writ_013",
@@ -3600,7 +3600,7 @@
     "difficulty": "adaptive",
     "options": [
       "Start with the request alone and add context only if the first draft fails",
-      "Marketing prompts work best when they stay broad and unstructured",
+      "Marketing copy prompts actually work best when they stay broad and unstructured, letting the model make its own creative choices",
       "Give the product, audience, tone, benefits, brand voice, and any compliance constraints up front",
       "Detailed briefs box the model in and usually make copy less persuasive"
     ],
@@ -3613,7 +3613,7 @@
       "ai-fundamentals"
     ],
     "option_a": "Start with the request alone and add context only if the first draft fails",
-    "option_b": "Marketing prompts work best when they stay broad and unstructured",
+    "option_b": "Marketing copy prompts actually work best when they stay broad and unstructured, letting the model make its own creative choices",
     "option_c": "Give the product, audience, tone, benefits, brand voice, and any compliance constraints up front",
     "option_d": "Detailed briefs box the model in and usually make copy less persuasive"
   },
@@ -3629,7 +3629,7 @@
       "They are basically the same because both approaches rely on a generated visual output",
       "Design work should stay fully manual because AI (Artificial Intelligence) tools weaken creative judgment",
       "Designing with AI (Artificial Intelligence) means you direct and refine the work; designing for AI (Artificial Intelligence) means you brief",
-      "AI (Artificial Intelligence) can help polish designs, but it cannot generate useful visual directions from prompts"
+      "AI (Artificial Intelligence) can help polish and refine existing designs, but it struggles to generate useful initial visual directions or concepts directly from prompts"
     ],
     "explanation": "Design with AI (Artificial Intelligence) = you direct and refine. Design for AI (Artificial Intelligence) = you brief AI (Artificial Intelligence) to generate from scratch.",
     "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
@@ -3642,7 +3642,7 @@
     "option_a": "They are basically the same because both approaches rely on a generated visual output",
     "option_b": "Design work should stay fully manual because AI (Artificial Intelligence) tools weaken creative judgment",
     "option_c": "Designing with AI (Artificial Intelligence) means you direct and refine the work; designing for AI (Artificial Intelligence) means you brief",
-    "option_d": "AI (Artificial Intelligence) can help polish designs, but it cannot generate useful visual directions from prompts"
+    "option_d": "AI (Artificial Intelligence) can help polish and refine existing designs, but it struggles to generate useful initial visual directions or concepts directly from prompts"
   },
   {
     "id": "google_ai_cert_cont_013",
@@ -3681,7 +3681,7 @@
     "difficulty": "adaptive",
     "options": [
       "Use AI (Artificial Intelligence) for every design task because speed matters more than long-term brand impact",
-      "Design quality matters less than shipping quickly, even for highly visible assets",
+      "Design quality ultimately matters less than shipping quickly, even for highly visible and brand-critical marketing assets",
       "Use professional design for durable, high-stakes assets; use AI (Artificial Intelligence) for faster tactical content",
       "Professional design only makes sense when AI (Artificial Intelligence) tools fail to generate anything at all"
     ],
@@ -3694,7 +3694,7 @@
       "ai-fundamentals"
     ],
     "option_a": "Use AI (Artificial Intelligence) for every design task because speed matters more than long-term brand impact",
-    "option_b": "Design quality matters less than shipping quickly, even for highly visible assets",
+    "option_b": "Design quality ultimately matters less than shipping quickly, even for highly visible and brand-critical marketing assets",
     "option_c": "Use professional design for durable, high-stakes assets; use AI (Artificial Intelligence) for faster tactical content",
     "option_d": "Professional design only makes sense when AI (Artificial Intelligence) tools fail to generate anything at all"
   },
@@ -3710,7 +3710,7 @@
       "An effective slide usually packs in as much text and detail as possible",
       "Strong slides depend mostly on visual complexity and decorative effects",
       "An effective slide has one clear message, strong supporting visuals, minimal text, and a style that fits the talk",
-      "Slide quality matters less than giving the audience every detail directly on screen"
+      "Slide quality matters less than ensuring the audience has access to every relevant detail and supporting data directly on screen"
     ],
     "explanation": "Effective slide: one clear message, strong visuals, minimal text, style that fits the talk.",
     "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
@@ -3723,7 +3723,7 @@
     "option_a": "An effective slide usually packs in as much text and detail as possible",
     "option_b": "Strong slides depend mostly on visual complexity and decorative effects",
     "option_c": "An effective slide has one clear message, strong supporting visuals, minimal text, and a style that fits the talk",
-    "option_d": "Slide quality matters less than giving the audience every detail directly on screen"
+    "option_d": "Slide quality matters less than ensuring the audience has access to every relevant detail and supporting data directly on screen"
   },
   {
     "id": "google_ai_cert_data_021",
@@ -3735,7 +3735,7 @@
     "difficulty": "adaptive",
     "options": [
       "Metrics and KPIs (Key Performance Indicators) are completely identical measures",
-      "All metrics are equally important",
+      "All metrics are equally important and should be monitored with the same priority regardless of business impact",
       "Metrics track data; KPIs (Key Performance Indicators) track business-critical outcomes",
       "KPIs (Key Performance Indicators) only apply to financial metrics, not operations"
     ],
@@ -3748,7 +3748,7 @@
       "ai-fundamentals"
     ],
     "option_a": "Metrics and KPIs (Key Performance Indicators) are completely identical measures",
-    "option_b": "All metrics are equally important",
+    "option_b": "All metrics are equally important and should be monitored with the same priority regardless of business impact",
     "option_c": "Metrics track data; KPIs (Key Performance Indicators) track business-critical outcomes",
     "option_d": "KPIs (Key Performance Indicators) only apply to financial metrics, not operations"
   },
@@ -3869,7 +3869,7 @@
     "category": "ai-collab-mindset",
     "difficulty": "adaptive",
     "options": [
-      "They are basically the same because both are early versions of an idea",
+      "They are essentially the same artifact because both represent early, unfinished versions of an idea before full development",
       "A prototype is something customers use daily, while an MVP (Minimum Viable Product) is mostly for internal testing",
       "A prototype tests the concept; an MVP (Minimum Viable Product) is a usable product with enough value for real users",
       "An MVP (Minimum Viable Product) comes before a prototype because shipping matters more than learning"
@@ -3882,7 +3882,7 @@
       "google-ai-cert",
       "ai-fundamentals"
     ],
-    "option_a": "They are basically the same because both are early versions of an idea",
+    "option_a": "They are essentially the same artifact because both represent early, unfinished versions of an idea before full development",
     "option_b": "A prototype is something customers use daily, while an MVP (Minimum Viable Product) is mostly for internal testing",
     "option_c": "A prototype tests the concept; an MVP (Minimum Viable Product) is a usable product with enough value for real users",
     "option_d": "An MVP (Minimum Viable Product) comes before a prototype because shipping matters more than learning"
@@ -3923,10 +3923,10 @@
     "category": "ai-collab-mindset",
     "difficulty": "adaptive",
     "options": [
-      "No tracking is needed once the app has been deployed",
+      "No ongoing tracking is needed once the app has been successfully deployed to users",
       "Impact measurement is not possible for AI (Artificial Intelligence)-powered applications",
       "Usage patterns, satisfaction, time saved, errors, and KPI (Key Performance Indicator) improvements",
-      "Apps require no ongoing monitoring after the initial launch phase"
+      "Apps that are stable at launch require no ongoing performance monitoring after the initial release phase"
     ],
     "explanation": "Track usage, satisfaction, time saved, errors, and business KPI (Key Performance Indicator) improvements.",
     "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
@@ -3936,10 +3936,10 @@
       "google-ai-cert",
       "ai-fundamentals"
     ],
-    "option_a": "No tracking is needed once the app has been deployed",
+    "option_a": "No ongoing tracking is needed once the app has been successfully deployed to users",
     "option_b": "Impact measurement is not possible for AI (Artificial Intelligence)-powered applications",
     "option_c": "Usage patterns, satisfaction, time saved, errors, and KPI (Key Performance Indicator) improvements",
-    "option_d": "Apps require no ongoing monitoring after the initial launch phase"
+    "option_d": "Apps that are stable at launch require no ongoing performance monitoring after the initial release phase"
   },
   {
     "id": "google_ai_cert_app_017",
@@ -3977,9 +3977,9 @@
     "category": "ai-collab-mindset",
     "difficulty": "adaptive",
     "options": [
-      "A social media brand monitoring and sentiment analysis tool",
+      "A social media brand monitoring and real-time sentiment analysis tool built into Google Workspace",
       "An AI (Artificial Intelligence) research tool that synthesizes web sources into organized reports",
-      "A relational database query builder for structured data analysis",
+      "A relational database query builder designed for structured business data analysis and reporting",
       "A code debugging and automated testing framework for developers"
     ],
     "explanation": "Deep Research synthesizes web sources into reports, infographics, and visualizations — beyond basic search.",
@@ -3990,9 +3990,9 @@
       "google-ai-cert",
       "ai-fundamentals"
     ],
-    "option_a": "A social media brand monitoring and sentiment analysis tool",
+    "option_a": "A social media brand monitoring and real-time sentiment analysis tool built into Google Workspace",
     "option_b": "An AI (Artificial Intelligence) research tool that synthesizes web sources into organized reports",
-    "option_c": "A relational database query builder for structured data analysis",
+    "option_c": "A relational database query builder designed for structured business data analysis and reporting",
     "option_d": "A code debugging and automated testing framework for developers"
   },
   {
@@ -4004,9 +4004,9 @@
     "category": "ai-collab-mindset",
     "difficulty": "adaptive",
     "options": [
-      "A built-in voice recorder for capturing meeting notes",
+      "A built-in voice recorder for capturing and automatically transcribing your meeting notes in real time",
       "A podcast-style discussion generated by two AI (Artificial Intelligence) hosts from your sources",
-      "A music streaming player integrated into the workspace",
+      "A music and ambient audio streaming player integrated directly into the NotebookLM workspace interface",
       "A real-time transcription service for live conversations"
     ],
     "explanation": "Audio Overview creates an AI (Artificial Intelligence)-hosted podcast-style discussion from your uploaded sources.",
@@ -4017,37 +4017,10 @@
       "google-ai-cert",
       "ai-fundamentals"
     ],
-    "option_a": "A built-in voice recorder for capturing meeting notes",
+    "option_a": "A built-in voice recorder for capturing and automatically transcribing your meeting notes in real time",
     "option_b": "A podcast-style discussion generated by two AI (Artificial Intelligence) hosts from your sources",
-    "option_c": "A music streaming player integrated into the workspace",
+    "option_c": "A music and ambient audio streaming player integrated directly into the NotebookLM workspace interface",
     "option_d": "A real-time transcription service for live conversations"
-  },
-  {
-    "id": "gap_new_003",
-    "uid": "gap_new_003",
-    "questionText": "What is vibe coding?",
-    "questionType": "multiple_choice",
-    "correctAnswer": "Building software from natural-language instructions with AI (Artificial Intelligence) implementing",
-    "category": "ai-collab-mindset",
-    "difficulty": "adaptive",
-    "options": [
-      "Writing code while listening to music for creative inspiration",
-      "Building software from natural-language instructions with AI (Artificial Intelligence) implementing",
-      "A recently released programming language for AI (Artificial Intelligence) development tasks",
-      "Manually writing every line of code without any AI (Artificial Intelligence) assistance"
-    ],
-    "explanation": "Vibe coding = describe what you want in plain language, AI (Artificial Intelligence) generates the implementation.",
-    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
-    "learningObjective": "Google AI (Artificial Intelligence) Professional: Vibe coding",
-    "tags": [
-      "google-ai-professional-cert",
-      "google-ai-cert",
-      "ai-fundamentals"
-    ],
-    "option_a": "Writing code while listening to music for creative inspiration",
-    "option_b": "Building software from natural-language instructions with AI (Artificial Intelligence) implementing",
-    "option_c": "A recently released programming language for AI (Artificial Intelligence) development tasks",
-    "option_d": "Manually writing every line of code without any AI (Artificial Intelligence) assistance"
   },
   {
     "id": "gap_new_004",
@@ -4058,10 +4031,10 @@
     "category": "ai-collab-mindset",
     "difficulty": "adaptive",
     "options": [
-      "A digital audio workstation for music production workflows",
+      "A professional digital audio workstation purpose-built for music production and sound design workflows",
       "A platform for prototyping, testing, and exploring Google AI (Artificial Intelligence) models",
       "A professional photo editing suite with AI (Artificial Intelligence) enhancement filters",
-      "A centralized email and calendar management application"
+      "A centralized email, calendar, and task management application designed for Google Workspace power users"
     ],
     "explanation": "AI (Artificial Intelligence) Studio is the prototyping environment for exploring and testing Google's AI (Artificial Intelligence) models.",
     "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
@@ -4071,10 +4044,10 @@
       "google-ai-cert",
       "ai-fundamentals"
     ],
-    "option_a": "A digital audio workstation for music production workflows",
+    "option_a": "A professional digital audio workstation purpose-built for music production and sound design workflows",
     "option_b": "A platform for prototyping, testing, and exploring Google AI (Artificial Intelligence) models",
     "option_c": "A professional photo editing suite with AI (Artificial Intelligence) enhancement filters",
-    "option_d": "A centralized email and calendar management application"
+    "option_d": "A centralized email, calendar, and task management application designed for Google Workspace power users"
   },
   {
     "id": "gap_new_005",
@@ -4220,10 +4193,10 @@
     "category": "ai-collab-mindset",
     "difficulty": "adaptive",
     "options": [
-      "They describe the same stage of product development exactly",
+      "They describe the exact same stage of product development and are used interchangeably by most practitioners without distinction",
       "A prototype tests the concept; an MVP (Minimum Viable Product) delivers real user value",
       "An MVP (Minimum Viable Product) is built before a prototype in the development cycle",
-      "Prototypes are intended for full production use from day one"
+      "Prototypes are designed to be shipped directly to production and used by real customers from the very first day of release"
     ],
     "explanation": "Prototype = test concept. MVP (Minimum Viable Product) = usable by real users. Prototypes inform whether to build the MVP (Minimum Viable Product).",
     "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
@@ -4233,10 +4206,10 @@
       "google-ai-cert",
       "ai-fundamentals"
     ],
-    "option_a": "They describe the same stage of product development exactly",
+    "option_a": "They describe the exact same stage of product development and are used interchangeably by most practitioners without distinction",
     "option_b": "A prototype tests the concept; an MVP (Minimum Viable Product) delivers real user value",
     "option_c": "An MVP (Minimum Viable Product) is built before a prototype in the development cycle",
-    "option_d": "Prototypes are intended for full production use from day one"
+    "option_d": "Prototypes are designed to be shipped directly to production and used by real customers from the very first day of release"
   },
   {
     "id": "gap_new_011",
@@ -4563,60 +4536,6 @@
     "option_d": "V2 planning should start before V1 development is complete"
   },
   {
-    "id": "gap_new_023",
-    "uid": "gap_new_023",
-    "questionText": "What is the value of a shared knowledge hub for distributed teams?",
-    "questionType": "multiple_choice",
-    "correctAnswer": "A single source of truth that reduces duplication and speeds alignment",
-    "category": "ai-collab-mindset",
-    "difficulty": "adaptive",
-    "options": [
-      "Shared knowledge hubs create unnecessary additional overhead",
-      "A single source of truth that reduces duplication and speeds alignment",
-      "Only teams working from the same physical office benefit from hubs",
-      "Knowledge hubs are only practical for large enterprise organizations"
-    ],
-    "explanation": "Shared knowledge hubs centralize truth, reduce duplication, and speed up distributed team alignment.",
-    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
-    "learningObjective": "Google AI (Artificial Intelligence) Professional: Knowledge management",
-    "tags": [
-      "google-ai-professional-cert",
-      "google-ai-cert",
-      "ai-fundamentals"
-    ],
-    "option_a": "Shared knowledge hubs create unnecessary additional overhead",
-    "option_b": "A single source of truth that reduces duplication and speeds alignment",
-    "option_c": "Only teams working from the same physical office benefit from hubs",
-    "option_d": "Knowledge hubs are only practical for large enterprise organizations"
-  },
-  {
-    "id": "gap_new_024",
-    "uid": "gap_new_024",
-    "questionText": "How should you structure feedback when asking AI (Artificial Intelligence) to improve your writing?",
-    "questionType": "multiple_choice",
-    "correctAnswer": "Give targeted feedback on concision, evidence, jargon, and tone",
-    "category": "ai-collab-mindset",
-    "difficulty": "adaptive",
-    "options": [
-      "Say 'make it better' and let the AI (Artificial Intelligence) figure out what to fix",
-      "Give targeted feedback on concision, evidence, jargon, and tone",
-      "Only comment on grammar and spelling errors in the output",
-      "Feedback does not meaningfully improve AI (Artificial Intelligence)-generated writing output"
-    ],
-    "explanation": "Targeted, specific feedback (concision, evidence, tone) produces far better revisions than 'make it better'.",
-    "remediationNotes": "Re-read the matching section in your transcript and verify why the other options are incorrect.",
-    "learningObjective": "Google AI (Artificial Intelligence) Professional: AI (Artificial Intelligence) writing feedback",
-    "tags": [
-      "google-ai-professional-cert",
-      "google-ai-cert",
-      "ai-fundamentals"
-    ],
-    "option_a": "Say 'make it better' and let the AI (Artificial Intelligence) figure out what to fix",
-    "option_b": "Give targeted feedback on concision, evidence, jargon, and tone",
-    "option_c": "Only comment on grammar and spelling errors in the output",
-    "option_d": "Feedback does not meaningfully improve AI (Artificial Intelligence)-generated writing output"
-  },
-  {
     "id": "gap_new_025",
     "uid": "gap_new_025",
     "questionText": "What is the recommended approach for handling stakeholder disagreement after a presentation?",
@@ -4868,9 +4787,9 @@
     "category": "ai-collab-mindset",
     "difficulty": "adaptive",
     "options": [
-      "Deploy the code immediately — if it compiles, it's production-ready",
+      "Deploy the code immediately to production — if it compiles and runs without visible errors, it is considered production-ready",
       "Ask the AI (Artificial Intelligence) to explain the code, then review and test before deploying",
-      "Delete any code you don't immediately understand and start fresh",
+      "Delete any code you cannot immediately understand in full and ask the AI to regenerate it entirely from scratch",
       "Unreviewed code should be deployed as long as it passes basic tests"
     ],
     "explanation": "Ask for explanation → understand → review → test. Never deploy code you don't understand.",
@@ -4881,9 +4800,9 @@
       "google-ai-cert",
       "ai-fundamentals"
     ],
-    "option_a": "Deploy the code immediately — if it compiles, it's production-ready",
+    "option_a": "Deploy the code immediately to production — if it compiles and runs without visible errors, it is considered production-ready",
     "option_b": "Ask the AI (Artificial Intelligence) to explain the code, then review and test before deploying",
-    "option_c": "Delete any code you don't immediately understand and start fresh",
+    "option_c": "Delete any code you cannot immediately understand in full and ask the AI to regenerate it entirely from scratch",
     "option_d": "Unreviewed code should be deployed as long as it passes basic tests"
   },
   {
@@ -5032,7 +4951,7 @@
     "options": [
       "AI (Artificial Intelligence) involvement should never be documented for any business decision",
       "Record what AI (Artificial Intelligence) recommended, what you verified, and your final reasoning",
-      "Documentation is only legally required in heavily regulated industries",
+      "Documentation of AI-assisted decisions is only legally required in heavily regulated industries like finance or healthcare",
       "Documentation of AI (Artificial Intelligence) use is unnecessary for all team-level decisions"
     ],
     "explanation": "Full documentation trail: AI (Artificial Intelligence) recommendation → verification → modifications → final human reasoning.",
@@ -5045,7 +4964,7 @@
     ],
     "option_a": "AI (Artificial Intelligence) involvement should never be documented for any business decision",
     "option_b": "Record what AI (Artificial Intelligence) recommended, what you verified, and your final reasoning",
-    "option_c": "Documentation is only legally required in heavily regulated industries",
+    "option_c": "Documentation of AI-assisted decisions is only legally required in heavily regulated industries like finance or healthcare",
     "option_d": "Documentation of AI (Artificial Intelligence) use is unnecessary for all team-level decisions"
   },
   {
@@ -5192,7 +5111,7 @@
     "category": "ai-collab-mindset",
     "difficulty": "adaptive",
     "options": [
-      "They describe the same process with no meaningful distinction",
+      "They describe the same iterative process where a human provides creative direction and AI assists throughout",
       "With AI (Artificial Intelligence): human directs, AI (Artificial Intelligence) assists. For AI (Artificial Intelligence): human briefs, AI (Artificial Intelligence) generates",
       "Only professional designers are qualified to work with AI (Artificial Intelligence) tools",
       "AI (Artificial Intelligence) tools cannot meaningfully contribute to any design workflows"
@@ -5205,7 +5124,7 @@
       "google-ai-cert",
       "ai-fundamentals"
     ],
-    "option_a": "They describe the same process with no meaningful distinction",
+    "option_a": "They describe the same iterative process where a human provides creative direction and AI assists throughout",
     "option_b": "With AI (Artificial Intelligence): human directs, AI (Artificial Intelligence) assists. For AI (Artificial Intelligence): human briefs, AI (Artificial Intelligence) generates",
     "option_c": "Only professional designers are qualified to work with AI (Artificial Intelligence) tools",
     "option_d": "AI (Artificial Intelligence) tools cannot meaningfully contribute to any design workflows"
@@ -5383,7 +5302,7 @@
     "options": [
       "AI (Artificial Intelligence) skills have no meaningful impact on career advancement",
       "70% of managers consider AI (Artificial Intelligence)-trained workforce critical — AI (Artificial Intelligence) fluency matters",
-      "Only dedicated AI (Artificial Intelligence) engineers benefit from developing AI (Artificial Intelligence)-related skills",
+      "Only dedicated AI (Artificial Intelligence) engineers and data scientists meaningfully benefit from developing AI (Artificial Intelligence)-related technical skills",
       "AI (Artificial Intelligence) skills are temporary and won't matter within the next few years"
     ],
     "explanation": "70% of managers view AI (Artificial Intelligence)-trained workforce as critical — AI (Artificial Intelligence) fluency is a career accelerant across roles.",
@@ -5396,7 +5315,7 @@
     ],
     "option_a": "AI (Artificial Intelligence) skills have no meaningful impact on career advancement",
     "option_b": "70% of managers consider AI (Artificial Intelligence)-trained workforce critical — AI (Artificial Intelligence) fluency matters",
-    "option_c": "Only dedicated AI (Artificial Intelligence) engineers benefit from developing AI (Artificial Intelligence)-related skills",
+    "option_c": "Only dedicated AI (Artificial Intelligence) engineers and data scientists meaningfully benefit from developing AI (Artificial Intelligence)-related technical skills",
     "option_d": "AI (Artificial Intelligence) skills are temporary and won't matter within the next few years"
   }
 ]

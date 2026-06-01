@@ -1,5 +1,5 @@
 // src/components/AppShell.tsx
-import { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { Sidebar } from './Sidebar';
 import { useTheme } from '../hooks/useTheme';
@@ -173,7 +173,7 @@ export function AppShell() {
     );
 }
 
-function AppContent({ isReady, zoom, mainAreaRef }: { isReady: boolean, zoom: number, mainAreaRef: any }) {
+function AppContent({ isReady, zoom, mainAreaRef }: { isReady: boolean, zoom: number, mainAreaRef: React.MutableRefObject<HTMLElement | null> }) {
     const location = useLocation();
     const routeKey = `${location.pathname}${location.search}`;
     const isQuizRoute = location.pathname === '/quiz'

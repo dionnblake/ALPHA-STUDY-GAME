@@ -44,6 +44,8 @@ export function useQuiz(
 
     const timerRef = useRef<number | null>(null);
     const questionStartRef = useRef(Date.now());
+    // Stable ref to always-current handleTimeUp, so the timer interval never closes over stale state.
+    const handleTimeUpRef = useRef<(() => Promise<void>) | null>(null);
 
     const currentQuestion = queue[currentIndex];
 
@@ -135,7 +137,7 @@ export function useQuiz(
                 setTimeLeft(prev => {
                     if (prev <= 1) {
                         if (timerRef.current) clearInterval(timerRef.current);
-                        void handleTimeUp();
+                        void handleTimeUpRef.current?.();
                         return 0;
                     }
                     return prev - 1;
@@ -186,6 +188,9 @@ export function useQuiz(
         setTopicFocus(nextTopicPerformance[currentQuestion.category || 'general']?.classification === 'weak' ? 'increased' : 'maintained');
         setState('feedback');
     }, [currentQuestion, mode, questionMetrics, targetDifficulty]);
+
+    // Keep the ref in sync so the timer interval always calls the latest closure.
+    handleTimeUpRef.current = handleTimeUp;
 
     const evaluateAnswer = useCallback((currentQ: Question, answer: string | string[]) => {
         let correct = false;

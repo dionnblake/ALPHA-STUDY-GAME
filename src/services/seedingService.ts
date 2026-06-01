@@ -213,12 +213,12 @@ export async function seedDatabase(onProgress: (percent: number) => void) {
     }
 
     // Insert normalized rows.
-    for (const { file, questions } of filesWithQuestions) {
-        const difficulty = file.split('_')[0].split('/').pop();
+    for (const { questions } of filesWithQuestions) {
+        const difficulty = 'adaptive';
 
         for (let index = 0; index < questions.length; index++) {
             const q = questions[index];
-            const row = toQuestionRow(q, `${difficulty}_${index}`, difficulty ?? 'adaptive');
+            const row = toQuestionRow(q, `seed_${index}`, difficulty);
 
                 await db.execute(
                     `INSERT OR REPLACE INTO questions (
