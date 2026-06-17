@@ -1,6 +1,6 @@
-// src/screens/QuizScreen.tsx
+﻿// src/screens/QuizScreen.tsx
 import { useEffect, useState } from 'react';
-import { useSearchParams, useNavigate } from 'react-router-dom';
+import { useSearchParams, useNavigate, useLocation } from 'react-router-dom';
 import { useQuiz } from '../hooks/useQuiz';
 import { useKeyboardShortcuts } from '../hooks/useKeyboardShortcuts';
 import { CheckCircle, XCircle, ArrowRight, Pause, Database, Timer, Info } from 'lucide-react';
@@ -13,16 +13,16 @@ import './QuizScreen.css';
 export function QuizScreen() {
     const [searchParams] = useSearchParams();
     const navigate = useNavigate();
-    const location = window.location.hash;
+    const location = useLocation();
 
     // Detect fill_in_blank from URL path
     const rawType = searchParams.get('type') || 'mixed';
     const validTypes = ['mixed', 'domain', 'fill_in_blank'] as const;
     type QuizType = typeof validTypes[number];
-    const type: QuizType = location.includes('/fill-in-blank')
+    const type: QuizType = location.pathname === '/fill-in-blank'
         ? 'fill_in_blank'
         : (validTypes as readonly string[]).includes(rawType) ? rawType as QuizType : 'mixed';
-    const trackTagFromPath = location.includes('/generative-ai-leader')
+    const trackTagFromPath = location.pathname === '/generative-ai-leader'
         ? 'google-generative-ai-leader'
         : undefined;
     const trackTag = searchParams.get('track') || trackTagFromPath;
@@ -36,7 +36,7 @@ export function QuizScreen() {
     const {
         state, currentQuestion, currentIndex, totalQuestions,
         selectedLetter, selectedLetters, isCorrect, timeLeft, isPaused,
-        sessionId, error, submitAnswer, selectOption, finalizeAnswer, nextQuestion, togglePause,
+        sessionId, error, submitAnswer, selectOption, finalizeAnswer, nextQuestion, togglePause, abortSession,
         mode, timeLimitMinutes, targetDifficulty, difficultyAdjustment, topicFocus, timerEnabled
     } = useQuiz(type, domainId, 20, trackTag || undefined, quizMode);
 
@@ -54,20 +54,38 @@ export function QuizScreen() {
         });
     }, [challenge]);
 
-    // Keyboard bindings
+    const [shuffledOptions, setShuffledOptions] = useState<{ letter: string; text: string }[]>([]);
+    const [showExitConfirm, setShowExitConfirm] = useState(false);
+
+    // Keyboard bindings — number/letter keys map to DISPLAY position (options are shuffled on screen)
+    const selectByPosition = (index: number) => {
+        if (showExitConfirm) return;
+        const letter = shuffledOptions[index]?.letter;
+        if (letter) selectOption(letter);
+    };
+    const positionShortcuts: Record<string, () => void> = {};
+    ['1', '2', '3', '4', '5', '6', '7', '8', '9'].forEach((key, idx) => {
+        positionShortcuts[key] = () => selectByPosition(idx);
+    });
+    ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i'].forEach((key, idx) => {
+        positionShortcuts[key] = () => selectByPosition(idx);
+    });
+
     useKeyboardShortcuts({
-        '1': () => selectOption('A'), '2': () => selectOption('B'),
-        '3': () => selectOption('C'), '4': () => selectOption('D'),
-        '5': () => selectOption('E'), '6': () => selectOption('F'),
-        'a': () => selectOption('A'), 'b': () => selectOption('B'),
-        'c': () => selectOption('C'), 'd': () => selectOption('D'),
-        'e': () => selectOption('E'), 'enter': () => {
+        ...positionShortcuts,
+        'enter': () => {
+            if (showExitConfirm) return;
             if (state === 'feedback') nextQuestion();
             else finalizeAnswer();
         },
-        's': () => submitAnswer('SKIP'),
-        'escape': () => navigate('/')
+        's': () => { if (!showExitConfirm) submitAnswer('SKIP'); },
+        'escape': () => setShowExitConfirm(prev => !prev)
     }, state !== 'loading' && state !== 'finished');
+
+    const handleExitToDashboard = async () => {
+        await abortSession();
+        navigate('/');
+    };
 
     // Handle Finish
     useEffect(() => {
@@ -76,7 +94,6 @@ export function QuizScreen() {
         }
     }, [state, sessionId, navigate]);
 
-    const [shuffledOptions, setShuffledOptions] = useState<{ letter: string; text: string }[]>([]);
     const qType = currentQuestion?.question_type || 'multiple_choice';
 
     useEffect(() => {
@@ -111,12 +128,17 @@ export function QuizScreen() {
     })();
 
     if (error) {
+        const isEmptyBank = /no .*questions .*available/i.test(error);
         return (
             <div className="page-container flex-center">
                 <div className="glass-panel" style={{ padding: '2rem', textAlign: 'center', maxWidth: 500 }}>
                     <XCircle size={48} color="var(--color-error)" style={{ marginBottom: '1rem' }} />
-                    <h2 style={{ color: 'var(--color-error)' }}>Neural Synthesis Failed</h2>
-                    <p style={{ margin: '1rem 0', opacity: 0.8 }}>{error}</p>
+                    <h2 style={{ color: 'var(--color-error)' }}>{isEmptyBank ? 'NO QUESTIONS AVAILABLE' : 'QUIZ FAILED TO LOAD'}</h2>
+                    <p style={{ margin: '1rem 0', opacity: 0.8 }}>
+                        {isEmptyBank
+                            ? 'Try a different track from the sidebar, or re-seed the question bank from Settings.'
+                            : error}
+                    </p>
                     <button className="btn-primary" onClick={() => navigate('/')}>Return to Dashboard</button>
                 </div>
             </div>
@@ -129,6 +151,22 @@ export function QuizScreen() {
 
     return (
         <div className="quiz-screen">
+            {showExitConfirm && (
+                <div className="exit-confirm-backdrop">
+                    <div className="pause-overlay glass-panel exit-confirm-panel">
+                        <h2>END SESSION?</h2>
+                        <p className="text-muted">Progress on answered questions is saved.</p>
+                        <div className="exit-confirm-actions">
+                            <button className="btn-skip" onClick={() => setShowExitConfirm(false)}>
+                                KEEP STUDYING
+                            </button>
+                            <button className="btn-primary" onClick={handleExitToDashboard}>
+                                EXIT TO DASHBOARD
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            )}
             <header className="quiz-top-bar glass-panel">
                 <div className="top-bar-left">
                     <div className="session-info">
@@ -216,7 +254,12 @@ export function QuizScreen() {
                                     ) : (
                                         <div className="question-body">
                                             {currentQuestion.question_text}
-                                            {qType === 'multiple_response' && <div className="q-type-hint">CHOOSE ALL THAT APPLY</div>}
+                                            {qType === 'multiple_response' && (
+                                                <div className="q-type-hint-banner">
+                                                    <span className="q-type-hint-icon">&#9746;</span>
+                                                    SELECT ALL THAT APPLY — multiple answers are correct
+                                                </div>
+                                            )}
                                             {qType === 'ordering' && <div className="q-type-hint">DETERMINE CORRECT SEQUENCE</div>}
                                         </div>
                                     )}
@@ -235,7 +278,7 @@ export function QuizScreen() {
                                     )}
 
                                     {qType !== 'fill_in_blank' && <div className="options-stack">
-                                        {options.map((opt) => {
+                                        {options.map((opt, displayIndex) => {
                                             const isSelected = selectedLetters.includes(opt.letter) || selectedLetter === opt.letter;
 
                                             // Correct answer letters from DB (always stored as letters after seeding)
@@ -247,7 +290,8 @@ export function QuizScreen() {
 
                                             // For ordering: show the position the USER chose while active
                                             // In feedback: show CORRECT position so user knows right sequence
-                                            let displayKey: string | number = opt.letter;
+                                            // Otherwise: sequential letter by display position so badges match the keyboard (A = first on screen)
+                                            let displayKey: string | number = String.fromCharCode(65 + displayIndex);
                                             if (qType === 'ordering') {
                                                 if (state === 'feedback') {
                                                     // Show the correct sequence position (1-based) for every option
@@ -288,9 +332,15 @@ export function QuizScreen() {
                                                     disabled={state === 'feedback'}
                                                     onClick={() => selectOption(opt.letter)}
                                                 >
-                                                    <div className="option-key">
-                                                        {displayKey}
-                                                    </div>
+                                                    {qType === 'multiple_response' ? (
+                                                        <div className={`option-checkbox${isSelected ? ' selected' : ''}`}>
+                                                            {isSelected && <span className="checkbox-check">&#10003;</span>}
+                                                        </div>
+                                                    ) : (
+                                                        <div className="option-key">
+                                                            {displayKey}
+                                                        </div>
+                                                    )}
                                                     <div className="option-text">{opt.text}</div>
                                                     {state === 'feedback' && isActualCorrect && <CheckCircle size={20} color="var(--color-success)" style={{ marginLeft: 'auto' }} />}
                                                     {state === 'feedback' && isSelected && !isActualCorrect && qType !== 'ordering' && <XCircle size={20} color="var(--color-error)" style={{ marginLeft: 'auto' }} />}
@@ -402,3 +452,4 @@ export function QuizScreen() {
         </div>
     );
 }
+

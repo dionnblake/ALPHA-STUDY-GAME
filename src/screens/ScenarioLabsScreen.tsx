@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { Zap, CheckCircle, AlertTriangle } from 'lucide-react';
+import { Zap, CheckCircle, AlertTriangle, ArrowRight, RotateCcw } from 'lucide-react';
 import './ScenarioLabsScreen.css';
 
 type BlockInfo = {
@@ -9,11 +9,47 @@ type BlockInfo = {
     type: 'persona' | 'context' | 'task' | 'format';
 };
 
-const INITIAL_BLOCKS: BlockInfo[] = [
-    { id: 'b1', text: 'Output only the raw code block without markdown formatting.', type: 'format' },
-    { id: 'b2', text: 'Act as an expert Python software engineer.', type: 'persona' },
-    { id: 'b3', text: 'Write a script to sort an array using merge sort.', type: 'task' },
-    { id: 'b4', text: 'I am a computer science student studying algorithms.', type: 'context' }
+type Scenario = {
+    id: number;
+    title: string;
+    description: string;
+    blocks: BlockInfo[];
+};
+
+const SCENARIOS: Scenario[] = [
+    {
+        id: 1,
+        title: "SCENARIO 1 // ALGORITHM IMPLEMENTATION",
+        description: "Assemble a perfect prompt instructing an AI to write a Python script for merge sort.",
+        blocks: [
+            { id: 'b1', text: 'Output only the raw code block without markdown formatting.', type: 'format' },
+            { id: 'b2', text: 'Act as an expert Python software engineer.', type: 'persona' },
+            { id: 'b3', text: 'Write a script to sort an array using merge sort.', type: 'task' },
+            { id: 'b4', text: 'I am a computer science student studying algorithms.', type: 'context' }
+        ]
+    },
+    {
+        id: 2,
+        title: "SCENARIO 2 // ENTERPRISE API INTEGRATION",
+        description: "Assemble a prompt to integrate an external telemetry API inside Express with low latency.",
+        blocks: [
+            { id: 's2_1', text: 'Format your response in structured JSON format with error codes.', type: 'format' },
+            { id: 's2_2', text: 'You are a veteran backend systems architect specialized in RESTful services.', type: 'persona' },
+            { id: 's2_3', text: 'Design an Express middleware to catch connection timeouts and fetch weather telemetry.', type: 'task' },
+            { id: 's2_4', text: 'We are deploying a production IoT monitoring server with strict low-latency requirements.', type: 'context' }
+        ]
+    },
+    {
+        id: 3,
+        title: "SCENARIO 3 // DATA SCIENCE ANALOGY",
+        description: "Assemble a prompt explaining decision tree boosting algorithms to executive stakeholders.",
+        blocks: [
+            { id: 's3_1', text: 'Explain the concept using a real-world analogy without mathematical formulas.', type: 'format' },
+            { id: 's3_2', text: 'You are an inspiring technical writer and data science educator.', type: 'persona' },
+            { id: 's3_3', text: 'Explain the difference between bagging and boosting, specifically focusing on decision trees.', type: 'task' },
+            { id: 's3_4', text: 'I need to explain our model upgrades to the business management stakeholders.', type: 'context' }
+        ]
+    }
 ];
 
 type SlotsState = {
@@ -24,7 +60,8 @@ type SlotsState = {
 };
 
 export function ScenarioLabsScreen() {
-    const [bankBlocks, setBankBlocks] = useState<BlockInfo[]>(INITIAL_BLOCKS);
+    const [currentScenarioIndex, setCurrentScenarioIndex] = useState(0);
+    const [bankBlocks, setBankBlocks] = useState<BlockInfo[]>(SCENARIOS[0].blocks);
     const [slots, setSlots] = useState<SlotsState>({
         persona: null,
         context: null,
@@ -36,10 +73,21 @@ export function ScenarioLabsScreen() {
     const [selectedBlockId, setSelectedBlockId] = useState<string | null>(null);
     const [activeDragOverSlot, setActiveDragOverSlot] = useState<keyof SlotsState | null>(null);
     const [feedback, setFeedback] = useState<{ status: 'success' | 'error', message: string } | null>(null);
+    
+    const slotRectsRef = useRef<Record<string, DOMRect | null>>({});
 
     const handleDragStart = (block: BlockInfo, sourceSlot?: keyof SlotsState) => {
         setDraggedBlockInfo({ block, sourceSlot });
         setFeedback(null);
+        
+        // Cache slot coordinates ONCE on drag start to prevent layout thrashing and keep drag performance 60fps/120fps smooth.
+        slotRectsRef.current = {
+            persona: document.querySelector('[data-slot="persona"]')?.getBoundingClientRect() || null,
+            context: document.querySelector('[data-slot="context"]')?.getBoundingClientRect() || null,
+            task: document.querySelector('[data-slot="task"]')?.getBoundingClientRect() || null,
+            format: document.querySelector('[data-slot="format"]')?.getBoundingClientRect() || null,
+            bank: document.querySelector('[data-slot="bank"]')?.getBoundingClientRect() || null
+        };
     };
 
     const getViewportCoords = (event: any, info: any) => {
@@ -65,17 +113,8 @@ export function ScenarioLabsScreen() {
     };
 
     const findSlotAtCoords = (clientX: number, clientY: number): keyof SlotsState | 'bank' | null => {
-        const slotsElements = {
-            persona: document.querySelector('[data-slot="persona"]'),
-            context: document.querySelector('[data-slot="context"]'),
-            task: document.querySelector('[data-slot="task"]'),
-            format: document.querySelector('[data-slot="format"]'),
-            bank: document.querySelector('[data-slot="bank"]')
-        };
-
-        for (const [key, el] of Object.entries(slotsElements)) {
-            if (!el) continue;
-            const rect = el.getBoundingClientRect();
+        for (const [key, rect] of Object.entries(slotRectsRef.current)) {
+            if (!rect) continue;
             if (
                 clientX >= rect.left &&
                 clientX <= rect.right &&
@@ -231,7 +270,29 @@ export function ScenarioLabsScreen() {
         }
     };
 
-    const isComplete = slots.persona && slots.context && slots.task && slots.format;
+    const handleNextScenario = () => {
+        const nextIndex = (currentScenarioIndex + 1) % SCENARIOS.length;
+        setCurrentScenarioIndex(nextIndex);
+        setBankBlocks(SCENARIOS[nextIndex].blocks);
+        setSlots({
+            persona: null,
+            context: null,
+            task: null,
+            format: null
+        });
+        setFeedback(null);
+    };
+
+    const handleReset = () => {
+        setBankBlocks(SCENARIOS[currentScenarioIndex].blocks);
+        setSlots({
+            persona: null,
+            context: null,
+            task: null,
+            format: null
+        });
+        setFeedback(null);
+    };
 
     return (
         <motion.div 
@@ -239,12 +300,17 @@ export function ScenarioLabsScreen() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
         >
-            <header className="lab-header">
-                <span className="hud-label" style={{ color: 'var(--primary)' }}>SCENARIO LABS // PROMPT ASSEMBLY</span>
-                <h1 style={{ fontSize: '2.5rem', marginTop: '0.5rem' }}>Construct Optimal Prompt</h1>
-                <p className="text-muted" style={{ marginTop: '0.5rem' }}>
-                    Drag the cognitive blocks from the memory bank into the assembly slots below to form the perfect prompt.
-                </p>
+            <header className="lab-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: '1rem' }}>
+                <div style={{ flex: 1, minWidth: '300px' }}>
+                    <span className="hud-label" style={{ color: 'var(--primary)' }}>SCENARIO LABS // PROMPT ASSEMBLY</span>
+                    <h1 style={{ fontSize: '2rem', marginTop: '0.5rem' }}>{SCENARIOS[currentScenarioIndex].title}</h1>
+                    <p className="text-muted" style={{ marginTop: '0.5rem' }}>
+                        {SCENARIOS[currentScenarioIndex].description}
+                    </p>
+                </div>
+                <div className="hud-label" style={{ color: 'var(--primary)', border: '1px solid var(--primary-light)', padding: '0.5rem 1rem', borderRadius: '8px', background: 'var(--primary-light)' }}>
+                    STAGE {currentScenarioIndex + 1} / {SCENARIOS.length}
+                </div>
             </header>
 
             <div className="lab-workspace">
@@ -295,6 +361,7 @@ export function ScenarioLabsScreen() {
                                 <span className="slot-label">{slotType.toUpperCase()}</span>
                                 {block ? (
                                     <motion.div
+                                        key={`${slotType}-${block.id}`}
                                         drag
                                         dragSnapToOrigin={true}
                                         dragElastic={0.6}
@@ -324,14 +391,32 @@ export function ScenarioLabsScreen() {
                 </div>
             </div>
 
-            <div className="lab-actions">
+            <div className="lab-actions" style={{ display: 'flex', gap: '1rem', justifyContent: 'flex-end', marginTop: '2rem' }}>
                 <button 
-                    className="btn-evaluate" 
-                    onClick={handleEvaluate}
-                    disabled={!isComplete}
+                    className="btn-secondary" 
+                    onClick={handleReset}
+                    style={{ background: 'rgba(255, 255, 255, 0.05)', border: '1px solid var(--border-subtle)', display: 'flex', alignItems: 'center', gap: '8px', cursor: 'pointer' }}
                 >
-                    EVALUATE STRUCTURE
+                    <RotateCcw size={16} />
+                    RESET
                 </button>
+                {feedback?.status === 'success' ? (
+                    <button 
+                        className="btn-evaluate" 
+                        onClick={handleNextScenario}
+                        style={{ background: 'linear-gradient(135deg, #57f287, #28d7ff)', color: '#021524', display: 'flex', alignItems: 'center', gap: '8px', boxShadow: '0 0 20px rgba(87, 242, 135, 0.3)' }}
+                    >
+                        NEXT SCENARIO
+                        <ArrowRight size={16} />
+                    </button>
+                ) : (
+                    <button 
+                        className="btn-evaluate" 
+                        onClick={handleEvaluate}
+                    >
+                        EVALUATE STRUCTURE
+                    </button>
+                )}
             </div>
 
             {feedback && (

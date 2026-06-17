@@ -390,6 +390,17 @@ export function useQuiz(
         }
     }, [state, mode]);
 
+    // Cleanly end the session mid-quiz (e.g. user exits early) so the
+    // study_sessions row is finalized with the answers recorded so far.
+    const abortSession = useCallback(async () => {
+        if (timerRef.current) clearInterval(timerRef.current);
+        await updateSessionMetadata({
+            question_metrics: questionMetrics,
+            target_difficulty: targetDifficulty
+        });
+        await endSession();
+    }, [questionMetrics, targetDifficulty]);
+
     return {
         state,
         currentQuestion,
@@ -413,6 +424,7 @@ export function useQuiz(
         selectOption,
         finalizeAnswer,
         nextQuestion,
-        togglePause
+        togglePause,
+        abortSession
     };
 }

@@ -1,31 +1,36 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import {
-    ResponsiveContainer, AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip,
-    RadarChart, PolarGrid, PolarAngleAxis, Radar
+    ResponsiveContainer, AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip
 } from 'recharts';
 import { DashboardStats, getDashboardStats, TRACK_DEFINITIONS } from '../services/analyticsService';
-import { AlertCircle, Target, TrendingUp, CheckCircle, Activity, BarChart } from 'lucide-react';
+import { AlertCircle, Target, TrendingUp, CheckCircle, Activity, BarChart, Rocket } from 'lucide-react';
+import { KnowledgeGraph } from '../components/KnowledgeGraph';
 import './ProgressScreen.css';
 
 export function ProgressScreen() {
+    const navigate = useNavigate();
     const [stats, setStats] = useState<DashboardStats | null>(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
 
-    useEffect(() => {
-        async function loadData() {
-            try {
-                const s = await getDashboardStats();
-                setStats(s);
-            } catch (err: any) {
-                console.error("Failed to load analytics", err);
-                setError(err.message || "TELEMETRY LINK FAILURE");
-            } finally {
-                setLoading(false);
-            }
+    const loadData = useCallback(async () => {
+        setLoading(true);
+        setError(null);
+        try {
+            const s = await getDashboardStats();
+            setStats(s);
+        } catch (err: any) {
+            console.error("Failed to load analytics", err);
+            setError(err?.message || "An unexpected error occurred while reading the local study database.");
+        } finally {
+            setLoading(false);
         }
-        loadData();
     }, []);
+
+    useEffect(() => {
+        loadData();
+    }, [loadData]);
 
     if (loading) return (
         <div className="page-container flex-center">
@@ -38,13 +43,34 @@ export function ProgressScreen() {
 
     if (error || !stats) return (
         <div className="page-container flex-center">
-            <div className="error-panel glass-panel">
+            <div className="state-panel glass-panel">
                 <AlertCircle size={48} color="var(--color-error)" />
-                <h2 style={{ color: 'var(--color-error)', marginTop: '2rem' }}>INITIALIZATION ERROR</h2>
-                <p className="text-muted" style={{ maxWidth: '400px', margin: '1rem auto' }}>
-                    Critical failure in performance synchronization. Data records may be insufficient or corrupted.
+                <h2 style={{ color: 'var(--color-error)', marginTop: '1.5rem' }}>COULDN'T LOAD ANALYTICS</h2>
+                <p className="text-muted state-panel-body">
+                    {error || "The analytics data came back empty. This is usually temporary."}
                 </p>
-                <div className="diagnostic-prompt">Complete a study mission to generate neural telemetry.</div>
+                <div className="state-panel-actions">
+                    <button className="btn-primary" onClick={loadData}>Try Again</button>
+                    <button className="btn-secondary" onClick={() => navigate('/')}>Back to Dashboard</button>
+                </div>
+            </div>
+        </div>
+    );
+
+    const hasStudyData = stats.sessionTrend.length > 0 || stats.totalXP > 0;
+
+    if (!hasStudyData) return (
+        <div className="page-container flex-center">
+            <div className="state-panel glass-panel">
+                <span className="hud-label" style={{ color: 'var(--primary)' }}>SYSTEM STATUS: AWAITING FIRST MISSION</span>
+                <Rocket size={48} color="var(--primary)" style={{ marginTop: '1.5rem' }} />
+                <h2 style={{ marginTop: '1.5rem' }}>No study data yet</h2>
+                <p className="text-muted state-panel-body">
+                    Complete your first quiz session and your performance analytics will appear here.
+                </p>
+                <div className="state-panel-actions">
+                    <button className="btn-primary" onClick={() => navigate('/quiz?track=google-ai-essentials')}>Start a Quiz</button>
+                </div>
             </div>
         </div>
     );
@@ -143,19 +169,7 @@ export function ProgressScreen() {
                         <BarChart size={16} className="text-muted" />
                     </div>
                     <div style={{ height: '320px', width: '100%' }}>
-                        <ResponsiveContainer>
-                            <RadarChart cx="50%" cy="50%" outerRadius="80%" data={domainPerformance}>
-                                <PolarGrid stroke="rgba(255,255,255,0.05)" />
-                                <PolarAngleAxis dataKey="subject" tick={{ fontSize: 10, fill: 'var(--text-muted)', fontWeight: 600 }} />
-                                <Radar
-                                    name="Mastery"
-                                    dataKey="A"
-                                    stroke="var(--primary)"
-                                    fill="var(--primary)"
-                                    fillOpacity={0.3}
-                                />
-                            </RadarChart>
-                        </ResponsiveContainer>
+                        <KnowledgeGraph data={domainPerformance} />
                     </div>
                 </div>
 
@@ -163,7 +177,11 @@ export function ProgressScreen() {
                     <div className="chart-hud-header">
                         <div>
                             <div className="chart-title">QUIZ ACCURACY BY STUDY SESSION</div>
-                            <div className="chart-subtitle">Last {chartData.length} saved sessions from your study database</div>
+                            <div className="chart-subtitle">
+                                {chartData.length > 0
+                                    ? `Last ${chartData.length} saved sessions from your study database`
+                                    : 'No saved sessions yet'}
+                            </div>
                         </div>
                         <Activity size={16} className="text-muted" />
                     </div>
@@ -204,7 +222,7 @@ export function ProgressScreen() {
                             </ResponsiveContainer>
                         ) : (
                             <div className="empty-chart-state">
-                                Complete a quiz session and it will appear here with the date, score, and number correct.
+                                No sessions recorded yet. Finish a quiz and it will appear here with the date, score, and number correct.
                             </div>
                         )}
                     </div>

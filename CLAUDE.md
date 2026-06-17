@@ -1,6 +1,13 @@
 # AI Study Game: project guide
 
+> [!IMPORTANT]
+> **CRITICAL STARTUP & TURN-END RULES**:
+> - **On Startup (Read First)**: Read the central status file `C:\Users\ALPHA\.context\.agent-status.md` immediately to see where the last agent left off. Do not ask "where were we".
+> - **On Turn End (Write Last)**: On your very last turn before finishing the task, you MUST overwrite the status file `C:\Users\ALPHA\.context\.agent-status.md` with exactly one line in the format:
+>   `last_seen: <timestamp> | agent: <agent_name> | task: <last thing completed / current state>`
+
 Read this before changing code or content. The app is a local Windows 11 study game for learning AI, Google AI, prompt engineering, and GenAI on Google Cloud material. The user values useful learning material over volume. Do not add filler questions.
+
 
 ## Stack
 

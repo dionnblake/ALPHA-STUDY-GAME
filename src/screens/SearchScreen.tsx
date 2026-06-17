@@ -77,6 +77,24 @@ export function SearchScreen() {
         setHistory([]);
     };
 
+    const getQuestionOptions = (question: Question) => ([
+        { key: 'A', val: question.option_a },
+        { key: 'B', val: question.option_b },
+        { key: 'C', val: question.option_c },
+        { key: 'D', val: question.option_d },
+        { key: 'E', val: question.option_e },
+        { key: 'F', val: question.option_f },
+        { key: 'G', val: question.option_g },
+        { key: 'H', val: question.option_h },
+        { key: 'I', val: question.option_i }
+    ].filter((opt) => typeof opt.val === 'string' && opt.val.trim().length > 0));
+
+    const isCorrectOption = (question: Question, key: string, value: string | null | undefined) => {
+        const raw = (question.correct_answer || '').trim();
+        const correctValues = raw.split(/[|,]/).map((part) => part.trim().toLowerCase()).filter(Boolean);
+        return correctValues.includes(key.toLowerCase()) || (value ? correctValues.includes(value.trim().toLowerCase()) : false);
+    };
+
     return (
         <div className="page-container search-screen-root">
             <header className="search-header">
@@ -226,13 +244,8 @@ export function SearchScreen() {
                             </div>
 
                             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
-                                {[
-                                    { key: 'A', val: selectedQuestion.option_a },
-                                    { key: 'B', val: selectedQuestion.option_b },
-                                    { key: 'C', val: selectedQuestion.option_c },
-                                    { key: 'D', val: selectedQuestion.option_d }
-                                ].map(opt => (
-                                    <div key={opt.key} className={`modal-option-hud ${selectedQuestion.correct_answer === opt.key ? 'is-correct' : ''}`}>
+                                {getQuestionOptions(selectedQuestion).map(opt => (
+                                    <div key={opt.key} className={`modal-option-hud ${isCorrectOption(selectedQuestion, opt.key, opt.val) ? 'is-correct' : ''}`}>
                                         <strong style={{ color: 'var(--primary)', width: '20px' }}>{opt.key}</strong>
                                         {opt.val}
                                     </div>

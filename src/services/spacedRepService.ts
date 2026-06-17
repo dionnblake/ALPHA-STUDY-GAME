@@ -38,23 +38,18 @@ export async function getQuestionPool(
 
     if (trackTag && trackTag.trim().length > 0) {
         const needle = trackTag.toLowerCase();
-
-        if (needle === 'google-ai-professional-cert') {
-            questions = questions.filter((q) => q.domain_id >= 6 && q.domain_id <= 12);
-        } else {
-            questions = questions.filter((q) => {
-                const tagsRaw = Array.isArray(q.tags)
-                    ? q.tags
-                    : (() => {
-                        try {
-                            return JSON.parse((q as any).tags || '[]');
-                        } catch {
-                            return [];
-                        }
-                    })();
-                return Array.isArray(tagsRaw) && tagsRaw.some((t: unknown) => String(t).toLowerCase() === needle);
-            });
-        }
+        questions = questions.filter((q) => {
+            const tagsRaw = Array.isArray(q.tags)
+                ? q.tags
+                : (() => {
+                    try {
+                        return JSON.parse((q as any).tags || '[]');
+                    } catch {
+                        return [];
+                    }
+                })();
+            return Array.isArray(tagsRaw) && tagsRaw.some((t: unknown) => String(t).toLowerCase() === needle);
+        });
     }
 
     const progressList = await db.select<UserProgress[]>(

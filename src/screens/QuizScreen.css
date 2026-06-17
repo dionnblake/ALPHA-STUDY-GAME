@@ -1,4 +1,4 @@
-/* src/screens/QuizScreen.css */
+﻿/* src/screens/QuizScreen.css */
 
 .quiz-screen {
     height: 100%;
@@ -762,6 +762,32 @@
     letter-spacing: 0.2rem;
 }
 
+/* EXIT CONFIRMATION */
+.exit-confirm-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+}
+
+.exit-confirm-panel {
+    min-height: 0;
+    max-width: 460px;
+    padding: 3rem;
+    gap: 1.25rem;
+}
+
+.exit-confirm-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 /* FILL IN BLANK */
 .fill-in-blank-container {
     display: flex;
@@ -965,4 +991,51 @@
     .btn-submit {
         flex: 1;
     }
+}
+
+/* MULTI-SELECT BANNER */
+.q-type-hint-banner {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-top: 1rem;
+    padding: 0.55rem 1rem;
+    background: rgba(255, 193, 7, 0.12);
+    border: 1px solid rgba(255, 193, 7, 0.4);
+    border-radius: 8px;
+    font-size: 0.82rem;
+    font-weight: 800;
+    color: var(--color-warning);
+    letter-spacing: 0.06em;
+}
+
+.q-type-hint-icon {
+    font-size: 1.1rem;
+    line-height: 1;
+}
+
+/* CHECKBOX for multi-select options */
+.option-checkbox {
+    width: 22px;
+    height: 22px;
+    min-width: 22px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+    transition: all 0.15s ease;
+}
+
+.option-checkbox.selected {
+    background: var(--cyan);
+    border-color: var(--cyan);
+}
+
+.checkbox-check {
+    font-size: 0.75rem;
+    font-weight: 900;
+    color: #000;
+    line-height: 1;
 }

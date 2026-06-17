@@ -1,28 +1,107 @@
+/* ============================================================
+   Design tokens — single source of truth
+   Raw palette first, then semantic aliases used by the rest of
+   the app (the former index.css / quiz-screen vocabulary).
+   Do not redefine these in screen stylesheets.
+   ============================================================ */
 :root {
+  /* --- Raw backgrounds --- */
   --bg-0: #030509;
   --bg-1: #080d1b;
   --bg-2: #0c1426;
+  --bg-top: #05070d;
+  --bg-bottom: #0a1020;
+  --bg-deep: #05070d;
+
+  /* --- Surfaces --- */
   --surface: rgba(16, 23, 38, 0.75);
   --surface-strong: rgba(20, 29, 46, 0.90);
+  --bg-mica: rgba(12, 18, 33, 0.72);
+  --bg-surface: rgba(16, 23, 38, 0.84);
+  --bg-surface-alt: rgba(21, 29, 46, 0.84);
+  --bg-active: rgba(31, 42, 62, 0.84);
+  --bg-base: var(--bg-1);
+
+  /* --- Borders --- */
   --border: rgba(255, 255, 255, 0.08);
   --border-strong: rgba(255, 255, 255, 0.16);
+  --border-subtle: var(--border);
+  --border-vibrant: var(--border-strong);
+  --border-1: var(--border);
+  --card-stroke: rgba(255, 255, 255, 0.2);
+
+  /* --- Text --- */
   --text-1: #fdfdfe;
   --text-2: #b4bfd4;
   --text-3: #7583a1;
+  --text-primary: var(--text-1);
+  --text-base: var(--text-1);
+  --text-secondary: var(--text-2);
+  --text-muted: var(--text-3);
+
+  /* --- Raw accent palette --- */
   --cyan: #1cd4ff;
   --orange: #ff9d2e;
   --green: #48f57e;
   --pink: #ff4db1;
   --purple: #9047ff;
   --yellow: #ffd338;
+
+  /* --- Semantic accents (aliases of the raw palette) --- */
+  --primary: var(--cyan);
+  --primary-rgb: 28, 212, 255;
+  --primary-light: rgba(28, 212, 255, 0.22);
+  --primary-glow: rgba(28, 212, 255, 0.32);
+  --accent: var(--cyan);
+  --accent-blue: #4d7cff;
+
+  /* --- Status colors --- */
+  --color-success: var(--green);
+  --color-warning: var(--orange);
+  --color-error: #ff5b5b;
+  --color-error-rgb: 255, 91, 91;
+  --color-info: #4d7cff;
+
+  /* --- Exam domain colors --- */
+  --domain-1: var(--cyan);
+  --domain-2: var(--orange);
+  --domain-3: var(--green);
+  --domain-4: var(--pink);
+  --domain-5: var(--purple);
+  --domain-13: #7dd3fc;
+  --domain-1-glow: rgba(28, 212, 255, 0.32);
+  --domain-2-glow: rgba(255, 157, 46, 0.32);
+  --domain-3-glow: rgba(72, 245, 126, 0.3);
+  --domain-4-glow: rgba(255, 77, 177, 0.3);
+  --domain-5-glow: rgba(144, 71, 255, 0.3);
+  --domain-13-glow: rgba(125, 211, 252, 0.3);
+
+  /* --- Shadows / glows --- */
   --shadow-lg: 0 24px 64px rgba(0, 0, 0, 0.45);
   --shadow-md: 0 16px 36px rgba(0, 0, 0, 0.35);
+  --glow-cyan: 0 0 24px rgba(28, 212, 255, 0.5);
+  --glow-purple: 0 0 24px rgba(144, 71, 255, 0.5);
+
+  /* --- Radii / layout --- */
   --radius-xl: 24px;
   --radius-lg: 20px;
   --radius-md: 16px;
+  --radius-sm: 12px;
   --sidebar-w: 280px;
-  --glow-cyan: 0 0 24px rgba(28, 212, 255, 0.5);
-  --glow-purple: 0 0 24px rgba(144, 71, 255, 0.5);
+  --sidebar-width: var(--sidebar-w);
+  --app-zoom: 1;
+}
+
+/* Keyboard focus visibility (app is keyboard-driven).
+   !important so scattered `outline: none` resets in screen
+   stylesheets cannot suppress keyboard focus indicators. */
+button:focus-visible,
+a:focus-visible,
+[tabindex]:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--primary) !important;
+  outline-offset: 2px;
 }
 
 * {
@@ -90,7 +169,7 @@ h1, h2, h3, .brand-title, .page-title {
 
 .brand-kicker {
   color: var(--cyan);
-  font-size: 9px;
+  font-size: 10px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   font-weight: 700;
@@ -156,7 +235,7 @@ h1, h2, h3, .brand-title, .page-title {
 }
 
 .app-shell.sidebar-scroll-enabled .brand-kicker {
-  font-size: 8px;
+  font-size: 10px;
 }
 
 .app-shell.sidebar-scroll-enabled .brand-title {
@@ -165,13 +244,13 @@ h1, h2, h3, .brand-title, .page-title {
 }
 
 .app-shell.sidebar-scroll-enabled .brand-subtitle {
-  font-size: 9px;
+  font-size: 10px;
   margin: 4px 0;
 }
 
 .app-shell.sidebar-scroll-enabled .version-pill {
   margin-top: 4px;
-  font-size: 8px;
+  font-size: 10px;
   padding: 1px 6px;
 }
 
@@ -197,7 +276,9 @@ h1, h2, h3, .brand-title, .page-title {
   transition: 180ms ease;
   font-weight: 600;
   font-size: 12px;
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .nav-item:hover {
@@ -245,6 +326,38 @@ h1, h2, h3, .brand-title, .page-title {
 
 .app-shell.quiz-max-zoom .sidebar {
   display: none;
+}
+
+.app-shell.reader-max-zoom {
+  grid-template-columns: 1fr;
+}
+
+.app-shell.reader-max-zoom .sidebar {
+  display: none;
+}
+
+.app-shell.reader-max-zoom .main-area {
+  padding: 18px 20px;
+}
+
+.app-shell.reader-max-zoom .python-reader-root {
+  padding: 1rem;
+}
+
+.app-shell.learnpy-max-zoom {
+  grid-template-columns: 1fr;
+}
+
+.app-shell.learnpy-max-zoom .sidebar {
+  display: none;
+}
+
+.app-shell.learnpy-max-zoom .main-area {
+  padding: 18px 20px;
+}
+
+.app-shell.learnpy-max-zoom .learnpy-root {
+  padding: 1rem;
 }
 
 .main-area::-webkit-scrollbar {
@@ -654,12 +767,47 @@ h1, h2, h3, .brand-title, .page-title {
 }
 
 @media (max-width: 900px) {
+  /* Collapse the sidebar to a 64px icon rail instead of removing
+     navigation entirely. NavLinks carry title attributes so hover
+     still reveals the destination name. */
   .app-shell {
-    grid-template-columns: 1fr;
+    --sidebar-w: 64px;
   }
 
   .sidebar {
+    padding: 14px 8px;
+  }
+
+  .brand-block {
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  .brand-kicker {
+    font-size: 9px;
+    letter-spacing: 0.08em;
+    text-align: center;
+  }
+
+  .brand-title,
+  .brand-subtitle,
+  .version-pill,
+  .nav-section-kicker,
+  .nav-label,
+  .nav-progress {
     display: none;
+  }
+
+  .sidebar .nav-item {
+    justify-content: center;
+    gap: 0;
+    padding: 10px 0;
+  }
+
+  /* .sidebar prefix outranks the .nav-item:hover translateX rules
+     in premium-upgrade.css, which loads after this file. */
+  .sidebar .nav-item:hover {
+    transform: none;
   }
 
   .main-area {
@@ -682,5 +830,17 @@ h1, h2, h3, .brand-title, .page-title {
 
   .stats-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Respect OS-level reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }

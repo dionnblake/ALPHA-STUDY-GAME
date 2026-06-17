@@ -1,17 +1,12 @@
-:root {
-  --primary: var(--cyan);
-  --primary-glow: rgba(40, 215, 255, 0.35);
-  --primary-light: rgba(40, 215, 255, 0.15);
-  --bg-mica: rgba(16, 23, 38, 0.65);
+/* Shared tokens (--primary, --bg-mica, --color-success, ...) come from
+   src/styles/theme.css. Only screen-specific overrides live here, scoped
+   to the settings screen so they cannot leak into other routes. */
+.settings-screen-root {
+  /* Settings uses flatter, more translucent control surfaces
+     (theme rail, range track, active rail button) than the
+     global dark surface tokens. */
   --bg-surface: rgba(255, 255, 255, 0.04);
   --bg-active: rgba(255, 255, 255, 0.08);
-  --border-subtle: rgba(255, 255, 255, 0.08);
-  --text-base: var(--text-1);
-  --text-muted: var(--text-3);
-  --color-success: var(--green);
-}
-
-.settings-screen-root {
   animation: fadeIn 0.6s ease-out;
   padding-bottom: 6rem;
 }

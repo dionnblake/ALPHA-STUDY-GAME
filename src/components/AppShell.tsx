@@ -1,21 +1,25 @@
 // src/components/AppShell.tsx
-import React, { useState, useEffect, useRef } from 'react';
-import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
+import React, { useState, useEffect, useRef, lazy, Suspense } from 'react';
+import { HashRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { Sidebar } from './Sidebar';
 import { useTheme } from '../hooks/useTheme';
-import { useKeyboardShortcuts } from '../hooks/useKeyboardShortcuts';
 import { ErrorBoundary } from './ErrorBoundary';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 
 import { HomeScreen } from '../screens/HomeScreen';
-import { QuizScreen } from '../screens/QuizScreen';
 import { SplashScreen } from '../screens/SplashScreen';
-import { SessionSummaryScreen } from '../screens/SessionSummaryScreen';
-import { SearchScreen } from '../screens/SearchScreen';
-import { ProgressScreen } from '../screens/ProgressScreen';
-import { AchievementsScreen } from '../screens/AchievementsScreen';
-import { FlashcardsScreen } from '../screens/FlashcardsScreen';
-import { SettingsScreen } from '../screens/SettingsScreen';
+
+const QuizScreen = lazy(() => import('../screens/QuizScreen').then(m => ({ default: m.QuizScreen })));
+const SessionSummaryScreen = lazy(() => import('../screens/SessionSummaryScreen').then(m => ({ default: m.SessionSummaryScreen })));
+const SearchScreen = lazy(() => import('../screens/SearchScreen').then(m => ({ default: m.SearchScreen })));
+const ProgressScreen = lazy(() => import('../screens/ProgressScreen').then(m => ({ default: m.ProgressScreen })));
+const AchievementsScreen = lazy(() => import('../screens/AchievementsScreen').then(m => ({ default: m.AchievementsScreen })));
+const FlashcardsScreen = lazy(() => import('../screens/FlashcardsScreen').then(m => ({ default: m.FlashcardsScreen })));
+const SettingsScreen = lazy(() => import('../screens/SettingsScreen').then(m => ({ default: m.SettingsScreen })));
+const ScenarioLabsScreen = lazy(() => import('../screens/ScenarioLabsScreen').then(m => ({ default: m.ScenarioLabsScreen })));
+const PythonReaderScreen = lazy(() => import('../screens/PythonReaderScreen').then(m => ({ default: m.PythonReaderScreen })));
+const LearningPythonScreen = lazy(() => import('../screens/LearningPythonScreen').then(m => ({ default: m.LearningPythonScreen })));
+
 
 const ZOOM_MIN = 0.65;
 const ZOOM_MAX = 1.4;
@@ -102,6 +106,13 @@ export function AppShell() {
                 return;
             }
 
+            const target = e.target as HTMLElement | null;
+            const isEditableTarget = target && (
+                ['INPUT', 'TEXTAREA', 'SELECT'].includes(target.tagName) ||
+                target.isContentEditable
+            );
+            if (isEditableTarget) return;
+
             const mainArea = mainAreaRef.current;
             if (!mainArea) return;
 
@@ -158,51 +169,49 @@ export function AppShell() {
         window.localStorage.setItem('app_zoom_level', zoom.toString());
     }, [zoom]);
 
-    useKeyboardShortcuts({
-        'escape': () => console.log('Escape pressed'),
-    }, isReady);
-
     if (!isReady) {
         return <SplashScreen onComplete={() => setIsReady(true)} />;
     }
 
     return (
         <HashRouter>
-            <AppContent isReady={isReady} zoom={zoom} mainAreaRef={mainAreaRef} />
+            <AppContent zoom={zoom} mainAreaRef={mainAreaRef} />
         </HashRouter>
     );
 }
 
-function AppContent({ isReady, zoom, mainAreaRef }: { isReady: boolean, zoom: number, mainAreaRef: React.MutableRefObject<HTMLElement | null> }) {
+function AppContent({ zoom, mainAreaRef }: { zoom: number, mainAreaRef: React.MutableRefObject<HTMLElement | null> }) {
     const location = useLocation();
+    const reduceMotion = useReducedMotion();
     const routeKey = `${location.pathname}${location.search}`;
     const isQuizRoute = location.pathname === '/quiz'
         || location.pathname === '/generative-ai-leader'
         || location.pathname === '/fill-in-blank';
+    const isPythonReaderRoute = location.pathname === '/python-reader';
+    const isLearnPythonRoute = location.pathname === '/learn-python';
     const isMaxZoom = zoom >= 1.32;
     const needsSidebarScroll = zoom >= 1.1;
-
-    if (!isReady) {
-        return <SplashScreen onComplete={() => {}} />; // SplashScreen is usually handled in AppShell
-    }
+    const isReaderMaxZoom = isPythonReaderRoute && isMaxZoom;
+    const isLearnPyMaxZoom = isLearnPythonRoute && isMaxZoom;
 
     return (
         <div
-            className={`app-shell ${isQuizRoute && isMaxZoom ? 'quiz-max-zoom' : ''} ${needsSidebarScroll ? 'sidebar-scroll-enabled' : ''}`}
+            className={`app-shell ${isQuizRoute && isMaxZoom ? 'quiz-max-zoom' : ''} ${isReaderMaxZoom ? 'reader-max-zoom' : ''} ${isLearnPyMaxZoom ? 'learnpy-max-zoom' : ''} ${needsSidebarScroll ? 'sidebar-scroll-enabled' : ''}`}
             style={{ '--app-zoom': zoom } as any}
         >
             <Sidebar allowOverflowScroll={needsSidebarScroll} />
             <main className={`main-area ${isQuizRoute ? 'quiz-main-area' : ''}`} id="main-scroll-area" ref={mainAreaRef} tabIndex={0}>
                 <ErrorBoundary>
-                    <AnimatePresence mode="wait">
-                        <motion.div
+                    {/* Entry-only animation: AnimatePresence mode="wait" deadlocks when a
+                        lazy route suspends inside it, leaving the previous screen stuck. */}
+                    <motion.div
                             key={routeKey}
-                            initial={{ opacity: 0, scale: 0.98, filter: "blur(4px)" }}
-                            animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
-                            exit={{ opacity: 0, scale: 1.02, filter: "blur(4px)" }}
-                            transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
+                            initial={reduceMotion ? { opacity: 1 } : { opacity: 0, scale: 0.98, filter: "blur(4px)" }}
+                            animate={reduceMotion ? { opacity: 1 } : { opacity: 1, scale: 1, filter: "blur(0px)" }}
+                            transition={reduceMotion ? { duration: 0 } : { duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
                             style={{ height: "100%" }}
                         >
+                            <Suspense fallback={<div className="page-container flex-center"><h3>Loading…</h3></div>}>
                             <Routes location={location} key={routeKey}>
                                 <Route path="/" element={<HomeScreen />} />
                                 <Route path="/quiz" element={<QuizScreen />} />
@@ -212,11 +221,15 @@ function AppContent({ isReady, zoom, mainAreaRef }: { isReady: boolean, zoom: nu
                                 <Route path="/search" element={<SearchScreen />} />
                                 <Route path="/progress" element={<ProgressScreen />} />
                                 <Route path="/achievements" element={<AchievementsScreen />} />
+                                <Route path="/scenario-labs" element={<ScenarioLabsScreen />} />
+                                <Route path="/python-reader" element={<PythonReaderScreen />} />
+                                <Route path="/learn-python" element={<LearningPythonScreen />} />
                                 <Route path="/flashcards" element={<FlashcardsScreen />} />
                                 <Route path="/settings" element={<SettingsScreen />} />
+                                <Route path="*" element={<Navigate to="/" replace />} />
                             </Routes>
-                        </motion.div>
-                    </AnimatePresence>
+                            </Suspense>
+                    </motion.div>
                 </ErrorBoundary>
             </main>
         </div>

@@ -41,3 +41,7 @@ src-tauri/gen/
 *.njsproj
 *.sln
 *.sw?
+
+# Local app artifacts (never commit)
+ai_study_game.db
+launch.log

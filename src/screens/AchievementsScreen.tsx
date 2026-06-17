@@ -1,5 +1,6 @@
 // src/screens/AchievementsScreen.tsx
 import { useEffect, useState } from 'react';
+import { motion, useMotionValue, useTransform, useSpring } from 'framer-motion';
 import { Medal, Lock, Trophy, Star, Shield, Zap, Target, Book, Calendar, Flame } from 'lucide-react';
 import { getDb } from '../services/database';
 import { Achievement } from '../types/models';
@@ -9,6 +10,80 @@ const ICON_MAP: Record<string, any> = {
     medals: Medal, trophy: Trophy, star: Star, shield: Shield, 
     zap: Zap, target: Target, book: Book, calendar: Calendar, flame: Flame
 };
+
+function HolographicRecordCard({ a }: { a: Achievement }) {
+    const IconComponent = ICON_MAP[a.icon] || Medal;
+    const progress = (a.progress / a.requirement_value) * 100;
+
+    // Framer motion coordinates for mouse hover 3D parallax
+    const x = useMotionValue(0);
+    const y = useMotionValue(0);
+
+    // Spring interpolation for buttery smooth movement
+    const rotateX = useSpring(useTransform(y, [-100, 100], [12, -12]), { stiffness: 200, damping: 20 });
+    const rotateY = useSpring(useTransform(x, [-100, 100], [-12, 12]), { stiffness: 200, damping: 20 });
+
+    const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+        const rect = e.currentTarget.getBoundingClientRect();
+        const width = rect.width;
+        const height = rect.height;
+        const mouseX = e.clientX - rect.left - width / 2;
+        const mouseY = e.clientY - rect.top - height / 2;
+        x.set(mouseX);
+        y.set(mouseY);
+    };
+
+    const handleMouseLeave = () => {
+        x.set(0);
+        y.set(0);
+    };
+
+    return (
+        <motion.div 
+            className={`holographic-record-card ${a.is_unlocked ? 'is-unlocked' : 'is-locked'} rarity-${a.rarity}`}
+            onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
+            style={{
+                rotateX,
+                rotateY,
+                transformStyle: 'preserve-3d',
+                perspective: 1000
+            }}
+            whileHover={{ scale: 1.02, boxShadow: '0 12px 30px rgba(var(--primary-rgb), 0.25)' }}
+            transition={{ duration: 0.15 }}
+        >
+            <div className="record-icon-vault" style={{ transform: 'translateZ(35px)' }}>
+                {a.is_unlocked ? (
+                    <IconComponent className="record-icon" size={32} />
+                ) : (
+                    <Lock className="lock-icon" size={24} style={{ opacity: 0.5 }} />
+                )}
+            </div>
+            <div className="record-data" style={{ transform: 'translateZ(20px)' }}>
+                <h3>{a.name.toUpperCase()}</h3>
+                <p>{a.description}</p>
+                
+                {!a.is_unlocked && (
+                    <div className="record-progress-hud">
+                        <div className="hud-progress-bg-mini">
+                            <div className="hud-progress-fill-neon" style={{ width: `${progress}%` }} />
+                        </div>
+                        <div className="hud-progress-labels-small">
+                            <span>PROGRESS</span>
+                            <span>{a.progress} / {a.requirement_value}</span>
+                        </div>
+                    </div>
+                )}
+                {a.is_unlocked && (
+                    <span className="hud-label-small" style={{ color: 'var(--color-success)', display: 'block', marginTop: '0.5rem' }}>
+                        SYNCHRONIZED {new Date(a.unlock_timestamp!).toLocaleDateString().toUpperCase()}
+                    </span>
+                )}
+            </div>
+            <div className="record-rarity-tag" style={{ transform: 'translateZ(25px)' }}>{a.rarity}</div>
+        </motion.div>
+    );
+}
 
 export function AchievementsScreen() {
     const [achievements, setAchievements] = useState<Achievement[]>([]);
@@ -64,44 +139,9 @@ export function AchievementsScreen() {
             </header>
 
             <div className="achievements-stream">
-                {filtered.map(a => {
-                    const IconComponent = ICON_MAP[a.icon] || Medal;
-                    const progress = (a.progress / a.requirement_value) * 100;
-
-                    return (
-                        <div key={a.id} className={`holographic-record-card ${a.is_unlocked ? 'is-unlocked' : 'is-locked'} rarity-${a.rarity}`}>
-                            <div className="record-icon-vault">
-                                {a.is_unlocked ? (
-                                    <IconComponent className="record-icon" size={32} />
-                                ) : (
-                                    <Lock className="lock-icon" size={24} style={{ opacity: 0.5 }} />
-                                )}
-                            </div>
-                            <div className="record-data">
-                                <h3>{a.name.toUpperCase()}</h3>
-                                <p>{a.description}</p>
-                                
-                                {!a.is_unlocked && (
-                                    <div className="record-progress-hud">
-                                        <div className="hud-progress-bg-mini">
-                                            <div className="hud-progress-fill-neon" style={{ width: `${progress}%` }} />
-                                        </div>
-                                        <div className="hud-progress-labels-small">
-                                            <span>PROGRESS</span>
-                                            <span>{a.progress} / {a.requirement_value}</span>
-                                        </div>
-                                    </div>
-                                )}
-                                {a.is_unlocked && (
-                                    <span className="hud-label-small" style={{ color: 'var(--color-success)' }}>
-                                        SYNCHRONIZED {new Date(a.unlock_timestamp!).toLocaleDateString().toUpperCase()}
-                                    </span>
-                                )}
-                            </div>
-                            <div className="record-rarity-tag">{a.rarity}</div>
-                        </div>
-                    );
-                })}
+                {filtered.map(a => (
+                    <HolographicRecordCard key={a.id} a={a} />
+                ))}
             </div>
         </div>
     );

@@ -24,11 +24,6 @@ export default function PremiumDashboardLayout() {
     // Initial load
     loadStats();
 
-    // Keep dashboard guidance current as progress changes.
-    const interval = window.setInterval(() => {
-      loadStats();
-    }, 8000);
-
     // Refresh when returning to the app/tab.
     const onFocus = () => loadStats();
     const onVisibility = () => {
@@ -39,13 +34,12 @@ export default function PremiumDashboardLayout() {
     document.addEventListener("visibilitychange", onVisibility);
 
     return () => {
-      window.clearInterval(interval);
       window.removeEventListener("focus", onFocus);
       document.removeEventListener("visibilitychange", onVisibility);
     };
   }, [loadStats]);
 
-  const streakDays = stats ? parseInt(stats.streakCount.split("d")[0], 10) : 0;
+  const streakDays = stats?.streakDays ?? 0;
   const weakestDomainId = stats
     ? Object.entries(stats.domainProgress).sort((a, b) => a[1] - b[1])[0]?.[0]
     : undefined;
@@ -79,6 +73,11 @@ export default function PremiumDashboardLayout() {
           </p>
         </div>
         <div className="topbar-right">
+          {stats?.studyState === "fresh_start" && (
+            <div className="fresh-start-pill">
+              Fresh start
+            </div>
+          )}
           <StreakPill days={streakDays} />
         </div>
       </motion.div>

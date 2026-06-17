@@ -15,12 +15,16 @@
     "sanitize:question-leaks": "node scripts/sanitize-question-leaks.mjs",
     "sanitize:truncated-stems": "node scripts/sanitize-truncated-question-stems.mjs",
     "qa:questions:release": "node scripts/release-question-qa.mjs",
+    "qa:python-reader": "node scripts/validate-python-reader-missions.mjs",
+    "qa:learn-python": "node scripts/validate-learning-python-missions.mjs",
     "release:questions": "npm run sanitize:question-leaks && npm run sanitize:truncated-stems && npm run qa:questions:release",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "tauri": "tauri"
   },
   "dependencies": {
+    "@fontsource/inter": "^5.2.8",
+    "@fontsource/outfit": "^5.2.8",
     "@tauri-apps/api": "^2",
     "@tauri-apps/plugin-opener": "^2",
     "@tauri-apps/plugin-sql": "^2.3.2",

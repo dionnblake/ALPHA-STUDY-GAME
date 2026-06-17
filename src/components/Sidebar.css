@@ -1,6 +1,10 @@
-/* src/components/Sidebar.css */
+/* src/components/Sidebar.css
+   Sidebar-specific additions, layered on top of the base
+   .sidebar / .nav-list / .nav-item rules in styles/theme.css.
+   Do not duplicate those base rules here. */
+
 .version-pill {
-  display: inline-block;
+  align-self: flex-start;
   margin-top: 8px;
   padding: 2px 8px;
   background: rgba(40, 215, 255, 0.1);
@@ -13,137 +17,72 @@
   text-transform: uppercase;
 }
 
-.sidebar {
-  height: 100%;
-  background: rgba(20, 20, 25, 0.4);
-  backdrop-filter: blur(40px) saturate(180%);
-  border-right: 1px solid rgba(255, 255, 255, 0.05);
-  display: flex;
-  flex-direction: column;
-  z-index: 1000;
-  padding: 1.5rem 0;
+/* --- Nav sections --- */
+
+.nav-section {
+  display: grid;
+  gap: 4px;
 }
 
-.sidebar-header {
-  padding: 2rem 1.5rem;
-  margin-bottom: 2rem;
+.nav-section + .nav-section {
+  margin-top: 12px;
 }
 
-.profile-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-}
-
-.avatar-ring {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  padding: 3px;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), transparent);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-}
-
-.user-avatar {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  object-fit: cover;
-  background: var(--bg-surface);
-}
-
-.profile-name {
-  font-family: 'Outfit', sans-serif;
+.nav-section-kicker {
+  padding: 0 12px;
+  margin: 0 0 2px;
+  color: var(--text-3);
+  font-size: 10px;
   font-weight: 700;
-  font-size: 1.1rem;
-  color: var(--text-base);
-  letter-spacing: 0.02em;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
 }
 
-.sidebar-menu {
-  flex: 1;
-  padding: 0 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-
-.nav-item {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  padding: 0.8rem 1.25rem;
-  border-radius: 12px;
-  color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  transition: all 0.2s ease;
-  border: 1px solid transparent;
-}
-
-.nav-item:hover {
-  background: rgba(255, 255, 255, 0.05);
-  color: #fff;
-}
-
-.nav-item.active {
-  background: rgba(0, 163, 255, 0.1);
-  color: #00a3ff;
-  font-weight: 600;
-}
+/* --- Nav item internals (icon / label / progress) --- */
 
 .nav-icon {
-  opacity: 0.6;
-  width: 18px;
-  height: 18px;
+  flex-shrink: 0;
+  opacity: 0.7;
+}
+
+.nav-item:hover .nav-icon {
+  opacity: 0.9;
 }
 
 .nav-item.active .nav-icon {
   opacity: 1;
-  color: #00a3ff;
+  color: var(--primary);
 }
 
-.nav-list {
+.nav-label {
   flex: 1;
-  overflow-x: hidden;
-  overflow-y: auto;
-  padding: 0 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-  scrollbar-width: none;
+  min-width: 0;
 }
 
-.nav-list::-webkit-scrollbar {
-  width: 0;
-  height: 0;
+.nav-progress {
+  flex-shrink: 0;
+  margin-left: auto;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-3);
+  font-variant-numeric: tabular-nums;
 }
 
-.nav-list::-webkit-scrollbar-track {
-  background: transparent;
+.nav-progress-high {
+  color: var(--primary);
 }
 
-.nav-list::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 3px;
+/* --- Compact zoom (sidebar-scroll-enabled): keep section
+       headers from bloating vertical space. --- */
+
+.app-shell.sidebar-scroll-enabled .nav-section-kicker {
+  display: none;
 }
 
-.nav-list::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.4);
+.app-shell.sidebar-scroll-enabled .nav-section + .nav-section {
+  margin-top: 6px;
 }
 
-.sidebar.sidebar-overflowing .nav-list {
-  scrollbar-width: thin;
-}
-
-.sidebar.sidebar-overflowing .nav-list::-webkit-scrollbar {
-  width: 8px;
-}
-
-.sidebar-footer {
-  padding: 0 1rem;
-  margin-top: auto;
+.app-shell.sidebar-scroll-enabled .nav-progress {
+  font-size: 10px;
 }

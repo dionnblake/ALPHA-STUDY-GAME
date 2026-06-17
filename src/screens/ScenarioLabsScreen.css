@@ -116,6 +116,8 @@
   margin-top: 2rem;
   display: flex;
   justify-content: flex-end;
+  position: relative;
+  z-index: 10;
 }
 
 .btn-evaluate {
@@ -130,6 +132,7 @@
   cursor: pointer;
   transition: all 0.2s;
   box-shadow: 0 0 20px var(--primary-glow);
+  pointer-events: auto !important;
 }
 
 .btn-evaluate:hover:not(:disabled) {

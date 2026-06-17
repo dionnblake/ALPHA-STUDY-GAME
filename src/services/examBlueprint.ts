@@ -173,6 +173,7 @@ export const DOMAINS: Domain[] = [
         name: "Domain 14: AWS Certified AI Practitioner",
         weight: 0.20,
         categories: [
+            "AWS Certified AI Practitioner",
             "aws-ai-ml-fundamentals",
             "aws-learning-types",
             "aws-model-lifecycle",

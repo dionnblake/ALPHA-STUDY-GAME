@@ -7,7 +7,7 @@ export default function StatsGridPremium({ stats }: { stats: DashboardStats | nu
     { 
       label: "Completed Missions", 
       value: isLoading ? "Loading" : stats.completedMissions, 
-      delta: isLoading ? "Reading study sessions" : `+${stats.missionsThisWeek} this week`, 
+      delta: isLoading ? "Reading study sessions" : stats.studyState === "fresh_start" ? "Fresh start" : `+${stats.missionsThisWeek} this week`, 
       accent: "cyan", 
       icon: "OK", 
       tone: "positive" 
@@ -31,7 +31,7 @@ export default function StatsGridPremium({ stats }: { stats: DashboardStats | nu
     { 
       label: "Hours Studied", 
       value: isLoading ? "Loading" : stats.hoursStudied, 
-      delta: isLoading ? "Reading durations" : `${stats.hoursThisWeek} this week`, 
+      delta: isLoading ? "Reading durations" : stats.studyState === "fresh_start" ? "No study history yet" : `${stats.hoursThisWeek} this week`, 
       accent: "orange", 
       icon: "H", 
       tone: "warning" 

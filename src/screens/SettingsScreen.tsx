@@ -5,6 +5,7 @@ import {
     CheckCircle, ShieldAlert, Cpu, Palette, RefreshCw
 } from 'lucide-react';
 import { getSettings, updateSettings, DEFAULT_SETTINGS } from '../services/settingsService';
+import { forceReSeedQuestions, executeSystemPurge } from '../services/database';
 import { Settings } from '../types/models';
 import './SettingsScreen.css';
 
@@ -31,7 +32,10 @@ export function SettingsScreen() {
         setTimeout(() => setSaved(false), 2000);
 
         if (key === 'theme') {
-            document.documentElement.setAttribute('data-theme', value);
+            const resolvedTheme = value === 'system'
+                ? (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+                : value;
+            document.documentElement.setAttribute('data-theme', resolvedTheme);
         }
     };
 
@@ -192,7 +196,6 @@ export function SettingsScreen() {
                             <button className="hud-btn" onClick={async () => {
                                 if (window.confirm("Perform mission data synchronization? This will refresh all questions with the latest corrected transcripts. Your XP, history, and streaks will be preserved.")) {
                                     try {
-                                        const { forceReSeedQuestions } = await import('../services/database');
                                         await forceReSeedQuestions();
                                         window.location.reload();
                                     } catch (e) {
@@ -221,7 +224,6 @@ export function SettingsScreen() {
                             <button className="hud-btn-danger" onClick={async () => {
                                 if (window.confirm("CRITICAL WARNING: This will permanently wipe ALL study data, achievements, and session history. Are you absolutely certain you wish to proceed with the terminal purge?")) {
                                     try {
-                                        const { executeSystemPurge } = await import('../services/database');
                                         await executeSystemPurge();
                                         window.location.reload();
                                     } catch (e) {

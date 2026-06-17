@@ -17,6 +17,7 @@ export interface DashboardStats {
     level: number;
     avgSpeed: number; // Avg seconds per question
     streakCount: string;
+    streakDays: number;
     streakHistory: number[];
     sessionHistory: number[]; // Accuracy % per session (last 15)
     sessionTrend: SessionTrendPoint[];
@@ -30,6 +31,7 @@ export interface DashboardStats {
     xpThisWeek: number;
     accuracyChange: number;
     hoursThisWeek: number;
+    studyState: 'fresh_start' | 'active';
     radarData: {
         ai_systems: number;
         deep_learning: number;
@@ -65,9 +67,16 @@ export function getRankTitle(level: number): string {
 export async function getDashboardStats(): Promise<DashboardStats> {
     const db = await getDb();
 
+    const refreshSetting = await db.select<{ value: string }[]>(
+        "SELECT value FROM settings WHERE key = 'mission_data_refreshed_at'"
+    );
+    const missionDataRefreshedAt = refreshSetting.length > 0 ? Number(refreshSetting[0].value) : 0;
+    const since = Number.isFinite(missionDataRefreshedAt) ? missionDataRefreshedAt : 0;
+
     // 1. Calculate Global Accuracy
     const sessions = await db.select<{ total: number, correct: number }[]>(
-        'SELECT SUM(total_questions) as total, SUM(correct_answers) as correct FROM study_sessions'
+        'SELECT SUM(total_questions) as total, SUM(correct_answers) as correct FROM study_sessions WHERE start_timestamp > ?',
+        [since]
     );
 
     let accuracy = 0;
@@ -82,7 +91,10 @@ export async function getDashboardStats(): Promise<DashboardStats> {
                 SUM(up.attempts) as total
          FROM user_progress up
          JOIN questions q ON up.question_uid = q.uid
+         WHERE up.last_attempt_timestamp > ?
          GROUP BY q.domain_id`
+        ,
+        [since]
     );
 
     const domainProgress: Record<number, number> = {};
@@ -108,6 +120,8 @@ export async function getDashboardStats(): Promise<DashboardStats> {
         `SELECT q.tags as tags, up.correct_attempts as correct_attempts, up.attempts as attempts
          FROM user_progress up
          JOIN questions q ON up.question_uid = q.uid`
+        + (since > 0 ? ' WHERE up.last_attempt_timestamp > ?' : ''),
+        since > 0 ? [since] : undefined
     );
 
     for (const row of tagRows) {
@@ -168,8 +182,11 @@ export async function getDashboardStats(): Promise<DashboardStats> {
             correct_answers as correct,
             total_questions as total
          FROM study_sessions
+         WHERE start_timestamp > ?
          ORDER BY start_timestamp DESC
          LIMIT 15`
+        ,
+        [since]
     );
     // Reverse to chronological for the graph
     const sessionTrend = recentSessions.reverse().map(rs => ({
@@ -192,7 +209,7 @@ export async function getDashboardStats(): Promise<DashboardStats> {
          GROUP BY day
          ORDER BY day DESC
          LIMIT 7`,
-        [sevenDaysAgoMs]
+        [Math.max(sevenDaysAgoMs, since)]
     );
 
     const history: number[] = new Array(7).fill(0);
@@ -209,7 +226,8 @@ export async function getDashboardStats(): Promise<DashboardStats> {
     }
 
     const totalSessions = await db.select<{ dur: number, q: number }[]>(
-        'SELECT duration_seconds as dur, total_questions as q FROM study_sessions'
+        'SELECT duration_seconds as dur, total_questions as q FROM study_sessions WHERE start_timestamp > ?',
+        [since]
     );
     const avgSpeed = (totalSessions.length > 0 && totalSessions.reduce((acc, s) => acc + (s.q > 0 ? s.q : 0), 0) > 0)
         ? Math.round(totalSessions.reduce((acc, s) => acc + (s.dur || 0), 0) / totalSessions.reduce((acc, s) => acc + (s.q || 0), 0))
@@ -237,7 +255,7 @@ export async function getDashboardStats(): Promise<DashboardStats> {
             SUM(total_questions) as total
          FROM study_sessions
          WHERE start_timestamp > ?`,
-        [sevenDaysAgoMs]
+        [Math.max(sevenDaysAgoMs, since)]
     );
 
     const missionsThisWeek = thisWeekSessions[0]?.count || 0;
@@ -254,7 +272,7 @@ export async function getDashboardStats(): Promise<DashboardStats> {
             SUM(total_questions) as total
          FROM study_sessions
          WHERE start_timestamp > ? AND start_timestamp <= ?`,
-        [twoWeeksAgoMs, sevenDaysAgoMs]
+        [Math.max(twoWeeksAgoMs, since), Math.max(sevenDaysAgoMs, since)]
     );
     const prevWeekTotal = previousWeekSessions[0]?.total || 0;
     const prevWeekCorrect = previousWeekSessions[0]?.correct || 0;
@@ -263,6 +281,9 @@ export async function getDashboardStats(): Promise<DashboardStats> {
 
     // Calculate XP this week - Reward XP based on actual correct answers this week
     const xpThisWeek = (missionsThisWeek * 100) + (thisWeekCorrect * 10);
+    const studyState: DashboardStats['studyState'] = (completedMissions === 0 && missionsThisWeek === 0 && hoursStudied === 0)
+        ? 'fresh_start'
+        : 'active';
 
     const finalStats = {
         accuracy,
@@ -270,6 +291,7 @@ export async function getDashboardStats(): Promise<DashboardStats> {
         level,
         avgSpeed,
         streakCount: `${currentStreak}d`,
+        streakDays: currentStreak,
         streakHistory: history,
         domainProgress,
         domainXP,
@@ -281,6 +303,7 @@ export async function getDashboardStats(): Promise<DashboardStats> {
         xpThisWeek,
         accuracyChange,
         hoursThisWeek,
+        studyState,
         radarData: radar,
         sessionHistory, // Accuracy % per session
         sessionTrend,

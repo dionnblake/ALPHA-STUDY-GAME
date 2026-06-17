@@ -1,0 +1,439 @@
+.python-reader-root {
+  min-height: 100%;
+  padding: 2rem;
+  color: #f5f7fb;
+  background:
+    linear-gradient(135deg, rgba(9, 13, 24, 0.96), rgba(3, 3, 3, 0.98) 48%, rgba(20, 28, 20, 0.96)),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.035) 0, rgba(255, 255, 255, 0.035) 1px, transparent 1px, transparent 42px);
+}
+
+.python-reader-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  align-items: flex-end;
+  margin-bottom: 1.25rem;
+}
+
+.python-reader-kicker,
+.challenge-objective,
+.select-mode,
+.reviewer-note span,
+.ai-prompt-box span {
+  color: #67e8f9;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+.python-reader-header h1 {
+  margin: 0.35rem 0;
+  font-size: 2.35rem;
+  line-height: 1;
+}
+
+.python-reader-header p {
+  margin: 0;
+  color: rgba(245, 247, 251, 0.72);
+}
+
+.reader-scoreboard {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(86px, 1fr));
+  gap: 0.75rem;
+  min-width: min(100%, 360px);
+}
+
+.reader-scoreboard div,
+.pack-chip,
+.reader-code-panel,
+.reader-challenge-panel,
+.feedback-panel {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(8, 11, 18, 0.78);
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(18px);
+}
+
+.reader-scoreboard div {
+  border-radius: 8px;
+  padding: 0.85rem;
+}
+
+.reader-scoreboard strong {
+  display: block;
+  font-size: 1.25rem;
+}
+
+.reader-scoreboard span {
+  display: block;
+  margin-top: 0.2rem;
+  color: rgba(245, 247, 251, 0.62);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+}
+
+.reader-pack-rail {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(140px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.pack-chip {
+  min-height: 64px;
+  border-radius: 8px;
+  color: inherit;
+  cursor: pointer;
+  text-align: left;
+  padding: 0.8rem;
+  transition: border-color 0.2s ease, transform 0.2s ease, background 0.2s ease;
+}
+
+.pack-chip:hover {
+  transform: translateY(-1px);
+  border-color: rgba(103, 232, 249, 0.45);
+}
+
+.pack-chip.active {
+  background: linear-gradient(135deg, rgba(103, 232, 249, 0.18), rgba(234, 179, 8, 0.12));
+  border-color: rgba(103, 232, 249, 0.68);
+}
+
+.pack-chip span,
+.pack-chip strong {
+  display: block;
+}
+
+.pack-chip span {
+  color: rgba(245, 247, 251, 0.74);
+  font-size: 0.82rem;
+}
+
+.pack-chip strong {
+  margin-top: 0.45rem;
+  color: #facc15;
+}
+
+.reader-workspace {
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(360px, 0.88fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.reader-code-panel,
+.reader-challenge-panel {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.reader-code-panel {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.mission-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mission-meta span,
+.mission-meta strong {
+  display: block;
+}
+
+.mission-meta span {
+  color: rgba(245, 247, 251, 0.64);
+  font-size: 0.78rem;
+}
+
+.mission-badges {
+  display: flex;
+  gap: 0.5rem;
+  align-items: start;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.mission-badges span {
+  border: 1px solid rgba(250, 204, 21, 0.36);
+  border-radius: 999px;
+  padding: 0.28rem 0.5rem;
+  color: #fde68a;
+  background: rgba(250, 204, 21, 0.08);
+}
+
+.code-window {
+  margin: 0;
+  padding: 1rem 0;
+  overflow: auto;
+  max-height: min(46vh, 520px);
+  background: #05070b;
+  flex: 0 0 auto;
+}
+
+.code-window code {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  min-width: max-content;
+  font-family: "JetBrains Mono", "Consolas", monospace;
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+.line-number {
+  color: rgba(148, 163, 184, 0.58);
+  text-align: right;
+  padding-right: 1rem;
+  user-select: none;
+}
+
+.line-code {
+  color: #dbeafe;
+  white-space: pre;
+  padding-right: 1rem;
+}
+
+.reader-insight-zone {
+  padding: 1rem;
+  min-height: 0;
+  flex: 1 1 auto;
+  display: flex;
+}
+
+.reader-placeholder {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0.35rem;
+  border: 1px dashed rgba(255, 255, 255, 0.14);
+  border-radius: 8px;
+  padding: 1rem;
+  color: rgba(245, 247, 251, 0.52);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.reader-placeholder span {
+  color: #facc15;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.reader-placeholder p {
+  margin: 0;
+  max-width: 28rem;
+  line-height: 1.45;
+}
+
+.reader-challenge-panel {
+  padding: 1rem;
+}
+
+.challenge-copy h2 {
+  margin: 0.35rem 0;
+  font-size: 1.45rem;
+}
+
+.challenge-copy p {
+  color: rgba(245, 247, 251, 0.78);
+  margin: 0 0 0.85rem;
+}
+
+.select-mode {
+  display: inline-flex;
+  border: 1px solid rgba(103, 232, 249, 0.25);
+  border-radius: 999px;
+  padding: 0.35rem 0.55rem;
+  background: rgba(103, 232, 249, 0.08);
+  margin-bottom: 0.85rem;
+}
+
+.answer-grid {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.answer-card {
+  width: 100%;
+  min-height: 56px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.045);
+  color: #f8fafc;
+  text-align: left;
+  padding: 0.85rem;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+}
+
+.answer-card:hover {
+  border-color: rgba(103, 232, 249, 0.45);
+  transform: translateX(2px);
+}
+
+.answer-card.selected {
+  border-color: rgba(250, 204, 21, 0.75);
+  background: rgba(250, 204, 21, 0.12);
+}
+
+.answer-card.correct {
+  border-color: rgba(34, 197, 94, 0.9);
+  background: rgba(34, 197, 94, 0.15);
+}
+
+.answer-card.incorrect {
+  border-color: rgba(248, 113, 113, 0.9);
+  background: rgba(248, 113, 113, 0.14);
+}
+
+.reader-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1rem 0;
+}
+
+.reader-icon-button,
+.reader-evaluate-button,
+.reader-reset-button {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  color: #f8fafc;
+  background: rgba(255, 255, 255, 0.06);
+  min-height: 42px;
+  cursor: pointer;
+}
+
+.reader-icon-button {
+  width: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reader-evaluate-button,
+.reader-reset-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0 0.9rem;
+}
+
+.reader-evaluate-button {
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.24), rgba(103, 232, 249, 0.14));
+  border-color: rgba(34, 197, 94, 0.42);
+}
+
+.reader-reset-button {
+  margin-left: auto;
+}
+
+.reader-icon-button:disabled,
+.reader-evaluate-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.feedback-panel {
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 0;
+  width: 100%;
+  align-self: end;
+}
+
+.feedback-panel.success {
+  border-color: rgba(34, 197, 94, 0.48);
+}
+
+.feedback-panel.failure {
+  border-color: rgba(248, 113, 113, 0.52);
+}
+
+.feedback-status,
+.correct-answer-box {
+  display: flex;
+  gap: 0.55rem;
+  align-items: center;
+}
+
+.feedback-status {
+  margin-bottom: 0.7rem;
+}
+
+.feedback-panel.success .feedback-status {
+  color: #86efac;
+}
+
+.feedback-panel.failure .feedback-status {
+  color: #fca5a5;
+}
+
+.correct-answer-box,
+.reviewer-note,
+.ai-prompt-box {
+  border-radius: 8px;
+  padding: 0.75rem;
+  margin-top: 0.75rem;
+  background: rgba(255, 255, 255, 0.055);
+}
+
+.correct-answer-box {
+  color: #fde68a;
+}
+
+.reviewer-note p,
+.ai-prompt-box p,
+.feedback-panel p {
+  color: rgba(245, 247, 251, 0.78);
+  margin: 0.4rem 0 0;
+}
+
+@media (max-width: 1120px) {
+  .python-reader-header,
+  .reader-workspace {
+    grid-template-columns: 1fr;
+  }
+
+  .python-reader-header {
+    display: grid;
+    align-items: start;
+  }
+
+  .reader-pack-rail {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .python-reader-root {
+    padding: 1rem;
+  }
+
+  .reader-scoreboard,
+  .reader-pack-rail {
+    grid-template-columns: 1fr;
+  }
+
+  .reader-workspace {
+    grid-template-columns: 1fr;
+  }
+
+  .mission-meta {
+    display: grid;
+  }
+
+  .reader-reset-button {
+    margin-left: 0;
+  }
+}
