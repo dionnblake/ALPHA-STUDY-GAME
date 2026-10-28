@@ -2,6 +2,28 @@
 
 Interactive AI study game app with quiz tracks, flashcards, progress analytics, and local session data.
 
+## Screenshots
+
+Browser previews of the version available in this repository. The Windows desktop app is required for the full quiz database and saved progress.
+
+### Study dashboard
+
+Browse the study tracks and see the dashboard layout. This browser preview shows an empty study history.
+
+![AI Study Game dashboard with study tracks, mission progress, and mastery panels](docs/screenshots/dashboard.png)
+
+### AI concept flashcards
+
+Choose a difficulty and practice AI terminology at your own pace.
+
+![Beginner AI flashcard showing the term Human Review](docs/screenshots/flashcards.png)
+
+### Reveal the definition
+
+Click a card or press Space to read its explanation.
+
+![The Human Review flashcard flipped to show its written definition](docs/screenshots/flashcard-definition.png)
+
 ## Tech stack
 
 - Frontend: React + TypeScript + Vite
